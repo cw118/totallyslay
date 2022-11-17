@@ -2,6 +2,10 @@
   background: #e5e5e5;
   width: 100vw;
   height: 100vh;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .printUnverified {
@@ -16,38 +20,19 @@
   background-repeat: no-repeat;
   height: 0%;
   z-index: 10;
-  animation: scan 3.0s linear forwards;
-  -webkit-animation: scan 3.0s linear forwards;
+  animation: scan 4.0s linear forwards;
+  -webkit-animation: scan 4.0s linear forwards;
 }
 
 .printUnverified, .printVerified {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0%;
   width: 100%;
 }
 
 .cardUnverified, .cardVerified {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.cardUnverified {
-  background-image: url(../public/idscan/id-card.svg);
-  height: 100%;
-  background-repeat: no-repeat;
-  z-index: 5;
-}
-
-.cardVerified {
-  background-image: url(../public/idscan/id-card-scanned.svg);
-  height: 0%;
-  background-repeat: no-repeat;
-  z-index: 10;
-  animation: scan 3.0s linear forwards;
-  -webkit-animation: scan 3.0s linear forwards;
+  display: none;
 }
 
 #scan {
@@ -69,10 +54,9 @@
 }
 
 .idScan {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 
 .fingerprint, .idCard {
@@ -97,5 +81,37 @@
   100% {
     opacity: 0;
     display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+
+  .cardUnverified,
+  .cardVerified {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .cardUnverified {
+    background-image: url(../public/idscan/id-card.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
+  }
+
+  .cardVerified {
+    background-image: url(../public/idscan/id-card-scanned.svg);
+    height: 0%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    animation: scan 4.0s linear forwards;
+    -webkit-animation: scan 4.0s linear forwards;
+  }
+
+  .fingerprint {
+    margin-right: 2em;
   }
 }
