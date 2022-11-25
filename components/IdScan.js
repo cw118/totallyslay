@@ -19,16 +19,9 @@ const IdScan = () => {
 
   return (
     <div className={styles.container} onMouseDown={playScan} onTouchStart={playScan} onMouseUp={pauseScan} onTouchEnd={pauseScan}>
+      <div className={styles.scanCursor}></div>
       <div className={styles.idScan}>
-        <div className={styles.scanCursor}></div>
-        <div className={styles.fingerprint}>
-          <div className={styles.printUnverified + (scanComplete ? `${styles.hide}` : '')}></div>
-          <div className={styles.printVerified} id={scanComplete ? `` : (styles.scanPaused + (mouseDown ? `${styles.scan}` : ''))} onAnimationEnd={validate}></div>
-        </div>
-        <div className={styles.idCard}>
-          <div className={styles.cardUnverified}></div>
-          <div className={styles.cardVerified} id={scanComplete ? `` : (styles.scanPaused + (mouseDown ? `${styles.scan}` : ''))} onAnimationEnd={validate}></div>
-        </div>
+        <div className={styles.idUnverified + (scanComplete ? `` : '')} id={styles.scanPaused + (mouseDown ? `${styles.scan}` : '')} onAnimationEnd={validate}></div>
       </div>
     </div>
   )

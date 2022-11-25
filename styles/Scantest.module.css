@@ -8,31 +8,30 @@
   -ms-user-select: none;
 }
 
-.printUnverified {
+.idUnverified {
   background-image: url(/idscan/fingerprint.svg);
-  height: 100%;
   background-repeat: no-repeat;
   z-index: 5;
+  width: 100%;
+  height: 100%;
 }
 
-.printVerified {
+.idUnverified::before {
+  content: '';
   background-image: url(/idscan/fingerprint-scanned.svg);
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 0%;
   z-index: 10;
   animation: scan 4.0s linear forwards;
   -webkit-animation: scan 4.0s linear forwards;
-}
-
-.printUnverified, .printVerified {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  width: 100%;
-}
-
-.cardUnverified, .cardVerified {
-  display: none;
+  -webkit-animation-play-state: inherit;
+  -moz-animation-play-state: inherit;
+  -o-animation-play-state: inherit;
+  animation-play-state: inherit;
 }
 
 #scan {
@@ -49,17 +48,12 @@
   animation-play-state: paused;
 }
 
-.hide {
-  display: none;
-}
-
 .idScan {
+  width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: 1.5fr 2.5fr;
 }
 
-.fingerprint, .idCard {
+.idUnverified {
   position: relative;
   width: 100%;
   height: 100%;
@@ -69,9 +63,10 @@
   position: absolute;
   top: 0;
   border-radius: 8px;
-  height: 12px;
+  height: 8px;
+  border: solid 2px #3a4092;
   width: 100%;
-  /* absolute positioning trick for horizontal centering */
+  background: #a4a7db;
 }
 
 @keyframes scan {
@@ -92,44 +87,12 @@
   }
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
 @media screen and (min-width: 767px) {
-
-  .cardUnverified,
-  .cardVerified {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: block;
+  .idUnverified {
+    background-image: url(/idscan/id.svg);
   }
 
-  .cardUnverified {
-    background-image: url(../public/idscan/id-card.svg);
-    height: 100%;
-    background-repeat: no-repeat;
-    z-index: 5;
-  }
-
-  .cardVerified {
-    background-image: url(../public/idscan/id-card-scanned.svg);
-    height: 0%;
-    background-repeat: no-repeat;
-    z-index: 10;
-    animation: scan 4.0s linear forwards;
-    -webkit-animation: scan 4.0s linear forwards;
-  }
-
-  .fingerprint {
-    margin-right: 2em;
+  .idUnverified::before {
+    background-image: url(/idscan/id-scanned.svg);
   }
 }
