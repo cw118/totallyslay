@@ -6,12 +6,15 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .idUnverified {
   background-image: url(/idscan/fingerprint.svg);
   background-repeat: no-repeat;
-  z-index: 5;
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -34,39 +37,19 @@
   animation-play-state: inherit;
 }
 
-#scan {
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-}
-
-#scanPaused {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-.idScan {
-  width: 100%;
-  height: 100%;
-}
-
-.idUnverified {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 .scanCursor {
   position: absolute;
-  top: 0;
   border-radius: 8px;
   height: 8px;
   border: solid 2px #3a4092;
   width: 100%;
   background: #a4a7db;
+  animation: cursorScan 4.0s linear forwards;
+  -webkit-animation: cursorScan 4.0s linear forwards;
+  -webkit-animation-play-state: inherit;
+  -moz-animation-play-state: inherit;
+  -o-animation-play-state: inherit;
+  animation-play-state: inherit;
 }
 
 @keyframes scan {
