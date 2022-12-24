@@ -10,22 +10,46 @@ html, body {
   box-sizing: border-box;
 }
 
-.topLeft {
-  top: 0;
-  left: 0;
+.puzzle {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d";
+  padding: 0;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+  width: 300px;
+  height: 250px;
 }
 
-.topRight {
-  top: 0;
-  right: 0;
+.pOne {
+  grid-area: a;
 }
 
-.bottomLeft {
-  bottom: 0;
-  left: 0;
+.pTwo {
+  grid-area: b;
 }
 
-.bottomRight {
-  bottom: 0;
-  right: 0;
+.pThree {
+  grid-area: c;
+}
+
+.pFour {
+  grid-area: d;
+}
+
+.one {
+  background-image: url(/puzzle/one.png);
+}
+
+.two {
+  background-image: url(/puzzle/two.png);
+}
+
+.three {
+  background-image: url(/puzzle/three.png);
+}
+
+.four {
+  background-image: url(/puzzle/four.png);
 }

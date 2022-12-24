@@ -7,67 +7,13 @@
   align-items: center;
 }
 
-.quadrant {
-  width: 150px;
-  height: 125px;
-  position: absolute;
-}
-
-#one {
-  top: 0;
-  left: 0;
-}
-
-#two {
-  top: 0;
-  right: 0;
-}
-
-#three {
-  bottom: 0;
-  left: 0;
-}
-
-#four {
-  bottom: 0;
-  right: 0;
-}
-
-.area {
-  opacity: 0.2;
-  background: white;
-  width: 300px;
-  height: 250px;
-  position: relative;
-  user-select: none;
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
-}
-
-.piecesContainer {
-  width: 300px;
-  height: 250px;
-  position: relative;
-}
-
 .piece {
   width: 150px;
   height: 125px;
-  position: absolute;
-  z-index: 999;
-}
-
-#pieceone {
-  background-image: url(/puzzle/one.png);
-}
-
-#piecetwo {
-  background-image: url(/puzzle/two.png);
-}
-
-#piecethree {
-  background-image: url(/puzzle/three.png);
-}
-
-#piecefour {
-  background-image: url(/puzzle/four.png);
+  cursor: grab;
+  margin: 0 -1px -1px;
+  background-repeat: no-repeat;
+  display: grid;
+  position: relative;
+  z-index: 10;
 }
