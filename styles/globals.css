@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html, body {
+/* html, body {
   padding: 0;
   margin: 0;
   font-family: 'Irish Grover', serif;
@@ -8,48 +11,58 @@ html, body {
 
 * {
   box-sizing: border-box;
-}
+} */
 
-.puzzle {
-  display: grid;
-  grid-template-areas:
-    "a b"
-    "c d";
-  padding: 0;
-  user-select: none;
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
-  width: 300px;
-  height: 250px;
-}
+@layer base {
+  .mainNavLogo {
+    /* border-top: solid 100px white;
+    border-left: solid 50px white;
+    border-right: solid 50px white;
+    background: blue; */
+    justify-self: center;
+  }
+  
+  .puzzle {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "c d";
+    padding: 0;
+    user-select: none;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+    width: 300px;
+    height: 250px;
+  }
 
-.pOne {
-  grid-area: a;
-}
+  .pOne {
+    grid-area: a;
+  }
 
-.pTwo {
-  grid-area: b;
-}
+  .pTwo {
+    grid-area: b;
+  }
 
-.pThree {
-  grid-area: c;
-}
+  .pThree {
+    grid-area: c;
+  }
 
-.pFour {
-  grid-area: d;
-}
+  .pFour {
+    grid-area: d;
+  }
 
-.one {
-  background-image: url(/puzzle/one.png);
-}
+  .one {
+    background-image: url(/puzzle/one.png);
+  }
 
-.two {
-  background-image: url(/puzzle/two.png);
-}
+  .two {
+    background-image: url(/puzzle/two.png);
+  }
 
-.three {
-  background-image: url(/puzzle/three.png);
-}
+  .three {
+    background-image: url(/puzzle/three.png);
+  }
 
-.four {
-  background-image: url(/puzzle/four.png);
+  .four {
+    background-image: url(/puzzle/four.png);
+  }
 }
