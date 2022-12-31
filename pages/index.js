@@ -1,9 +1,9 @@
-import MainNav from "../components/MainNav"
+import RegNav from "../components/RegNav"
 
 export default function Home() {
   return (
     <>
-      <MainNav />
+      <RegNav />
       <p>Under construction</p>
     </>
   )
