@@ -1,17 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); /* Irish Grover font */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* html, body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Irish Grover', serif;
-}
-
-* {
-  box-sizing: border-box;
-} */
 
 @layer base {
   #regNav {
@@ -22,7 +12,7 @@
     height: 2.5rem;
   }
 
-  #regNav a:not(#regLogo) {
+  #regNav a:not(#regLogo, #hiddenLogo) {
     color: #000;
     font-size: 1.25rem;
     font-weight: bold;
@@ -49,37 +39,68 @@
     margin-top: 0;
   }
 
-  #regLogo {
+  #regLogo, #hiddenLogo {
     position: absolute;
     background-color: #f8981d;
-    left: 50%;
-    transform: translateX(-50%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 25% 100%, 0 80%);
-    width: 80px;
-    top: -25px;
-    padding: 2.5px 18px 4.5px 5px;
     margin-left: -30px;
+    transform: translateX(-50%);
+    opacity: 1;
+    width: 80px;
+  }
+
+  #regLogo {
+    left: 50%;
+    top: -28px;
+    padding: 3px 18px 4.5px 5.5px;
     z-index: 35;
-    cursor: pointer;
+    visibility: visible;
+    transition: opacity 3s, z-index 3.5s, visibility 3.5s linear;
+  }
+
+  #regLogo:hover {
+    opacity: 0;
+    z-index: 25;
+    visibility: hidden;
+  }
+
+  #hiddenLogo {
+    z-index: 30;
+    top: -33.5px;
+    padding: 4px 3.25px 6px 0px;
+    transition: opacity 3s;
+  }
+
+  #hiddenLogo:hover {
+    opacity: 0;
   }
 
   @media screen and (min-width: 767px) {
+    #regLogo, #hiddenLogo {
+      margin-left: 0;
+      width: 120px;
+    }
+    
     #regLogo {
       width: 120px;
       top: -30px;
       padding: 10px 40px 10px 30px;
-      margin-left: 0px;
+    }
+
+    #hiddenLogo {
+      top: -36px;
+      padding: 5px 14.25px 0px 12px;
     }
 
     #regNav ul {
       width: revert;
     }
 
-    #regNav a {
+    #regNav a:not(#regLogo, #hiddenLogo) {
       transition: color 0.2s;
     }
 
-    #regNav a:hover {
+    #regNav a:not(#regLogo, #hiddenLogo):hover {
       color: #fff;
     }
   }
