@@ -2,18 +2,21 @@ import { useState } from 'react';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
 import Piece from './Piece';
+import styles from '../styles/Moohp.module.css';
+import classNames from 'classnames';
 
 // force update hook from https://stackoverflow.com/questions/46240647/react-how-to-force-a-function-component-to-render/53837442#53837442
 // forces rerender after dragend of a puzzle piece to show updated puzzle after pieces swap places
 const useForceUpdate = () => {
   const [value, setValue] = useState(0); // integer state
   return () => setValue(value => value + 1); // update state to force render
-  // An function that increment 👆🏻 the previous state like here 
-  // is better than directly setting `value + 1`
 }
 // end of force update hook
 
 const Puzzle = () => {
+  const [puzzleSolved, setPuzzleSolved] = useState(false);
+  const [revealed, setRevealed] = useState(false);
+
   const ids = ['one', 'two', 'three', 'four'];
   const solved = ['pOne', 'pTwo', 'pThree', 'pFour'];
   let initial = ['pThree', 'pOne', 'pFour', 'pTwo'];
@@ -30,9 +33,10 @@ const Puzzle = () => {
     return true;
   }
 
-  const handleSolve = () => {
-    console.log('solved'); // temporary, to be replaced by spy page reveal
-  }
+  const handleSolve = () => setPuzzleSolved(true);
+  
+  const hidePuzzleScreen = () => setRevealed(true);
+
   const [sourcePos, setsourcePos] = useState('');
 
   const handleDrag = (e) => {
@@ -49,20 +53,35 @@ const Puzzle = () => {
 
     setPositions(newPositions);
 
-    // if puzzle is solved, "quit"
     if (isSolved(positions)) {
       handleSolve();
     }
   };
 
   return (
-    <DndProvider backend={HTML5Backend}>
-      <div className='puzzle'>
-        {positions.map((pos, index) => (
-      <Piece key={index} id={ids[index]} newPos={pos} onDropPiece={onDropPiece} handleDrag={handleDrag} forceUpdate={forceUpdate} />
-        ))}
+    <div className={classNames(styles.puzzleArea, { ' hide': revealed })}>
+      <div className={classNames(styles.door, {
+        'revealLeft': puzzleSolved,
+      })} id={styles.leftDoor}>
+        <div className={styles.doorLogoContainer}>
+          <div id={styles.leftLogo}></div>
+        </div>
       </div>
-    </DndProvider>
+      <div className={classNames(styles.door, {
+        'revealRight': puzzleSolved,
+      })} id={styles.rightDoor} onAnimationEnd={hidePuzzleScreen}>
+        <div className={styles.doorLogoContainer}>
+          <div id={styles.rightLogo}></div>
+        </div>
+      </div>
+      <DndProvider backend={HTML5Backend}>
+        <div className={classNames('puzzle', { 'fade': puzzleSolved })}>
+          {positions.map((pos, index) => (
+        <Piece key={index} id={ids[index]} newPos={pos} onDropPiece={onDropPiece} handleDrag={handleDrag} forceUpdate={forceUpdate} />
+          ))}
+        </div>
+      </DndProvider>
+    </div>
   );
 
 }

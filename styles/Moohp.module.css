@@ -1,16 +1,75 @@
-.container {
-  background: linear-gradient(180deg, #9c1aff 0%, rgb(119, 0, 255) 100%);
+.doorContainer {
+  overflow: hidden;
+}
+
+.puzzleArea {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.door {
+  background-image: url(/puzzle/circuit-board.svg);
+  background-repeat: repeat;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 80;
+}
+
+#leftDoor {
+  left: 0;
+  border-right: solid 2px #050515;
+}
+
+#rightDoor {
+  right: 0;
+  border-left: solid 2px #050515;
+}
+
+.doorLogoContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#leftLogo {
+  background-image: url(/puzzle/left.svg);
+  right: 0;
+  border-left: solid 1px #ccc;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#rightLogo {
+  background-image: url(/puzzle/right.svg);
+  left: 0;
+  border-right: solid 1px #ccc;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#leftLogo, #rightLogo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 250px;
+  width: 150px;
+  z-index: 100;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
 }
 
 .piece {
   width: 150px;
   height: 125px;
-  cursor: grab;
   margin: 0 -1px -1px;
   background-repeat: no-repeat;
   display: grid;

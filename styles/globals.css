@@ -144,41 +144,118 @@
       "a b"
       "c d";
     padding: 0;
-    user-select: none;
-    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
     width: 300px;
     height: 250px;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+    position: relative;
+    z-index: 90;
+    margin-left: 1.5px;
+  }
+
+  .revealLeft {
+    animation: 6s ease-in-out 2s forwards slideLeft;
+  }
+
+  .revealRight {
+    animation: 6s ease-in-out 2s forwards slideRight;
+  }
+
+  .delayedHide {
+    animation: 0.01s linear 4.99s forwards noDisplay;
+  }
+
+  @keyframes slideLeft {
+    from {
+      left: 0;
+    }
+    to {
+      left: -50%;
+      display: none;
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      width: 50vw;
+    }
+    to {
+      width: 0px;
+      display: none;
+    }
+  }
+
+  @keyframes noDisplay {
+    from {
+      display: block;
+    }
+    to {
+      display: none;
+    }
+  }
+
+  .fade {
+    animation: 1.5s linear 1 forwards fadeOut;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 
   .pOne {
     grid-area: a;
+    border-top: solid 1px #eee;
+    border-left: solid 1px #eee;
+    border-right: solid 0.5px #eee;
+    border-bottom: solid 0.5px #eee;
   }
 
   .pTwo {
     grid-area: b;
+    border-top: solid 1px #eee;
+    border-left: solid 0.5px #eee;
+    border-right: solid 1px #eee;
+    border-bottom: solid 0.5px #eee;
   }
 
   .pThree {
     grid-area: c;
+    border-bottom: solid 1px #eee;
+    border-left: solid 1px #eee;
+    border-right: solid 0.5px #eee;
+    border-top: solid 0.5px #eee;
   }
 
   .pFour {
     grid-area: d;
+    border-bottom: solid 1px #eee;
+    border-left: solid 0.5px #eee;
+    border-right: solid 1px #eee;
+    border-top: solid 0.5px #eee;
   }
 
   .one {
-    background-image: url(/puzzle/one.png);
+    background-image: url(/puzzle/one.svg);
   }
 
   .two {
-    background-image: url(/puzzle/two.png);
+    background-image: url(/puzzle/two.svg);
   }
 
   .three {
-    background-image: url(/puzzle/three.png);
+    background-image: url(/puzzle/three.svg);
   }
 
   .four {
-    background-image: url(/puzzle/four.png);
+    background-image: url(/puzzle/four.svg);
+  }
+
+  .hide {
+    display: none !important;
   }
 }

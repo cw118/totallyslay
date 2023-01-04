@@ -6,9 +6,7 @@ export default function moohp() {
   return (
     <>
       <SpyNav />
-      <div className={styles.container}>
-        <Puzzle />
-      </div>
+      <Puzzle />
     </>
   );
 }
