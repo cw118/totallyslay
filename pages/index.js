@@ -1,7 +1,10 @@
+import RegNav from "../components/RegNav"
+
 export default function Home() {
   return (
     <>
-      <span>Hello</span>
+      <RegNav />
+      <p>Under construction</p>
     </>
   )
 }
