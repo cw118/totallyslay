@@ -2,7 +2,7 @@ import Puzzle from '../../components/Puzzle';
 import SpyNav from '../../components/SpyNav';
 import styles from '../../styles/Moohp.module.css';
 
-const moohp = () => {
+export default function moohp() {
   return (
     <>
       <SpyNav />
@@ -12,5 +12,3 @@ const moohp = () => {
     </>
   );
 }
-
-export default moohp;
