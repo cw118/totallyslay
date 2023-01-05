@@ -1,4 +1,4 @@
-import Carouselle from "../components/Carousel";
+import Carouselle from "../components/home/Carousel";
 import Foooter from "../components/Footer";
 
 export default function Home() {

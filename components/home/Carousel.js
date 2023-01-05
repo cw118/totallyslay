@@ -1,5 +1,5 @@
 import {Carousel} from 'flowbite-react';
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/Home.module.css';
 
 export default function Carouselle() {
     return(

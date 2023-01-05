@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
 import Piece from './Piece';
-import styles from '../styles/Moohp.module.css';
+import styles from '../../styles/Moohp.module.css';
 import classNames from 'classnames';
 
 // force update hook from https://stackoverflow.com/questions/46240647/react-how-to-force-a-function-component-to-render/53837442#53837442

@@ -1,4 +1,4 @@
-import Puzzle from '../../components/Puzzle';
+import Puzzle from '../../components/home/Puzzle';
 
 export default function moohp() {
   return (
