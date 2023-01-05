@@ -80,7 +80,7 @@ const Puzzle = () => {
           <div id={styles.rightLogo}></div>
         </div>
       </div>
-      <h3 className={classNames('puzzleHint', { 'fade': puzzleSolved })}>{lang ? 'Résoudre le puzzle/ua0!' : 'Solve the puzzle!'}<br />{lang ? 'Effectuez un appui long sur une pièce pour la faire glisser' : 'Press and hold a puzzle piece to drag'}</h3>
+      <h3 className={classNames('puzzleHint', { 'fade': puzzleSolved })}>{lang ? 'Résoudre le puzzle !' : 'Solve the puzzle!'}<br />{lang ? 'Effectuez un appui long sur une pièce pour la faire glisser' : 'Press and hold a puzzle piece to drag'}</h3>
       <DndProvider backend={HTML5Backend}>
         <div className={classNames('puzzle', { 'fade': puzzleSolved })}>
           {positions.map((pos, index) => (

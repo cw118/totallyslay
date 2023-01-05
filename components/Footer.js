@@ -13,7 +13,7 @@ const Foooter = () => {
           <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
         <Footer.Brand
           href={lang ? '/fr' : '/'}
-          src="mari-logo.png"
+          src="/mari-logo.png"
           alt="M.A.R.I. logo"
           name="M.A.R.I."
         />
