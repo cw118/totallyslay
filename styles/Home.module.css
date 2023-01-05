@@ -1,7 +1,23 @@
-.slide {
-    height: 500px;
+.container {
+    height: 100%;
 }
 
-.image {
-   
+.slide1{
+    height: 500px;
+    position: relative;
+    background-image: url('/carousel/slide1_1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide2{
+    height: 500px;
+    position: relative;
+    background-image: url('/carousel/1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
 }
