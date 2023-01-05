@@ -1,5 +1,5 @@
 import { useDrag, useDrop } from 'react-dnd';
-import styles from '../styles/Puzzle.module.css';
+import styles from '../styles/Moohp.module.css';
 
 const Piece = ({ id, newPos, onDropPiece, handleDrag, forceUpdate }) => {
   const [{ isDragging }, drag] = useDrag(() => ({

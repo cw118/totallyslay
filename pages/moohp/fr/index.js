@@ -1,5 +1,3 @@
-const moohpFr = () => {
+export default function moohpFr() {
 
 }
-
-export default moohpFr;

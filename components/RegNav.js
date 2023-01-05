@@ -18,10 +18,10 @@ const RegNav = () => {
         </Navbar.Link>
       </Navbar.Collapse>
       <div className='block m-auto relative'>
-        <Link href='/' id='regLogo'>
+        <Link href='/' id='regLogo' className='navLogo'>
           <img src='/mari-logo.png' alt='M.A.R.I Logo' />
         </Link>
-        <Link href='/moohp' id='hiddenLogo'>
+        <Link href='/moohp' id='hiddenLogo' className='navLogo'>
           <img src='/moohp-logo.png' alt='MOOHP logo' />
         </Link>
       </div>

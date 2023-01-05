@@ -1,5 +1,3 @@
-const Accueil = () => {
-  
-}
+export default function Accueil() {
 
-export default Accueil();
+}

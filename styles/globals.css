@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); /* Irish Grover font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap'); /* Rajdhani font */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,11 +9,15 @@
     background-color: #f8981d;
   }
 
-  #regNav > div {
+  #spyNav {
+    background-color: #a4a8db;
+  }
+
+  #regNav > div, #spyNav > div {
     height: 2.5rem;
   }
 
-  #regNav a:not(#regLogo, #hiddenLogo) {
+  #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
     color: #000;
     font-size: 1.25rem;
     font-weight: bold;
@@ -25,12 +30,18 @@
     width: 100vw;
     outline: solid 20px #f8981d;
   }
+  
+  #spyNav ul {
+    background-color: #a4a8db;
+    width: 100vw;
+    outline: solid 20px #a4a8db;
+  }
 
-  #regNav li {
+  #regNav li, #spyNav li {
     z-index: 40;
   }
 
-  #regNav button {
+  #regNav button, #spyNav button {
     margin-left: 0.5rem;
     z-index: 45;
   }
@@ -40,8 +51,19 @@
   }
 
   #regLogo, #hiddenLogo {
-    position: absolute;
     background-color: #f8981d;
+  }
+
+  #spyLogo, #hiddenRegLogo {
+    background-color: #a4a8db;
+  }
+
+  #spyLogo img {
+    filter: grayscale(1) invert(1);
+  }
+
+  .navLogo {
+    position: absolute;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 25% 100%, 0 80%);
     margin-left: -30px;
     transform: translateX(-50%);
@@ -50,59 +72,69 @@
     cursor: pointer;
   }
 
-  #regLogo {
+  #regLogo, #spyLogo {
+    transition: opacity 2s, z-index 2.5s, user-select 2.2s linear;
+    user-select: initial;
+    z-index: 35;
+  }
+
+  #regLogo, #hiddenRegLogo {
     left: 50%;
     top: -28px;
     padding: 3px 18px 4.5px 5.5px;
-    z-index: 35;
-    transition: opacity 2s, z-index 2.5s, user-select 2.2s linear;
-    user-select: initial;
   }
 
-  #regLogo:hover {
+  #spyLogo, #hiddenLogo {
+    top: -33.5px;
+    padding: 4px 3.25px 6px 0px;
+  }
+
+  #regLogo:hover, #spyLogo:hover {
     opacity: 0;
     z-index: 25;
     user-select: none;
   }
 
-  #hiddenLogo {
+  #hiddenLogo, #hiddenRegLogo {
     z-index: 30;
-    top: -33.5px;
-    padding: 4px 3.25px 6px 0px;
     transition: z-index 0.3s;
   }
 
-  #hiddenLogo:hover {
+  #hiddenLogo:hover, #hiddenRegLogo:hover {
     z-index: 40;
   }
 
   @media screen and (min-width: 767px) {
-    #regLogo, #hiddenLogo {
+    .navLogo {
       margin-left: 0;
       width: 120px;
     }
     
-    #regLogo {
+    #regLogo, #hiddenRegLogo {
       width: 120px;
       top: -30px;
       padding: 10px 40px 10px 30px;
     }
 
-    #hiddenLogo {
+    #hiddenLogo, #spyLogo {
       top: -36px;
       padding: 5px 14.25px 0px 12px;
     }
 
-    #regNav ul {
+    #regNav ul, #spyNav ul {
       width: revert;
     }
 
-    #regNav a:not(#regLogo, #hiddenLogo) {
-      transition: color 0.2s;
+    #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
+      transition: color 0.25s;
     }
 
-    #regNav a:not(#regLogo, #hiddenLogo):hover {
+    #regNav a:not(.navLogo):hover {
       color: #fff;
+    }
+
+    #spyNav a:not(.navLogo):hover {
+      color: #2c306d;
     }
   }
   
@@ -112,41 +144,118 @@
       "a b"
       "c d";
     padding: 0;
-    user-select: none;
-    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
     width: 300px;
     height: 250px;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+    position: relative;
+    z-index: 90;
+    margin-left: 1.5px;
+  }
+
+  .revealLeft {
+    animation: 6s ease-in-out 2s forwards slideLeft;
+  }
+
+  .revealRight {
+    animation: 6s ease-in-out 2s forwards slideRight;
+  }
+
+  .delayedHide {
+    animation: 0.01s linear 4.99s forwards noDisplay;
+  }
+
+  @keyframes slideLeft {
+    from {
+      left: 0;
+    }
+    to {
+      left: -50%;
+      display: none;
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      width: 50vw;
+    }
+    to {
+      width: 0px;
+      display: none;
+    }
+  }
+
+  @keyframes noDisplay {
+    from {
+      display: block;
+    }
+    to {
+      display: none;
+    }
+  }
+
+  .fade {
+    animation: 1.5s linear 1 forwards fadeOut;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 
   .pOne {
     grid-area: a;
+    border-top: solid 1px #eee;
+    border-left: solid 1px #eee;
+    border-right: solid 0.5px #eee;
+    border-bottom: solid 0.5px #eee;
   }
 
   .pTwo {
     grid-area: b;
+    border-top: solid 1px #eee;
+    border-left: solid 0.5px #eee;
+    border-right: solid 1px #eee;
+    border-bottom: solid 0.5px #eee;
   }
 
   .pThree {
     grid-area: c;
+    border-bottom: solid 1px #eee;
+    border-left: solid 1px #eee;
+    border-right: solid 0.5px #eee;
+    border-top: solid 0.5px #eee;
   }
 
   .pFour {
     grid-area: d;
+    border-bottom: solid 1px #eee;
+    border-left: solid 0.5px #eee;
+    border-right: solid 1px #eee;
+    border-top: solid 0.5px #eee;
   }
 
   .one {
-    background-image: url(/puzzle/one.png);
+    background-image: url(/puzzle/one.svg);
   }
 
   .two {
-    background-image: url(/puzzle/two.png);
+    background-image: url(/puzzle/two.svg);
   }
 
   .three {
-    background-image: url(/puzzle/three.png);
+    background-image: url(/puzzle/three.svg);
   }
 
   .four {
-    background-image: url(/puzzle/four.png);
+    background-image: url(/puzzle/four.svg);
+  }
+
+  .hide {
+    display: none !important;
   }
 }
