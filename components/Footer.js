@@ -8,7 +8,7 @@ const Foooter = () => {
   const lang = currentRoute.includes('/fr') ? 'fr' : '';
 
     return (
-      <Footer container={true}>
+      <Footer container={true} className='fixed bottom-0 footer'>
           <div className="w-full text-center">
           <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
         <Footer.Brand

@@ -22,7 +22,7 @@ module.exports = {
     // },
     fontFamily: {
       sans: ['Irish Grover', 'sans-serif'],
-      serif: ['Merriweather', 'serif'], // change to spy theme font
+      serif: ['Rajdhani', 'serif'],
     },
     // extend: {
     //   spacing: {

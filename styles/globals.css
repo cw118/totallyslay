@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); /* Irish Grover font */
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap'); /* Rajdhani font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap'); /* Rajdhani font */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  .footer {
+    border-top: solid 0.75px gray;
+  }
+
+  .mainContent {
+    margin-bottom: 104.5px;
+  }
+
   #regNav {
     background-color: #f8981d;
   }
@@ -153,16 +161,26 @@
     margin-left: 1.5px;
   }
 
+  .puzzleHint {
+    top: 7.5rem;
+    padding: 5px 2px;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: rgba(8, 96, 125, 0.5);
+    font-family: Rajdhani, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+  }
+
   .revealLeft {
-    animation: 6s ease-in-out 2s forwards slideLeft;
+    animation: 3s ease-in-out 0.5s forwards slideLeft;
   }
 
   .revealRight {
-    animation: 6s ease-in-out 2s forwards slideRight;
-  }
-
-  .delayedHide {
-    animation: 0.01s linear 4.99s forwards noDisplay;
+    animation: 3s ease-in-out 0.5s forwards slideRight;
   }
 
   @keyframes slideLeft {
@@ -195,7 +213,7 @@
   }
 
   .fade {
-    animation: 1.5s linear 1 forwards fadeOut;
+    animation: 0.5s linear 1 forwards fadeOut;
   }
 
   @keyframes fadeOut {

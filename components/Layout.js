@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
     <>
       <Meta />
       {spy ? <SpyNav /> : <RegNav />}
-      {children}
+      <div className='mainContent'>{children}</div>
       <Foooter />
     </>
   )

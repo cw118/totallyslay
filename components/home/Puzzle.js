@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
-import Piece from './Piece';
+import PuzzlePiece from './PuzzlePiece';
 import styles from '../../styles/Moohp.module.css';
 import classNames from 'classnames';
+import { useRouter } from 'next/router';
 
 // force update hook from https://stackoverflow.com/questions/46240647/react-how-to-force-a-function-component-to-render/53837442#53837442
 // forces rerender after dragend of a puzzle piece to show updated puzzle after pieces swap places
@@ -14,6 +15,11 @@ const useForceUpdate = () => {
 // end of force update hook
 
 const Puzzle = () => {
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
+  const lang = currentRoute.includes('/fr') ? 'fr' : '';
+
   const [puzzleSolved, setPuzzleSolved] = useState(false);
   const [revealed, setRevealed] = useState(false);
 
@@ -74,10 +80,11 @@ const Puzzle = () => {
           <div id={styles.rightLogo}></div>
         </div>
       </div>
+      <h3 className={classNames('puzzleHint', { 'fade': puzzleSolved })}>{lang ? 'Résoudre le puzzle/ua0!' : 'Solve the puzzle!'}<br />{lang ? 'Effectuez un appui long sur une pièce pour la faire glisser' : 'Press and hold a puzzle piece to drag'}</h3>
       <DndProvider backend={HTML5Backend}>
         <div className={classNames('puzzle', { 'fade': puzzleSolved })}>
           {positions.map((pos, index) => (
-        <Piece key={index} id={ids[index]} newPos={pos} onDropPiece={onDropPiece} handleDrag={handleDrag} forceUpdate={forceUpdate} />
+        <PuzzlePiece key={index} id={ids[index]} newPos={pos} onDropPiece={onDropPiece} handleDrag={handleDrag} forceUpdate={forceUpdate} />
           ))}
         </div>
       </DndProvider>

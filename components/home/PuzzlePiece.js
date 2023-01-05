@@ -1,7 +1,7 @@
 import { useDrag, useDrop } from 'react-dnd';
 import styles from '../../styles/Moohp.module.css';
 
-const Piece = ({ id, newPos, onDropPiece, handleDrag, forceUpdate }) => {
+const PuzzlePiece = ({ id, newPos, onDropPiece, handleDrag, forceUpdate }) => {
   const [{ isDragging }, drag] = useDrag(() => ({
     type: 'PIECE',
     item: { newPos },
@@ -27,4 +27,4 @@ const Piece = ({ id, newPos, onDropPiece, handleDrag, forceUpdate }) => {
   )
 }
 
-export default Piece;
+export default PuzzlePiece;
