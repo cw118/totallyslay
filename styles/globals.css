@@ -9,8 +9,24 @@
     border-top: solid 0.75px gray;
   }
 
+  @media screen and (min-width: 766px) {
+    .footerBrand {
+      display: flex !important; /* override default Footer.Brand display:block for md screens */
+    }
+  }
+
+  .invertedLogo img {
+    filter: grayscale(1) invert(1);
+  }
+
   .mainContent {
-    margin-bottom: 104.5px;
+    margin-bottom: 120.5px; /* height of footer on mobile (constant) */
+  }
+
+  @media screen and (min-width: 767px) {
+    .mainContent {
+      margin-bottom: 80.5px; /* height of footer on tablet and larger (constant) */
+    }
   }
 
   #regNav {
@@ -18,7 +34,7 @@
   }
 
   #spyNav {
-    background-color: #a4a8db;
+    background-color: #4d55a3;
   }
 
   #regNav > div, #spyNav > div {
@@ -26,11 +42,18 @@
   }
 
   #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
-    color: #000;
     font-size: 1.25rem;
     font-weight: bold;
     transition: background-color 0.25s;
     cursor: pointer;
+  }
+
+  #regNav a:not(.navLogo) {
+    color: #000;
+  }
+
+  #spyNav a:not(.navLogo) {
+    color: #fff;
   }
 
   #regNav ul {
@@ -40,9 +63,9 @@
   }
   
   #spyNav ul {
-    background-color: #a4a8db;
+    background-color: #4d55a3;
     width: 100vw;
-    outline: solid 20px #a4a8db;
+    outline: solid 20px #4d55a3;
   }
 
   #regNav li, #spyNav li {
@@ -63,11 +86,7 @@
   }
 
   #spyLogo, #hiddenRegLogo {
-    background-color: #a4a8db;
-  }
-
-  #spyLogo img {
-    filter: grayscale(1) invert(1);
+    background-color: #4d55a3;
   }
 
   .navLogo {
@@ -142,7 +161,7 @@
     }
 
     #spyNav a:not(.navLogo):hover {
-      color: #2c306d;
+      color: #ccf5ff;
     }
   }
   

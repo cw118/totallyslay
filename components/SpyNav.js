@@ -9,8 +9,8 @@ const SpyNav = () => {
   const lang = currentRoute.includes('/fr') ? 'fr' : '';
 
   return (
-    <Navbar fluid={true} id='spyNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4'>
-      <Navbar.Toggle className='text-gray-700 focus:ring-black' />
+    <Navbar fluid={true} id='spyNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4 font-spy'>
+      <Navbar.Toggle className='text-gray-100 focus:ring-black' />
       <Navbar.Collapse className='z-40'>
         <Navbar.Link
           href={lang ? currentRoute.replace('fr', '').replace('//', '/') : '/fr' + currentRoute}
