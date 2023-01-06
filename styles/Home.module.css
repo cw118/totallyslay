@@ -1,7 +1,118 @@
-.slide {
-    height: 500px;
+
+.container {
+    background-color: rgb(238, 238, 238);
 }
 
-.image {
-   
+.slide1{
+    background-image: url('/carousel/slide1_3.svg');
+    height: 520px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.slide2 {
+    background-image: url('/carousel/slide2.svg');
+    height: 520px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide3 {
+    background-image: url('/carousel/slide4.svg');
+    height: 520px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide4 {
+    background-image: url('/carousel/slide3.svg');
+    height: 520px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* slide 1 */
+.header1 {
+    font-size: 4rem;
+    color: #FE5F00;
+    padding-top: 2.5rem;
+    width: 40%;
+    margin: auto;
+}
+.text1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*need 2 change dont rmb what it is*/
+    font-size: 20px;
+    padding: 10px;
+    width: 30%;
+    margin: auto;
+}
+
+/* slide 2 */
+.header2 {
+    font-size: 4rem;
+    color: #ff74a3;
+    padding-top: 2.5rem;
+    width: 40%;
+    margin: auto;
+}
+.text2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*need 2 change dont rmb what it is*/
+    font-size: 20px;
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+}
+
+/* slide 3 */
+.header3 {
+    font-size: 2.3rem;
+    color: #b251ea;
+    padding-top: 7.5rem;
+    width: 28%;
+    margin: auto;
+}
+.text3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*need 2 change dont rmb what it is*/
+    font-size: 17px;
+    padding: 10px;
+    width: 30%;
+    margin: auto;
+}
+
+/* slide 4 */
+.header4 {
+    font-size: 3.5rem;
+    color: #7FC638;
+    padding-top: 3.7rem;
+    line-height: 4rem;
+    width: 32%;
+    margin: auto;
+}
+.text4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*need 2 change dont rmb what it is*/
+    font-size: 20px;
+    padding: 10px;
+    width: 33%;
+    margin: auto;
+    line-height: 1.8rem;
+}
+
+@media only screen and (min-width: 600px) {
+    /* for tablets */
+    .slide1 {
+        background-image: url('/carousel/slide1_2.svg');
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* for desktop */
+    .slide1 {background-image: url('/carousel/slide1_1.svg');}
+}
+
+/* NEED TO FINISSH MEDIA QUERIES */
+
+
