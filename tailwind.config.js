@@ -22,8 +22,8 @@ module.exports = {
     // },
     fontFamily: {
       sans: ['Irish Grover', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      kiwi: ['Kiwi Maru', 'kiwi'], // change to spy theme font
+      spy: ['Rajdhani', 'serif'],
+      kiwi: ['Kiwi Maru', 'kiwi']
     },
     // extend: {
     //   spacing: {

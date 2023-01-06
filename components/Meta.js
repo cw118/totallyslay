@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const Meta = ({ title, description }) => {
+const Meta = ({ title, description, icon }) => {
   return (
     <Head>
       <meta charSet="UTF-8" />
@@ -8,17 +8,15 @@ const Meta = ({ title, description }) => {
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta name='description' content={description} />
       <meta charSet='utf-8' />
-      <link rel='icon' href='/favicon.ico' />
+      <link rel='icon' href={icon} />
       <title>{title}</title>
     </Head>
   );
 }
 
-/*
 Meta.defaultProps = {
-  title: '',
-  description: '',
+  title: 'M.A.R.I.',
+  description: 'Welcome to the Marianopolis Academic Research Institute\' website!',
 }
-*/
 
 export default Meta;
