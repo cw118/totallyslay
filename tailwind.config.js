@@ -22,7 +22,6 @@ module.exports = {
     // },
     fontFamily: {
       sans: ['Irish Grover', 'sans-serif'],
-      serif: ['Rajdhani', 'serif'],
       spy: ['Rajdhani', 'serif'],
     },
     // extend: {

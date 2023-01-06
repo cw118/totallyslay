@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Meta />
+      <Meta icon={spy ? '/favicon/moohp-icon.svg' : '/favicon/mari-icon.svg'} />
       {spy ? <SpyNav /> : <RegNav />}
       <div className={classNames('mainContent', { 'font-spy': spy })}>{children}</div>
       <Foooter />

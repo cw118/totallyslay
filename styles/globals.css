@@ -9,24 +9,12 @@
     border-top: solid 0.75px gray;
   }
 
-  @media screen and (min-width: 766px) {
-    .footerBrand {
-      display: flex !important; /* override default Footer.Brand display:block for md screens */
-    }
-  }
-
   .invertedLogo img {
     filter: grayscale(1) invert(1);
   }
 
   .mainContent {
     margin-bottom: 120.5px; /* height of footer on mobile (constant) */
-  }
-
-  @media screen and (min-width: 767px) {
-    .mainContent {
-      margin-bottom: 80.5px; /* height of footer on tablet and larger (constant) */
-    }
   }
 
   #regNav {
@@ -44,7 +32,7 @@
   #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
     font-size: 1.25rem;
     font-weight: bold;
-    transition: background-color 0.25s;
+    transition: background-color 0.3s, color 0.25s;
     cursor: pointer;
   }
 
@@ -75,6 +63,7 @@
   #regNav button, #spyNav button {
     margin-left: 0.5rem;
     z-index: 45;
+    transition: color 0.2s, background-color 0.25s;
   }
 
   .navSecondCollapse ul {
@@ -92,7 +81,7 @@
   .navLogo {
     position: absolute;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 25% 100%, 0 80%);
-    margin-left: -30px;
+    /* margin-left: -30px; */
     transform: translateX(-50%);
     opacity: 1;
     width: 80px;
@@ -131,6 +120,10 @@
     z-index: 40;
   }
 
+  #spyNav a:not(.navLogo):hover {
+    color: #4d55a3;
+  }
+
   @media screen and (min-width: 767px) {
     .navLogo {
       margin-left: 0;
@@ -162,6 +155,14 @@
 
     #spyNav a:not(.navLogo):hover {
       color: #ccf5ff;
+    }
+
+    .mainContent {
+      margin-bottom: 80.5px; /* height of footer on tablet and larger (constant) */
+    }
+
+    .footerBrand {
+      display: flex !important; /* override default Footer.Brand display:block for md screens */
     }
   }
   
