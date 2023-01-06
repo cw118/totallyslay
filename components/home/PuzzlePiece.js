@@ -24,7 +24,7 @@ const PuzzlePiece = ({ id, newPos, onDropPiece, handleDrag, forceUpdate }) => {
     <div ref={dropRef} className={`${newPos} ` + `${styles.piece}`}>
       <div ref={drag} id={newPos} style={{ opacity: isDragging ? 0.7 : 1 }} className={id} onDragStart={handleDrag} onDragEnd={forceUpdate}></div>
     </div>
-  )
+  );
 }
 
 export default PuzzlePiece;

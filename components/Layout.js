@@ -1,6 +1,7 @@
 import Meta from './Meta';
-import RegNav from './RegNav';
-import SpyNav from './SpyNav';
+import RegNav from './nav/RegNav';
+import SpyNav from './nav/SpyNav';
+import RegNavFr from './nav/RegNavFr';
 import Foooter from './Footer';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
@@ -9,16 +10,17 @@ const Layout = ({ children }) => {
   const router = useRouter();
   const currentRoute = router.pathname;
 
+  const lang = currentRoute.includes('/fr') ? true : false;
   const spy = currentRoute.includes('/moohp') ? true : false;
 
   return (
     <>
       <Meta icon={spy ? '/favicon/moohp-icon.svg' : '/favicon/mari-icon.svg'} />
-      {spy ? <SpyNav /> : <RegNav />}
+      {spy ? <SpyNav /> : (lang ? <RegNavFr /> : <RegNav />)}
       <div className={classNames('mainContent', { 'font-spy': spy })}>{children}</div>
       <Foooter />
     </>
-  )
+  );
 }
 
 export default Layout;

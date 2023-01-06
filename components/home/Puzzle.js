@@ -18,7 +18,7 @@ const Puzzle = () => {
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  const lang = currentRoute.includes('/fr') ? 'fr' : '';
+  const lang = currentRoute.includes('/fr') ? true : false;
 
   const [puzzleSolved, setPuzzleSolved] = useState(false);
   const [revealed, setRevealed] = useState(false);

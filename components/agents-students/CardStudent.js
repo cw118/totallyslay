@@ -22,42 +22,42 @@ export default function Cards() {
     {name: "Elisa Xue", age: 17, year: "First year", club:"Arduino", fun: "x", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "First year", club:"Arduino", fun: "x", src:"/members/Jennifer_S.JPG"},
 ]
-    return (
-        <div>
-            <h1 className={styles.title}>
-            Student Body
-            </h1>
-            <div className={styles.div}>
-                {list.map((member, index) => 
-                    <Carte key={index} src={member.src} name={member.name} club={member.club} fun={member.fun} age={member.age} />
-                )}
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <h1 className={styles.title}>
+        Student Body
+      </h1>
+      <div className={styles.div}>
+        {list.map((member, index) =>
+          <Carte key={index} src={member.src} name={member.name} club={member.club} fun={member.fun} age={member.age} />
+        )}
+      </div>
+    </div>
+  );
 }
 
 function Carte(props) {
-    return (
-        <Card
-            className={styles.card} 
-            imgSrc={props.src}
-            horizontal = {true}
-        >
-            <div className="font-kiwi">
-                <p>
-                    Name: {props.name}
-                </p>
-                <p>
-                    Age: {props.age}
-                </p>
-                <p>
-                    Clubs: {props.club}
-                </p>
-                <p>
-                    Quote: &ldquo;{props.fun}&rdquo;
-                </p>
-            </div>
-        </Card>
-    )
+  return (
+    <Card
+      className={styles.card}
+      imgSrc={props.src}
+      horizontal={true}
+    >
+      <div className="font-kiwi">
+        <p>
+          Name: {props.name}
+        </p>
+        <p>
+          Age: {props.age}
+        </p>
+        <p>
+          Clubs: {props.club}
+        </p>
+        <p>
+          Quote: &ldquo;{props.fun}&rdquo;
+        </p>
+      </div>
+    </Card>
+  );
 }
 

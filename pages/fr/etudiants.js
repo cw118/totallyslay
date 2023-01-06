@@ -5,5 +5,5 @@ export default function etudiants() {
     <>
       <Meta title='Étudiants | M.A.R.I.' description='' />
     </>
-  )
+  );
 }

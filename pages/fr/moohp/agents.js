@@ -5,5 +5,5 @@ export default function frAgents() {
     <>
       <Meta title='Agents | MOOHP' description='' />
     </>
-  )
+  );
 }
