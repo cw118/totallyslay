@@ -23,7 +23,7 @@ module.exports = {
     fontFamily: {
       sans: ['Irish Grover', 'sans-serif'],
       spy: ['Rajdhani', 'serif'],
-      kiwi: ['Kiwi Maru', 'kiwi']
+      kiwi: ['Kiwi Maru', 'serif']
     },
     // extend: {
     //   spacing: {
