@@ -63,7 +63,7 @@ export default function Cards() {
                 )}
             </div>
         </div>
-    )
+    );
 }
 
 function Carte(props) {
@@ -91,6 +91,6 @@ function Carte(props) {
                 </p>
             </div>
         </Card>
-    )
+    );
 }
 

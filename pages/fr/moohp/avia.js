@@ -5,5 +5,5 @@ export default function frAvia() {
     <>
       <Meta title='Avia | MOOHP' description='' />
     </>
-  )
+  );
 }

@@ -6,7 +6,7 @@ const SpyNav = () => {
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  const lang = currentRoute.includes('/fr') ? 'fr' : '';
+  const lang = currentRoute.includes('/fr') ? true : false; // works for this nav since en-fr translations are the same
 
   return (
     <Navbar fluid={true} id='spyNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4 font-spy'>
@@ -30,10 +30,10 @@ const SpyNav = () => {
       </Navbar.Collapse>
       <div className='block m-auto relative'>
         <Link href={lang ? '/fr/moohp' : '/moohp'} id='spyLogo' className='navLogo'>
-          <img src='/logo/moohp-logo.svg' alt='MOOHP logo' />
+          <img src='/logo/moohp-logo.svg' alt={lang ? 'Logo de MOOHP' : 'MOOHP logo'} />
         </Link>
         <Link href={lang ? '/fr' : '/'} id='hiddenRegLogo' className='navLogo'>
-          <img src='/logo/mari-logo.svg' alt='M.A.R.I logo' />
+          <img src='/logo/mari-logo.svg' alt={lang ? 'Logo de M.A.R.I.' : 'M.A.R.I logo'} />
         </Link>
       </div>
       <Navbar.Collapse className='navSecondCollapse'>
@@ -48,7 +48,7 @@ const SpyNav = () => {
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
-  )
+  );
 }
 
 export default SpyNav;

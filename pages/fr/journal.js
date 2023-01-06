@@ -5,5 +5,5 @@ export default function journal() {
     <>
       <Meta title='Journal | M.A.R.I.' description='' />
     </>
-  )
+  );
 }

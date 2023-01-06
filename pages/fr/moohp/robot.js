@@ -5,5 +5,5 @@ export default function frRobot() {
     <>
       <Meta title='Robot | MOOHP' description='' />
     </>
-  )
+  );
 }

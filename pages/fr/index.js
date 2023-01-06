@@ -5,5 +5,5 @@ export default function Accueil() {
     <>
       <Meta title='Accueil | M.A.R.I.' description="Bienvenue à l'Institut de recherche académique de Marianopolis !" />
     </>
-  )
+  );
 }
