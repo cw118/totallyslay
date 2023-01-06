@@ -28,8 +28,8 @@ export default function Cards() {
             Student Body
             </h1>
             <div className={styles.div}>
-                {list.map((member) => 
-                    <Carte src={member.src} name={member.name} club={member.club} fun={member.fun} age={member.age} />
+                {list.map((member, index) => 
+                    <Carte key={index} src={member.src} name={member.name} club={member.club} fun={member.fun} age={member.age} />
                 )}
             </div>
         </div>
@@ -54,7 +54,7 @@ function Carte(props) {
                     Clubs: {props.club}
                 </p>
                 <p>
-                    Quote: "{props.fun}"
+                    Quote: &ldquo;{props.fun}&rdquo;
                 </p>
             </div>
         </Card>
