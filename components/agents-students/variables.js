@@ -9,7 +9,7 @@ export const engS = [
     {name: "Isabella Hensley", age: 18, year: "Second year", club:"Arduino", fun: "x", src:"/members/Isabella_S.JPG"},
     {name: "Victoria Hoang", age: 17, year: "Second year", club:"Web development", fun: "pigeons can't fly", src:"/members/Victoria_S.JPG"},
     {name: "Vincent Ly", age: 18, year: "Second year", club:"Arduino and programming", fun: "ADAMant", src:"/members/Vincent_S.JPG"},
-    {name: "Nehna Patel", age: 18, year: "Second year", club:"Construction", fun: "x", src:"/members/Nehna_S.JPG"},
+    {name: "Nehna Patel", age: 18, year: "Second year", club:"Construction", fun: "x", src:"/members/Nehna_S.jpg"},
     {name: "Ruwa Qatmash", age: 17, year: "First year", club:"Arduino", fun: "x", src:"/members/Ruwa_S.JPG"},
     {name: "Celia Shi", age: 18, year: "Second year", club:"Web Development", fun: "x", src:"/members/Celia_S.JPG"},
     {name: "Sangeeta Vidyarthi", age: 18, year: "Second year", club:"Arduino and film", fun: "x", src:"/members/Sangeeta_S.JPG"},
