@@ -1,6 +1,6 @@
-import {Card} from "flowbite-react"
-import styles from "../../styles/card.module.css"
-import { useRouter } from "next/router"
+import { Card } from "flowbite-react";
+import styles from "../../styles/card.module.css";
+import { useRouter } from "next/router";
 import { engS, frS } from "./variables";
 
 export default function Cards() {
@@ -35,19 +35,19 @@ function Carte(props) {
         >
             <div className="font-kiwi">
                 <p>
-                    {lang ? `Nom: ${props.name}` : `Name: ${props.name}`}
+                    <b>{lang ? 'Nom: ' : 'Name: '}</b> {`${props.name}`}
                 </p>
                 <p>
-                    {lang ? `Âge: ${props.age}` : `age: ${props.age}`}
+                    <b>{lang ? 'Âge: ' : 'Age: '}</b> {`${props.age}`}
                 </p>
                 <p>
-                    {props.year}
+                    <b>{props.year}</b>
                 </p>
                 <p>
-                    {lang ? `Comité(s): ${props.club}` : `Club(s): ${props.club}`}
+                    <b>{lang ? 'Comité(s): ' : 'Club(s): '}</b> {`${props.club}`}
                 </p>
                 <p>
-                    {props.fun}
+                    <i>&ldquo;{props.fun}&rdquo;</i>
                 </p>
             </div>
         </Card>
