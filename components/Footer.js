@@ -23,7 +23,7 @@ const Foooter = () => {
           <Footer.Copyright
             className='footerCopyright'
             href="#"
-            by={lang ? 'Robotique Marianopolis' : 'Marianopolis Robotics'}
+            by={lang ? 'Robotique Marianopolis. Site inspiré par Totally Spies!' : 'Marianopolis Robotics. Site inspired by Totally Spies!'}
             year={2023}
           />
         </div>

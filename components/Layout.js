@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
     <>
       <Meta icon={spy ? '/favicon/moohp-icon.svg' : '/favicon/mari-icon.svg'} />
       {spy ? <SpyNav /> : (lang ? <RegNavFr /> : <RegNav />)}
-      <div className={classNames('mainContent', { 'font-spy': spy })}>{children}</div>
+      <div className={classNames('mainContent', { 'font-spy spyBg': spy })}>{children}</div>
       {spy ?? <JerryPopUp lang={lang} />}
       <Foooter />
     </>

@@ -18,6 +18,11 @@
     margin-bottom: 120.5px; /* height of footer on mobile (constant) */
   }
 
+  .spyBg {
+    background-image: url(/grid.svg);
+    background-repeat: repeat;
+  }
+
   #regNav {
     background-color: #f8981d;
   }
