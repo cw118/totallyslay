@@ -12,7 +12,7 @@ const JerryPopUp = ({ lang }) => {
     <>
       <div className={'jerryPopUp' + (show ? ' activePopUp' : '')} onClick={handleShow}></div>
       <div className={'popUpTooltip font-spy' + (show ? '' : ' noOpacity invisible')}>
-        <p>{lang ? 'Cher agent, vous avez été recruté pour une mission d\'espionnage ultra confidentielle par la CRC! ' : 'Greetings agent, you have been recruited for a top-secret spy mission by the CRC!'} <Link href={lang ? '/fr/moohp' : '/moohp'} className='popUpLink'>{lang ? 'Cliquez/tapez ici pour commencer.' : 'Click/tap here to begin.'}</Link></p>
+        <p>{lang ? 'Appel à tous les agents de MOOHP! Réunissez au' : 'Calling all MOOHP agents! Please convene at'} <Link href={lang ? '/fr/moohp' : '/moohp'} className='popUpLink'>{lang ? 'siège de MOOHP, une nouvelle tâche importante vous attend!' : 'MOOHP headquarters, a new important task awaits!'}</Link></p>
       </div>
     </>
   );

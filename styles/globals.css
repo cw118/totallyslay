@@ -18,11 +18,6 @@
     margin-bottom: 120.5px; /* height of footer on mobile (constant) */
   }
 
-  .spyBg {
-    background-image: url(/grid.svg);
-    background-repeat: repeat;
-  }
-
   #regNav {
     background-color: #f8981d;
   }
@@ -87,7 +82,7 @@
   .navLogo {
     position: absolute;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 25% 100%, 0 80%);
-    /* margin-left: -30px; */
+    margin-left: -18px;
     transform: translateX(-50%);
     opacity: 1;
     width: 80px;
@@ -140,6 +135,7 @@
     border: solid 1px #000;
     cursor: pointer;
     outline: solid 3px #000;
+    background-color: #fff;
     background-image: url(/young-jerry/jerry-mari.svg);
     background-repeat: no-repeat;
     z-index: 75;
@@ -264,8 +260,39 @@
     margin-left: 1.5px;
   }
 
+  @media screen and (orientation: landscape) and (max-width: 1280px) {
+    .puzzleHintLeft, .puzzleHintRight {
+      display: block !important;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 5px 2px;
+      position: absolute;
+      z-index: 100;
+      text-align: center;
+      font-size: 1.8rem;
+      color: #fff;
+      background-color: rgba(8, 96, 125, 0.5);
+      font-family: Rajdhani, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      max-width: 200px;
+    }
+
+    .puzzleHintLeft {
+      left: 1.5rem;
+    }
+    
+    .puzzleHintRight {
+      right: 1.5rem;
+    }
+
+    .puzzleHint {
+      display: none;
+    }
+  }
+
   .puzzleHint {
-    top: 7.5rem;
+    top: 10%;
     padding: 5px 2px;
     position: absolute;
     z-index: 100;
@@ -276,6 +303,14 @@
     font-family: Rajdhani, sans-serif;
     font-weight: 700;
     letter-spacing: 0.7px;
+  }
+
+  .puzzleHintLeft {
+    display: none;
+  }
+
+  .puzzleHintRight {
+    display: none;
   }
 
   .revealLeft {

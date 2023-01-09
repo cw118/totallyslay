@@ -4,7 +4,7 @@
 
 .slide1{
     background-image: url('/carousel/slide1_3.svg');
-    height: 520px;
+    height: 535px;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,7 +12,7 @@
 
 .slide2 {
     background-image: url('/carousel/slide2_3.svg');
-    height: 520px;
+    height: 535px;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@
 
 .slide3 {
     background-image: url('/carousel/slide3_3.svg');
-    height: 520px;
+    height: 535px;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@
 
 /* slide 1 */
 .header1 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     line-height: 2.3rem;
     color: #FE5F00;
     padding-top: 3.8rem;
@@ -45,7 +45,7 @@
 
 /* slide 2 */
 .header2 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     color: #ff74a3;
     padding-top: 2.5rem;
     width: 45%;

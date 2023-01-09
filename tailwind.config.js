@@ -9,9 +9,9 @@ module.exports = {
     require("flowbite/plugin")
   ],
   theme: { // see https://tailwindcss.com/docs/theme for more info on customization
-    // colors: {
+    colors: {
     //   'blue': '#1fb6ff',
-    //   'purple': '#7e5bef',
+      'dark-purple': '#4148a4',
     //   'pink': '#ff49db',
     //   'orange': '#ff7849',
     //   'green': '#13ce66',
@@ -19,7 +19,7 @@ module.exports = {
     //   'gray-dark': '#273444',
     //   'gray': '#8492a6',
     //   'gray-light': '#d3dce6',
-    // },
+    },
     fontFamily: {
       sans: ['Irish Grover', 'sans-serif'],
       spy: ['Rajdhani', 'serif'],
