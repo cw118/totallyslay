@@ -260,8 +260,39 @@
     margin-left: 1.5px;
   }
 
+  @media screen and (orientation: landscape) and (max-width: 1280px) {
+    .puzzleHintLeft, .puzzleHintRight {
+      display: block !important;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 5px 2px;
+      position: absolute;
+      z-index: 100;
+      text-align: center;
+      font-size: 1.8rem;
+      color: #fff;
+      background-color: rgba(8, 96, 125, 0.5);
+      font-family: Rajdhani, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      max-width: 200px;
+    }
+
+    .puzzleHintLeft {
+      left: 1.5rem;
+    }
+    
+    .puzzleHintRight {
+      right: 1.5rem;
+    }
+
+    .puzzleHint {
+      display: none;
+    }
+  }
+
   .puzzleHint {
-    top: 7.5rem;
+    top: 10%;
     padding: 5px 2px;
     position: absolute;
     z-index: 100;
@@ -272,6 +303,14 @@
     font-family: Rajdhani, sans-serif;
     font-weight: 700;
     letter-spacing: 0.7px;
+  }
+
+  .puzzleHintLeft {
+    display: none;
+  }
+
+  .puzzleHintRight {
+    display: none;
   }
 
   .revealLeft {
