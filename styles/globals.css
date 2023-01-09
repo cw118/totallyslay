@@ -131,8 +131,22 @@
   }
 
   .jerryPopUp {
-    background-color: #000;
+    width: 6em;
+    aspect-ratio: 1;
+    position: fixed;
+    bottom: 140.5px;
+    right: 1.25rem;
+    border-radius: 50%;
+    border: solid 1px #000;
+    cursor: pointer;
+    outline: solid 3px #000;
+    background-image: url(/young-jerry/jerry-mari.svg);
+    background-repeat: no-repeat;
     z-index: 75;
+  }
+
+  .activePopUp {
+    background-image: url(/young-jerry/jerry-moohp.svg);
   }
 
   .popUpTooltip {
@@ -146,21 +160,9 @@
     font-weight: 500;
     background-color: #4d55a3;
     color: #fff;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, visibility 0.2s;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-
-  .jerryPopUp {
-    width: 6em;
-    aspect-ratio: 1;
-    position: fixed;
-    bottom: 140.5px;
-    right: 1.25rem;
-    border-radius: 50%;
-    border: solid 1px #000;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
   }
 
   .popUpTooltip::after {
@@ -189,6 +191,7 @@
     .jerryPopUp {
       width: 7em;
       bottom: 100.5px;
+      background-position: 50% 145%;
     }
 
     .popUpTooltip {
@@ -377,5 +380,9 @@
 
   .noOpacity {
     opacity: 0;
+  }
+
+  .invisible {
+    visibility: collapse;
   }
 }
