@@ -18,11 +18,6 @@
     margin-bottom: 120.5px; /* height of footer on mobile (constant) */
   }
 
-  .spyBg {
-    background-image: url(/grid.svg);
-    background-repeat: repeat;
-  }
-
   #regNav {
     background-color: #f8981d;
   }
@@ -87,7 +82,7 @@
   .navLogo {
     position: absolute;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 25% 100%, 0 80%);
-    /* margin-left: -30px; */
+    margin-left: -18px;
     transform: translateX(-50%);
     opacity: 1;
     width: 80px;
@@ -140,6 +135,7 @@
     border: solid 1px #000;
     cursor: pointer;
     outline: solid 3px #000;
+    background-color: #fff;
     background-image: url(/young-jerry/jerry-mari.svg);
     background-repeat: no-repeat;
     z-index: 75;
