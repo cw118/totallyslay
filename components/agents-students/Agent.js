@@ -20,7 +20,7 @@ export default function Agents(){
                     year={member.year} code={member.code} 
                     height={member.height} specialty={member.specialty}
                     mbti={member.mbti} gadget={member.gadget} text={member.text}
-                    />
+                />
             )}
         </div>
     )

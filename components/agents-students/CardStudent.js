@@ -16,7 +16,8 @@ export default function Cards() {
             </h1>
             <div className={styles.div}>
                 {students.map((member, index) => 
-                    <Carte key={index} src={member.src} name={member.name} club={member.club} fun={member.fun} age={member.age} year={member.year}/>
+                    <Carte key={index} src={member.src} name={member.name} 
+                    club={member.club} fun={member.fun} age={member.age} year={member.year}/>
                 )}
             </div>
         </div>
