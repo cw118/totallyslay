@@ -40,8 +40,8 @@ const SpyNav = () => {
         <Navbar.Link href={lang ? '/fr/moohp/agents' : '/moohp/agents'}>
           Agents
         </Navbar.Link>
-        <Navbar.Link href={lang ? '/fr/moohp/journal' : '/moohp/journal'}>
-          Journal
+        <Navbar.Link href={lang ? '/fr/moohp/archives' : '/moohp/archives'}>
+          Archives
         </Navbar.Link>
         <Navbar.Link href={lang ? '/fr/moohp/robot' : '/moohp/robot'}>
           Robot

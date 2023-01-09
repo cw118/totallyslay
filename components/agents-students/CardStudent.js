@@ -1,7 +1,7 @@
 import { Card } from "flowbite-react";
 import styles from "../../styles/card.module.css";
 import { useRouter } from "next/router";
-import { engS, frS } from "./variables";
+import { engS, frS } from "./variablesMembers.js";
 
 export default function Cards() {
     const router = useRouter();
@@ -16,7 +16,8 @@ export default function Cards() {
             </h1>
             <div className={styles.div}>
                 {students.map((member, index) => 
-                    <Carte key={index} src={member.src} name={member.name} club={member.club} fun={member.fun} age={member.age} year={member.year}/>
+                    <Carte key={index} src={member.src} name={member.name} 
+                    club={member.club} fun={member.fun} age={member.age} year={member.year}/>
                 )}
             </div>
         </div>
@@ -28,11 +29,7 @@ function Carte(props) {
     const currentRoute = router.pathname;
     const lang = currentRoute.includes('/fr') ? 'fr' : '';
     return (
-        <Card
-            className={styles.card} 
-            imgSrc={props.src}
-            horizontal = {true}
-        >
+        <Card className={styles.card} imgSrc={props.src} horizontal = {true}>
             <div className="font-kiwi">
                 <p>
                     <b>{lang ? 'Nom: ' : 'Name: '}</b> {`${props.name}`}

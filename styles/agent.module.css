@@ -1,12 +1,13 @@
 .Card {
     display: grid;
     align-content: center;
+    padding-top: 3ch;
 }
 
 .img {
     border-radius: 10px;
-    border-color: #4d55a3;
-    border-width: 3ch;
+    border-color: #ffff;
+    border-width: 2ch;
 }
 
 .title {
@@ -83,5 +84,17 @@
     .div {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
+    }
+    .Card {
+        display: grid;
+        align-content: center;
+        padding-top: 0ch;
+    }
+    .flipCard {
+        margin: auto;
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
     }
 }

@@ -1,0 +1,18 @@
+.tabs button {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2vh 5vw;
+}
+
+.tabs {
+    width: 100vw;
+    justify-content: space-around;
+    padding-top: 2.3vh;
+    border-style: hidden;
+}
+
+.card {
+    max-width: revert;
+    align-items: center;
+    margin-right: 5.1vh;
+}
