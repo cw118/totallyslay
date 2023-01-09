@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); /* Irish Grover font */
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap'); /* Rajdhani font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap'); /* Rajdhani font */
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap'); 
 @tailwind base;
 @tailwind components;
@@ -16,6 +16,11 @@
 
   .mainContent {
     margin-bottom: 120.5px; /* height of footer on mobile (constant) */
+  }
+
+  .spyBg {
+    background-image: url(/grid.svg);
+    background-repeat: repeat;
   }
 
   #regNav {
@@ -123,6 +128,83 @@
 
   #spyNav a:not(.navLogo):hover {
     color: #4d55a3;
+  }
+
+  .jerryPopUp {
+    width: 6em;
+    aspect-ratio: 1;
+    position: fixed;
+    bottom: 140.5px;
+    right: 1.25rem;
+    border-radius: 50%;
+    border: solid 1px #000;
+    cursor: pointer;
+    outline: solid 3px #000;
+    background-image: url(/young-jerry/jerry-mari.svg);
+    background-repeat: no-repeat;
+    z-index: 75;
+  }
+
+  .activePopUp {
+    background-image: url(/young-jerry/jerry-moohp.svg);
+  }
+
+  .popUpTooltip {
+    max-width: 400px;
+    height: auto;
+    padding: 1rem;
+    position: fixed;
+    z-index: 150;
+    bottom: 16.5em;
+    right: 1rem;
+    opacity: 1;
+    font-weight: 500;
+    background-color: #4d55a3;
+    color: #fff;
+    transition: opacity 0.2s, visibility 0.2s;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .popUpTooltip::after {
+    transform: skewX(-10deg);
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 25px;
+    border-width: 20px 20px 0 0;
+    border-style: solid;
+    border-color: #4d55a3 transparent;
+  }
+
+  .popUpLink {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.4px;
+  }
+
+  .popUpLink:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 640px) {
+    /* 640px is when the footer flattens into "one line" */
+    .jerryPopUp {
+      width: 7em;
+      bottom: 100.5px;
+      background-position: 50% 145%;
+    }
+
+    .popUpTooltip {
+      max-width: none;
+      width: 450px;
+      bottom: 13.5em;
+      font-size: 1.1rem;
+    }
+
+    .popUpLink {
+      font-size: 1.17rem;
+    }
   }
 
   @media screen and (min-width: 767px) {
@@ -296,5 +378,13 @@
 
   .hide {
     display: none !important;
+  }
+
+  .noOpacity {
+    opacity: 0;
+  }
+
+  .invisible {
+    visibility: collapse;
   }
 }

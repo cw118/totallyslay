@@ -10,7 +10,7 @@ const Foooter = () => {
   const spy = currentRoute.includes('/moohp') ? true : false;
 
   return (
-    <Footer container={true} className={classNames('fixed bottom-0 footer', { 'font-spy': spy })}>
+    <Footer container={true} className={classNames('fixed bottom-0 footer rounded-none', { 'font-spy': spy })}>
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <Footer.Brand
@@ -23,7 +23,7 @@ const Foooter = () => {
           <Footer.Copyright
             className='footerCopyright'
             href="#"
-            by={lang ? 'Robotique Marianopolis' : 'Marianopolis Robotics'}
+            by={lang ? 'Robotique Marianopolis. Site inspiré par Totally Spies!' : 'Marianopolis Robotics. Site inspired by Totally Spies!'}
             year={2023}
           />
         </div>
