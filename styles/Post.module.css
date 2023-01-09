@@ -1,0 +1,61 @@
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.cardContainer {
+    box-shadow: none;
+}
+
+.avatarContainer {
+    display:block;
+    float: left;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.author {
+    padding-right: 1rem;
+}
+
+.date {
+    font-size: 15px;
+    line-height: 1rem;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.username {
+    color: grey;
+    font-size: 15px;
+}
+
+.hashtag {
+    color: rgb(4, 134, 255);
+}
+
+.hashtag:hover {
+    text-decoration: underline;
+}
+
+.commentContainer {
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    background-color: rgb(232, 232, 232);
+}
+
+@media only screen and (min-width: 600px) {
+    /* for tablets */
+    .container {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* for desktop */
+    .container {
+        width: 700px;
+    }
+}

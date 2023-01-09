@@ -21,13 +21,7 @@ import styles from '../../styles/Home.module.css';
              <h1 className={styles.header3}>TUNE IN: Totally Spies Screening This Friday</h1>
              <p className={styles.text3}>Three teenage girls from Beverly Hills – Alex, Clover, and Sam – attempt to balance their lives as high school students with their undercover work as super spies at WOOHP, battling a variety of bizarre criminals.</p>
            </div>
-           <div className={styles.slide4}>
-             <h1 className={styles.header4}>Claw Your Way Into the Future!</h1>
-             <p className={styles.text4}>Have you been looking for an opportunity to develop your engineering skills?<br></br><br></br>
-               Now’s your chance!<br></br><br></br>
-               M.A.R.I. is honoured to host “Claw Your Way Into the Future,” a workshop in which you can build your own robotic arm claw.</p>
-                    
-           </div>
+           
                 
          </Carousel>
        </div>
