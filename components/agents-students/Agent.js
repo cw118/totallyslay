@@ -34,8 +34,8 @@ function FlipImg(props) {
         <div className={styles.div}>
             <div className={styles.flipCard}>
                 <div className={styles.flipCardInner}>
-                    <div class={styles.flipCardFront}>
-                        <img src={props.src} alt={props.name}/>
+                    <div className={styles.flipCardFront}>
+                        <img src={props.src} alt={props.name} className={styles.img}/>
                     </div>
                     <div className={styles.flipCardBack}>
                         <h1>{props.name}</h1>
@@ -43,7 +43,7 @@ function FlipImg(props) {
                             {lang ? `Agent ${props.year} - MOOHP` : `${props.year} Agent - MOOHP`}
                         </h2>
                         <p>
-                            {lang ? `Nom de code: ${props.code}` : `Codename: ${props.name}`}
+                            {lang ? `Nom de code: ${props.code}` : `Codename: ${props.code}`}
                         </p>
                         <p>
                             {lang ? `Âge: ${props.age}` : `Age: ${props.age}`}

@@ -17,6 +17,7 @@ export const engS = [
     {name: "Carolyn Wu", age: 17, year: "First year", club:"Web Development", fun: "x", src:"/members/Carolyn_S.JPG"},
     {name: "Elisa Xue", age: 17, year: "First year", club:"Arduino", fun: "x", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "First year", club:"Arduino", fun: "x", src:"/members/Jennifer_S.JPG"},
+    {name: "Dominique Paradis", age: "Confidential", year: "Confidential", club:"Confidential", fun: "Confidential", src:"/members/Jennifer_S.JPG"},
 ];
 
 export const frS = [
@@ -38,6 +39,7 @@ export const frS = [
     {name: "Carolyn Wu", age: 17, year: "Première année", club:"Dévelopment web", fun: "x", src:"/members/Carolyn_S.JPG"},
     {name: "Elisa Xue", age: 17, year: "Première année", club:"Arduino", fun: "x", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "Première année", club:"Arduino", fun: "x", src:"/members/Jennifer_S.JPG"},
+    {name: "Dominique Paradis", age: "Confidentiel", year: "Confidentiel", club:"Confidentiel", fun: "Confidential", src:"/members/Jennifer_S.JPG"},
 ];
 
 export const engM = [
@@ -45,7 +47,7 @@ export const engM = [
         gadget: "Laser glasses", specialty: "Professional forgetter", mbti: "INTP",
         text: ``
     },    
-    {name: "Andrea Abou-Haidar", age: 17, year: "Senior", code: "Adrea", height: "5'1/155cm", gadget: "Anti-Gravity Ring", 
+    {name: "Andrea Abou-Haidar", age: 17, year: "Head", code: "Adrea", height: "5'1/155cm", gadget: "Anti-Gravity Ring", 
         specialty: "Acrobatics specialist", mbti: "INFJ", club:"Machinery and manufacturing", src:"/members/Andrea_M.JPG",
         text: `By being part of the 2022-2023 Marianopolis Robotics Team, I
         made new friends, developed leadership skills, and most importantly, 
@@ -86,7 +88,7 @@ export const engM = [
         "Ly", height: "5'9/175cm", gadget: "Sunglasses with night vision", specialty: "Losing my sanity", mbti: "ISTJ",
         text: ``    
     },
-    {name: "Nehna Patel", age: 18, year: "Senior", club:"Manufacturing", src:"/members/Nehna_M.JPG", code: "Patel", 
+    {name: "Nehna Patel", age: 18, year: "Head", club:"Manufacturing", src:"/members/Nehna_M.JPG", code: "Patel", 
         height: "5'4/162cm", gadget: "Compowder", specialty: "Mind reading", mbti: "ESFP",
         text: ``
     },
@@ -118,6 +120,10 @@ export const engM = [
         height: "5'7/170cm", gadget: "Wd-40 camera", specialty: "Smile specialist", mbti: "ENTJ",
         text: ``
     },
+    {name: "Dominique Paradis", age: "???", year: "Executive", club:"Executive", src:"/members/Adam_M.JPG", code: "Adam", height: "???", 
+        gadget: "???", specialty: "???", mbti: "???",
+        text: ``
+    },
 ];
 
 export const frM = [
@@ -125,7 +131,7 @@ export const frM = [
         gadget: "Lunette laser", specialty: "Oublieur professionnel", mbti: "INTP",
         text: ``
     },    
-    {name: "Andrea Abou-Haidar", age: 17, year: "Sénior", code: "Quack", height: "5'1/155cm", gadget: "Bague antigravité", 
+    {name: "Andrea Abou-Haidar", age: 17, year: "en chef", code: "Quack", height: "5'1/155cm", gadget: "Bague antigravité", 
         specialty: "Spécialiste en acrobatie", mbti: "INFJ", club:"Machinerie and production", src:"/members/Andrea_M.JPG",
         text: ``
     },
@@ -161,7 +167,7 @@ export const frM = [
         "Ly", height: "5'9/175cm", gadget: "Lunettes de soleil avec vision nocturne", specialty: "Perdre la tête", mbti: "ISTJ",
         text: ``    
     },
-    {name: "Nehna Patel", age: 18, year: "Sénior", club:"Production", src:"/members/Nehna_M.JPG", code: "Patel", 
+    {name: "Nehna Patel", age: 18, year: "en chef", club:"Production", src:"/members/Nehna_M.JPG", code: "Patel", 
         height: "5'4/162cm", gadget: "Compowder", specialty: "Télépathie", mbti: "ESFP",
         text: ``
     },
@@ -191,6 +197,10 @@ export const frM = [
     },
     {name: "Jennifer Zhang", age: 17, year: "Junior", club:"Machinerie", src:"/members/Jennifer_M.JPG", code: "Yiting Zhang", 
         height: "5'7/170cm", gadget: "Caméra wd-40", specialty: "Spécialiste en sourire", mbti: "ENTJ",
+        text: ``
+    },
+    {name: "Dominique Paradis", age: "???", year: "Exécutif", club:"Exécutif", src:"/members/Adam_M.JPG", code: "Adam", height: "???", 
+        gadget: "???", specialty: "???", mbti: "???",
         text: ``
     },
 ];

@@ -12,7 +12,7 @@ export default function Cards() {
     return (
         <div>
             <h1 className={styles.title}>
-            {lang ? "Étudiants" : "Student Body"}
+            {lang ? "Étudiants et personel" : "Student Body and Staff"}
             </h1>
             <div className={styles.div}>
                 {students.map((member, index) => 
