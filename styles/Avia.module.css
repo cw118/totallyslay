@@ -1,0 +1,71 @@
+.background {
+    background-color: #4148A4;
+}
+
+.header {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.intro {
+    width: 70%;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+}
+
+.aviaLogo {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.crcLogo {
+    width: 60%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.infoContainer {
+    border-radius: 80px;
+    margin: 20px;
+    padding: 0px 30px;
+    width: 40%;
+    /* background-image: url("/grid.svg");*/
+}
+
+.textOnly {
+    color: white;
+    font-size: 25px;
+    margin: 5px 60px; 
+    text-align: center;
+}
+
+.info {
+    border: 2px white solid;
+    border-radius: 40px;
+    background-color: #4148A4;
+    line-height: 40px;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.video {
+    width: 60%;
+    height: 500px;
+    margin: 20px;
+}
+
+
+
+

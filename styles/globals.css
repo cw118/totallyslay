@@ -28,7 +28,7 @@
   }
 
   #spyNav {
-    background-color: #4d55a3;
+    background-color: #A4A8DB;
   }
 
   #regNav > div, #spyNav > div {
@@ -47,7 +47,7 @@
   }
 
   #spyNav a:not(.navLogo) {
-    color: #fff;
+    color: #4148A4;
   }
 
   #regNav ul {
@@ -57,9 +57,9 @@
   }
   
   #spyNav ul {
-    background-color: #4d55a3;
+    background-color: #A4A8DB;
     width: 100vw;
-    outline: solid 20px #4d55a3;
+    outline: solid 20px #A4A8DB;
   }
 
   #regNav li, #spyNav li {
@@ -81,7 +81,7 @@
   }
 
   #spyLogo, #hiddenRegLogo {
-    background-color: #4d55a3;
+    background-color: #A4A8DB;
   }
 
   .navLogo {
@@ -387,4 +387,12 @@
   .invisible {
     visibility: collapse;
   }
+}
+
+model-viewer {
+  width: 60%;
+  height: auto;
+  background-image: url('/grid.svg');
+  border-radius:80px;
+  margin: 20px;
 }
