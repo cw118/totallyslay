@@ -5,11 +5,11 @@ import { MoohpIntroFr } from '../../../components/home/MoohpIntro';
 
 export default function frMoohp() {
   return (
-    <>
+    <div className='bg-dark-purple'>
       <Meta title='Accueil | MOOHP' description="Bienvenue à l'Organisation Marianopolis pour la protection des humains!" />
       <Puzzle />
-      <MoohpHero fr={true} />
+      <MoohpHero />
       <MoohpIntroFr />
-    </>
+    </div>
   );
 }
