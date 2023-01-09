@@ -1,6 +1,6 @@
 import { Card } from "flowbite-react"
 import styles from "../../styles/agent.module.css"
-import {engM, frM} from "./variables"
+import {engM, frM} from "./variablesMembers.js"
 import { useRouter } from "next/router"
 
 export default function Agents(){

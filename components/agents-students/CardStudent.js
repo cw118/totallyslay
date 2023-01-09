@@ -1,7 +1,7 @@
 import { Card } from "flowbite-react";
 import styles from "../../styles/card.module.css";
 import { useRouter } from "next/router";
-import { engS, frS } from "./variables";
+import { engS, frS } from "./variablesMembers.js";
 
 export default function Cards() {
     const router = useRouter();
@@ -29,11 +29,7 @@ function Carte(props) {
     const currentRoute = router.pathname;
     const lang = currentRoute.includes('/fr') ? 'fr' : '';
     return (
-        <Card
-            className={styles.card} 
-            imgSrc={props.src}
-            horizontal = {true}
-        >
+        <Card className={styles.card} imgSrc={props.src} horizontal = {true}>
             <div className="font-kiwi">
                 <p>
                     <b>{lang ? 'Nom: ' : 'Name: '}</b> {`${props.name}`}

@@ -48,8 +48,7 @@ export const engM = [
         text: `I learned that theory is very far from practice, that most of 
         the time you cannot know what you will lack or find. Thus,
         I found problems with adjusting to unforeseen difficulties.
-        It also came with the cost of time I would have wasted anyways.
-        `
+        It also came with the cost of time I would have wasted anyways.`
     },    
     {name: "Andrea Abou-Haidar", age: 17, year: "Head", code: "Adrea", height: "5'1/155cm", gadget: "Anti-Gravity Ring", 
         specialty: "Acrobatics specialist", mbti: "INFJ", club:"Machinery and manufacturing", src:"/members/Andrea_M.JPG",
@@ -191,7 +190,7 @@ export const engM = [
         uses of parts. It’s an extremely enjoyable experience 
         and I will cherish it forever.`
     },
-    {name: "Dominique Paradis", age: "???", year: "Executive", club:"Executive", src:"/members/Adam_M.JPG", code: "Adam", height: "???", 
+    {name: "Dominique Paradis", age: "???", year: "Executive", club:"Executive", src:"/members/Paradis_M.jpg", code: "Adam", height: "???", 
         gadget: "???", specialty: "???", mbti: "???",
         text: `???`
     },
@@ -286,7 +285,7 @@ export const frM = [
         height: "5'7/170cm", gadget: "Caméra wd-40", specialty: "Spécialiste en sourire", mbti: "ENTJ",
         text: ``
     },
-    {name: "Dominique Paradis", age: "???", year: "Exécutif", club:"Exécutif", src:"/members/Adam_M.JPG", code: "Adam", height: "???", 
+    {name: "Dominique Paradis", age: "???", year: "Exécutif", club:"Exécutif", src:"/members/Paradis_M.jpg", code: "Adam", height: "???", 
         gadget: "???", specialty: "???", mbti: "???",
         text: ``
     },
