@@ -123,6 +123,12 @@
   .hero {
     padding: 1.5rem 15vw;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding: 2em 20vw;
+  }
 
   .piece {
     width: 150px;
@@ -140,11 +146,5 @@
 
   #rightLogo {
     background-image: url(/puzzle/right.svg);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .hero {
-    padding: 2em 20vw;
   }
 }

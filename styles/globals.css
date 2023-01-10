@@ -361,6 +361,7 @@
   .puzzleChangeLang span {
     font-weight: 500;
     color: inherit;
+    padding: 3px 7px;
   }
 
   @media screen and (min-width: 640px) {
@@ -381,11 +382,6 @@
     .popUpLink {
       font-size: 1.17rem;
     }
-
-    .puzzle {
-      width: 300px;
-      height: 250px;
-    }
   }
 
   @media screen and (min-width: 767px) {
@@ -394,26 +390,22 @@
       width: 120px;
     }
 
-    #regLogo,
-    #hiddenRegLogo {
+    #regLogo, #hiddenRegLogo {
       width: 120px;
       top: -30px;
       padding: 10px 40px 10px 30px;
     }
 
-    #hiddenLogo,
-    #spyLogo {
+    #hiddenLogo, #spyLogo {
       top: -36px;
       padding: 5px 14.25px 0px 12px;
     }
 
-    #regNav ul,
-    #spyNav ul {
+    #regNav ul, #spyNav ul {
       width: revert;
     }
 
-    #regNav a:not(.navLogo),
-    #spyNav a:not(.navLogo) {
+    #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
       transition: color 0.25s;
     }
 
@@ -453,6 +445,14 @@
 
     .puzzleChangeLang span {
       font-size: 1.2rem;
+      padding: 0.5rem 0.6rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .puzzle {
+      width: 300px;
+      height: 250px;
     }
   }
 }

@@ -14,7 +14,7 @@ const Foooter = () => {
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <Footer.Brand
-            href={lang ? '/fr' : '/'}
+            href={spy ? (lang ? '/fr/moohp' : '/moohp') : (lang ? '/fr' : '/')}
             src={spy ? '/logo/moohp-logo.svg' : '/logo/mari-logo.svg'}
             alt={spy ? "MOOHP logo" : "M.A.R.I. logo"}
             name={spy ? "MOOHP" : "M.A.R.I."}
