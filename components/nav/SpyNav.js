@@ -22,6 +22,7 @@ const SpyNav = () => {
         </Navbar.Link>
         <Navbar.Link
           href={lang ? '/fr/moohp/avia' : '/moohp/avia'}
+          className={(currentRoute === '/moohp/avia' || currentRoute === '/fr/moohp/avia') ? 'navActive' : ''}
         >
           Avia
         </Navbar.Link>
