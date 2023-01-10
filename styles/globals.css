@@ -390,6 +390,10 @@
     visibility: collapse;
   }
 
+  .flowerBg {
+    background-image: url('/backgrounds/flower.svg');
+  }
+
   .screenCover {
     position: fixed;
     top: 0;

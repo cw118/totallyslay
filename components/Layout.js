@@ -12,13 +12,14 @@ const Layout = ({ children }) => {
   const currentRoute = router.pathname;
 
   const lang = currentRoute.includes('/fr') ? true : false;
-  const spy = currentRoute.includes('/moohp') ? true : null;
+  const spy = currentRoute.includes('/moohp') ? true : false;
+  const reg = !spy;
 
   return (
     <>
       <Meta icon={spy ? '/favicon/moohp-icon.svg' : '/favicon/mari-icon.svg'} />
       {spy ? <SpyNav /> : (lang ? <RegNavFr /> : <RegNav />)}
-      <div className={classNames('mainContent', { 'font-spy spyBg': spy })}>{children}</div>
+      <div className={classNames('mainContent', { 'font-spy bg-dark-purple': spy, ' flowerBg': reg })}>{children}</div>
       {spy ?? <JerryPopUp lang={lang} />}
       <Foooter />
     </>

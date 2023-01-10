@@ -1,3 +1,7 @@
+.background {
+    /* background-image: url('/backgrounds/flower.svg'); */
+}
+
 .container {
     background-color: rgb(238, 238, 238);
 }
@@ -28,18 +32,18 @@
 
 /* slide 1 */
 .header1 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     line-height: 2.3rem;
     color: #FE5F00;
-    padding-top: 3.8rem;
-    width: 40%;
+    padding-top: 4rem;
+    width: 180px;
     margin: auto;
 }
 .text1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12.5px;
     padding: 10px;
-    width: 40%;
+    width: 200px;
     margin: auto;
 }
 
@@ -47,15 +51,16 @@
 .header2 {
     font-size: 2.1rem;
     color: #ff74a3;
-    padding-top: 2.5rem;
-    width: 45%;
+    padding-top: 3rem;
+    width: 230px;
     margin: auto;
+    line-height: 2.7rem;
 }
 .text2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12.5px;
     padding: 10px;
-    width: 49%;
+    width: 250px;
     margin: auto;
 }
 
@@ -64,82 +69,110 @@
     font-size: 1.4rem;
     color: #b251ea;
     padding-top: 5rem;
-    width: 45%;
+    width: 220px;
     margin: auto;
 }
 .text3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12.5px;
     padding: 10px;
-    width: 48%;
+    width: 250px;
     margin: auto;
+}
+
+/* testimonial */
+.testimonialContainer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50%;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background-color: rgb(255, 239, 206);
+    transform: rotate(1.5deg);
+}
+
+.jared {
+    max-width: 100%;
+    width: 150px;
+    display: none;
+}
+
+.testText {
+    padding-left: 20px;
+    background-color: #7FC638;
+    margin: 0px 20px;
+    padding: 30px;
+}
+
+.quote {
+    font-size: 17px;
+    color: rgb(255, 239, 206);
+}
+
+.name {
+    font-size: 15px;
+    color: rgb(255, 229, 177);
+    padding-top: 10px;
 }
 
 @media only screen and (min-width: 600px) {
     /* for tablets */
-    .slide1 {
-        background-image: url('/carousel/slide1_2.svg');
-        height: 620px;
-    }
-    .slide2 {
-        background-image: url('/carousel/slide2_2.svg');
-        height: 620px;
-    }
-    .slide3 {
-        background-image: url('/carousel/slide3_2.svg');
-        height: 620px;
-    }
+    .slide1 {background-image: url('/carousel/slide1_2.svg'); height: 620px;}
+    .slide2 {background-image: url('/carousel/slide2_2.svg'); height: 620px;}
+    .slide3 {background-image: url('/carousel/slide3_2.svg'); height: 620px;}
 
     /* slide 1 */
     .header1 {
         font-size: 3rem;
         line-height: 3.5rem;
-        width: 52%;
+        width: 400px;
     }
     .text1 {
-        font-size: 18px;
-        width: 52%;
+        font-size: 16px;
+        width: 400px;
     }
     /* slide 2 */
     .header2 {
         font-size: 2.8rem;
-        padding-top: 5.5rem;
-        width: 60%;
+        padding-top: 6.5rem;
+        width: 400px;
     }
     .text2 {
-        font-size: 18px;
-        width: 62%;
+        font-size: 16px;
+        width: 450px;
     }
 
     /* slide 3 */
     .header3 {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         padding-top: 9rem;
+        line-height: 2.2rem;
+        width: 320px;
     }
     .text3 {
         font-size: 16px;
+        width: 370px;
+    }
+    .testimonialContainer {
+        max-width: 90%;
+    }
+    .jared {
+        display: block;
     }
 }
 
 @media only screen and (min-width: 950px) {
     /* for desktop */
-    .slide1 {
-        background-image: url('/carousel/slide1_1.svg');
-        height: 520px;
-    }
-    .slide2 {
-        background-image: url('/carousel/slide2_1.svg');
-        height: 520px;
-    }
-    .slide3 {
-        background-image: url('/carousel/slide3_1.svg');
-        height: 520px;
-    }
+    .slide1 { background-image: url('/carousel/slide1_1.svg'); height: 520px;}
+    .slide2 { background-image: url('/carousel/slide2_1.svg'); height: 520px;}
+    .slide3 { background-image: url('/carousel/slide3_1.svg'); height: 520px;}
 
     /* slide 1 */
     .header1 {
         font-size: 3rem;
-        line-height: 3.6rem;
         padding-top: 3.4rem;
         width: 40%;
         }
@@ -151,7 +184,8 @@
     /* slide 2 */
     .header2 {
         font-size: 4rem;
-        width: 42%;
+        line-height: 4rem;
+        width: 40%;
         padding-top: 3rem;
     }
     .text2 {
@@ -164,48 +198,19 @@
     .header3 {
         font-size: 2rem;
         padding-top: 6rem;
-        width: 30%;
+        width: 28%;
     }
     .text3 {
         font-size: 16px;
         padding: 10px;
         width: 32%;
     }
-}
-
-/* testimonial */
-.testimonialContainer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 50%;
-    max-width: 70%;
-    margin: 40px auto;
-    padding: 30px 0px;
-}
-
-.jared {
-    max-width: 100%;
-    width: 150px;
-}
-
-.testText {
-    padding-left: 20px;
-    background-color: rgb(255, 239, 206);
-    border-radius: 40px;
-    margin: 0px 20px;
-    padding: 30px;
-}
-
-.quote {
-    font-size: 17px;
-}
-
-.name {
-    font-size: 15px;
-    color: rgb(168, 168, 168);
-    padding-top: 10px;
+    .testimonialContainer {
+        max-width: 70%;
+    }
+    .jared {
+        display: block;
+    }
 }
 
 
