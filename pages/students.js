@@ -1,5 +1,5 @@
 import Meta from '../components/Meta';
-import Cards from "../components/agents-students/CardStudent"
+import Cards from "../components/agents-students/Cards"
 
 export default function Students() {
   return (
