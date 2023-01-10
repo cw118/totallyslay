@@ -12,14 +12,12 @@ const SpyNav = () => {
     <Navbar fluid={true} id='spyNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4 font-spy'>
       <Navbar.Toggle className='text-gray-100 hover:text-gray-700' />
       <Navbar.Collapse className='z-40'>
-        <Navbar.Link
-          href={lang ? currentRoute.replace('fr', '').replace('//', '/') : '/fr' + currentRoute}
-        >
+        <Navbar.Link href={lang ? currentRoute.replace('fr', '').replace('//', '/') : '/fr' + currentRoute}>
           {lang ? 'English' : 'Français'}
         </Navbar.Link>
         <Navbar.Link
           href={lang ? '/fr/moohp' : '/moohp'}
-        >
+          className={(currentRoute === '/moohp' || currentRoute === '/fr/moohp') ? 'navActive' : ''}>
           {lang ? 'Accueil' : 'Home'}
         </Navbar.Link>
         <Navbar.Link
@@ -37,13 +35,19 @@ const SpyNav = () => {
         </Link>
       </div>
       <Navbar.Collapse className='navSecondCollapse'>
-        <Navbar.Link href={lang ? '/fr/moohp/agents' : '/moohp/agents'}>
+        <Navbar.Link
+          href={lang ? '/fr/moohp/agents' : '/moohp/agents'}
+          className={(currentRoute === '/moohp/agents' || currentRoute === '/fr/moohp/agents') ? 'navActive' : ''}>
           Agents
         </Navbar.Link>
-        <Navbar.Link href={lang ? '/fr/moohp/archives' : '/moohp/archives'}>
+        <Navbar.Link
+          href={lang ? '/fr/moohp/archives' : '/moohp/archives'}
+          className={(currentRoute === '/moohp/archives' || currentRoute === '/fr/moohp/archives') ? 'navActive' : ''}>
           Archives
         </Navbar.Link>
-        <Navbar.Link href={lang ? '/fr/moohp/robot' : '/moohp/robot'}>
+        <Navbar.Link
+          href={lang ? '/fr/moohp/robot' : '/moohp/robot'}
+          className={(currentRoute === '/moohp/robot' || currentRoute === '/fr/moohp/robot') ? 'navActive' : ''}>
           Robot
         </Navbar.Link>
       </Navbar.Collapse>

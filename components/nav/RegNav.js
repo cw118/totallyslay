@@ -16,13 +16,8 @@ const RegNav = () => {
     <Navbar fluid={true} id='regNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4'>
       <Navbar.Toggle className='text-gray-700' />
       <Navbar.Collapse className='z-40'>
-        <Navbar.Link
-          href={frCounterparts[`${currentRoute}`]}
-        >Français</Navbar.Link>
-        <Navbar.Link
-          href='/'
-        >Home
-        </Navbar.Link>
+        <Navbar.Link href={frCounterparts[`${currentRoute}`]}>Français</Navbar.Link>
+        <Navbar.Link href='/' className={currentRoute === '/' ? 'navActive' : ''}>Home</Navbar.Link>
       </Navbar.Collapse>
       <div className='block m-auto relative'>
         <Link href='/' id='regLogo' className='navLogo'>
@@ -33,12 +28,8 @@ const RegNav = () => {
         </Link>
       </div>
       <Navbar.Collapse className='navSecondCollapse'>
-        <Navbar.Link href='/students'>
-          Students
-        </Navbar.Link>
-        <Navbar.Link href='/journal'>
-          Journal
-        </Navbar.Link>
+        <Navbar.Link href='/students' className={currentRoute === '/students' ? 'navActive' : ''}>Students</Navbar.Link>
+        <Navbar.Link href='/journal' className={currentRoute === '/journal' ? 'navActive' : ''}>Journal</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

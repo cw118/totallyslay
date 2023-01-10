@@ -6,6 +6,9 @@
 @tailwind utilities;
 
 @layer base {
+  /* nearly all custom styles are too complex for tailwind
+     some default tailwind styles have to be overriden
+     using !important */
   .footer {
     border-top: solid 0.75px gray;
   }
@@ -18,12 +21,16 @@
     margin-bottom: 120.5px; /* height of footer on mobile (constant) */
   }
 
+  .navActive {
+    text-decoration: solid 2.5px underline;
+  }
+
   #regNav {
     background-color: #f8981d;
   }
 
   #spyNav {
-    background-color: #A4A8DB;
+    background-color: #a4a8db;
   }
 
   #regNav > div, #spyNav > div {
@@ -52,9 +59,9 @@
   }
   
   #spyNav ul {
-    background-color: #A4A8DB;
+    background-color: #a4a8db;
     width: 100vw;
-    outline: solid 20px #A4A8DB;
+    outline: solid 20px #a4a8db;
   }
 
   #regNav li, #spyNav li {
@@ -76,7 +83,7 @@
   }
 
   #spyLogo, #hiddenRegLogo {
-    background-color: #A4A8DB;
+    background-color: #a4a8db;
   }
 
   .navLogo {
@@ -233,7 +240,7 @@
     }
 
     #spyNav a:not(.navLogo):hover {
-      color: #ccf5ff;
+      color: #000;
     }
 
     .mainContent {
@@ -260,57 +267,18 @@
     margin-left: 1.5px;
   }
 
-  @media screen and (orientation: landscape) and (max-width: 1280px) {
-    .puzzleHintLeft, .puzzleHintRight {
-      display: block !important;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 5px 2px;
-      position: absolute;
-      z-index: 100;
-      text-align: center;
-      font-size: 1.8rem;
-      color: #fff;
-      background-color: rgba(8, 96, 125, 0.5);
-      font-family: Rajdhani, sans-serif;
-      font-weight: 700;
-      letter-spacing: 0.7px;
-      max-width: 200px;
-    }
-
-    .puzzleHintLeft {
-      left: 1.5rem;
-    }
-    
-    .puzzleHintRight {
-      right: 1.5rem;
-    }
-
-    .puzzleHint {
-      display: none;
-    }
-  }
-
   .puzzleHint {
-    top: 10%;
-    padding: 5px 2px;
+    top: 5px;
+    padding: 0px 2px;
     position: absolute;
     z-index: 100;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #fff;
     background-color: rgba(8, 96, 125, 0.5);
     font-family: Rajdhani, sans-serif;
     font-weight: 700;
     letter-spacing: 0.7px;
-  }
-
-  .puzzleHintLeft {
-    display: none;
-  }
-
-  .puzzleHintRight {
-    display: none;
   }
 
   .revealLeft {
@@ -422,12 +390,56 @@
   .invisible {
     visibility: collapse;
   }
-}
 
-model-viewer {
-  width: 60%;
-  height: auto;
-  background-image: url('/grid.svg');
-  border-radius:80px;
-  margin: 20px;
+  .screenCover {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 80;
+  }
+
+  /* for 3d models */
+  model-viewer {
+    width: 60%;
+    height: auto;
+    background-image: url('/grid.svg');
+    border-radius: 80px;
+    margin: 20px;
+  }
+
+  .puzzleChangeLang {
+    position: absolute;
+    z-index: 85;
+    bottom: 5px;
+    color: #000 !important;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .puzzleChangeLang:hover {
+    color: #fff !important;
+  }
+
+  .puzzleChangeLang span {
+    font-weight: 500;
+    color: inherit;
+  }
+
+  @media screen and (min-width: 900px) {
+    .puzzleHint {
+      font-size: 1.7rem;
+      top: 15px;
+    }
+
+    .puzzleChangeLang {
+      bottom: 20px;
+    }
+
+    .puzzleChangeLang span {
+      font-size: 1.2rem;
+    }
+  }
 }
