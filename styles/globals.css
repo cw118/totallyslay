@@ -49,7 +49,7 @@
   }
 
   #spyNav a:not(.navLogo) {
-    color: #4148A4;
+    color: #4148a4;
   }
 
   #regNav ul {
@@ -249,6 +249,11 @@
     .footerBrand {
       display: flex !important; /* override default Footer.Brand display:block for md screens */
     }
+
+    /* for 3d models */
+    model-viewer {
+      height: 100%;
+    }
   }
   
   .puzzle {
@@ -401,11 +406,9 @@
 
   /* for 3d models */
   model-viewer {
-    width: 60%;
-    height: auto;
+    width: 100%;
     background-image: url('/grid.svg');
-    border-radius: 80px;
-    margin: 20px;
+    border-radius: 40px;
   }
 
   .puzzleChangeLang {
