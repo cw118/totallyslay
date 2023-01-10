@@ -41,7 +41,7 @@
 }
 
 #leftLogo {
-  background-image: url(/puzzle/left.svg);
+  background-image: url(/puzzle/left-sm.svg);
   right: 0;
   border-left: solid 1px #ccc;
   border-top-left-radius: 25px;
@@ -49,7 +49,7 @@
 }
 
 #rightLogo {
-  background-image: url(/puzzle/right.svg);
+  background-image: url(/puzzle/right-sm.svg);
   left: 0;
   border-right: solid 1px #ccc;
   border-top-right-radius: 25px;
@@ -60,16 +60,16 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 250px;
-  width: 150px;
+  height: 215px;
+  width: 129px;
   z-index: 100;
   border-top: solid 1px #ccc;
   border-bottom: solid 1px #ccc;
 }
 
 .piece {
-  width: 150px;
-  height: 125px;
+  width: 129px;
+  height: 107.5px;
   margin: 0 -1px -1px;
   background-repeat: no-repeat;
   display: grid;
@@ -122,6 +122,24 @@
 @media screen and (min-width: 640px) {
   .hero {
     padding: 1.5rem 15vw;
+  }
+
+  .piece {
+    width: 150px;
+    height: 125px;
+  }
+
+  #leftLogo, #rightLogo {
+    height: 250px;
+    width: 150px;
+  }
+
+  #leftLogo {
+    background-image: url(/puzzle/left.svg);
+  }
+
+  #rightLogo {
+    background-image: url(/puzzle/right.svg);
   }
 }
 

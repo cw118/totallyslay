@@ -188,73 +188,6 @@
   .popUpLink:hover {
     text-decoration: underline;
   }
-
-  @media screen and (min-width: 640px) {
-    /* 640px is when the footer flattens into "one line" */
-    .jerryPopUp {
-      width: 7em;
-      bottom: 100.5px;
-      background-position: 50% 145%;
-    }
-
-    .popUpTooltip {
-      max-width: none;
-      width: 450px;
-      bottom: 13.5em;
-      font-size: 1.1rem;
-    }
-
-    .popUpLink {
-      font-size: 1.17rem;
-    }
-  }
-
-  @media screen and (min-width: 767px) {
-    .navLogo {
-      margin-left: 0;
-      width: 120px;
-    }
-    
-    #regLogo, #hiddenRegLogo {
-      width: 120px;
-      top: -30px;
-      padding: 10px 40px 10px 30px;
-    }
-
-    #hiddenLogo, #spyLogo {
-      top: -36px;
-      padding: 5px 14.25px 0px 12px;
-    }
-
-    #regNav ul, #spyNav ul {
-      width: revert;
-    }
-
-    #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
-      transition: color 0.25s;
-    }
-
-    #regNav a:not(.navLogo):hover {
-      color: #fff;
-    }
-
-    #spyNav a:not(.navLogo):hover {
-      color: #000;
-    }
-
-    .mainContent {
-      margin-bottom: 80.5px; /* height of footer on tablet and larger (constant) */
-    }
-
-    .footerBrand {
-      display: flex !important; /* override default Footer.Brand display:block for md screens */
-    }
-
-    /* for 3d models */
-    model-viewer {
-      height: 100%;
-    }
-  }
   
   .puzzle {
     display: grid;
@@ -262,8 +195,8 @@
       "a b"
       "c d";
     padding: 0;
-    width: 300px;
-    height: 250px;
+    width: 258px;
+    height: 215px;
     background-color: #000;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
     position: relative;
@@ -428,6 +361,84 @@
   .puzzleChangeLang span {
     font-weight: 500;
     color: inherit;
+  }
+
+  @media screen and (min-width: 640px) {
+    /* 640px is when the footer flattens into "one line" */
+    .jerryPopUp {
+      width: 7em;
+      bottom: 100.5px;
+      background-position: 50% 145%;
+    }
+
+    .popUpTooltip {
+      max-width: none;
+      width: 450px;
+      bottom: 13.5em;
+      font-size: 1.1rem;
+    }
+
+    .popUpLink {
+      font-size: 1.17rem;
+    }
+
+    .puzzle {
+      width: 300px;
+      height: 250px;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    .navLogo {
+      margin-left: 0;
+      width: 120px;
+    }
+
+    #regLogo,
+    #hiddenRegLogo {
+      width: 120px;
+      top: -30px;
+      padding: 10px 40px 10px 30px;
+    }
+
+    #hiddenLogo,
+    #spyLogo {
+      top: -36px;
+      padding: 5px 14.25px 0px 12px;
+    }
+
+    #regNav ul,
+    #spyNav ul {
+      width: revert;
+    }
+
+    #regNav a:not(.navLogo),
+    #spyNav a:not(.navLogo) {
+      transition: color 0.25s;
+    }
+
+    #regNav a:not(.navLogo):hover {
+      color: #fff;
+    }
+
+    #spyNav a:not(.navLogo):hover {
+      color: #000;
+    }
+
+    .mainContent {
+      margin-bottom: 80.5px;
+      /* height of footer on tablet and larger (constant) */
+    }
+
+    .footerBrand {
+      display: flex !important;
+      /* override default Footer.Brand display:block for md screens */
+    }
+
+    /* for 3d models */
+    model-viewer {
+      height: 100%;
+    }
   }
 
   @media screen and (min-width: 900px) {

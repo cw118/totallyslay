@@ -96,13 +96,8 @@
     padding: 0.5rem 1.5rem 0px;
   }
 
-  .info {
-
-  }
-
   .video {
-    width: 60%;
     height: 500px;
-    margin: 20px;
+    max-width: 100%;
   }
 }
