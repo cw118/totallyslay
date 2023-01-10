@@ -16,3 +16,8 @@
     align-items: center;
     margin-right: 5.1vh;
 }
+
+.timeline {
+    display: grid;
+    row-gap: 0px;
+}

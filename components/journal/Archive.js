@@ -46,7 +46,7 @@ export default function Archive() {
 
 function Posts(props) {
     return(
-        <Timeline>
+        <Timeline className={styles.timeline}>
             <Timeline.Item>
                 <Timeline.Point />
                 <Timeline.Content>
