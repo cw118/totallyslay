@@ -141,7 +141,6 @@
     border-radius: 50%;
     border: solid 1px #000;
     cursor: pointer;
-    outline: solid 3px #000;
     background-color: #fff;
     background-image: url(/young-jerry/jerry-mari.svg);
     background-repeat: no-repeat;
@@ -392,7 +391,7 @@
   }
 
   .screenCover {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -410,7 +409,7 @@
   }
 
   .puzzleChangeLang {
-    position: absolute;
+    position: fixed;
     z-index: 85;
     bottom: 5px;
     color: #000 !important;
