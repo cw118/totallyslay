@@ -3,11 +3,12 @@ import styles from "../../styles/Avia.module.css";
 import GamePiece from "./GamePiece";
 import RedGamePiece from "./RedGamePiece";
 import Bee from "./Bee";
+import Typewrite from '../Typewrite';
 
 export default function Avia({ fr }) {
     return (
         <>
-          <h1 className={styles.header}><strong>{fr ? 'Votre mission' : 'Your Mission'}: AVIA 2023</strong></h1>
+          <h1 className={styles.header}><strong><Typewrite page={fr ? 'aviaFr' : 'avia'} /></strong></h1>
             <div className={styles.intro}>
                 <img src="/logo/avia_logo.png" alt="AVIA Logo" className={styles.aviaLogo}/>
                 <p>{fr ? 'La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l\'aide à MOOHP (organisation Marianopolis pour la protection des humains).' : 'The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.'}</p><br></br>

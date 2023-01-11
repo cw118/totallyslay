@@ -1,10 +1,11 @@
 import RobotArm from './RobotArm';
 import styles from '../../styles/Robot.module.css';
+import Typewrite from '../Typewrite';
 
 const Robot = ({ fr }) => {
   return (
     <div className={styles.pageWrapper}>
-      <h3 className={styles.title}>Robot / Gadget</h3>
+      <h3 className={styles.title}><Typewrite page='robot' /></h3>
       <div className={styles.rowOne}>
         <RobotArm />
         <RobotArm />
