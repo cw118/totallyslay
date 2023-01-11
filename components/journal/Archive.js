@@ -14,6 +14,15 @@ export default function Archive() {
     const prog = lang ? progFr : progEng;
 
     return(
+        <>
+        <div className={styles.intro}>
+            <h1 className={styles.header}><strong>MOOHP Archives</strong></h1>
+            <p>MOOHP’s directors carefully curated a team of agents from 
+                the Marianopolis Academic Research Institute to complete the
+                AVIA 2023 mission. 18 members first convened in early September, 
+                then consistently twice a week, to explore their skillsets and 
+                discover how they could each contribute to such an important mission.</p>
+        </div>
         <Tabs.Group aria-label="Tabs with icons" style="underline" className={styles.tabs}>
             <Tabs.Item title="Robot">
                 {rob.map((member, index) => 
@@ -41,6 +50,7 @@ export default function Archive() {
                 )}
             </Tabs.Item>
         </Tabs.Group>
+        </>
     )
 }
 

@@ -12,7 +12,7 @@ export default function Cards() {
     return (
         <div>
             <h1 className={styles.title}>
-            {lang ? "Étudiants et personel" : "Student Body and Staff"}
+                {lang ? "Étudiants et personel" : "Student Body and Staff"}
             </h1>
             <div className={styles.div}>
                 {students.map((member, index) => 
@@ -30,7 +30,7 @@ function Carte(props) {
     const lang = currentRoute.includes('/fr') ? 'fr' : '';
     return (
         <Card className={styles.card} imgSrc={props.src} horizontal = {true}>
-            <div className="font-kiwi">
+            <div className="font-verdana">
                 <p>
                     <b>{lang ? 'Nom: ' : 'Name: '}</b> {`${props.name}`}
                 </p>

@@ -392,6 +392,7 @@
 
   .flowerBg {
     background-image: url('/backgrounds/flower.svg');
+    background-attachment: fixed;
   }
 
   .screenCover {
