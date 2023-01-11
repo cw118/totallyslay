@@ -139,16 +139,16 @@
     bottom: 140.5px;
     right: 1.25rem;
     border-radius: 50%;
-    border: solid 1px #000;
+    box-shadow: 0 0 0 2.5px #000;
     cursor: pointer;
     background-color: #fff;
-    background-image: url(/young-jerry/jerry-mari.svg);
+    background-image: url(/clown-jerry/jerry-mari.svg);
     background-repeat: no-repeat;
     z-index: 75;
   }
 
   .activePopUp {
-    background-image: url(/young-jerry/jerry-moohp.svg);
+    background-image: url(/clown-jerry/jerry-moohp.svg);
   }
 
   .popUpTooltip {
@@ -369,7 +369,7 @@
     .jerryPopUp {
       width: 7em;
       bottom: 100.5px;
-      background-position: 50% 145%;
+      background-position: 50% 135%;
     }
 
     .popUpTooltip {
