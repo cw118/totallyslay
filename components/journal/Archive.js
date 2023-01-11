@@ -24,29 +24,29 @@ export default function Archive() {
                 discover how they could each contribute to such an important mission.</p>
         </div>
         <Tabs.Group aria-label="Tabs with icons" style="underline" className={styles.tabs}>
-            <Tabs.Item title="Robot">
+            <Tabs.Item title="ROBOT">
                 {rob.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} text={member.text}/>
+                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
                 )}
             </Tabs.Item>
-            <Tabs.Item title="Kiosk">
+            <Tabs.Item title="KIOSK">
                 {kiosk.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} text={member.text}/>
+                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
                 )}
             </Tabs.Item>
-            <Tabs.Item title="Website">
+            <Tabs.Item title="WEBSITE">
                 {web.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} text={member.text}/>
+                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
                 )}
             </Tabs.Item>
-            <Tabs.Item title="Video">
+            <Tabs.Item title="VIDEO">
                 {vid.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} text={member.text}/>
+                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
                 )}
             </Tabs.Item>
-            <Tabs.Item title="Programming">
+            <Tabs.Item title="PROGRAMMING">
                 {prog.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} text={member.text}/>
+                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
                 )}
             </Tabs.Item>
         </Tabs.Group>
@@ -58,15 +58,16 @@ function Posts(props) {
     return(
         <Timeline className={styles.timeline}>
             <Timeline.Item>
-                <Timeline.Point />
+                <Timeline.Point className={styles.point}/>
                 <Timeline.Content>
-                    <Timeline.Time> 
+                    <Timeline.Time className={styles.time}> 
                         {props.time}
                     </Timeline.Time>
-                    <Card imgSrc={props.img} horizontal={true} className={styles.card}>
-                        <p>
+                    <Card className={"bg-transparent " + `${styles.card}`} >
+                        <p className={styles.text}>
                             {props.text}
                         </p>
+                        <img src={props.img} alt={props.alt} className={styles.img}/>
                     </Card>
                 </Timeline.Content>
             </Timeline.Item>

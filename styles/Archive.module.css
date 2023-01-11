@@ -1,3 +1,7 @@
+.header {
+    font-size: 60px;
+}
+
 .intro {
     color: white;
     text-align: center;
@@ -5,32 +9,82 @@
     width: 80%;
     margin: auto;
     font-size: 20px;
-}
-
-.header {
-    font-size: 50px;
+    letter-spacing: 1.5px;
 }
 
 .tabs button {
-    background-color: white;
-    border-radius: 10px;
-    padding: 2vh 5vw;
+    padding: 1.5vh 3vw;
+    border: 3px #66d9ff solid;
+    color: #66d9ff;
+    font-size: 18px;
+    letter-spacing: 5px;
 }
 
 .tabs {
     width: 100vw;
     justify-content: space-around;
     padding-top: 2.3vh;
+    padding-bottom: 4vh;
     border-style: hidden;
+    color: #66d9ff;
+}
+
+.tabs button:hover {
+    background-color: #66d9ff;
+    color: #4148A4;
+    border-color: #66d9ff;
+    border-radius: 30px;
+    transition-duration: 0.5s;
 }
 
 .card {
     max-width: revert;
     align-items: center;
     margin-right: 5.1vh;
+    border: 2px #66d9ff solid;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .timeline {
     display: grid;
     row-gap: 0px;
+    font-size: 18px;
+    width: 100%;
+    margin: auto;
+}
+
+.point {
+    background-color: #66d9ff;
+    border-color: #66d9ff;
+}
+
+.time {
+    color: white;
+    font-size: 18px;
+}
+
+.img {
+    border: 2.5px #66d9ff solid;
+    border-radius: 20px;
+}
+
+.text {
+    width: 95%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    /* tablet */
+    .timeline {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    /* desktop */
+    .timeline {
+        width: 50%;
+    }
 }
