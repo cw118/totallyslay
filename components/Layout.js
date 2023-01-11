@@ -1,7 +1,6 @@
 import Meta from './Meta';
 import RegNav from './nav/RegNav';
 import SpyNav from './nav/SpyNav';
-import RegNavFr from './nav/RegNavFr';
 import Foooter from './Footer';
 import JerryPopUp from './JerryPopUp';
 import { useRouter } from 'next/router';
@@ -18,7 +17,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Meta icon={spy ? '/favicon/moohp-icon.svg' : '/favicon/mari-icon.svg'} />
-      {spy ? <SpyNav /> : (lang ? <RegNavFr /> : <RegNav />)}
+      {spy ? <SpyNav /> : <RegNav />}
       <div className={classNames('mainContent', { 'font-spy bg-dark-purple': spy, ' flowerBg': reg })}>{children}</div>
       {spy ? null : <JerryPopUp lang={lang} />}
       <Foooter />

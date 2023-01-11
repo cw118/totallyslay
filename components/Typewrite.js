@@ -6,7 +6,8 @@ const pageTexts = {
   'agents': 'Agents',
   'archives': 'MOOHP Archives',
   'archivesFr': 'Archives MOOHP',
-  'robot': 'Robot / Gadget',
+  'robot': 'Robot',
+  'robotFr': 'Gadget',
 }
 
 const Typewrite = ({ page }) => {
