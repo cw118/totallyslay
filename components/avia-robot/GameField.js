@@ -1,5 +1,3 @@
-// import styles from '../styles/<>.module.css';
-// add id={styles.gameField} to <model-viewer> once the CSS module stylesheet is linked
 import Script from 'next/script';
 
 const GameField = () => {

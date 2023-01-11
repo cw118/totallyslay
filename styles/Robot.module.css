@@ -1,0 +1,103 @@
+.pageWrapper {
+  color: #fff;
+  padding: 50px 2.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.pageWrapper img {
+  border-radius: 35px;
+  border: solid 2.5px #000;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.container, .imageContainer, .rowOne {
+  border: solid 2px #fff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 30px;
+  row-gap: 2rem;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+.rowTwo, .rowThree {
+  display: grid;
+  row-gap: 2.5rem;
+}
+
+.rowTwoModels {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 2.5rem;
+}
+
+@media screen and (min-width: 767px) {
+  .pageWrapper {
+    row-gap: 3rem;
+  }
+
+  .container, .imageContainer {
+    display: grid;
+  }
+
+  .imageContainer {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pageWrapper {
+    row-gap: 3.5rem;
+  }
+
+  .rowOne {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5rem;
+    height: 300px;
+  }
+
+  .rowOne model-viewer {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .rowTwo {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .rowTwo .container:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.8rem;
+  }
+  
+  .rowTwoModels, .rowTwoModels model-viewer {
+    height: 100%;
+  }
+
+  .rowThree {
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .imageContainer {
+    display: flex;
+  }
+}

@@ -431,11 +431,6 @@
       display: flex !important;
       /* override default Footer.Brand display:block for md screens */
     }
-
-    /* for 3d models */
-    model-viewer {
-      height: 100%;
-    }
   }
 
   @media screen and (min-width: 900px) {
