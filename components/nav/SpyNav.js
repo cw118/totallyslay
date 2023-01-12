@@ -27,19 +27,20 @@ const SpyNav = () => {
     '/fr/moohp/gadget': '/moohp/robot',
   }
 
+  const pause = () => setPaused(true);
+  const play = () => setPaused(false);
+
   const revealLogo = () => {
     setShowLogo(true);
     setHideLogo(false);
-    setPaused(false);
+    play();
   }
 
   const coverLogo = () => {
     setShowLogo(false);
     setHideLogo(true);
-    setPaused(false);
+    play();
   }
-
-  const pause = () => setPaused(true);
 
   return (
     <Navbar fluid={true} id='spyNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4 font-spy'>
@@ -64,7 +65,7 @@ const SpyNav = () => {
         <div id='spyLogo' className={classNames('navLogo', { 'showLogoTwo': showLogo, 'hideLogoTwo': hideLogo, 'pause': paused })} onMouseOver={revealLogo} onTouchStart={revealLogo} onMouseLeave={pause} onTouchEnd={pause}>
           <img src='/logo/moohp-logo.svg' alt={lang ? 'Logo de MOOHP' : 'MOOHP logo'} />
         </div>
-        <Link href={lang ? '/fr' : '/'} id='hiddenRegLogo' className='navLogo' onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
+        <Link href={lang ? '/fr' : '/'} id='hiddenRegLogo' className='navLogo' onMouseOver={play} onTouchStart={play} onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
           <img src='/logo/mari-logo.svg' alt={lang ? 'Logo de M.A.R.I.' : 'M.A.R.I logo'} />
         </Link>
       </div>

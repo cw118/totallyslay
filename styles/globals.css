@@ -116,7 +116,7 @@
   }
 
   .showLogo {
-    animation: 1.5s linear 1 forwards showLogo;
+    animation: 0.8s linear 1 forwards showLogo;
   }
 
   @keyframes showLogo { /* for theme 1 pages */
@@ -131,7 +131,7 @@
   }
 
   .showLogoTwo {
-    animation: 1.5s linear 1 forwards showLogoTwo;
+    animation: 0.8s linear 1 forwards showLogoTwo;
   }
 
   @keyframes showLogoTwo { /* for theme 2 pages */
@@ -147,7 +147,7 @@
   }
 
   .hideLogo {
-    animation: 1.6s linear 1 forwards hideLogo;
+    animation: 0.9s linear 1 forwards hideLogo;
   }
 
   @keyframes hideLogo {
@@ -161,7 +161,7 @@
   }
   
   .hideLogoTwo {
-    animation: 1.6s linear 1 forwards hideLogoTwo;
+    animation: 0.9s linear 1 forwards hideLogoTwo;
   }
 
   @keyframes hideLogoTwo {
@@ -495,19 +495,19 @@
     }
 
     .showLogo {
-      animation: 1.5s linear 1 forwards showLogoLarge;
+      animation: 0.8s linear 1 forwards showLogoLarge;
     }
 
     .showLogoTwo {
-      animation: 1.5s linear 1 forwards showLogoTwoLarge;
+      animation: 0.8s linear 1 forwards showLogoTwoLarge;
     }
 
     .hideLogo {
-      animation: 1.6s linear 1 forwards hideLogoLarge;
+      animation: 0.9s linear 1 forwards hideLogoLarge;
     }
     
     .hideLogoTwo {
-      animation: 1.6s linear 1 forwards hideLogoTwoLarge;
+      animation: 0.9s linear 1 forwards hideLogoTwoLarge;
     }
 
     #regNav ul, #spyNav ul {

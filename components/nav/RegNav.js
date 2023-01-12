@@ -23,19 +23,20 @@ const RegNav = () => {
     '/fr/etudiants': '/students',
   }
 
+  const pause = () => setPaused(true);
+  const play = () => setPaused(false);
+
   const revealLogo = () => {
     setShowLogo(true);
     setHideLogo(false);
-    setPaused(false);
+    play();
   }
 
   const coverLogo = () => {
     setShowLogo(false);
     setHideLogo(true);
-    setPaused(false);
+    play();
   }
-
-  const pause = () => setPaused(true);
 
   return (
     <Navbar fluid={true} id='regNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4'>
@@ -48,7 +49,7 @@ const RegNav = () => {
         <Link href={lang ? '/fr' : '/'} id='regLogo' className={classNames('navLogo', { 'showLogo': showLogo, 'hideLogo': hideLogo, 'pause': paused })} onMouseOver={revealLogo} onTouchStart={revealLogo} onMouseLeave={pause} onTouchEnd={pause}>
           <img src='/logo/mari-logo.svg' alt='M.A.R.I Logo' />
         </Link>
-        <Link href={lang ? '/fr/moohp' : '/moohp'} id='hiddenLogo' className='navLogo' onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
+        <Link href={lang ? '/fr/moohp' : '/moohp'} id='hiddenLogo' className='navLogo' onMouseOver={play} onTouchStart={play} onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
           <img src='/logo/moohp-logo.svg' alt='MOOHP logo' />
         </Link>
       </div>
