@@ -65,7 +65,7 @@ function FlipImg(props) {
             <div className={styles.Card}>
                 <Card className={styles.text}>
                     <p className={styles.name}>Agent {props.code}</p>
-                    <p>"{props.text}"</p>
+                    <p>&ldquo;{props.text}&rdquo;</p>
                 </Card>
             </div>
         </div>
