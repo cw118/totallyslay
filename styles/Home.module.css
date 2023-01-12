@@ -1,4 +1,21 @@
-.container {
+.schoolContainer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50%;
+    max-width: 90%;
+    padding: 30px 40px;
+    background-color: rgb(255, 239, 206);
+    transform: rotate(-1deg);
+}
+
+.button{
+    display: flex;
+}
+
+.div{
+    display: grid;
 }
 
 .slide1{
@@ -154,6 +171,9 @@
     .testimonialContainer {
         max-width: 90%;
     }
+    .SchoolContainer {
+        max-width: 90%;
+    }
     .jared {
         display: block;
     }
@@ -203,8 +223,23 @@
     .testimonialContainer {
         max-width: 70%;
     }
+    .schoolContainer {
+        width: 100%;
+        height: 100%
+    }
     .jared {
         display: block;
+    }
+    .button{
+        display: grid;
+        width: 80%;
+    }
+    .singleButton{
+        height: 100%;
+    }
+    .div{
+        grid-template-columns: 80% 20%;
+        width: 70%;
     }
 }
 

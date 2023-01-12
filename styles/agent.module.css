@@ -117,9 +117,6 @@
 @media screen and (min-width: 1280px) {
     .div {
         grid-template-columns: 25% 50%;
-        column-gap: 3rem;
-        display: grid;
-        justify-content: center;
     }
     .Card {
         display: grid;
