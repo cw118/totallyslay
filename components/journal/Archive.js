@@ -12,12 +12,12 @@ export default function Archive({ fr }) {
     const prog = fr ? progFr : progEng;
 
     return(
-        <>
+        <div className={styles.bg}>
         <div className={styles.intro}>
             <h1 className={styles.header}><Typewrite page={fr ? 'archivesFr' : 'archives'} /></h1>
             <p>MOOHP&apos;s directors carefully curated a team of agents from 
-                the Marianopolis Academic Research Institute to complete the
-                AVIA 2023 mission. 18 members first convened in early September, 
+                the Marianopolis Academic Research Institute to complete
+                AVIA 2023. 18 members first convened in early September, 
                 then consistently twice a week, to explore their skillsets and 
                 discover how they could each contribute to such an important mission.</p>
         </div>
@@ -48,7 +48,7 @@ export default function Archive({ fr }) {
                 )}
             </Tabs.Item>
         </Tabs.Group>
-        </>
+        </div>
     )
 }
 

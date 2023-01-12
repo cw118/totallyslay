@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const JerryPopUp = ({ lang }) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   const handleShow = () => {
     setShow(!show);

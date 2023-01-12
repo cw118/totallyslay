@@ -15,7 +15,7 @@ export default function Avia({ fr }) {
           <p>
             {fr ? 'Cette compétition pluridisciplinaire exige l\'implication de tous les agents chez MOOHP, intégrant l\'informatique, la technologie et l\'ingénierie avec les arts et lettres — les divisions de robot, de kiosque, de site web et de vidéo sont toutes indispensables à cette mission!' : 'This multidisciplinary competition requires the involvement of all agents at MOOHP. Integrating computer science, technology, and engineering with visual arts and humanities; the Machinery, Manufacturing, Hacking, Virtual Network, Marketing and divisions are integral to this mission!'}
           </p>
-                <img src="/logo/crc_logo.png" alt="CRC Logo" className={styles.crcLogo}/>
+                <img src="/logo/crc_logo.svg" alt="CRC Logo" className={styles.crcLogo}/>
             </div>
             <h1 className={styles.header}><strong>AVIA will proceed as follows:</strong></h1>
             <p className={styles.textOnly}>You are to be teamed up with agents from a different agency to complete this mission in every heat. <br></br>Placed in either the yellow or blue team, you will compete against the other over several heats.</p>

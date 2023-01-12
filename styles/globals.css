@@ -26,7 +26,7 @@
   }
 
   #regNav {
-    background-color: #f8981d;
+    background-color: #FF7522;
   }
 
   #spyNav {
@@ -53,9 +53,9 @@
   }
 
   #regNav ul {
-    background-color: #f8981d;
+    background-color: #FF7522;
     width: 100vw;
-    outline: solid 20px #f8981d;
+    outline: solid 20px #FF7522;
   }
   
   #spyNav ul {
@@ -79,7 +79,7 @@
   }
 
   #regLogo, #hiddenLogo {
-    background-color: #f8981d;
+    background-color: #FF7522;
   }
 
   #spyLogo, #hiddenRegLogo {
@@ -375,8 +375,7 @@
   }
 
   .flowerBg {
-    background-image: url('/backgrounds/flower.svg');
-    background-attachment: fixed;
+    background-image: url('/backgrounds/flowers.svg');
   }
 
   .screenCover {

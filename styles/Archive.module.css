@@ -1,3 +1,7 @@
+.bg {
+    background: url(/backgrounds/gridBlank.svg);
+}
+
 .header {
     font-size: 60px;
     font-weight: bold;
@@ -17,8 +21,9 @@
     padding: 1.5vh 3vw;
     border: 3px #66d9ff solid;
     color: #66d9ff;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 5px;
+    font-weight: bolder;
 }
 
 .tabs {
@@ -35,7 +40,9 @@
     color: #4148A4;
     border-color: #66d9ff;
     border-radius: 30px;
+    translate: 0px -15px;
     transition-duration: 0.5s;
+    box-shadow: #66d9ff;
 }
 
 .card {
@@ -63,7 +70,7 @@
 
 .time {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .img {
