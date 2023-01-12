@@ -347,19 +347,19 @@
   }
 
   .one {
-    background-image: url(/puzzle/one.svg);
+    background-image: url(/puzzle/one-sm.svg);
   }
 
   .two {
-    background-image: url(/puzzle/two.svg);
+    background-image: url(/puzzle/two-sm.svg);
   }
 
   .three {
-    background-image: url(/puzzle/three.svg);
+    background-image: url(/puzzle/three-sm.svg);
   }
 
   .four {
-    background-image: url(/puzzle/four.svg);
+    background-image: url(/puzzle/four-sm.svg);
   }
 
   .hide {
@@ -557,6 +557,22 @@
     .puzzle {
       width: 300px;
       height: 250px;
+    }
+
+    .one {
+      background-image: url(/puzzle/one.svg);
+    }
+
+    .two {
+      background-image: url(/puzzle/two.svg);
+    }
+
+    .three {
+      background-image: url(/puzzle/three.svg);
+    }
+
+    .four {
+      background-image: url(/puzzle/four.svg);
     }
   }
 }

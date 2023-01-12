@@ -1,10 +1,10 @@
 import { useState } from 'react';
+import useSessionStorage from '../Storage';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
 import PuzzlePiece from './PuzzlePiece';
 import styles from '../../styles/Moohp.module.css';
 import classNames from 'classnames';
-import { useRouter } from 'next/router';
 import MoohpHero from './MoohpHero';
 import MoohpIntro from './MoohpIntro';
 import { Button } from 'flowbite-react';
@@ -19,13 +19,9 @@ const useForceUpdate = () => {
 // end of force update hook
 
 const Puzzle = ({ fr }) => {
-  const router = useRouter();
-  const currentRoute = router.pathname;
-
-  const lang = currentRoute.includes('/fr') ? true : false;
-
-  const [puzzleSolved, setPuzzleSolved] = useState(false);
-  const [revealed, setRevealed] = useState(false);
+  // const context = useContext(AppContext);
+  const [puzzleSolved, setPuzzleSolved] = useSessionStorage('puzzleSolved', false);
+  const [revealed, setRevealed] = useSessionStorage('moohpRevealed', false);
 
   const ids = ['one', 'two', 'three', 'four'];
   const solved = ['pOne', 'pTwo', 'pThree', 'pFour'];
@@ -42,10 +38,6 @@ const Puzzle = ({ fr }) => {
     }
     return true;
   }
-
-  const handleSolve = () => setPuzzleSolved(true);
-  
-  const hidePuzzleScreen = () => setRevealed(true);
 
   const [sourcePos, setsourcePos] = useState('');
 
@@ -64,9 +56,11 @@ const Puzzle = ({ fr }) => {
     setPositions(newPositions);
 
     if (isSolved(positions)) {
-      handleSolve();
+      setPuzzleSolved(true);
     }
   };
+
+  const hidePuzzleScreen = () => setRevealed(true);
 
   return (
     <>
@@ -85,7 +79,7 @@ const Puzzle = ({ fr }) => {
             <div id={styles.rightLogo}></div>
           </div>
         </div>
-        <h3 className={classNames('puzzleHint', { 'fade': puzzleSolved })}>{lang ? 'Résoudre la casse-tête!' : 'Solve the puzzle!'}<br />{lang ? 'Effectuez un appui long sur une pièce pour la bouger' : 'Press and hold a puzzle piece to drag'}</h3>
+        <h3 className={classNames('puzzleHint', { 'fade': puzzleSolved })}>{fr ? 'Résoudre la casse-tête!' : 'Solve the puzzle!'}<br />{fr ? 'Effectuez un appui long sur une pièce pour la bouger' : 'Press and hold a puzzle piece to drag'}</h3>
 
         <DndProvider backend={HTML5Backend}>
           <div className={classNames('puzzle', { 'fade': puzzleSolved })}>
