@@ -1,23 +1,21 @@
-import styles from "../../styles/Archive.module.css"
-import {Tabs, Card, Timeline} from "flowbite-react"
-import {robEng, kioskEng, webEng, vidEng, progEng, robFr, kioskFr, webFr, vidFr, progFr} from "./variablesArchives.js"
-import { useRouter } from "next/router"
+import styles from "../../styles/Archive.module.css";
+import { Tabs, Card, Timeline } from "flowbite-react";
+import { robEng, kioskEng, webEng, vidEng, progEng, robFr, kioskFr, webFr, vidFr, progFr } from "./variablesArchives.js";
+import { useRouter } from "next/router";
+import Typewrite from '../Typewrite';
 
-export default function Archive() {
-    const router = useRouter();
-    const currentRoute = router.pathname;
-    const lang = currentRoute.includes('/fr') ? 'fr' : '';
-    const rob = lang ? robFr : robEng;
-    const kiosk = lang ? kioskFr : kioskEng;
-    const web = lang ? webFr : webEng;
-    const vid = lang ? vidFr : vidEng;
-    const prog = lang ? progFr : progEng;
+export default function Archive({ fr }) {
+    const rob = fr ? robFr : robEng;
+    const kiosk = fr ? kioskFr : kioskEng;
+    const web = fr ? webFr : webEng;
+    const vid = fr ? vidFr : vidEng;
+    const prog = fr ? progFr : progEng;
 
     return(
         <>
         <div className={styles.intro}>
-            <h1 className={styles.header}><strong>MOOHP Archives</strong></h1>
-            <p>MOOHP’s directors carefully curated a team of agents from 
+            <h1 className={styles.header}><Typewrite page={fr ? 'archivesFr' : 'archives'} /></h1>
+            <p>MOOHP&apos;s directors carefully curated a team of agents from 
                 the Marianopolis Academic Research Institute to complete the
                 AVIA 2023 mission. 18 members first convened in early September, 
                 then consistently twice a week, to explore their skillsets and 

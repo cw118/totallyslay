@@ -31,7 +31,7 @@ export const frS = [
     {name: "Isabella Hensley", age: 18, year: "Deuxième année", club:"Arduino", fun: "Donne moi un marteau, je le réparerai.", src:"/members/Isabella_S.JPG"},
     {name: "Victoria Hoang", age: 17, year: "Deuxième année", club:"Dévelopment web", fun: "pigeons can't fly", src:"/members/Victoria_S.JPG"},
     {name: "Vincent Ly", age: 18, year: "Deuxième année", club:"Arduino et programmation", fun: "Si tu range les clous de mauvaise maniere, tu es foutu.", src:"/members/Vincent_S.JPG"},
-    {name: "Nehna Patel", age: 18, year: "Deuxième année", club:"Construction", fun: "Je ne peux pas éternuer", src:"/members/Nehna_S.JPG"},
+    {name: "Nehna Patel", age: 18, year: "Deuxième année", club:"Construction", fun: "Je ne peux pas éternuer", src:"/members/Nehna_S.jpg"},
     {name: "Ruwa Qatmash", age: 17, year: "Première année", club:"Arduino", fun: "WD-40, c'est la vie!", src:"/members/Ruwa_S.JPG"},
     {name: "Celia Shi", age: 18, year: "Deuxième année", club:"Dévelopment web", fun: "Je ne chanterai plus jamais. *elle recommence de chanter*", src:"/members/Celia_S.JPG"},
     {name: "Sangeeta Vidyarthi", age: 18, year: "Deuxième année", club:"Arduino et film", fun: "Tant pis les crédits de la vidéo.", src:"/members/Sangeeta_S.JPG"},
@@ -39,7 +39,7 @@ export const frS = [
     {name: "Carolyn Wu", age: 17, year: "First year", club:"Dévelopment web", fun: "Avec quoi avais-tu besoin d'aide?", src:"/members/Carolyn_S.JPG"},  
     {name: "Elisa Xue", age: 17, year: "Première année", club:"Arduino", fun: "Je viens de comprendre pourquoi fx signifie effets.", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "Première année", club:"Arduino", fun: "Soudé un million de fois!", src:"/members/Jennifer_S.JPG"},
-    {name: "Dominique Paradis", age: "Confidentiel", year: "Confidentiel", club:"Confidentiel", fun: "Confidential", src:"/members/Jennifer_S.JPG"},
+    {name: "Dominique Paradis", age: "Confidentiel", year: "Confidentiel", club:"Confidentiel", fun: "Confidential", src:"/members/Paradis_S.png"},
 ];
 
 export const engM = [

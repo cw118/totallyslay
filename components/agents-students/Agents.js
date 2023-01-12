@@ -1,7 +1,8 @@
-import { Card } from "flowbite-react"
-import styles from "../../styles/agent.module.css"
-import {engM, frM} from "./variablesMembers.js"
-import { useRouter } from "next/router"
+import { Card } from "flowbite-react";
+import styles from "../../styles/agent.module.css";
+import { engM, frM } from "./variablesMembers.js";
+import { useRouter } from "next/router";
+import Typewrite from '../Typewrite';
 
 export default function Agents(){
     const router = useRouter();
@@ -12,7 +13,7 @@ export default function Agents(){
     return (
         <div className={styles.bg}>
             <h1 className={styles.title}>
-                <b>Agents</b>
+                <b><Typewrite page='agents' /></b>
             </h1>
             {students.map((member, index) => 
                 <FlipImg key={index} src={member.src} name={member.name} 

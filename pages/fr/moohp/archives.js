@@ -5,7 +5,7 @@ export default function archives() {
   return (
     <>
       <Meta title='Archives | MOOHP' description='' />
-      <Archive />
+      <Archive fr={true} />
     </>
   );
 }

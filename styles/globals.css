@@ -391,7 +391,7 @@
   /* for 3d models */
   model-viewer {
     width: 100%;
-    background-image: url('/grid.svg');
+    background-image: url('/backgrounds/grid.svg');
     border-radius: 40px;
   }
 
