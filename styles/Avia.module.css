@@ -60,12 +60,15 @@
 }
 
 @media screen and (min-width: 767px) {
+  .container model-viewer {
+    height: 100%;
+  }
+  
   .header {
     font-size: 60px;
   }
 
   .intro {
-    width: 70%;
     font-size: 24px;
   }
 

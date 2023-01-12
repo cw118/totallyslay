@@ -7,7 +7,7 @@ const MoohpIntro = ({ fr }) => {
   const ref = useRef(null);
 
   const focusClear = () => {
-    setAgentName('\xa0');
+    setAgentName('');
     ref.current.focus();
   }
 
