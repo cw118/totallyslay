@@ -1,8 +1,14 @@
 import { Navbar } from 'flowbite-react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import classNames from 'classnames';
 
 const SpyNav = () => {
+  const [showLogo, setShowLogo] = useState(false); // show (reveal) hidden logo
+  const [hideLogo, setHideLogo] = useState(false); // hide (cover) hidden logo, start with falsy value to avoid animation on initial render
+  const [paused, setPaused] = useState(false);
+
   const router = useRouter();
   const currentRoute = router.pathname;
 
@@ -20,6 +26,20 @@ const SpyNav = () => {
     '/moohp/robot': '/fr/moohp/gadget',
     '/fr/moohp/gadget': '/moohp/robot',
   }
+
+  const revealLogo = () => {
+    setShowLogo(true);
+    setHideLogo(false);
+    setPaused(false);
+  }
+
+  const coverLogo = () => {
+    setShowLogo(false);
+    setHideLogo(true);
+    setPaused(false);
+  }
+
+  const pause = () => setPaused(true);
 
   return (
     <Navbar fluid={true} id='spyNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4 font-spy'>
@@ -41,10 +61,10 @@ const SpyNav = () => {
         </Navbar.Link>
       </Navbar.Collapse>
       <div className='block m-auto relative'>
-        <div id='spyLogo' className='navLogo'>
+        <div id='spyLogo' className={classNames('navLogo', { 'showLogoTwo': showLogo, 'hideLogoTwo': hideLogo, 'pause': paused })} onMouseOver={revealLogo} onTouchStart={revealLogo} onMouseLeave={pause} onTouchEnd={pause}>
           <img src='/logo/moohp-logo.svg' alt={lang ? 'Logo de MOOHP' : 'MOOHP logo'} />
         </div>
-        <Link href={lang ? '/fr' : '/'} id='hiddenRegLogo' className='navLogo'>
+        <Link href={lang ? '/fr' : '/'} id='hiddenRegLogo' className='navLogo' onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
           <img src='/logo/mari-logo.svg' alt={lang ? 'Logo de M.A.R.I.' : 'M.A.R.I logo'} />
         </Link>
       </div>
