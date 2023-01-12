@@ -50,7 +50,7 @@ export const engM = [
         I found problems with adjusting to unforeseen difficulties.
         It also came with the cost of time I would have wasted anyways.`
     },    
-    {name: "Andrea Abou-Haidar", age: 17, year: "Head", code: "Adrea", height: "5'1/155cm", gadget: "Anti-Gravity Ring", 
+    {name: "Andrea Abou-Haidar", age: 17, year: "Head", code: "Andrea", height: "5'1/155cm", gadget: "Anti-Gravity Ring", 
         specialty: "Acrobatics specialist", mbti: "INFJ", club:"Machinery and manufacturing", src:"/members/Andrea_M.JPG",
         text: `By being part of the 2022-2023 Marianopolis Robotics Team, I
         made new friends, developed leadership skills, and most importantly, 
@@ -188,7 +188,7 @@ export const engM = [
         uses of parts. It’s an extremely enjoyable experience 
         and I will cherish it forever.`
     },
-    {name: "Dominique Paradis", age: "???", year: "Executive", club:"Executive", src:"/members/Paradis_M.jpg", code: "Adam", height: "???", 
+    {name: "Dominique Paradis", age: "???", year: "Executive", club:"Executive", src:"/members/Paradis_M.jpg", code: "Dominique Paradis", height: "???", 
         gadget: "Shoe Phone", specialty: "Disguise Expert", mbti: "???",
         text: `I am mostly here to deal with the aspects of the team that diverge 
         from the main goal. I help organize budget, transport

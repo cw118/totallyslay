@@ -10,9 +10,9 @@ export default function Agents(){
     const students = lang ? frM : engM;
 
     return (
-        <div>
+        <div className={styles.bg}>
             <h1 className={styles.title}>
-                Agents
+                <b>Agents</b>
             </h1>
             {students.map((member, index) => 
                 <FlipImg key={index} src={member.src} name={member.name} 
@@ -52,7 +52,7 @@ function FlipImg(props) {
                             {lang ? `Taille: ${props.height}` : `Height: ${props.height}`}
                         </p>
                         <p>
-                        {lang ? `Spécialisation: ${props.specialty}` : `Specialty: ${props.specialty}`}
+                            {lang ? `Spécialisation: ${props.specialty}` : `Specialty: ${props.specialty}`}
                         </p>
                         <p>
                             {lang ? `Département: ${props.club}` : `Department: ${props.club}`}
@@ -63,8 +63,9 @@ function FlipImg(props) {
                 </div>
             </div>
             <div className={styles.Card}>
-                <Card>
-                    <p>{props.text}</p>
+                <Card className={styles.text}>
+                    <p className={styles.name}>Agent {props.code}</p>
+                    <p>"{props.text}"</p>
                 </Card>
             </div>
         </div>
