@@ -16,6 +16,8 @@
 
 .div{
     display: grid;
+    width: auto;
+    margin: auto;
 }
 
 .slide1{

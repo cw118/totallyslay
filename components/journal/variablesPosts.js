@@ -15,7 +15,7 @@ export const eng = [
     user: "losingmysanity_", hashtags: 'MrWorldwide', commenter: 'Adam Abbas', comment: 'Who put perfume on?', likes: 11,
     caption: 'Night Vision sunglasses are locked and loaded.'
     },
-    {author: 'Andrea Abou-Haidar', date: 'January 5th, 2023', avatar:'/journal/avatars/', status: "online", src: '/journal/post-images/lunch.png',
+    {author: 'Andrea Abou-Haidar', date: 'January 5th, 2023', avatar:'/journal/avatars/andrea.png', status: "online", src: '/journal/post-images/lunch.png',
     user: "not_that_short", hashtags: 'hashtag', commenter: 'Sangeeta Vidyarthi', comment: 'OMG! Is this at MOOH-', likes: 'x',
     caption: 'Lunch in a totally secret location after some top secret work ;)'
     },
