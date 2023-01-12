@@ -49,7 +49,7 @@
   }
 
   #spyNav a:not(.navLogo) {
-    color: #4148A4;
+    color: #4148a4;
   }
 
   #regNav ul {
@@ -139,16 +139,16 @@
     bottom: 140.5px;
     right: 1.25rem;
     border-radius: 50%;
-    border: solid 1px #000;
+    box-shadow: 0 0 0 2.5px #000;
     cursor: pointer;
     background-color: #fff;
-    background-image: url(/young-jerry/jerry-mari.svg);
+    background-image: url(/clown-jerry/jerry-mari.svg);
     background-repeat: no-repeat;
     z-index: 75;
   }
 
   .activePopUp {
-    background-image: url(/young-jerry/jerry-moohp.svg);
+    background-image: url(/clown-jerry/jerry-moohp.svg);
   }
 
   .popUpTooltip {
@@ -188,68 +188,6 @@
   .popUpLink:hover {
     text-decoration: underline;
   }
-
-  @media screen and (min-width: 640px) {
-    /* 640px is when the footer flattens into "one line" */
-    .jerryPopUp {
-      width: 7em;
-      bottom: 100.5px;
-      background-position: 50% 145%;
-    }
-
-    .popUpTooltip {
-      max-width: none;
-      width: 450px;
-      bottom: 13.5em;
-      font-size: 1.1rem;
-    }
-
-    .popUpLink {
-      font-size: 1.17rem;
-    }
-  }
-
-  @media screen and (min-width: 767px) {
-    .navLogo {
-      margin-left: 0;
-      width: 120px;
-    }
-    
-    #regLogo, #hiddenRegLogo {
-      width: 120px;
-      top: -30px;
-      padding: 10px 40px 10px 30px;
-    }
-
-    #hiddenLogo, #spyLogo {
-      top: -36px;
-      padding: 5px 14.25px 0px 12px;
-    }
-
-    #regNav ul, #spyNav ul {
-      width: revert;
-    }
-
-    #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
-      transition: color 0.25s;
-    }
-
-    #regNav a:not(.navLogo):hover {
-      color: #fff;
-    }
-
-    #spyNav a:not(.navLogo):hover {
-      color: #000;
-    }
-
-    .mainContent {
-      margin-bottom: 80.5px; /* height of footer on tablet and larger (constant) */
-    }
-
-    .footerBrand {
-      display: flex !important; /* override default Footer.Brand display:block for md screens */
-    }
-  }
   
   .puzzle {
     display: grid;
@@ -257,8 +195,8 @@
       "a b"
       "c d";
     padding: 0;
-    width: 300px;
-    height: 250px;
+    width: 258px;
+    height: 215px;
     background-color: #000;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
     position: relative;
@@ -392,6 +330,7 @@
 
   .flowerBg {
     background-image: url('/backgrounds/flower.svg');
+    background-attachment: fixed;
   }
 
   .screenCover {
@@ -405,11 +344,9 @@
 
   /* for 3d models */
   model-viewer {
-    width: 60%;
-    height: auto;
+    width: 100%;
     background-image: url('/grid.svg');
-    border-radius: 80px;
-    margin: 20px;
+    border-radius: 40px;
   }
 
   .puzzleChangeLang {
@@ -429,6 +366,76 @@
   .puzzleChangeLang span {
     font-weight: 500;
     color: inherit;
+    padding: 3px 7px;
+  }
+
+  @media screen and (min-width: 640px) {
+    /* 640px is when the footer flattens into "one line" */
+    .jerryPopUp {
+      width: 7em;
+      bottom: 100.5px;
+      background-position: 50% 135%;
+    }
+
+    .popUpTooltip {
+      max-width: none;
+      width: 450px;
+      bottom: 13.5em;
+      font-size: 1.1rem;
+    }
+
+    .popUpLink {
+      font-size: 1.17rem;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    .navLogo {
+      margin-left: 0;
+      width: 120px;
+    }
+
+    #regLogo, #hiddenRegLogo {
+      width: 120px;
+      top: -30px;
+      padding: 10px 40px 10px 30px;
+    }
+
+    #hiddenLogo, #spyLogo {
+      top: -36px;
+      padding: 5px 14.25px 0px 12px;
+    }
+
+    #regNav ul, #spyNav ul {
+      width: revert;
+    }
+
+    #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
+      transition: color 0.25s;
+    }
+
+    #regNav a:not(.navLogo):hover {
+      color: #fff;
+    }
+
+    #spyNav a:not(.navLogo):hover {
+      color: #000;
+    }
+
+    .mainContent {
+      margin-bottom: 80.5px;
+      /* height of footer on tablet and larger (constant) */
+    }
+
+    .footerBrand {
+      display: flex !important;
+      /* override default Footer.Brand display:block for md screens */
+    }
+
+    /* for 3d models */
+    model-viewer {
+      height: 100%;
+    }
   }
 
   @media screen and (min-width: 900px) {
@@ -443,6 +450,14 @@
 
     .puzzleChangeLang span {
       font-size: 1.2rem;
+      padding: 0.5rem 0.6rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .puzzle {
+      width: 300px;
+      height: 250px;
     }
   }
 }

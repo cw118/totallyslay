@@ -17,7 +17,7 @@ export const engS = [
     {name: "Carolyn Wu", age: 17, year: "First year", club:"Web Development", fun: "x", src:"/members/Carolyn_S.JPG"},
     {name: "Elisa Xue", age: 17, year: "First year", club:"Arduino", fun: "x", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "First year", club:"Arduino", fun: "x", src:"/members/Jennifer_S.JPG"},
-    {name: "Dominique Paradis", age: "Confidential", year: "Confidential", club:"Confidential", fun: "Confidential", src:"/members/Paradis_S.JPG"},
+    {name: "Dominique Paradis", age: "Confidential", year: "", club:"Confidential", fun: "Confidential", src:"/members/Paradis_S.png"},
 ];
 
 export const frS = [
@@ -39,7 +39,7 @@ export const frS = [
     {name: "Carolyn Wu", age: 17, year: "Première année", club:"Dévelopment web", fun: "x", src:"/members/Carolyn_S.JPG"},
     {name: "Elisa Xue", age: 17, year: "Première année", club:"Arduino", fun: "x", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "Première année", club:"Arduino", fun: "x", src:"/members/Jennifer_S.JPG"},
-    {name: "Dominique Paradis", age: "Confidentiel", year: "Confidentiel", club:"Confidentiel", fun: "Confidential", src:"/members/Jennifer_S.JPG"},
+    {name: "Dominique Paradis", age: "Confidentiel", year: "", club:"Confidentiel", fun: "Confidential", src:"/members/Paradis.png"},
 ];
 
 export const engM = [
@@ -151,10 +151,10 @@ export const engM = [
         code: "Sangeeta", height: "5'2/157cm", gadget: "Microphone pen", specialty: "Invisibility", mbti: "ESFJ",
         text: `This year in robotics, I learned how to work towards accomplishing 
         numerous tasks in a short time. I really enjoyed meeting 
-        new people and talking about their future plans. I enjoyed 
-        taking the lead in video planning and editing. I did sacrifice 
-        my APs and my winter break. I did learn new things regarding 
-        the robot, for instance the robotic arm mechanism.`
+        new people and talking about their future plans as well 
+        as taking the lead in video planning and editing. I did sacrifice 
+        my APs and my winter break. However, I learned new things 
+        regarding the robot, for instance the robotic arm mechanism.`
     },
     {name: "Zi Heng Wang", age: 18, year: "Junior", club:"Machinery", src:"/members/ZiHeng_M.JPG", code: "Zi Heng", 
         height: "5'9/175cm", gadget: "Alligator clips", specialty: "Sleep specialist", mbti: "INTJ",
@@ -177,10 +177,8 @@ export const engM = [
         skills. I enjoyed meeting new people and having something 
         to work on outside of class. This was my first time doing 
         robotics, so there were many things that I needed help with,
-         but I had a lot of fun. My main struggle was waking up in the 
-        morning during the winter break.
-        
-        `
+        but I had a lot of fun. My main struggle was waking up in the 
+        morning during the winter break.`
     },
     {name: "Jennifer Zhang", age: 17, year: "Junior", club:"Machinery", src:"/members/Jennifer_M.JPG", code: "Yiting Zhang", 
         height: "5'7/170cm", gadget: "Wd-40 camera", specialty: "Smile specialist", mbti: "ENTJ",
@@ -191,8 +189,12 @@ export const engM = [
         and I will cherish it forever.`
     },
     {name: "Dominique Paradis", age: "???", year: "Executive", club:"Executive", src:"/members/Paradis_M.jpg", code: "Adam", height: "???", 
-        gadget: "???", specialty: "???", mbti: "???",
-        text: `???`
+        gadget: "Shoe Phone", specialty: "Disguise Expert", mbti: "???",
+        text: `I am mostly here to deal with the aspects of the team that diverge 
+        from the main goal. I help organize budget, transport
+        of materials, team membership and scheduling. I want to make 
+        sure the students focus on the important aspects of the competition: 
+        the robot, the kiosk, video and website`
     },
 ];
 
@@ -227,66 +229,148 @@ export const frM = [
     },
     {name: "Yau Hong Chau", age: 18, year: "Sénior", club:"Marketing", src:"/members/Yau_M.JPG", code: "Croc", 
         height: "6'/182cm", gadget: "Brouilleur de téléphone", specialty: "Expert en mensonge", mbti: "ISTJ",
-        text: ``
+        text: `Alors que mon équipe et moi travaillions à un rythme constant
+        tout en faisant de grands progrès en préparation pour la 
+        compétition, j'ai appris à mieux gérer mon temps et à 
+        utiliser efficacement le temps limité pour rester en tête 
+        de mon travail. De plus, afin de me préparer au concours, j'ai 
+        sacrifié à la fois mon temps libre, notamment pendant 
+        les vacances d'hiver, ainsi que mon temps qui aurait été consacré 
+        pour les études et, surtout, le sommeil.`
     },
     {name: "Sofia Del Raso", age: 19, year: "Sénior", club:"Machinerie", src:"/members/Sofia_M.JPG", code: "S.A.D", 
         height: "5'3/160cm", gadget: "Pistolet à rayons de positivité", specialty: "Spécialiste en positivité", mbti: "ENFP",
-        text: ``
+        text: `J'ai vraiment adoré me faire de nouveaux amis ! Je pense que 
+        l'aspect social du de la compétition est certainement l'aspect 
+        que j'aime le plus. J'ai également appris à résoudre 
+        des problèmes et à travailler sous pression, ce qui, à 
+        mon avis, est une excellente compétence à avoir. Le CRC va
+        vraiment me manquer.`
     },
     {name: "Audrey Dumais", age: 17, year: "Junior", club:"Réseau virtuel", src:"/members/Audrey_M.JPG", code: "Badger", 
         height: "5'4/162cm", gadget: "Briquet à silex avec 82 fonctions", specialty: "Attrapeuse de mur", mbti: "ENFJ",
-        text: ``
+        text: `Travailler en équipe et se soutenir mutuellement sont quelques 
+        raisons pour lesquelles je suis devenue agent. En tant que 
+        membre de la division VN, je sais que nous avons consacré
+        beaucoup d'énergie sur l'apprentissage de langages de programmation 
+        tels que React.js et Next.js afin de garantir le 
+        bon déroulement de la mission pour nos agents sur le terrain.`
     },
     {name: "Zoe Hadziaras", age: 17, year: "Junior", club:"Production", src:"/members/Zoe_M.JPG", code: "Hadz", 
         height: "5'8/172cm", gadget: "Rouleau à peinture", specialty: "Fabricante de désordre professionnel", mbti: "ESFP",
-        text: ``
+        text: `J'ai appris qu'il est important de ne pas se consacrer uniquement 
+        à une seule spécialité. Cette année m'a appris à 
+        être capable de travailler au sein de différents groupes, 
+        comme le kiosque et le robot. La seule chose que j'ai dû sacrifier 
+        sont mes vacances d'hiver, mais cela en valait la peine 
+        car j'aime beaucoup la robotique et mon équipe.`
     },
     {name: "Isabella Hensley", age: 18, year: "Sénior", club:"Machinerie", src:"/members/Isabella_M.JPG", code: 
         "Hensley", height: "5'9/175cm", gadget: "Botte à propulsion autonome", specialty: "Assembleur de repas", mbti: "INTJ",
-        text: ``
+        text: `J'ai appris les systèmes de mouvement linéaire et l'électronique. 
+        J'ai aimé construire le robot et discuter avec mes
+        coéquipiers, même si cela signifiait que je devais sacrifier 
+        mes heures de sommeil.`
     },
     {name: "Victoria Hoang", age: 17, year: "Sénior", club:"Réseau virtuel", src:"/members/Victoria_M.JPG", code: 
         "Vi", height: "5'6/167cm", gadget: "Pigeon vêtu d'une caméra", specialty: "Codage rapide", mbti: "INFP",
-        text: ``
+        text: `J'ai appris de nouvelles méthodes plus efficaces pour créer 
+        des sites Web à l'aide de React.js et Next.js. Le manque 
+        de sommeil et le temps consacré à la robotique en valait la 
+        peine parce que je me suis fait de nouveaux amis et j'apprends 
+        d'eux tous les jours!`
     },
     {name: "Vincent Ly", age: 18, year: "Sénior", club:"Machinerie et piratage informatique", src:"/members/Vincent_M.JPG", code: 
         "Ly", height: "5'9/175cm", gadget: "Lunettes de soleil avec vision nocturne", specialty: "Perdre la tête", mbti: "ISTJ",
-        text: ``    
+        text: `J’ai maîtrisé les expressions régulières (Regex), l’algorithme 
+        du Simplex, le fonctionnement des mécanismes et 
+        l'assemblage d'un robot. En consacrant mon temps à la robotique, 
+        je prends un risque puisque j'ai moins de temps pour préparer 
+        mes candidatures à l'université, mais je pense que 
+        ce risque en vaut totalement la peine.`    
     },
     {name: "Nehna Patel", age: 18, year: "en chef", club:"Production", src:"/members/Nehna_M.JPG", code: "Patel", 
         height: "5'4/162cm", gadget: "Compowder", specialty: "Télépathie", mbti: "ESFP",
-        text: ``
+        text: `À travers les années durant lesquelles j’ai participé aux 
+        compétitions CRC, j’ai appris de nombreuses choses différentes 
+        — que ce soit développer mes compétences en construction, 
+        d'organisation ou de gestion. Ce que je préfère 
+        le plus dans chaque compétition, est de voir notre vision 
+        devenir réalité. Nous sommes toujours fiers de voir le résultat 
+        final. J’ai passé de nombreuses heures et jours en 
+        robotique, mais j’ai toujours apprécié ce temps.`
     },
     {name: "Ruwa Qatmash", age: 17, year: "Junior", club:"Machinerie", src:"/members/Ruwa_M.JPG", code: "Qatmash", 
         height: "5'6/167cm", gadget: "Wd-40", specialty: "Spécialiste en wd-40", mbti: "ENTJ",
-        text: ``
+        text: `ask ruwa`
     },
     {name: "Celia Shi", age: 18, year: "Sénior", club:"Réseau virtuel", src:"/members/Celia_M.JPG", code: "Seal", 
         height: "5'8/172cm", gadget: "Insecte télécommandé", specialty: "Chuchoteuse d'animaux", mbti: "INFP",
-        text: ``
+        text: `C’est la première fois que je suis dans une équipe de robotique 
+        et j’ai adoré mon expérience. J’ai appris à programmer 
+        en React.js et Next.js. J’ai également finalement 
+        appris à utiliser des lignes de commande git, à la place 
+        d’utiliser des clients GUI comme GitKraken. C’était un 
+        peu difficile au début, mais maintenant, c’est beaucoup plus facile.`
     },
     {name: "Sangeeta Vidyarthi", age: 18, year: "Sénior", club:"Machinerie et marketing", src:"/members/Sangeeta_M.JPG", 
         code: "Sangeeta", height: "5'2/157cm", gadget: "Stylo micro", specialty: "Invisibilité", mbti: "ESFJ",
-        text: ``
+        text: `Cette année, en robotique, j'ai appris à accomplir de nombreuses 
+        tâches avec peu de temps. J'ai vraiment apprécié rencontrer 
+        de nouvelles personnes et parler de leurs projets 
+        d'avenir, ainsi que de prendre en charge de la planification
+        et du montage vidéo. J'ai sacrifié mes pauses et mes vacances 
+        d'hiver. Cependant, j'ai appris de nouvelles choses concernant 
+        le robot, par exemple le mécanisme du bras robotique.`
     },
     {name: "Zi Heng Wang", age: 18, year: "Junior", club:"Machinerie", src:"/members/ZiHeng_M.JPG", code: "Zi Heng", 
         height: "5'9/175cm", gadget: "Pince crocodiles", specialty: "Spécialiste de sommeil", mbti: "INTJ",
-        text: ``
+        text: `Dans l'ensemble, c'était extrêmement amusant de travailler
+        sur le robot. J'ai adoré rencontrer de nouvelles personnes
+        et travailler avec des coéquipiers très compétents. Cette 
+        compétition m'a permis d'en apprendre davantage sur la programmation 
+        et le fonctionnement des circuits électriques. 
+        J'ai également acquis de nombreuses compétences en gestion
+        du temps et en travail d'équipe.`
     },
     {name: "Carolyn Wu", age: 17, year: "Junior", club:"Piratage informatique et réseau virtuel", src:"/members/Carolyn_M.JPG", 
         code: "Wu", height: "5'4/162cm", gadget: "Montre espion", specialty: "Développeur sénior", mbti: "INTJ",
-        text: ``
+        text: `J'ai beaucoup appris sur Next.js et sur les différentes façons 
+        de créer des animations 2D et 3D. Mes principales difficultés 
+        ont été le positionnement CSS, trouver une bonne 
+        approche pour animer des éléments, ainsi que l'intégration 
+        et la personnalisation avec npm que je n'avais jamais utilisés 
+        auparavant. Bien que j'aie sacrifié du temps que j'aurais 
+        pu consacrer à mes études ou à mes amis et ma famille, 
+        j'ai eu beaucoup de plaisir à apprendre, à connaître mes 
+        coéquipiers et à améliorer mes compétences en programmation.`
     },
     {name: "Elisa Xue", age: 17, year: "Junior", club:"Marketing", src:"/members/Elisa_M.JPG", code: "Emu", 
         height: "5'6/167cm", gadget: "Stylo enregistreur", specialty: "Audition exacerbée", mbti: "ISTP",
-        text: ``
+        text: `Grâce à cette expérience, j'ai appris à gérer mon temps
+        et à travailler en équipe. J'ai aimé rencontrer de nouvelles 
+        personnes et avoir quelque chose à faire en dehors des
+        cours. C'était la première fois que je faisais de la robotique, 
+        alors il y avait beaucoup de choses pour lesquelles j'avais 
+        besoin d'aide, mais je me suis beaucoup amusée. Ma principale 
+        difficulté a été de me réveiller le matin pendant les vacances d'hiver.`
     },
     {name: "Jennifer Zhang", age: 17, year: "Junior", club:"Machinerie", src:"/members/Jennifer_M.JPG", code: "Yiting Zhang", 
         height: "5'7/170cm", gadget: "Caméra wd-40", specialty: "Spécialiste en sourire", mbti: "ENTJ",
-        text: ``
+        text: `En tant que membre de l'équipe en charge du robot, j'ai beaucoup 
+        aimé travailler avec mes coéquipiers. Je me suis fait 
+        de nouveaux amis et nous avons coopéré sans problème pour 
+        atteindre nos buts. J'ai beaucoup appris sur les moteurs,
+        les outils et les différentes utilisations des pièces. C'est 
+        une expérience que je chérirai pour toujours.`
     },
-    {name: "Dominique Paradis", age: "???", year: "Exécutif", club:"Exécutif", src:"/members/Paradis_M.jpg", code: "Adam", height: "???", 
-        gadget: "???", specialty: "???", mbti: "???",
-        text: ``
+    {name: "Dominique Paradis", age: "???", year: "Exécutif", club:"Exécutif", src:"/members/Paradis_M.jpg", code: "Dominique Paradis", height: "???", 
+        gadget: "Téléphone soulier", specialty: "Expert en déguisement", mbti: "???",
+        text: `Je suis surtout là pour m'occuper des aspects de l'équipe 
+        qui divergent de l'objectif principal. J'aide à organiser le 
+        budget, le transport des matériaux, la composition de l'équipe 
+        et l'horaire. Je veux m'assurer que les étudiants se
+        concentrent sur les aspects importants de la compétition:
+        le robot, le kiosque, la vidéo et le site web.`
     },
 ];

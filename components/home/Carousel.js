@@ -4,7 +4,6 @@ import styles from '../../styles/Home.module.css';
  export default function Carouselle({ fr }) {
    return (
      <>
-       <div className={styles.container}>
          <Carousel slideInterval={6000}>
            <div className={styles.slide1}>
              <h1 className={styles.header1}>{fr ? 'Portes ouvertes 2023' : 'Open House 2023'}</h1>
@@ -22,7 +21,6 @@ import styles from '../../styles/Home.module.css';
              <p className={styles.text3}>{fr ? 'Trois adolescentes de Beverly Hills - Alex, Clover et Sam - tentent de balancer leur vie en tant qu\'étudiante du secondaire et agent d\'infiltration, combattant une variété de criminels étranges.' : 'Three teenage girls from Beverly Hills – Alex, Clover, and Sam – attempt to balance their lives as high school students with their undercover work as super spies at WOOHP, battling a variety of bizarre criminals.'}</p>
            </div>                
          </Carousel>
-       </div>
      </>
    );
 } 
