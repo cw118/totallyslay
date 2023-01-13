@@ -13,6 +13,16 @@
     border-top: solid 0.75px gray;
   }
 
+  /* for active tab on archives page (needs to be here to 
+     override default active tab styles) */
+  button[aria-selected="true"].active {
+    background-color: #66d9ff;
+    color: #4148A4;
+    border-color: #66d9ff;
+    border-radius: 30px;
+    box-shadow: #66d9ff;
+  }
+
   .invertedLogo img {
     filter: grayscale(1) invert(1);
   }

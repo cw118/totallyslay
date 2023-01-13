@@ -5,12 +5,13 @@ export const robEng = [
     for an efficient and creative robot. They focus first and 
     foremost on the possible mechanism responsible for picking
      up and transporting the horizontal game pieces. They are conflicted 
-    between two models: the first is omnidirectional, but 
-    the second's linear motion allows it to be extremely meticulous. 
+    between two models: They are conflicted between two models: the angled 
+    claw and the linear motion. The first one can grab different sizes of 
+    game pieces while the second one allows it to be extremely meticulous. 
     The base that had been previously saved was too small 
     for its wheels and was therefore rebuilt on a smaller scale.`
     },
-    {time: "November 13th, 2022", img: "/journal/robot/arm.png",
+    {time: "December 20thth, 2022", img: "/journal/robot/arm.png",
     alt:"Robot team presents a cardboard robot arm prototype", 
     text: `The members of the Machinery Division begin to build their prototypes 
     to pick between the two models of their arm once both have been tested and 
@@ -102,37 +103,140 @@ export const vidEng = [
 ]
 
 export const progEng = [
-    {time: "November 13th, 2022", img: "/journal/post-images/appa_funeral.png", 
-    text: `Vincent and Carolyn stay up til 3am`
+    {time: "December 3rd, 2022", img: "/journal/prog/vincent3am.png", 
+    text: `Vincent stayed up until 3am to finish the first preliminary problem.`
+    },
+    {time: "December 12th, 2022", img: "/journal/prog/2ndPrelim.png", 
+    text: `Vincent and Carolyn finally submitted the second preliminary 
+    problem, losing their sanity in the process`
     }
 ]
 
 export const robFr = [
-    {time: "November 13th, 2022", img: "/journal/post-images/appa_funeral.png", 
-    text: `rob fr`
+    {time: "13 novembre 2022", img: "/journal/robot/team.png",
+    alt:"L'équipe de robot qui planifie les prototypes", 
+    text: `Le département de machinerie commence à réfléchir à des
+    idées pour un robot créatif et efficace. Ils se concentrent 
+    d’abord sur tous les mécanismes possibles qui seront responsables 
+    pour ramasser et transporter les pièces de jeux. Ils hésitent 
+    entre deux modèles: des pinces ou un système de mouvement linéaire. 
+    Le premier permet de ramasser les pièces de jeux de toutes 
+    les tailles, alors que le dernier permet d’être d’autant plus 
+    précis. De plus, la base du robot de la compétition de l’an 
+    dernier qui a été conservée est trop petite pour nos roues.
+    Il faut donc reconstruire nos roues en diminuant leur taille.`
+    },
+    {time: "20 décembre 2022", img: "/journal/robot/arm.png",
+    alt:"L'équipe de robot présente un prototype en carton pour le bras", 
+    text: `Le département de machinerie commence à construire leurs 
+    prototypes pour choisir entre les deux modèles du bras du robot 
+    une fois que les deux ont été testés et comparés. Le premier prototype 
+    a un axe de rotation et 2 bâtons, comme une pince de crabe, alors que 
+    l'autre n'a qu'un seul bâton mobile, comme une mante religieuse. Les moteurs ont été soudés.`
+    },
+    {time: "4 janvier 2023", img: "/journal/robot/base.png", 
+    alt:"Tester les roues de la base du robot",
+    text: `L’équipe du robot se divise en sous-groupes. Les membres 
+    font des progrès remarquables sur tous les composants du robot. 
+    L'équipe assemble le cadre de base. Les moteurs électriques 
+    permettent de programmer la rotation des roues.`
+    },
+    {time: "7 janvier 2023", img: "/journal/robot/lift.png", 
+    alt:"Sofia and Vincent work on the mechanical lift Sofia et Vincent travail sur l'ascenceur mécanique",
+    text: `Après une planification minutieuse, les agents commencent à construire 
+    l'ascenseur mécanique, en complétant deux étages 
+    et en attachant les chaînes à chacune. Enfin, les machinistes 
+    fabriquent avec succès un bras fonctionnel capable de soulever 
+    les pièces du jeu. Ce département travaille sur les deux prototypes 
+    et prévoit de les terminer, de les tester et de sélectionner une 
+    version avant la fin janvier.`
     }
 ]
 
 export const kioskFr = [
-    {time: "November 13th, 2022", img: "/journal/post-images/appa_funeral.png", 
-    text: `kiosk fr.`
+    {time: "13 novembre 2022", img: "/journal/kiosk/walls-up.png", 
+    text: `Le département chargé de la manufacture a également commencé 
+    à réfléchir à la façon dont M.A.R.I et MOOHP seront représentés à AVIA 2023.
+    Les esprits créatifs se sont rassemblés pour susciter les idées les plus 
+    ingénieuses ! L'entraînement physique de nos agents est finalement mis à 
+    l’épreuve alors qu’ils assemblent les murs du kiosque.`
+    },
+    {time: "20 décembre 2022", img: "/journal/kiosk/blue.png", 
+    text: `Les membres du département de fabrication préparent les murs intérieurs et extérieurs du kiosque.`
+    },
+    {time: "4 janvier 2023", img: "/journal/kiosk/globe.png", 
+    text: `Durant la première semaine de janvier, l'intérieur du quartier général du MOOHP 
+    commence à se mettre en place! Les agents du département de la manufacture finissent de
+    peinturer les couleurs de base du mur et le logo du MOOHP.`
+    },
+    {time: "7 janvier 2023", img: "/journal/kiosk/couch.png", 
+    text: `Les agents commencent également à rassembler du matériels utiliés pour meubler le 
+    quartier général. En réutilisant des items de l'année passée, ils sont capables 
+    de construire un divan rouge!`
     }
 ]
 
 export const webFr = [
-    {time: "November 13th, 2022", img: "/journal/post-images/appa_funeral.png", 
-    text: `web eng`
+    {time: "13 novembre 2022", img: "/journal/web/work1.png", 
+    text: `Le département du réseau virtuel a déterminé la 
+    structure générale et le contenu de leur site web. Un 
+    tableau de vision et des logos ont été créés. Les membres 
+    du département ont également décidé d’utiliser React.js et 
+    Next.js pour créer un site web d’autant plus efficace et performant ! `
+    },
+    {time: "20 décembre 2022", img: "/journal/web/celia.png", 
+    text: `Les membres du département du réseau virtuel, avec des idées 
+    concrètes en tête, ont commencé à apprendre de nouveaux langages de 
+    programmation, à tester des idées ambitieuses et à documenter les 
+    progrès des agents du MOOHP et la mission à accomplir. Ils doivent 
+    également manier l'art de la subtilité pour capturer leurs agents 
+    en pleine action !`
+    },
+    {time: "7 janvier 2023", img: "/journal/web/work2.png", 
+    text: `Le département peut enfin commencer à construire 
+    son site web après avoir appris de nouveaux langages de 
+    programmation : React.js et Next.js ! Ils complètent la 
+    première moitié du site Web et consolident leur conception 
+    de sa seconde moitié pour pouvoir le programmer avec succès 
+    la semaine suivante. Quant au contenu, ils compilent toutes 
+    les informations pertinentes et mettent à jour les rapports 
+    d'avancement de l'équipe.`
     }
 ]
 
 export const vidFr = [
-    {time: "November 13th, 2022", img: "/journal/post-images/appa_funeral.png", 
-    text: `vid fr`
-    }
+    {time: "13 novembre 2022", img: "/journal/video/group1.png", 
+    text: `Le département de marketing a rassemblé des informations 
+    indispensables sur Totally Spies! afin de créer une vidéo d’une 
+    durée de 5 minutes qui résumera à la fois l’équipe, M.A.R.I., 
+    MOOHP et la mission AVIA 2023, tout en mettant en évidence le 
+    thème. Une fois le script finalisé, ils doivent rassembler tous 
+    les outils et les gadgets nécessaires (et les perruques !) qui 
+    permettront le succès de leur vidéo.`
+    },
+    {time: "20 décembre 2022", img: "/journal/video/gym-group.png", 
+    text: `Les membres du département de marketing finalisent leur 
+    scénario ! Ayant reçu les perruques, ils n'attendent 
+    plus que les gadgets nécessaires pour filmer leur vidéo.`
+    },
+    {time: "4 janvier 2023", img: "/journal/video/jerry-scene.png", 
+    text: `Après avoir raffiné leur scénario et rassemblé tous les 
+    accessoires et costumes nécessaires, ont réuni leurs acteurs et 
+    figurants pour filmer le plus de scènes possible, et les ont 
+    montés au fur et à mesure.`
+    },
+    {time: "6 janvier 2023", img:"/journal/video/lab-scene.png",
+    text: `figure out how to put video`
+    },
 ]
 
 export const progFr = [
-    {time: "November 13th, 2022", img: "/journal/post-images/appa_funeral.png", 
-    text: `prog fr`
+    {time: "3 décembre 2022", img: "/journal/prog/vincent3am.png", 
+    text: `Vincent est resté debout jusqu'à trois heures du matin pour finir le 
+    premier problème prèliminaire.`
+    },
+    {time: "12 décembre 2022", img: "/journal/prog/2ndPrelim.png", 
+    text: `Vincent et Carolyn ont finalement remis le deuxième problème préliminaire,
+    perdant leur santé mentale dans le processus.`
     }
 ]

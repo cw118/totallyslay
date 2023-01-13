@@ -1,7 +1,6 @@
 import styles from "../../styles/Archive.module.css";
 import { Tabs, Card, Timeline } from "flowbite-react";
 import { robEng, kioskEng, webEng, vidEng, progEng, robFr, kioskFr, webFr, vidFr, progFr } from "./variablesArchives.js";
-import { useRouter } from "next/router";
 import Typewrite from '../Typewrite';
 
 export default function Archive({ fr }) {
@@ -10,43 +9,38 @@ export default function Archive({ fr }) {
     const web = fr ? webFr : webEng;
     const vid = fr ? vidFr : vidEng;
     const prog = fr ? progFr : progEng;
+    const list = [{name: rob, title: "ROBOT"}, {name: kiosk, title: fr ? "KIOSQUE" : "KIOSk"}, {name: web, title: fr ? "SITE WEB" : "WEBSITE"}, 
+        {name: vid, title: fr ? "VIDÉO" : "VIDEO"}, {name: prog, title: fr ? "PROGRAMMATION" : "PROGRAMMING"}
+    ]
 
     return(
         <div className={styles.bg}>
         <div className={styles.intro}>
             <h1 className={styles.header}><Typewrite page={fr ? 'archivesFr' : 'archives'} /></h1>
-            <p>MOOHP&apos;s directors carefully curated a team of agents from 
+            <p>
+                {fr ? `Les directeurs de MOOHP ont soigneusement choisi une équipe d’agent 
+                de M.A.R.I. pour compléter la mission AVIA 2023. Les 18 membres 
+                constituant l’équipe se sont d’abord rencontrés au début du mois de 
+                septembre. Ensuite, des rencontres ont été tenues régulièrement deux 
+                fois par semaine afin d’explorer les talents individuels des agents 
+                et de déterminer la manière dont chacun pourra contribuer à la mission.`
+                :
+                `MOOHP's directors carefully curated a team of agents from 
                 the Marianopolis Academic Research Institute to complete
                 AVIA 2023. 18 members first convened in early September, 
                 then consistently twice a week, to explore their skillsets and 
-                discover how they could each contribute to such an important mission.</p>
+                discover how they could each contribute to such an important mission.`
+                }
+            </p>
         </div>
         <Tabs.Group aria-label="Tabs with icons" style="underline" className={styles.tabs}>
-            <Tabs.Item title="ROBOT">
-                {rob.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
-                )}
-            </Tabs.Item>
-            <Tabs.Item title="KIOSK">
-                {kiosk.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
-                )}
-            </Tabs.Item>
-            <Tabs.Item title="WEBSITE">
-                {web.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
-                )}
-            </Tabs.Item>
-            <Tabs.Item title="VIDEO">
-                {vid.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
-                )}
-            </Tabs.Item>
-            <Tabs.Item title="PROGRAMMING">
-                {prog.map((member, index) => 
-                    <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
-                )}
-            </Tabs.Item>
+            {list.map((el, index) => 
+                <Tabs.Item title={el.title} index={index}>
+                    {el.name.map((member, index) => 
+                        <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
+                    )}
+                </Tabs.Item>
+            )}
         </Tabs.Group>
         </div>
     )

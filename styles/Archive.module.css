@@ -23,13 +23,13 @@
     color: #66d9ff;
     font-size: 20px;
     letter-spacing: 5px;
+    transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
     font-weight: bolder;
+    margin-top: 5vh;
 }
 
 .tabs {
-    width: 100vw;
     justify-content: space-around;
-    padding-top: 2.3vh;
     padding-bottom: 4vh;
     border-style: hidden;
     color: #66d9ff;
@@ -40,8 +40,6 @@
     color: #4148A4;
     border-color: #66d9ff;
     border-radius: 30px;
-    translate: 0px -15px;
-    transition-duration: 0.5s;
     box-shadow: #66d9ff;
 }
 
@@ -87,6 +85,16 @@
     /* tablet */
     .timeline {
         width: 80%;
+    }
+}
+
+@media only screen and (min-width: 675) {
+    /* tabs styling */
+    .tabs {
+        padding-top: 5vh;
+    }
+    .tabs button {
+        margin-top: 0;
     }
 }
 
