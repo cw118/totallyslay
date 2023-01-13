@@ -9,7 +9,7 @@ export default function Archive({ fr }) {
     const web = fr ? webFr : webEng;
     const vid = fr ? vidFr : vidEng;
     const prog = fr ? progFr : progEng;
-    const list = [{name: rob, title: "ROBOT"}, {name: kiosk, title: fr ? "KIOSQUE" : "KIOSk"}, {name: web, title: fr ? "SITE WEB" : "WEBSITE"}, 
+    const list = [{name: rob, title: "ROBOT"}, {name: kiosk, title: fr ? "KIOSQUE" : "KIOSK"}, {name: web, title: fr ? "SITE WEB" : "WEBSITE"}, 
         {name: vid, title: fr ? "VIDÉO" : "VIDEO"}, {name: prog, title: fr ? "PROGRAMMATION" : "PROGRAMMING"}
     ]
 
@@ -35,7 +35,7 @@ export default function Archive({ fr }) {
         </div>
         <Tabs.Group aria-label="Tabs with icons" style="underline" className={styles.tabs}>
             {list.map((el, index) => 
-                <Tabs.Item title={el.title} index={index}>
+                <Tabs.Item title={el.title} key={index}>
                     {el.name.map((member, index) => 
                         <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
                     )}
