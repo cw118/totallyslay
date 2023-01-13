@@ -27,13 +27,15 @@ export default function Info({fr}) {
             </div>
             <div className={styles.button}>
                     <Link href={student}>
-                        <Button className={styles.singleButton}>
-                            <img src="/members/MARI.JPG" alt="Button to student page"/>
+                        <Button className={styles.singleButton1}>
+                            <p className={styles.linkTitle}>{fr ? `Promotion 2023` : `Class of 2023`}</p>
+                            <img src="/members/MARI.JPG" alt="M.A.R.I. school picture" className={styles.linkImg}></img>
                         </Button>
                     </Link><br></br>
                     <Link href={journal}>
-                        <Button className={styles.singleButton}>
-                            <img src="/members/MARI.JPG" alt="Button to student page"/>
+                        <Button className={styles.singleButton2}>
+                            <p className={styles.linkTitle}>{fr ? `Explorez la vie étudiante!` : `Explore Student Life!`}</p>
+                            <img src="/members/student-life.png" alt="M.A.R.I. school picture" className={styles.linkImg}></img>
                         </Button>
                     </Link>
             </div>
