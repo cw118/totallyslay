@@ -20,6 +20,15 @@
     margin: auto;
 }
 
+.singleButton {
+    background-color: white;
+    border-radius: 0;
+}
+
+.singleButton:hover {
+    background-color: black;
+}
+
 .slide1{
     background-image: url('/carousel/slide1_3.svg');
     height: 535px;

@@ -30,7 +30,7 @@ export default function Info({fr}) {
                         <Button className={styles.singleButton}>
                             <img src="/members/MARI.JPG" alt="Button to student page"/>
                         </Button>
-                    </Link>
+                    </Link><br></br>
                     <Link href={journal}>
                         <Button className={styles.singleButton}>
                             <img src="/members/MARI.JPG" alt="Button to student page"/>
