@@ -17,6 +17,10 @@
   font-weight: 700;
 }
 
+.intro {
+  font-size: 1.3rem;
+}
+
 .container, .imageContainer, .rowOne {
   border: solid 2px #fff;
   border-radius: 35px;
@@ -44,7 +48,7 @@
   row-gap: 2.5rem;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .pageWrapper {
     row-gap: 3rem;
   }

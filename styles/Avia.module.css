@@ -59,7 +59,7 @@
   width: 90vw;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .container model-viewer {
     height: 100%;
   }

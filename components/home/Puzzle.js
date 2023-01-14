@@ -1,10 +1,10 @@
 import { useState } from 'react';
+import useSessionStorage from '../Storage';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
 import PuzzlePiece from './PuzzlePiece';
 import styles from '../../styles/Moohp.module.css';
 import classNames from 'classnames';
-import { useRouter } from 'next/router';
 import MoohpHero from './MoohpHero';
 import MoohpIntro from './MoohpIntro';
 import { Button } from 'flowbite-react';
@@ -19,14 +19,19 @@ const useForceUpdate = () => {
 // end of force update hook
 
 const Puzzle = ({ fr }) => {
-  const router = useRouter();
-  const currentRoute = router.pathname;
+  /* Store booleans for whether puzzle is solved and moohp homepage is revealed
+   * in sessionStorage to persist state after refresh (N.B. sessionStorage is cleared
+   * after closing the tab, and is stored for a single tab at a time) 
+  */
+  const [puzzleSolved, setPuzzleSolved] = useSessionStorage('puzzleSolved', false);
+  const [revealed, setRevealed] = useSessionStorage('moohpRevealed', false);
 
-  const lang = currentRoute.includes('/fr') ? true : false;
+  // Setup dismiss puzzle instructions (onClick)
+  const [dismissed, setDismissed] = useState(false); // for fade out
+  const [hide, setHide] = useState(false); // for setting display: none to avoid blocking interactions w/ puzzle pieces
 
-  const [puzzleSolved, setPuzzleSolved] = useState(false);
-  const [revealed, setRevealed] = useState(false);
-
+  // Initialize puzzle: position and styling (id) of each piece
+  // positions of pieces are saved/detected as arrays
   const ids = ['one', 'two', 'three', 'four'];
   const solved = ['pOne', 'pTwo', 'pThree', 'pFour'];
   const initial = ['pThree', 'pOne', 'pFour', 'pTwo'];
@@ -42,10 +47,6 @@ const Puzzle = ({ fr }) => {
     }
     return true;
   }
-
-  const handleSolve = () => setPuzzleSolved(true);
-  
-  const hidePuzzleScreen = () => setRevealed(true);
 
   const [sourcePos, setsourcePos] = useState('');
 
@@ -64,9 +65,11 @@ const Puzzle = ({ fr }) => {
     setPositions(newPositions);
 
     if (isSolved(positions)) {
-      handleSolve();
+      setPuzzleSolved(true);
     }
   };
+
+  const hidePuzzleScreen = () => setRevealed(true);
 
   return (
     <>
@@ -85,7 +88,14 @@ const Puzzle = ({ fr }) => {
             <div id={styles.rightLogo}></div>
           </div>
         </div>
-        <h3 className={classNames('puzzleHint', { 'fade': puzzleSolved })}>{lang ? 'Résoudre la casse-tête!' : 'Solve the puzzle!'}<br />{lang ? 'Effectuez un appui long sur une pièce pour la bouger' : 'Press and hold a puzzle piece to drag'}</h3>
+        <div className={classNames('puzzleHint', { 'fade': dismissed, 'hide': hide })} onAnimationEnd={() => setHide(true)} onClick={() => setDismissed(true)}>
+          <h3><strong>{fr ? 'Appuyez sur une pièce du casse-tête jusqu\'à ce qu\'elle change de couleur, puis glissez et déposez-la sur une autre pièce pour échanger leurs places' : 'Hold a puzzle piece until it changes colour, then drag and drop on another piece to swap their places'}</strong></h3>
+          <h3><i>{fr ? 'Appuyez sur ce message pour le cacher' : 'Tap on this message to dismiss'}</i></h3>
+        </div>
+        <div className={classNames('puzzleHintMouse', { 'fade': dismissed, 'hide': hide })} onAnimationEnd={() => setHide(true)} onClick={() => setDismissed(true)}>
+          <h3><strong>{fr ? 'Cliquez sur une pièce du casse-tête, puis glissez et déposez-la sur une autre pièce pour échanger leurs places' : 'Click on a puzzle piece, then drag and drop on another piece to swap their places'}</strong></h3>
+          <h3><i>{fr ? 'Cliquez sur ce message pour le cacher' : 'Click on this message to dismiss'}</i></h3>
+        </div>
 
         <DndProvider backend={HTML5Backend}>
           <div className={classNames('puzzle', { 'fade': puzzleSolved })}>
@@ -97,7 +107,7 @@ const Puzzle = ({ fr }) => {
         <Button
           outline={true}
           gradientDuoTone="purpleToBlue"
-          className={classNames('puzzleChangeLang', { ' hide': puzzleSolved })}
+          className={classNames('puzzleChangeLang', { 'hide': puzzleSolved })}
         >
           <Link href={fr ? '/moohp' : '/fr/moohp'}>{fr ? 'English' : 'Français'}</Link>
         </Button>
