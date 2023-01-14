@@ -10,7 +10,7 @@ const Foooter = () => {
   const spy = currentRoute.includes('/moohp') ? true : false;
 
   return (
-    <Footer container={true} className={classNames('fixed bottom-0 footer rounded-none', { 'font-spy': spy })}>
+    <Footer container={true} className={classNames('footer px-2 py-4 rounded-none', { 'font-spy': spy })}>
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <Footer.Brand

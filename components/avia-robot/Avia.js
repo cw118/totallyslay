@@ -4,17 +4,32 @@ import GamePiece from "./GamePiece";
 import RedGamePiece from "./RedGamePiece";
 import Bee from "./Bee";
 import Typewrite from '../Typewrite';
+import { useContext } from 'react';
+import AppContext from '../AppContext';
 
 export default function Avia({ fr }) {
+  // "fetch"/use saved agent name
+  const [agentName, setAgentName] = useContext(AppContext);
+
     return (
         <>
           <h1 className={styles.header}><strong><Typewrite page={fr ? 'aviaFr' : 'avia'} /></strong></h1>
             <div className={styles.intro}>
+<<<<<<< HEAD
                 <img src="/logo/avia_logo.svg" alt="AVIA Logo" className={styles.aviaLogo}/>
                 <p>{fr ? 'La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l\'aide à MOOHP (organisation Marianopolis pour la protection des humains).' : 'The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.'}</p><br></br>
           <p>
             {fr ? 'Cette compétition pluridisciplinaire exige l\'implication de tous les agents chez MOOHP, intégrant l\'informatique, la technologie et l\'ingénierie avec les arts et lettres — les divisions de robot, de kiosque, de site web et de vidéo sont toutes indispensables à cette mission!' 
             : 'This multidisciplinary competition requires the involvement of all agents at MOOHP. Integrating computer science, technology, and engineering with visual arts and humanities; the Machinery, Manufacturing, Hacking, Virtual Network, Marketing and divisions are integral to this mission!'}
+=======
+                <img src="/logo/avia_logo.png" alt="AVIA Logo" className={styles.aviaLogo}/>
+                <p>
+                    <strong>{fr ? `Nous sommes contents que vous soyez là, agent ${agentName}! ` : `We're glad you made it, Agent ${agentName}! `}</strong>
+                    {fr ? `La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l'aide à MOOHP (organisation Marianopolis pour la protection des humains).` : `The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.`}
+                </p><br></br>
+          <p>
+            {fr ? 'Cette compétition pluridisciplinaire exige l\'implication de tous les agents chez MOOHP, incluant vous-même. Intégrant l\'informatique, la technologie et l\'ingénierie avec les arts et lettres — les divisions de robot, de kiosque, de site web et de vidéo sont toutes indispensables à cette mission!' : 'This multidisciplinary competition requires the involvement of all agents at MOOHP, including you. Integrating computer science, technology, and engineering with visual arts and humanities; the Machinery, Manufacturing, Hacking, Virtual Network, Marketing and divisions are integral to this mission!'}
+>>>>>>> 54ba32510d22789fba8fc8984682d8a65eb388e9
           </p>
                 <img src="/logo/crc_logo.svg" alt="CRC Logo" className={styles.crcLogo}/>
             </div>
@@ -65,11 +80,21 @@ export default function Avia({ fr }) {
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <p className={styles.textOnly}>{fr ? `Vous avez 5 minutes pour compléter chaque joute.` : `You have 5 minutes to complete each heat.`}</p>
             <p className={styles.textOnly}>{fr ? `Les agents MOOHP doivent se rassembler pendant trois jours, du 16 au 18 février, à l\’École Curé-Antoine-Labelle. On compte sur toi!` 
                 : `MOOHP agents are to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle. We\'re counting on you!`}</p>
             <h1 className={styles.vidHeader}>{fr ? `Pour plus d\'informations` : `For further information`}</h1>
             <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+=======
+            <p className={styles.textOnly}>You have <strong>5 minutes</strong> to complete each heat/mission. <br></br>MOOHP agents are to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle. We&apos;re counting on you!</p>
+            <div className={styles.container}>
+                <div className={styles.infoContainer}>
+                    <p className={styles.info}>video intro</p>
+                </div>
+                <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            </div>
+>>>>>>> 54ba32510d22789fba8fc8984682d8a65eb388e9
         </>
     )
 }

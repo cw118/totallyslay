@@ -1,6 +1,6 @@
 import Script from 'next/script';
 
-const GameField = () => {
+const RobotArm = () => {
   return (
     <>
       <Script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></Script>
@@ -13,4 +13,4 @@ const GameField = () => {
   );
 }
 
-export default GameField;
+export default RobotArm;

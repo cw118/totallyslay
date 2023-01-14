@@ -3,18 +3,27 @@ import styles from "../../styles/agent.module.css";
 import { engM, frM } from "./variablesMembers.js";
 import { useRouter } from "next/router";
 import Typewrite from '../Typewrite';
+import { useContext } from 'react';
+import AppContext from '../AppContext';
 
-export default function Agents(){
+export default function Agents() {
+    // "fetch"/use saved agent name
+    const [agentName, setAgentName] = useContext(AppContext);
+    
     const router = useRouter();
     const currentRoute = router.pathname;
-    const lang = currentRoute.includes('/fr') ? 'fr' : '';
-    const students = lang ? frM : engM;
+    const fr = currentRoute.includes('/fr') ? 'fr' : '';
+    const students = fr ? frM : engM;
 
     return (
         <div className={styles.bg}>
             <h1 className={styles.title}>
                 <b><Typewrite page='agents' /></b>
             </h1>
+            <p className={styles.intro}>
+                {fr ? `Une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour partir en mission avec vous, agent ${agentName}. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`
+                    : `A team of 18 MOOHP agents were carefully selected for this mission alongside you, Agent ${agentName}. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters.`}
+            </p>
             {students.map((member, index) => 
                 <FlipImg key={index} src={member.src} name={member.name} 
                     club={member.club} age={member.age} 
@@ -30,7 +39,7 @@ export default function Agents(){
 function FlipImg(props) {
     const router = useRouter();
     const currentRoute = router.pathname;
-    const lang = currentRoute.includes('/fr') ? 'fr' : '';
+    const fr = currentRoute.includes('/fr') ? 'fr' : '';
     return (
         <div className={styles.div}>
             <div className={styles.flipCard}>
@@ -41,22 +50,22 @@ function FlipImg(props) {
                     <div className={styles.flipCardBack}>
                         <h1>{props.name}</h1>
                         <h2>
-                            {lang ? `Agent ${props.year} - MOOHP` : `${props.year} Agent - MOOHP`}
+                            {fr ? `Agent ${props.year} - MOOHP` : `${props.year} Agent - MOOHP`}
                         </h2>
                         <p>
-                            {lang ? `Nom de code: ${props.code}` : `Codename: ${props.code}`}
+                            {fr ? `Nom de code: ${props.code}` : `Codename: ${props.code}`}
                         </p>
                         <p>
-                            {lang ? `Âge: ${props.age}` : `Age: ${props.age}`}
+                            {fr ? `Âge: ${props.age}` : `Age: ${props.age}`}
                         </p>
                         <p>
-                            {lang ? `Taille: ${props.height}` : `Height: ${props.height}`}
+                            {fr ? `Taille: ${props.height}` : `Height: ${props.height}`}
                         </p>
                         <p>
-                            {lang ? `Spécialisation: ${props.specialty}` : `Specialty: ${props.specialty}`}
+                            {fr ? `Spécialisation: ${props.specialty}` : `Specialty: ${props.specialty}`}
                         </p>
                         <p>
-                            {lang ? `Département: ${props.club}` : `Department: ${props.club}`}
+                            {fr ? `Département: ${props.club}` : `Department: ${props.club}`}
                         </p>
                         <p>MB type: {props.mbti}</p>
                         <p>Gadget: {props.gadget}</p>

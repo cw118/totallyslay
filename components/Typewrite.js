@@ -7,13 +7,14 @@ const pageTexts = {
   'archives': 'MOOHP Archives',
   'archivesFr': 'Archives MOOHP',
   'robot': 'Robot',
-  'robotFr': 'Gadget',
 }
 
 const Typewrite = ({ page }) => {
   return <Typewriter
     onInit={(typewriter) => {
-      typewriter.typeString(`${pageTexts[page]}`)
+      typewriter.pauseFor(10)
+                .changeDelay(95)
+                .typeString(`${pageTexts[page]}`)
                 .start();
       }}
     />
