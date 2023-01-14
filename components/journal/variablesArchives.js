@@ -104,11 +104,11 @@ export const vidEng = [
 
 export const progEng = [
     {time: "December 3rd, 2022", img: "/journal/prog/vincent3am.png", 
-    text: `Vincent stayed up until 3am to finish the first preliminary problem.`
+    text: `Vincent stayed up until 3am to finish the second preliminary problem.`
     },
     {time: "December 12th, 2022", img: "/journal/prog/2ndPrelim.png", 
     text: `Vincent and Carolyn finally submitted the second preliminary 
-    problem, losing their sanity in the process`
+    problem, losing their sanity in the process.`
     }
 ]
 
@@ -233,7 +233,7 @@ export const vidFr = [
 export const progFr = [
     {time: "3 décembre 2022", img: "/journal/prog/vincent3am.png", 
     text: `Vincent est resté debout jusqu'à trois heures du matin pour finir le 
-    premier problème prèliminaire.`
+    deuxième problème prèliminaire.`
     },
     {time: "12 décembre 2022", img: "/journal/prog/2ndPrelim.png", 
     text: `Vincent et Carolyn ont finalement remis le deuxième problème préliminaire,

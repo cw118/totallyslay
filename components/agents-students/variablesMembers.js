@@ -14,10 +14,10 @@ export const engS = [
     {name: "Celia Shi", age: 18, year: "Second year", club:"Web Development", fun: "I'll never sing again. *starts singing*", src:"/members/Celia_S.JPG"},
     {name: "Sangeeta Vidyarthi", age : 18, year: "Second year", club:"Arduino and film", fun: "Screw the credits.", src:"/members/Sangeeta_S.JPG"},
     {name: "Zi Heng Wang", age: 18, year: "First year", club:"Arduino", fun: "It's okay, we have a fire extinguisher.", src:"/members/ZiHeng_S.JPG"},
-    {name: "Carolyn Wu", age: 18, year: "First year", club:"Web Development", fun: "What did you need help with?", src:"/members/Carolyn_S.JPG"},
+    {name: "Carolyn Wu", age: 18, year: "First year", club:"Web Development", fun: "I'll be your sanity keeper.", src:"/members/Carolyn_S.JPG"},
     {name: "Elisa Xue", age: 17, year: "First year", club:"Arduino", fun: "I just realized why fx stands for effects.", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "First year", club:"Arduino", fun: "Soldered a million times!", src:"/members/Jennifer_S.JPG"},
-    {name: "Dominique Paradis", age: "Confidential", year: "", club:"Confidential", fun: "*Censored*", src:"/members/Paradis_S.png"},
+    {name: "Dominique Paradis", age: "Confidential", year: "", club:"Confidential", fun: "That's okay if you want to be wrong.", src:"/members/Paradis_S.png"},
 ];
 
 export const frS = [
@@ -36,10 +36,10 @@ export const frS = [
     {name: "Celia Shi", age: 18, year: "Deuxième année", club:"Dévelopment web", fun: "Je ne chanterai plus jamais. *elle recommence de chanter*", src:"/members/Celia_S.JPG"},
     {name: "Sangeeta Vidyarthi", age: 18, year: "Deuxième année", club:"Arduino et film", fun: "Tant pis les crédits de la vidéo.", src:"/members/Sangeeta_S.JPG"},
     {name: "Zi Heng Wang", age: 18, year: "Première année", club:"Arduino", fun: "Tout va bien aller, nous avons un extincteur de feu.", src:"/members/ZiHeng_S.JPG"},
-    {name: "Carolyn Wu", age: 18, year: "First year", club:"Dévelopment web", fun: "Avec quoi avais-tu besoin d'aide?", src:"/members/Carolyn_S.JPG"},  
+    {name: "Carolyn Wu", age: 18, year: "First year", club:"Dévelopment web", fun: "Je serai la gardienne de ton bon sens.", src:"/members/Carolyn_S.JPG"},  
     {name: "Elisa Xue", age: 17, year: "Première année", club:"Arduino", fun: "Je viens de comprendre pourquoi fx signifie effets.", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "Première année", club:"Arduino", fun: "Soudé un million de fois!", src:"/members/Jennifer_S.JPG"},
-    {name: "Dominique Paradis", age: "Confidentiel", year: "Confidentiel", club:"Confidentiel", fun: "*Censuré*", src:"/members/Paradis_S.png"},
+    {name: "Dominique Paradis", age: "Confidentiel", year: "Confidentiel", club:"Confidentiel", fun: "C'est correct si tu veux avoir tort.", src:"/members/Paradis_S.png"},
 ];
 
 
