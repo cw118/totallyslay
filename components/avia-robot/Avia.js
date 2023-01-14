@@ -7,7 +7,7 @@ import Typewrite from '../Typewrite';
 import { useContext } from 'react';
 import AppContext from '../AppContext';
 
-export default function Avia({ fr }) {
+const Avia = ({ fr }) => {
   // "fetch"/use saved agent name
   const [agentName, setAgentName] = useContext(AppContext);
   const name = (agentName ? ' ' : '') + agentName;
@@ -65,4 +65,4 @@ export default function Avia({ fr }) {
     )
 }
 
-
+export default Avia;

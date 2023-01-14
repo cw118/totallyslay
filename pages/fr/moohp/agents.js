@@ -5,7 +5,7 @@ export default function frAgents() {
   return (
     <>
       <Meta title='Agents | MOOHP' description='' />
-      <Agents />
+      <Agents fr={true} />
     </>
   );
 }

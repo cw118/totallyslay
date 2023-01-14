@@ -15,7 +15,7 @@ const Robot = ({ fr }) => {
     <div className={styles.pageWrapper}>
       <h3 className={styles.title}><Typewrite page='robot' /></h3>
       <p className={styles.intro}>
-        {fr ? `Agent${name}, voici toutes les informations dont vous aurez besoin sur le robot de MOOHP—il sera crucial pour l'accomplissement de la mission AVIA.` : `Agent${name}, here's all the information you'll need on the MOOHP robot—it'll be crucial to the completion of mission AVIA.`}
+        {fr ? `Agent${name}, voici toutes les informations dont vous aurez besoin sur le robot de MOOHP — il sera crucial pour l'accomplissement de la mission AVIA.` : `Agent${name}, here's all the information you'll need on the MOOHP robot—it'll be crucial to the completion of mission AVIA.`}
       </p>
       <div className={styles.rowOne}>
         <RobotBase />

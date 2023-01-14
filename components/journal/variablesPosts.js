@@ -1,4 +1,4 @@
-export const eng = [
+export const engPosts = [
     {author: 'Zoe Hadziaras', date: 'January 6th, 2023', avatar:'/journal/avatars/zoe.png', status: "away", src: '/journal/post-images/sofia-zoe.png',
     user: "messmaker_official", hashtags: 'TotallyTubbies', commenter: 'Sofia Del Raso', comment: 'I think this is my sign to go bald', likes: '13',
     caption: 'Laa-Laa and Dipsy'
@@ -8,7 +8,7 @@ export const eng = [
     caption: 'Celia keeps hitting us with the microphone'
     },
     {author: 'Celia Shi', date: 'January 5th, 2023', avatar:'/journal/avatars/celia.png', status: "online", src: '/journal/post-images/school-pic.png',
-    user: "username", hashtags: 'HumbleByKendrickLamar', commenter: 'Carolyn Wu', comment: 'You look so happy though', likes: 5,
+    user: "tallish_singer", hashtags: 'HumbleByKendrickLamar', commenter: 'Carolyn Wu', comment: 'You look so happy though', likes: 5,
     caption: 'I thought I was tall but they bumped me down to the middle row :(',
     },
     {author: 'Vincent Ly', date: 'January 5th, 2023', avatar:'/journal/avatars/vincent.png', status: "busy", src: '/journal/post-images/3spies.png',
@@ -41,7 +41,7 @@ export const eng = [
     }
 ]
 
-export const fr = [
+export const frPosts = [
     {author: 'Zoe Hadziaras', date: '6 janvier 2023', avatar:'/journal/avatars/zoe.png', status: "away", src: '/journal/post-images/sofia-zoe.png',
     user: "messmaker_official", hashtags: 'TotalementTubbies', commenter: 'Sofia Del Raso', comment: 'Je pense que c\'est mon signe de chauver ma tête', likes: 13,
     caption: 'Laa-Laa et Dipsy'
@@ -51,7 +51,7 @@ export const fr = [
     caption: 'Celia n\'arrête pas de nous frapper avec le microphone'
     },
     {author: 'Celia Shi', date: 'January 5th, 2023', avatar:'/journal/avatars/celia.png', status: "online", src: '/journal/post-images/school-pic.png',
-    user: "username", hashtags: 'HumbleParKendrickLamar', commenter: 'Carolyn Wu', comment: 'Mais t\'as l\'air tellement contente', likes: 5,
+    user: "tallish_singer", hashtags: 'HumbleParKendrickLamar', commenter: 'Carolyn Wu', comment: 'Mais t\'as l\'air tellement contente', likes: 5,
     caption: 'Je croyais que j\'étais grande mais ils m\'ont placée au rangée du milieu :(',
     },
     {author: 'Vincent Ly', date: 'January 5th, 2023', avatar:'/journal/avatars/vincent.png', status: "busy", src: '/journal/post-images/3spies.png',
@@ -80,6 +80,6 @@ export const fr = [
     },
     {author: 'Isabella Hensley', date: 'November 13th, 2022', avatar:'/journal/avatars/isabella.png', status: "offline", src: '/journal/post-images/cabbage.png',
     user: "british_person123", hashtags: 'végane', commenter: 'Sofia Del Raso', comment: 'C\'est moi qui a gagné!!', likes: 15,
-    caption: 'J\'ai gagné des billets au premier rang à un match de chouxballe! (Andrea a gagné).'
+    caption: 'J\'ai gagné des billets au premier rang à un match de "chouxballe"!! (Andrea a gagné).'
     }
 ]

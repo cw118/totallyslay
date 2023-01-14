@@ -251,12 +251,22 @@
     font-size: 0.95rem;
     letter-spacing: 0.4px;
     text-decoration: underline;
-    color: #fff;
     transition: color 0.3s;
+    animation: 1.2s ease-out alternate-reverse infinite colorPulse;
   }
 
   .popUpLink:hover {
-    color: #99e6ff;
+    color: #99e6ff !important;
+    font-weight: 800;
+  }
+
+  @keyframes colorPulse {
+    0% {
+      color: #000;
+    }
+    100% {
+      color: #fff;
+    }
   }
   
   .puzzle {

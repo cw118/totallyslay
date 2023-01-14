@@ -19,6 +19,7 @@
 
 .intro {
   font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .container, .imageContainer, .rowOne {
@@ -61,6 +62,10 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
   }
+
+  .intro {
+    font-size: 1.45rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -77,6 +82,10 @@
 
   .rowOne model-viewer {
     height: 100%;
+  }
+
+  .intro {
+    font-size: 1.6rem;
   }
 }
 

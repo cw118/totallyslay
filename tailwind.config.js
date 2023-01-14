@@ -8,32 +8,15 @@ module.exports = {
   plugins: [
     require("flowbite/plugin")
   ],
-  theme: { // see https://tailwindcss.com/docs/theme for more info on customization
+  theme: {
     colors: {
-    //   'blue': '#1fb6ff',
       'dark-purple': '#4148a4',
-    //   'pink': '#ff49db',
-    //   'orange': '#ff7849',
-    //   'green': '#13ce66',
-    //   'yellow': '#ffc82c',
-    //   'gray-dark': '#273444',
-    //   'gray': '#8492a6',
-    //   'gray-light': '#d3dce6',
     },
     fontFamily: {
       sans: ['Irish Grover', 'sans-serif'],
       spy: ['Rajdhani', 'serif'],
       kiwi: ['Kiwi Maru', 'serif'],
-      verdana: ['Verdana']
+      verdana: ['Verdana', 'sans-serif']
     },
-    // extend: {
-    //   spacing: {
-    //     '128': '32rem',
-    //     '144': '36rem',
-    //   },
-    //   borderRadius: {
-    //     '4xl': '2rem',
-    //   }
-    // }
   },
 };
