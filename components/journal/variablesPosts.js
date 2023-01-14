@@ -12,15 +12,15 @@ export const eng = [
     caption: 'I thought I was tall but they bumped me down to the middle row :(',
     },
     {author: 'Vincent Ly', date: 'January 5th, 2023', avatar:'/journal/avatars/vincent.png', status: "busy", src: '/journal/post-images/3spies.png',
-    user: "losingmysanity_", hashtags: 'MrWorldwide', commenter: 'Adamn Abbs', comment: 'Who put perfume on?', likes: 11,
+    user: "losingmysanity_", hashtags: 'MrWorldwide', commenter: 'Adam Abbas', comment: 'Who put perfume on?', likes: 11,
     caption: 'Night Vision sunglasses are locked and loaded.'
     },
-    {author: 'Andrea Abou-Haidar', date: 'January 5th, 2023', avatar:'/journal/avatars/', status: "online", src: '/journal/post-images/lunch.png',
-    user: "acrobatics_IDK WHAT TO PUT", hashtags: 'hashtag', commenter: 'Sangeeta Vidyarthi', comment: 'OMG! Is this at MOOH-', likes: 'x',
+    {author: 'Andrea Abou-Haidar', date: 'January 5th, 2023', avatar:'/journal/avatars/andrea.png', status: "online", src: '/journal/post-images/lunch.png',
+    user: "not_that_short", hashtags: 'hashtag', commenter: 'Sangeeta Vidyarthi', comment: 'OMG! Is this at MOOH-', likes: 'x',
     caption: 'Lunch in a totally secret location after some top secret work ;)'
     },
-    {author: 'Isabella Hensley', date: 'January 5th, 2023', avatar:'/journal/avatars/isabella.png', status: "offline", src: '/journal/post-images/spies.png',
-    user: "british_person123", hashtags: 'hashtag', commenter: 'commenter', comment: 'comment', likes: 'x',
+    {author: 'Audrey Dumais', date: 'January 5th, 2023', avatar:'/journal/avatars/audrey.png', status: "offline", src: '/journal/post-images/spies.png',
+    user: "wall_hugger", hashtags: 'hashtag', commenter: 'commenter', comment: 'comment', likes: 'x',
     caption: 'caption'
     },
     {author: 'Sofia Del Raso', date: 'December 20th, 2022', avatar:'/journal/avatars/sofia.png', status: "online", src: '/journal/post-images/appa-funeral.png',
@@ -31,7 +31,7 @@ export const eng = [
     user: "emu.lisa", hashtags: 'hashtag', commenter: 'commenter', comment: 'comment', likes: 'x',
     caption: 'caption'
     },
-    {author: 'Isabella Hensley', date: 'JSP QD', avatar:'/journal/avatars/isabella.png', status: "offline", src: '/journal/post-images/baldcap.png',
+    {author: 'Isabella Hensley', date: 'November 16th, 2022', avatar:'/journal/avatars/isabella.png', status: "offline", src: '/journal/post-images/baldcap.png',
     user: "british_person123", hashtags: 'hashtag', commenter: 'commenter', comment: 'comment', likes: 'x',
     caption: 'caption'
     },
@@ -74,7 +74,7 @@ export const fr = [
     user: "emu.lisa", hashtags: 'hashtag', commenter: 'commenter', comment: 'comment', likes: 'x',
     caption: 'caption'
     },
-    {author: 'Isabella Hensley', date: 'JSP QD', avatar:'/journal/avatars/isabella.png', status: "offline", src: '/journal/post-images/baldcap.png',
+    {author: 'Isabella Hensley', date: '16 novembre 2022', avatar:'/journal/avatars/isabella.png', status: "offline", src: '/journal/post-images/baldcap.png',
     user: "british_person123", hashtags: 'hashtag', commenter: 'commenter', comment: 'comment', likes: 'x',
     caption: 'caption'
     },

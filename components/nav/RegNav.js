@@ -16,10 +16,10 @@ const RegNav = () => {
 
   const linkCounterparts = {
     '/': '/fr',
-    '/journal': '/fr/journal',
+    '/student-life': '/fr/vie-etudiante',
     '/students': '/fr/etudiants',
     '/fr': '/',
-    '/fr/journal': '/journal',
+    '/fr/vie-etudiante': '/student-life',
     '/fr/etudiants': '/students',
   }
 
@@ -54,8 +54,8 @@ const RegNav = () => {
         </Link>
       </div>
       <Navbar.Collapse className='navSecondCollapse'>
-        <Navbar.Link href='/students' className={currentRoute === '/students' || currentRoute === '/fr/etudiants' ? 'navActive' : ''}>{lang ? 'Étudiants' : 'Students'}</Navbar.Link>
-        <Navbar.Link href='/journal' className={currentRoute === '/journal' || currentRoute === '/fr/journal' ? 'navActive' : ''}>Journal</Navbar.Link>
+        <Navbar.Link href={lang ? '/fr/etudiants' : '/students'} className={currentRoute === '/students' || currentRoute === '/fr/etudiants' ? 'navActive' : ''}>{lang ? 'Étudiants' : 'Students'}</Navbar.Link>
+        <Navbar.Link href={lang ? '/fr/vie-etudiante' : '/student-life'} className={currentRoute === '/student-life' || currentRoute === '/fr/vie-etudiante' ? 'navActive' : ''}>{lang ? 'Vie étudiante' : 'Student Life'}</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

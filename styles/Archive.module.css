@@ -1,3 +1,7 @@
+.bg {
+    background: url(/backgrounds/gridBlank.svg);
+}
+
 .header {
     font-size: 60px;
     font-weight: bold;
@@ -17,14 +21,15 @@
     padding: 1.5vh 3vw;
     border: 3px #66d9ff solid;
     color: #66d9ff;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 5px;
+    transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
+    font-weight: bolder;
+    margin-top: 5vh;
 }
 
 .tabs {
-    width: 100vw;
     justify-content: space-around;
-    padding-top: 2.3vh;
     padding-bottom: 4vh;
     border-style: hidden;
     color: #66d9ff;
@@ -35,7 +40,7 @@
     color: #4148A4;
     border-color: #66d9ff;
     border-radius: 30px;
-    transition-duration: 0.5s;
+    box-shadow: #66d9ff;
 }
 
 .card {
@@ -63,7 +68,7 @@
 
 .time {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .img {
@@ -80,6 +85,16 @@
     /* tablet */
     .timeline {
         width: 80%;
+    }
+}
+
+@media only screen and (min-width: 675) {
+    /* tabs styling */
+    .tabs {
+        padding-top: 5vh;
+    }
+    .tabs button {
+        margin-top: 0;
     }
 }
 

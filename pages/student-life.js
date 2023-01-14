@@ -2,11 +2,11 @@ import Meta from '../components/Meta';
 import Post from '../components/journal/Post.js';
 import styles from "../styles/Post.module.css";
 
-export default function journal() {
+export default function studentLife() {
   return (
     <>
-      <Meta title='Journal | M.A.R.I.' description="The M.A.R.I. journal" />
-      <h1 className={styles.header}>Journal</h1>
+      <Meta title='Student Life | M.A.R.I.' description="M.A.R.I. student life" />
+      <h1 className={styles.header}>Student Life</h1>
       <Post />
     </>
   );

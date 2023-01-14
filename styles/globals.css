@@ -23,6 +23,20 @@
     flex-direction: column;
   }
 
+  /* for active tab on archives page (needs to be here to 
+     override default active tab styles) */
+  button[aria-selected="true"].active {
+    background-color: #66d9ff;
+    color: #4148A4;
+    border-color: #66d9ff;
+    border-radius: 30px;
+    box-shadow: #66d9ff;
+  }
+
+  .invertedLogo img {
+    filter: grayscale(1) invert(1);
+  }
+
   .invertedLogo img {
     filter: grayscale(1) invert(1);
   }
@@ -32,7 +46,7 @@
   }
 
   #regNav {
-    background-color: #f8981d;
+    background-color: #FF7522;
   }
 
   #spyNav {
@@ -59,9 +73,9 @@
   }
 
   #regNav ul {
-    background-color: #f8981d;
+    background-color: #FF7522;
     width: 100vw;
-    outline: solid 20px #f8981d;
+    outline: solid 20px #FF7522;
   }
   
   #spyNav ul {
@@ -85,7 +99,7 @@
   }
 
   #regLogo, #hiddenLogo {
-    background-color: #f8981d;
+    background-color: #FF7522;
   }
 
   #spyLogo, #hiddenRegLogo {
@@ -394,7 +408,7 @@
   }
 
   .flowerBg {
-    background-image: url('/backgrounds/flower.svg');
+    background-image: url('/backgrounds/flowers.svg');
   }
 
   .screenCover {

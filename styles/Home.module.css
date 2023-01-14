@@ -1,4 +1,76 @@
-.container {
+.schoolContainer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 50%;
+    max-width: 90%;
+    padding: 30px 40px;
+    padding-top: 80px;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(255, 239, 206);
+    transform: rotate(-1deg);
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.linkTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    line-height: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px #FF8BD6;
+    z-index: 20;
+    letter-spacing: 1px;
+}
+
+.div {
+    display: grid;
+    width: auto;
+    margin: auto;
+}
+
+.linkImg {
+    opacity: 0.4;
+}
+
+.button {
+    margin: auto;
+}
+
+.singleButton1 {
+    background-color: #FF8BD6;
+    border-radius: 0;
+    position: relative;
+    text-align: center;
+    transform: rotate(-3deg);
+    width: 80vw;
+    margin-bottom: 30px;
+}
+
+.singleButton2 {
+    background-color: #D387FF;
+    border-radius: 0;
+    position: relative;
+    text-align: center;
+    transform: rotate(3deg);
+    width: 80vw;
+    margin-bottom: 30px;
+}
+
+.singleButton1:hover {
+    background-color: #FE05A2 ;
+    transform: rotate(5deg);
+}
+
+.singleButton2:hover {
+    background-color: #AC17FF;
+    transform: rotate(-4deg);
+}
+
+.linkTitle:hover{
+    color: white;
 }
 
 .slide1{
@@ -154,13 +226,23 @@
     .testimonialContainer {
         max-width: 90%;
     }
+    .SchoolContainer {
+        max-width: 90%;
+    }
     .jared {
         display: block;
+    }
+    .singleButton1 {
+        width: 500px;
+    }
+    .singleButton2 {
+        width: 500px;
     }
 }
 
 @media only screen and (min-width: 950px) {
     /* for desktop */
+    
     .slide1 { background-image: url('/carousel/slide1_1.svg'); height: 520px;}
     .slide2 { background-image: url('/carousel/slide2_1.svg'); height: 520px;}
     .slide3 { background-image: url('/carousel/slide3_1.svg'); height: 520px;}
@@ -203,8 +285,30 @@
     .testimonialContainer {
         max-width: 70%;
     }
+    .schoolContainer {
+        width: 100%;
+        height: 100%
+    }
     .jared {
         display: block;
+    }
+    .button{
+        display: grid;
+        width: 80%;
+    }
+    .div{
+        grid-template-columns: 80% 20%;
+        width: 70%;
+    }
+    .linkTitle {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .singleButton1 {
+        width: 200px;
+    }
+    .singleButton2 {
+        width: 200px;
     }
 }
 

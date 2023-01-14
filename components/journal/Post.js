@@ -29,7 +29,7 @@ function Info(props) {
             <div className={styles.postContainer}>
                 <div className={"space-y-1.2"}>
                     <div className={styles.author}>
-                        {props.author}
+                        <strong>{props.author}</strong>
                     </div>
                     <div className={styles.date}>
                         {props.date}
@@ -46,12 +46,8 @@ function Info(props) {
                         #{props.hashtags}
                     </p>
                     <div className={styles.commentContainer}>
-                        <p>
-                            <strong>{props.commenter}</strong>
-                        </p>
-                        <p>
-                            {props.comment}
-                        </p>
+                        <p className={styles.commenter}><strong>{props.commenter}</strong></p>
+                        <p>{props.comment}</p>
                     </div>
                     <p className={styles.likes}>
                         {props.likes} likes
