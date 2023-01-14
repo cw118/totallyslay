@@ -2,7 +2,7 @@ import GameField from "./GameField";
 import styles from "../../styles/Avia.module.css";
 import GamePiece from "./GamePiece";
 import RedGamePiece from "./RedGamePiece";
-import Bee from "./Bee";
+import Towers from "./Towers";
 import Typewrite from '../Typewrite';
 import { useContext } from 'react';
 import AppContext from '../AppContext';
@@ -46,7 +46,7 @@ const Avia = ({ fr }) => {
                     <p className={styles.info}>Game pieces are to be placed flat on each level of the following towers; the centre tower has 7 levels whilst its adjacent towers have 6 levels. To garner points and complete this mission successfully, agents must accumulate as many points as possible using the game pieces. </p>
                     <p className={styles.info}>Game pieces laid face-side up on the ground will award 35 points to the team corresponding with the colour facing upwards. Game pieces placed on tower levels collect points increasing along the height of towers</p>
                 </div>
-                <Bee />
+                <Towers />
             </div>
             <div className={styles.container}>
                 <RedGamePiece />
