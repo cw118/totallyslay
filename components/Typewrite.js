@@ -12,7 +12,8 @@ const pageTexts = {
 const Typewrite = ({ page }) => {
   return <Typewriter
     onInit={(typewriter) => {
-      typewriter.changeDelay(95)
+      typewriter.pauseFor(10)
+                .changeDelay(95)
                 .typeString(`${pageTexts[page]}`)
                 .start();
       }}

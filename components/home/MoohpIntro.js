@@ -1,12 +1,11 @@
 import { useState, useRef, useContext } from 'react';
 import AppContext from '../AppContext';
 import styles from '../../styles/Moohp.module.css';
-import Typewrite from '../Typewrite';
 import { Button } from 'flowbite-react';
 import useSessionStorage from '../Storage';
 import classNames from 'classnames';
 
-const MoohpIntro = ({ fr, revealed }) => {
+const MoohpIntro = ({ fr }) => {
   const [tempName, setTempName] = useState(''); // temporary name, updates on detected changes in input box
   const [agentName, setAgentName] = useContext(AppContext); // final submitted name saved "globally" in AppContext and sessionStorage
   const [inputWarn, setInputWarn] = useState(false); // warn user that they must type a name to be able to submit

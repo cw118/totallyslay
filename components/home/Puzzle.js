@@ -117,7 +117,7 @@ const Puzzle = ({ fr }) => {
       <div className={puzzleSolved ? '' : 'screenCover'}></div>
       <div className={puzzleSolved ? '' : 'hide'}>
         <MoohpHero />
-        <MoohpIntro fr={fr} revealed={revealed} />
+        <MoohpIntro fr={fr} />
       </div>
     </>
   );
