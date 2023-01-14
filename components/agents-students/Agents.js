@@ -8,7 +8,8 @@ import AppContext from '../AppContext';
 
 export default function Agents() {
     // "fetch"/use saved agent name
-    const [agentName, setAgentName] = useContext(AppContext);
+  const [agentName, setAgentName] = useContext(AppContext);
+  const name = (agentName ? ' ' : '') + agentName;
     
     const router = useRouter();
     const currentRoute = router.pathname;
@@ -21,8 +22,8 @@ export default function Agents() {
                 <b><Typewrite page='agents' /></b>
             </h1>
             <p className={styles.intro}>
-                {fr ? `Une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour partir en mission avec vous, agent ${agentName}. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`
-                    : `A team of 18 MOOHP agents were carefully selected for this mission alongside you, Agent ${agentName}. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters.`}
+                {fr ? `Une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour partir en mission avec vous, agent${name}. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`
+                    : `A team of 18 MOOHP agents were carefully selected for this mission alongside you, Agent${name}. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters.`}
             </p>
             {students.map((member, index) => 
                 <FlipImg key={index} src={member.src} name={member.name} 

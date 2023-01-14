@@ -89,7 +89,7 @@ const Puzzle = ({ fr }) => {
           </div>
         </div>
         <div className={classNames('puzzleHint', { 'fade': dismissed, 'hide': hide })} onAnimationEnd={() => setHide(true)} onClick={() => setDismissed(true)}>
-          <h3><strong>{fr ? 'Appuyez sur une pièce du casse-tête jusqu\'à ce qu\'elle change de couleur, puis glissez et déposez-la sur une autre pièce pour échanger leurs places' : 'Hold a puzzle piece until it changes colour, then drag and drop on another piece to swap their places'}</strong></h3>
+          <h3><strong>{fr ? 'Appuyez sur une pièce du casse-tête pendant 2 à 3 secondes, puis glissez et déposez-la sur une autre pièce pour échanger leurs places' : 'Hold a puzzle piece for 2–3 seconds, then drag and drop on another piece to swap their places'}</strong></h3>
           <h3><i>{fr ? 'Appuyez sur ce message pour le cacher' : 'Tap on this message to dismiss'}</i></h3>
         </div>
         <div className={classNames('puzzleHintMouse', { 'fade': dismissed, 'hide': hide })} onAnimationEnd={() => setHide(true)} onClick={() => setDismissed(true)}>

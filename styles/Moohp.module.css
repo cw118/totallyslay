@@ -176,6 +176,47 @@
   font-style: italic;
 }
 
+.bottomNav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.1rem;
+  border: solid 1px #fff;
+  border-radius: 7.5px;
+}
+
+/* use more selectors for higher specificity */
+.bottomNav h3.whereNext {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 7.5px;
+}
+
+.bottomNav button {
+  width: 100%;
+  padding: 0.2rem;
+  color: #66d9ff;
+  border: solid 2px #66d9ff;
+  background: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bottomNav button:hover {
+  background-color: #66d9ff;
+  color: #000;
+}
+
+.bottomNav button span {
+  font-size: 1.1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9rem;
+}
+
 @media screen and (min-width: 640px) {
   .hero {
     padding: 2.5rem 15vw 1.5rem;
@@ -231,6 +272,13 @@
   .welcomeAgent {
     font-size: 1.4rem;
     letter-spacing: 0.35px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.75rem;
+    column-gap: 0.75rem;
   }
 }
 
@@ -326,5 +374,12 @@
     font-size: 1.6rem;
     letter-spacing: 0.45px;
     padding: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
   }
 }

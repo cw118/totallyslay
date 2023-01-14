@@ -1,5 +1,6 @@
 import { useState, useRef, useContext } from 'react';
 import AppContext from '../AppContext';
+import Link from 'next/link';
 import styles from '../../styles/Moohp.module.css';
 import { Button } from 'flowbite-react';
 import useSessionStorage from '../Storage';
@@ -51,7 +52,6 @@ const MoohpIntro = ({ fr }) => {
           </div>
       </div>
       
-
       <p className={styles.moohpDesc}>{fr ? 'Ici, chez l\'organisation Marianopolis pour la protection des humains, nos espions (également des étudiants à temps plein à M.A.R.I.) travaillent sans relâche pour protéger le monde. L\'équipe, dirigée par l\'agent exécutif Paradis et menée par les agents en chef Abou-Haidar et Patel, est divisée en cinq départements' : 'Here at the Marianopolis Organisation of Human Protection, our double agents work tirelessly to keep the world safe. The team, managed by executive agent Paradis and led by head agents Abou-Haidar and Patel, is divided into the five following departments'}:</p>
       <ul className={styles.moohpDesc}>
         <li><strong>{fr ? 'Machinerie' : 'Machinery'}</strong>, {fr ? 'pour nos formidables constructeurs de robot' : 'for our totally awesome robot builders'}</li>
@@ -60,6 +60,16 @@ const MoohpIntro = ({ fr }) => {
         <li><strong>{fr ? 'Production' : 'Manufacturing/Production'}</strong>, {fr ? 'composé d\'experts en construction de kiosque' : 'composed of kiosk construction experts'}</li>
         <li><strong>{fr ? 'Marketing' : 'Marketing'}</strong>, {fr ? 'pour nos réalisateurs et producteurs vidéo' : 'for our video directors and producers'}</li>
       </ul>
+
+      <div className={styles.bottomNav}>
+        <h3 className={styles.whereNext}>{fr ? 'Où irez-vous ensuite' : 'Where to next'}, {fr ? 'agent' : 'Agent'}{agentName ? ` ${agentName}` : ''}?</h3>
+        <div className={styles.buttons}>
+          <Link href={fr ? '/fr/moohp/avia' : '/moohp/avia'}><Button>{fr ? 'En apprendre plus sur votre mission' : 'Learn more about your mission'}</Button></Link>
+          <Link href={fr ? '/fr/moohp/agents' : '/moohp/agents'}><Button>{fr ? 'Rencontrer l\'équipe de MOOHP' : 'Meet the MOOHP team'}</Button></Link>
+          <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}><Button>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Button></Link>
+          <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}><Button>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Button></Link>
+        </div>
+      </div>
     </div>
   );
 }

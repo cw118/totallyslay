@@ -10,6 +10,7 @@ import AppContext from '../AppContext';
 export default function Avia({ fr }) {
   // "fetch"/use saved agent name
   const [agentName, setAgentName] = useContext(AppContext);
+  const name = (agentName ? ' ' : '') + agentName;
 
     return (
         <>
@@ -17,7 +18,7 @@ export default function Avia({ fr }) {
             <div className={styles.intro}>
                 <img src="/logo/avia_logo.png" alt="AVIA Logo" className={styles.aviaLogo}/>
                 <p>
-                    <strong>{fr ? `Nous sommes contents que vous soyez là, agent ${agentName}! ` : `We're glad you made it, Agent ${agentName}! `}</strong>
+                    <strong>{fr ? `Nous sommes contents que vous soyez là, agent${name}! ` : `We're glad you made it, Agent${name}! `}</strong>
                     {fr ? `La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l'aide à MOOHP (organisation Marianopolis pour la protection des humains).` : `The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.`}
                 </p><br></br>
           <p>
