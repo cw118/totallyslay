@@ -27,11 +27,17 @@ const MoohpIntro = ({ fr, revealed }) => {
   
   return (
     <div className={styles.intro}>
-      <h3>{revealed ? <Typewrite page={(fr ? 'moohpFr' : 'moohp')} /> : null}</h3>
+      <h3>{fr ? 'Bienvenue à MOOHP!' : 'Welcome to MOOHP!'}</h3>
       <div className={styles.jerryWelcome}>
         <img className={styles.compowderJerry} src='/jerry/compowder-jerry.svg' alt={fr ? 'Hologramme de Jerry dans le compowder' : 'Hologram of Jerry in the Compowder'} />
         
-        <div className={classNames(`${styles.welcomeAgent}`, { 'hide': !hideInitial })}></div>
+        <div className={classNames(`${styles.welcomeAgent}`, { 'hide': !hideInitial, 'quickFadeIn': hideInitial })}>
+          <p className={styles.personalizedGreeting}>
+            <strong>{fr ? `Bonjour, agent ${agentName}! ` : `Greetings, Agent ${agentName}! `}</strong>
+            {fr ? `Heureux de vous voir parmi nous. Venez faire un tour et prenez connaissance de MOOHP!` : `Glad to have you here. Take a look around and get to know MOOHP!`}
+          </p>
+          <p className={styles.jerrySignature}>{fr ? 'Cordialement, Jerry Lewis' : 'Best regards, Jerry Lewis'}</p>
+        </div>
         
         <div className={classNames(`${styles.initialWelcome}`, { 'fade': agentName, 'hide': agentName && hideInitial })} onAnimationEnd={() => setHideInitial(true)}>
             <p className={styles.initialGreeting}>{fr ? 'Bonjour! Je suis Jerry Lewis, le fondateur de MOOHP: l\'organisation Marianopolis de la protection humaine. Vous devriez être la nouvelle recrue — comment vous appelez-vous?' : 'Greetings! I am Jerry Lewis, the founder of MOOHP: the Marianopolis Organization of Human Protection. You must be the new recruit—what is your name?'}</p>

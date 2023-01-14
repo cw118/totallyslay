@@ -347,6 +347,19 @@
     }
   }
 
+  .quickFadeIn {
+    animation: 0.3s linear 1 forwards fadeIn;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .pOne {
     grid-area: a;
     border-top: solid 1px #eee;

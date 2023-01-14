@@ -1,9 +1,6 @@
 import Typewriter from 'typewriter-effect';
 
 const pageTexts = {
-  'placeholder': ' ',
-  'moohp': 'Welcome to MOOHP!',
-  'moohpFr': 'Bienvenue à MOOHP!',
   'avia': 'Your Mission: AVIA 2023',
   'aviaFr': 'Votre mission: AVIA 2023',
   'agents': 'Agents',

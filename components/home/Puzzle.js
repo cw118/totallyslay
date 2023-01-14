@@ -107,7 +107,7 @@ const Puzzle = ({ fr }) => {
         <Button
           outline={true}
           gradientDuoTone="purpleToBlue"
-          className={classNames('puzzleChangeLang', { ' hide': puzzleSolved })}
+          className={classNames('puzzleChangeLang', { 'hide': puzzleSolved })}
         >
           <Link href={fr ? '/moohp' : '/fr/moohp'}>{fr ? 'English' : 'Français'}</Link>
         </Button>

@@ -79,7 +79,7 @@
 
 .hero {
   display: flex;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -90,9 +90,9 @@
   text-align: center;
 }
 
-.intro h3 {
+.intro > h3 {
   font-weight: 700;
-  font-size: 2.75rem;
+  font-size: 55px;
 }
 
 .moohpDesc {
@@ -164,12 +164,21 @@
 }
 
 .welcomeAgent {
+  font-size: 1.05rem;
+  padding: 1rem;
+  border: solid 1.5px #fff;
+  border-radius: 20px;
+  box-shadow: rgba(75, 203, 223, 0.349) 0px 7px 29px 0px;
+}
 
+.jerrySignature {
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 @media screen and (min-width: 640px) {
   .hero {
-    padding: 1.5rem 15vw;
+    padding: 2.5rem 15vw 1.5rem;
   }
 
   .initialWelcome {
@@ -180,9 +189,19 @@
   .inputGroup {
     row-gap: 0.7rem;
   }
+
+  .welcomeAgent {
+    font-size: 1.25rem;
+    letter-spacing: 0.3px;
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (min-width: 767px) {
+  .intro > h3 {
+    font-size: 65px;
+  }
+
   .initialWelcome {
     row-gap: 1rem;
   }
@@ -207,6 +226,11 @@
   .enterName span {
     font-size: 1rem;
     line-height: 1rem;
+  }
+
+  .welcomeAgent {
+    font-size: 1.4rem;
+    letter-spacing: 0.35px;
   }
 }
 
@@ -235,6 +259,11 @@
   .enterName span {
     font-size: 1.05rem;
     line-height: 1.05rem;
+  }
+
+  .welcomeAgent {
+    font-size: 1.5rem;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -291,5 +320,11 @@
   .inputName, .inputName::placeholder, .enterName span {
     font-size: 1.4rem;
     line-height: 1.4rem;
+  }
+
+  .welcomeAgent {
+    font-size: 1.6rem;
+    letter-spacing: 0.45px;
+    padding: 1.3rem;
   }
 }
