@@ -29,7 +29,7 @@ export const frS = [
     {name: "Audrey Dumais", age: 17, year: "Première année", club:"Dévelopment web", fun: "je lis un livre français ennuyant", src:"/members/Audrey_S.JPG"},
     {name: "Zoe Hadziaras", age: 18, year: "Première année", club:"Arduino", fun: "J'ai peur des rats.", src:"/members/Zoe_S.JPG"},
     {name: "Isabella Hensley", age: 18, year: "Deuxième année", club:"Arduino", fun: "Donne moi un marteau, je le réparerai.", src:"/members/Isabella_S.JPG"},
-    {name: "Victoria Hoang", age: 17, year: "Deuxième année", club:"Dévelopment web", fun: "pigeons can't fly", src:"/members/Victoria_S.JPG"},
+    {name: "Victoria Hoang", age: 18, year: "Deuxième année", club:"Dévelopment web", fun: "pigeons can't fly", src:"/members/Victoria_S.JPG"},
     {name: "Vincent Ly", age: 18, year: "Deuxième année", club:"Arduino et programmation", fun: "Si tu range les clous de mauvaise maniere, tu es foutu.", src:"/members/Vincent_S.JPG"},
     {name: "Nehna Patel", age: 18, year: "Deuxième année", club:"Construction", fun: "Je ne peux pas éternuer", src:"/members/Nehna_S.jpg"},
     {name: "Ruwa Qatmash", age: 17, year: "Première année", club:"Arduino", fun: "WD-40, c'est la vie!", src:"/members/Ruwa_S.JPG"},
@@ -109,7 +109,7 @@ export const engM = [
         building the robot and talking with my teammates even if 
         it meant that I had to sacrifice my sleep schedule.`
     },
-    {name: "Victoria Hoang", age: 17, year: "Senior", club:"Virtual network", src:"/members/Victoria_M.JPG", code: 
+    {name: "Victoria Hoang", age: 18, year: "Senior", club:"Virtual network", src:"/members/Victoria_M.JPG", code: 
         "Vi", height: "5'6/167cm", gadget: "Camera-clad pigeon", specialty: "Bee modeler", mbti: "INFP",
         text: `I learnt new and more efficient ways to build websites using
         React.js and Next.js. Making new friends and learning from 
@@ -273,7 +273,7 @@ export const frM = [
         coéquipiers, même si cela signifiait que je devais sacrifier 
         mes heures de sommeil.`
     },
-    {name: "Victoria Hoang", age: 17, year: "Sénior", club:"Réseau virtuel", src:"/members/Victoria_M.JPG", code: 
+    {name: "Victoria Hoang", age: 18, year: "Sénior", club:"Réseau virtuel", src:"/members/Victoria_M.JPG", code: 
         "Vi", height: "5'6/167cm", gadget: "Pigeon vêtu d'une caméra", specialty: "Modéliste d'abeille", mbti: "INFP",
         text: `J'ai appris de nouvelles méthodes plus efficaces pour créer 
         des sites Web à l'aide de React.js et Next.js. Le manque 
