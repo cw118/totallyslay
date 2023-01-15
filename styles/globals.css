@@ -46,7 +46,7 @@
   }
 
   #regNav {
-    background-color: #FF7522;
+    background-color: #ff521c;
   }
 
   #spyNav {
@@ -65,7 +65,7 @@
   }
 
   #regNav a:not(.navLogo) {
-    color: #000;
+    color: #fff;
   }
 
   #spyNav a:not(.navLogo) {
@@ -73,9 +73,9 @@
   }
 
   #regNav ul {
-    background-color: #FF7522;
+    background-color: #ff521c;
     width: 100vw;
-    outline: solid 20px #FF7522;
+    outline: solid 20px #ff521c;
   }
   
   #spyNav ul {
@@ -99,7 +99,7 @@
   }
 
   #regLogo, #hiddenLogo {
-    background-color: #FF7522;
+    background-color: #ff521c;
   }
 
   #spyLogo, #hiddenRegLogo {
@@ -256,13 +256,13 @@
   }
 
   .popUpLink:hover {
-    color: #99e6ff !important;
+    color: #1ac6ff !important;
     font-weight: 800;
   }
 
   @keyframes colorPulse {
     0% {
-      color: #000;
+      color: #66d9ff;
     }
     100% {
       color: #fff;
@@ -585,7 +585,7 @@
     }
 
     #regNav a:not(.navLogo):hover {
-      color: #fff;
+      color: #ffd8cc;
     }
 
     #spyNav a:not(.navLogo):hover {

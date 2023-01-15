@@ -13,8 +13,7 @@ export default function Info({fr}) {
                         est un collège privé situé à Westmount, Montréal. 
                         Nous offrons une variété de programmes pré-universitaires
                         dans le domaine des sciences sociales, des sciences et des 
-                        arts. Des certificats sont également offerts à nos étudiants 
-                        afin qu’ils puissent être d’autant plus impliqués dans les enjeux sociaux.` 
+                        arts. Des certificats sont également offerts à nos étudiants pour reconnaître leurs implications dans les enjeux sociaux."` 
                         :
                         `The Marianopolis Academic Research Institute (M.A.R.I.) is a
                         private english college located in Westmount, Montreal. We 

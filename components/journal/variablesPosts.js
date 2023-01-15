@@ -8,7 +8,7 @@ export const engPosts = [
     caption: 'Celia keeps hitting us with the microphone'
     },
     {author: 'Celia Shi', date: 'January 5th, 2023', avatar:'/journal/avatars/celia.png', status: "online", src: '/journal/post-images/school-pic.png',
-    user: "tallish_singer", hashtags: 'HumbleByKendrickLamar', commenter: 'Carolyn Wu', comment: 'You look so happy though', likes: 5,
+    user: "tallish_singer", hashtags: 'humbled', commenter: 'Carolyn Wu', comment: 'You look so happy though', likes: 5,
     caption: 'I thought I was tall but they bumped me down to the middle row :(',
     },
     {author: 'Vincent Ly', date: 'January 5th, 2023', avatar:'/journal/avatars/vincent.png', status: "busy", src: '/journal/post-images/3spies.png',
@@ -25,7 +25,7 @@ export const engPosts = [
     },
     {author: 'Sofia Del Raso', date: 'December 20th, 2022', avatar:'/journal/avatars/sofia.png', status: "online", src: '/journal/post-images/appa-funeral.png',
     user: "british_person123", hashtags: 'RIPAppa', commenter: 'Nehna Patel', comment: 'Who would do such a thing...', likes: 18,
-    caption: 'Not a good mo(u)rning. He may stay in our hearts, but not our basement.'
+    caption: 'Not a good mo(u)rning. Appa may stay in our hearts, but not our basement.'
     },
     {author: 'Elisa Xue', date: 'December 20th, 2022', avatar:'/journal/avatars/elisa.png', status: "away", src: '/journal/post-images/blond-yau.png',
     user: "emu.lisa", hashtags: 'funhaircuts', commenter: 'Adelina Badea', comment: 'My dream hairstyle', likes: 17,
@@ -43,32 +43,32 @@ export const engPosts = [
 
 export const frPosts = [
     {author: 'Zoe Hadziaras', date: '6 janvier 2023', avatar:'/journal/avatars/zoe.png', status: "away", src: '/journal/post-images/sofia-zoe.png',
-    user: "messmaker_official", hashtags: 'TotalementTubbies', commenter: 'Sofia Del Raso', comment: 'Je pense que c\'est mon signe de chauver ma tête', likes: 13,
+    user: "messmaker_official", hashtags: 'TotalementTubbies', commenter: 'Sofia Del Raso', comment: 'Je pense que c\'est le temps de me raser', likes: 13,
     caption: 'Laa-Laa et Dipsy'
     },
     {author: 'Yau Hong Chau', date: '6 janvier 2023', avatar:'/journal/avatars/yau.png', status: "offline", src: '/journal/post-images/camera.png',
-    user: "iwear_crocs", hashtags: 'clubdefilm', commenter: 'Victoria Hoang', comment: 'C\'est probablement sa façon de faire un "mic drop"', likes: 8,
+    user: "iwear_crocs", hashtags: 'clubDeFilm', commenter: 'Victoria Hoang', comment: 'C\'est probablement sa façon de faire un "mic drop"', likes: 8,
     caption: 'Celia n\'arrête pas de nous frapper avec le microphone'
     },
     {author: 'Celia Shi', date: 'January 5th, 2023', avatar:'/journal/avatars/celia.png', status: "online", src: '/journal/post-images/school-pic.png',
-    user: "tallish_singer", hashtags: 'HumbleParKendrickLamar', commenter: 'Carolyn Wu', comment: 'Mais t\'as l\'air tellement contente', likes: 5,
-    caption: 'Je croyais que j\'étais grande mais ils m\'ont placée au rangée du milieu :(',
+    user: "tallish_singer", hashtags: 'humbled', commenter: 'Carolyn Wu', comment: 'Mais tu avais l\'air tellement contente', likes: 5,
+    caption: 'Je croyais que j\'étais grande, mais ils m\'ont placée à la rangée du milieu :(',
     },
     {author: 'Vincent Ly', date: 'January 5th, 2023', avatar:'/journal/avatars/vincent.png', status: "busy", src: '/journal/post-images/3spies.png',
     user: "losingmysanity_", hashtags: 'MrWorldwide', commenter: 'Adam Abbas', comment: 'Qui a mis du parfum?', likes: 11,
     caption: 'Les lunettes à vision nocturne sont verrouillées et chargées.'
     },
     {author: 'Andrea Abou-Haidar', date: 'January 5th, 2023', avatar:'/journal/avatars/', status: "online", src: '/journal/post-images/lunch.png',
-    user: "acrobatics_IDK WHAT TO PUT", hashtags: 'topsecret', commenter: 'Sangeeta Vidyarthi', comment: 'Oh mon dieu, est-ce à MOOH-', likes: 19,
-    caption: 'Le dîner dans un endroit secret après du travail top secret ;)'
+    user: "acrobatics_IDK WHAT TO PUT", hashtags: 'topSecret', commenter: 'Sangeeta Vidyarthi', comment: 'Oh mon dieu, est-ce à MOOH-', likes: 19,
+    caption: 'Un dîner dans un endroit secret après avoir fait un travail top secret ;)'
     },
     {author: 'Audrey Dumais', date: 'January 5th, 2023', avatar:'/journal/avatars/audrey.png', status: "offline", src: '/journal/post-images/spies.png',
     user: "wall_hugger", hashtags: 'TotalementDesEspions', commenter: 'Ruwa Qatmash', comment: 'Comme nous sommes élégantes en complet!', likes: 11,
-    caption: 'Des espions dotés de lunettes de soleil en plastique à votre service'
+    caption: 'Des espionnes dotées de lunettes de soleil en plastique à votre service.'
     },
     {author: 'Sofia Del Raso', date: 'December 20th, 2022', avatar:'/journal/avatars/sofia.png', status: "online", src: '/journal/post-images/appa-funeral.png',
     user: "s.a.d.", hashtags: 'RIPAppa', commenter: 'Nehna Patel', comment: 'Qui ferait une telle chose...', likes: 18,
-    caption: 'Pas un bon matin. Il restera dans nos coeurs, mais pas dans notre espace de travail.'
+    caption: 'Ce n\'était pas un bon matin. Appa restera dans notre cœur, mais pas dans notre espace de travail.'
     },
     {author: 'Elisa Xue', date: 'December 20th, 2022', avatar:'/journal/avatars/elisa.png', status: "away", src: '/journal/post-images/blond-yau.png',
     user: "emu.lisa", hashtags: 'coiffuresAmusantes', commenter: 'Adelina Badea', comment: 'La coiffure de mes rêves', likes: 17,

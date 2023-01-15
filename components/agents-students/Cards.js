@@ -8,7 +8,7 @@ export default function Cards({ fr }) {
     return (
         <div>
             <h1 className={styles.title}>
-                {fr? "Étudiants et personel" : "Student Body and Staff"}
+                {fr? "Étudiants et personnel" : "Student Body and Staff"}
             </h1>
             <div className={styles.div}>
                 {students.map((member, index) => 

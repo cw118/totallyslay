@@ -40,7 +40,7 @@ const MoohpIntro = ({ fr }) => {
         </div>
         
         <div className={classNames(`${styles.initialWelcome}`, { 'fade': agentName, 'hide': agentName && hideInitial })} onAnimationEnd={() => setHideInitial(true)}>
-            <p className={styles.initialGreeting}>{fr ? 'Bonjour! Je suis Jerry Lewis, le fondateur de MOOHP: l\'organisation Marianopolis de la protection humaine. Vous devriez être la nouvelle recrue — comment vous appelez-vous?' : 'Greetings! I am Jerry Lewis, the founder of MOOHP: the Marianopolis Organization of Human Protection. You must be the new recruit—what is your name?'}</p>
+            <p className={styles.initialGreeting}>{fr ? 'Bonjour! Je suis Jerry Lewis, le fondateur de MOOHP: l\'Organisation Marianopolis de la Protection Humaine. Vous devriez être la nouvelle recrue. Comment vous appelez-vous?' : 'Greetings! I am Jerry Lewis, the founder of MOOHP: the Marianopolis Organization of Human Protection. You must be the new recruit. What is your name?'}</p>
             <div className={styles.inputGroup}>
             <input ref={inputRef} className={classNames(`${styles.inputName}`, { 'inputWarn': inputWarn })} type='text' onChange={(e) => setTempName(e.target.value)}
                 placeholder={inputWarn ? (fr ? 'Veuillez entrer un nom' : 'Please enter a name') : (fr ? 'Entrez un nom de code' : 'Type a codename')} />
@@ -52,11 +52,11 @@ const MoohpIntro = ({ fr }) => {
           </div>
       </div>
       
-      <p className={styles.moohpDesc}>{fr ? 'Ici, chez l\'organisation Marianopolis pour la protection des humains, nos espions (également des étudiants à temps plein à M.A.R.I.) travaillent sans relâche pour protéger le monde. L\'équipe, dirigée par l\'agent exécutif Paradis et menée par les agents en chef Abou-Haidar et Patel, est divisée en cinq départements' : 'Here at the Marianopolis Organisation of Human Protection, our double agents work tirelessly to keep the world safe. The team, managed by executive agent Paradis and led by head agents Abou-Haidar and Patel, is divided into the five following departments'}:</p>
+      <p className={styles.moohpDesc}>{fr ? 'Ici, chez l\'Organisation Marianopolis pour la Protection Humaine, nos espions (également des étudiants à temps plein à M.A.R.I.) travaillent sans relâche pour protéger le monde. L\'équipe, dirigée par l\'agent exécutif Paradis et menée par les agents en chef Abou-Haidar et Patel, est divisée en cinq départements' : 'Here at the Marianopolis Organisation of Human Protection, our double agents work tirelessly to keep the world safe. The team, managed by executive agent Paradis and led by head agents Abou-Haidar and Patel, is divided into the five following departments'}:</p>
       <ul className={styles.moohpDesc}>
         <li><strong>{fr ? 'Machinerie' : 'Machinery'}</strong>, {fr ? 'pour nos formidables constructeurs de robot' : 'for our totally awesome robot builders'}</li>
-        <li><strong>{fr ? 'Réseau virtuel' : 'Virtual Network'}</strong>, {fr ? 'qui gère nos sites web (comme celui-ci)' : 'which keeps our websites (like this one) running'}</li>
-        <li><strong>{fr ? 'Piratage informatique' : 'Hacking'}</strong>, {fr ? 'où nos programmeurs écrivent du code afin de résoudre des problèmes (de façon éthique!)' : 'where our programmers solve problems (ethically!) with code'}</li>
+        <li><strong>{fr ? 'Réseau virtuel' : 'Virtual Network'}</strong>, {fr ? 'qui gère notre site web ' : 'which keeps our website running'}</li>
+        <li><strong>{fr ? 'Piratage informatique' : 'Hacking'}</strong>, {fr ? 'où nos programmeurs créent des programmes qui s\'attaquent à des problèmes informatiques (de façon éthique!)' : 'where our programmers solve problems (ethically!) with code'}</li>
         <li><strong>{fr ? 'Production' : 'Manufacturing/Production'}</strong>, {fr ? 'composé d\'experts en construction de kiosque' : 'composed of kiosk construction experts'}</li>
         <li><strong>{fr ? 'Marketing' : 'Marketing'}</strong>, {fr ? 'pour nos réalisateurs et producteurs vidéo' : 'for our video directors and producers'}</li>
       </ul>
@@ -69,6 +69,7 @@ const MoohpIntro = ({ fr }) => {
           <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}><Button>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Button></Link>
           <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}><Button>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Button></Link>
         </div>
+        <Link href={fr ? '/fr' : '/'}><Button className={styles.mariBtn}>{fr ? 'Retourner à M.A.R.I.' : 'Return to M.A.R.I.'}</Button></Link>
       </div>
     </div>
   );

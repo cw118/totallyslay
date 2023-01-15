@@ -217,6 +217,19 @@
   row-gap: 0.9rem;
 }
 
+.bottomNav .mariBtn {
+  width: 100%;
+  padding: 0.2rem;
+  border: solid 2px #ff8bd6;
+  color: #ff8bd6;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bottomNav .mariBtn:hover {
+  background-color: #ff8bd6;
+  color: #000;
+}
+
 @media screen and (min-width: 640px) {
   .hero {
     padding: 2.5rem 15vw 1.5rem;
@@ -278,7 +291,7 @@
     font-size: 1.4rem;
   }
 
-  .buttons button span {
+  .buttons button span, .bottomNav .mariBtn span {
     font-size: 1.2rem;
     padding: 0.9rem;
   }
@@ -390,10 +403,10 @@
   }
 
   .buttons button {
-    padding: 0
+    padding: 0;
   }
 
-  .buttons button span {
+  .buttons button span, .bottomNav .mariBtn span {
     font-size: 1.4rem;
   }
 }

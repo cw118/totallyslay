@@ -15,7 +15,7 @@ export default function Agents({ fr }) {
     return (
         <div className={styles.bg}>
             <h1 className={styles.title}>
-                <b><Typewrite page='agents' /></b>
+                <strong><Typewrite page='agents' /></strong>
             </h1>
             <p className={styles.intro}>
                 {fr ? `Une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour partir en mission avec vous, agent${name}. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`

@@ -4,11 +4,11 @@ export const engS = [
     {name: "Adelina Badea", age: 17, year: "First year", club:"Arduino", fun: "ADAM!!!", src:"/members/Adelina_S.JPG"},
     {name: "Yau Hong Chau", age: 18, year: "Second year", club:"Film", fun: "I'm so cold.", src:"/members/Yau_S.JPG"},
     {name: "Sofia Del Raso", age: 19, year: "Second year", club:"Arduino", fun: "I got a way with the screws.", src:"/members/Sofia_S.JPG"},
-    {name: "Audrey Dumais", age: 17, year: "First year", club:"Web Development",fun: "just reading a boring French book.", src:"/members/Audrey_S.JPG"},
+    {name: "Audrey Dumais", age: 17, year: "First year", club:"Web Development",fun: "Just reading a boring French book.", src:"/members/Audrey_S.JPG"},
     {name: "Zoe Hadziaras", age: 18, year: "First year", club:"Arduino", fun: "I'm scared of the rats.", src:"/members/Zoe_S.JPG"},
     {name: "Isabella Hensley", age: 18, year: "Second year", club:"Arduino", fun: "Give me a hammer, I'll fix that.", src:"/members/Isabella_S.JPG"},
-    {name: "Victoria Hoang", age: 18, year: "Second year", club:"Web Development", fun: "pigeons can't fly", src:"/members/Victoria_S.JPG"},
-    {name: "Vincent Ly", age: 18, year: "Second year", club:"Arduino and programming", fun: "If you put the screw in the wrong box, you're screwed.", src:"/members/Vincent_S.JPG"},
+    {name: "Victoria Hoang", age: 18, year: "Second year", club:"Web Development", fun: "Pigeons can't fly", src:"/members/Victoria_S.JPG"},
+    {name: "Vincent Ly", age: 18, year: "Second year", club:"Arduino and programming", fun: "I am losing my sanity.", src:"/members/Vincent_S.JPG"},
     {name: "Nehna Patel", age: 18, year: "Second year", club:"Construction", fun: "I can't sneeze.", src:"/members/Nehna_S.jpg"},
     {name: "Ruwa Qatmash", age: 17, year: "First year", club:"Arduino", fun: "WD-40 for life", src:"/members/Ruwa_S.JPG"},
     {name: "Celia Shi", age: 18, year: "Second year", club:"Web Development", fun: "I'll never sing again. *starts singing*", src:"/members/Celia_S.JPG"},
@@ -17,7 +17,7 @@ export const engS = [
     {name: "Carolyn Wu", age: 18, year: "First year", club:"Web Development", fun: "I'll be your sanity keeper.", src:"/members/Carolyn_S.JPG"},
     {name: "Elisa Xue", age: 17, year: "First year", club:"Arduino", fun: "I just realized why fx stands for effects.", src:"/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 17, year: "First year", club:"Arduino", fun: "Soldered a million times!", src:"/members/Jennifer_S.JPG"},
-    {name: "Dominique Paradis", age: "Confidential", year: "", club:"Confidential", fun: "That's okay if you want to be wrong.", src:"/members/Paradis_S.png"},
+    {name: "Dominique Paradis", age: "(Confidential)", year: "", club:"(Confidential)", fun: "That's okay if you want to be wrong.", src:"/members/Paradis.png"},
 ];
 
 export const frS = [
@@ -26,20 +26,20 @@ export const frS = [
     {name: "Adelina Badea", age: 17, year: "Première année", club:"Arduino", fun: "ADAM!!!", src:"/members/Adelina_S.JPG"},
     {name: "Yau Hong Chau", age: 18, year: "Deuxième année", club:"Film", fun: "J'ai tellement froid!", src:"/members/Yau_S.JPG"},
     {name: "Sofia Del Raso", age: 19, year: "Second year", club:"Arduino", fun: "J'ai une spécialité avec les vis.", src:"/members/Sofia_S.JPG"},
-    {name: "Audrey Dumais", age: 17, year: "Première année", club:"Développement web", fun: "je lis un livre français ennuyant", src:"/members/Audrey_S.JPG"},
+    {name: "Audrey Dumais", age: 17, year: "Première année", club:"Développement web", fun: "Je lis un livre français ennuyant", src:"/members/Audrey_S.JPG"},
     {name: "Zoe Hadziaras", age: 18, year: "Première année", club:"Arduino", fun: "J'ai peur des rats.", src:"/members/Zoe_S.JPG"},
-    {name: "Isabella Hensley", age: 18, year: "Deuxième année", club:"Arduino", fun: "Donne moi un marteau, je le réparerai.", src:"/members/Isabella_S.JPG"},
-    {name: "Victoria Hoang", age: 17, year: "Deuxième année", club:"Développement web", fun: "pigeons can't fly", src:"/members/Victoria_S.JPG"},
-    {name: "Vincent Ly", age: 18, year: "Deuxième année", club:"Arduino et programmation", fun: "Si tu range les clous de mauvaise maniere, tu es foutu.", src:"/members/Vincent_S.JPG"},
+    {name: "Isabella Hensley", age: 18, year: "Deuxième année", club:"Arduino", fun: "Donne-moi un marteau, je le réparerai.", src:"/members/Isabella_S.JPG"},
+    {name: "Victoria Hoang", age: 17, year: "Deuxième année", club:"Développement web", fun: "Les pigeons ne peuvent pas voler", src:"/members/Victoria_S.JPG"},
+    {name: "Vincent Ly", age: 18, year: "Deuxième année", club:"Arduino et programmation", fun: "Je sombre dans la folie.", src:"/members/Vincent_S.JPG"},
     {name: "Nehna Patel", age: 18, year: "Deuxième année", club:"Construction", fun: "Je ne peux pas éternuer", src:"/members/Nehna_S.jpg"},
     {name: "Ruwa Qatmash", age: 17, year: "Première année", club:"Arduino", fun: "WD-40, c'est la vie!", src:"/members/Ruwa_S.JPG"},
-    {name: "Celia Shi", age: 18, year: "Deuxième année", club:"Développement web", fun: "Je ne chanterai plus jamais. *elle recommence de chanter*", src:"/members/Celia_S.JPG"},
-    {name: "Sangeeta Vidyarthi", age: 18, year: "Deuxième année", club:"Arduino et film", fun: "Tant pis les crédits de la vidéo.", src:"/members/Sangeeta_S.JPG"},
+    {name: "Celia Shi", age: 18, year: "Deuxième année", club:"Développement web", fun: "Je ne chanterai plus jamais *et puis elle recommence de chanter*", src:"/members/Celia_S.JPG"},
+    {name: "Sangeeta Vidyarthi", age: 18, year: "Deuxième année", club:"Arduino et film", fun: "Je ne veux plus faire les génériques de la vidéo.", src:"/members/Sangeeta_S.JPG"},
     {name: "Zi Heng Wang", age: 18, year: "Première année", club:"Arduino", fun: "Tout va bien aller, nous avons un extincteur de feu.", src:"/members/ZiHeng_S.JPG"},
-    {name: "Carolyn Wu", age: 18, year: "First year", club:"Développement web", fun: "Je serai la gardienne de ton bon sens.", src:"/members/Carolyn_S.JPG"},  
-    {name: "Elisa Xue", age: 17, year: "Première année", club:"Arduino", fun: "Je viens de comprendre pourquoi fx signifie effets.", src:"/members/Elisa_S.JPG"},
-    {name: "Jennifer Zhang", age: 17, year: "Première année", club:"Arduino", fun: "Soudé un million de fois!", src:"/members/Jennifer_S.JPG"},
-    {name: "Dominique Paradis", age: "Confidentiel", year: "Confidentiel", club:"Confidentiel", fun: "C'est correct si tu veux avoir tort.", src:"/members/Paradis_S.png"},
+    {name: "Carolyn Wu", age: 18, year: "First year", club:"Développement web", fun: "J'empêche mes amis de sombrer dans la folie.", src:"/members/Carolyn_S.JPG"},  
+    {name: "Elisa Xue", age: 17, year: "Première année", club:"Arduino", fun: "Je viens de découvrir que fx signifie effets.", src:"/members/Elisa_S.JPG"},
+    {name: "Jennifer Zhang", age: 17, year: "Première année", club:"Arduino", fun: "J'ai soudé un million de fois!", src:"/members/Jennifer_S.JPG"},
+    {name: "Dominique Paradis", age: "Confidentiel", year: "Confidentiel", club:"Confidentiel", fun: "C'est correct si tu veux avoir tort.", src:"/members/Paradis.png"},
 ];
 
 
@@ -51,7 +51,7 @@ export const engM = [
         I found problems with adjusting to unforeseen difficulties.
         It also came with the cost of time I would have wasted anyways.`
     },    
-    {name: "Andrea Abou-Haidar", age: 17, year: "Head", code: "Andrea", height: "5'1/155cm", gadget: "Anti-Gravity Ring", 
+    {name: "Andrea Abou-Haidar", age: 17, year: "Head", code: "Quack", height: "5'1/155cm", gadget: "Anti-Gravity Ring", 
         specialty: "Acrobatics specialist", mbti: "INFJ", club:"Machinery and manufacturing", src:"/members/Andrea_M.JPG",
         text: `By being part of the 2022-2023 Marianopolis Robotics Team, I
         made new friends, developed leadership skills, and most importantly, 
@@ -60,7 +60,7 @@ export const engM = [
         to stay on top of schoolwork and have a good social life while 
         enjoying robotics to the fullest.`
     },
-    {name: "Adelina Badea", age: 17, year: "Junior", club:"Machinery", src:"/members/Adelina_M.JPG", code: "Dovahkiin", 
+    {name: "Adelina Badea", age: 17, year: "Junior", club:"Machinery", src:"/members/Adelina_M.JPG", code: "Adelina", 
         height: "5'8/172cm", gadget: "Hairpin lockpick", specialty: "Dragon slayer", mbti: "ENFJ",
         text: `I learned how to make a robotic gripper by devising multiple
         solutions, building prototypes, testing, and concluding with
@@ -103,7 +103,7 @@ export const engM = [
         thing I had to sacrifice was my winter break, but it was worth
         it as I enjoy robotics and my team so much.`
     },
-    {name: "Isabella Hensley", age: 18, year: "Senior", club:"Marchinery", src:"/members/Isabella_M.JPG", code: 
+    {name: "Isabella Hensley", age: 18, year: "Senior", club:"Machinery", src:"/members/Isabella_M.JPG", code: 
         "Hensley", height: "5'9/175cm", gadget: "Jet pack boots", specialty: "Meal assembler", mbti: "INTJ",
         text: `I learned about linear motion systems and electronics. I enjoyed
         building the robot and talking with my teammates even if 
@@ -189,8 +189,8 @@ export const engM = [
         uses of parts. It’s an extremely enjoyable experience 
         and I will cherish it forever.`
     },
-    {name: "Dominique Paradis", age: "???", year: "Executive", club:"Executive", src:"/members/Paradis_M.jpg", code: "Dominique Paradis", height: "???", 
-        gadget: "Shoe Phone", specialty: "Disguise Expert", mbti: "???",
+    {name: "Dominique Paradis", age: "(Confidential)", year: "Executive", club:"Executive", src:"/members/Paradis.png", code: "Paradis", height: "(Confidential)", 
+        gadget: "Shoe Phone", specialty: "Disguise Expert", mbti: "(Confidential)",
         text: `I am mostly here to deal with the aspects of the team that diverge 
         from the main goal. I help organize budget, transport
         of materials, team membership and scheduling. I want to make 
@@ -218,7 +218,7 @@ export const frM = [
         maintenu mes résultats scolaires et ma vie sociale toute
         en profitant pleinement de la robotique.`
     },
-    {name: "Adelina Badea", age: 17, year: "Junior", club:"Machinerie", src:"/members/Adelina_M.JPG", code: "Dovahkiin", 
+    {name: "Adelina Badea", age: 17, year: "Junior", club:"Machinerie", src:"/members/Adelina_M.JPG", code: "Adelina", 
         height: "5'8/172cm", gadget: "Épingle à cheveux à crochetage", specialty: "Chasseuse de dragon", mbti: "ENFJ",
         text: `J’ai appris à faire un bras robotique en trouvant une multitude 
         de possibilités, en construisant des prototypes, en 
@@ -357,7 +357,7 @@ export const frM = [
         difficulté a été de me réveiller le matin pendant les vacances d'hiver.`
     },
     {name: "Jennifer Zhang", age: 17, year: "Junior", club:"Machinerie", src:"/members/Jennifer_M.JPG", code: "Yiting Zhang", 
-        height: "5'7/170cm", gadget: "Caméra wd-40", specialty: "Spécialiste en sourire", mbti: "ENTJ",
+        height: "5'7/170cm", gadget: "Caméra WD-40", specialty: "Spécialiste en sourire", mbti: "ENTJ",
         text: `En tant que membre de l'équipe en charge du robot, j'ai beaucoup 
         aimé travailler avec mes coéquipiers. Je me suis fait 
         de nouveaux amis et nous avons coopéré sans problème pour 
@@ -365,8 +365,8 @@ export const frM = [
         les outils et les différentes utilisations des pièces. C'est 
         une expérience que je chérirai pour toujours.`
     },
-    {name: "Dominique Paradis", age: "???", year: "Exécutif", club:"Exécutif", src:"/members/Paradis_M.jpg", code: "Dominique Paradis", height: "???", 
-        gadget: "Téléphone soulier", specialty: "Expert en déguisement", mbti: "???",
+    {name: "Dominique Paradis", age: "(Confidentiel)", year: "Exécutif", club:"Exécutif", src:"/members/Paradis.png", code: "Paradis", height: "(Confidentiel)", 
+        gadget: "Téléphone soulier", specialty: "Expert en déguisement", mbti: "(Confidentiel)",
         text: `Je suis surtout là pour m'occuper des aspects de l'équipe 
         qui divergent de l'objectif principal. J'aide à organiser le 
         budget, le transport des matériaux, la composition de l'équipe 
