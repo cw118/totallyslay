@@ -16,7 +16,7 @@ const Avia = ({ fr }) => {
         <>
           <h1 className={styles.header}><strong><Typewrite page={fr ? 'aviaFr' : 'avia'} /></strong></h1>
             <div className={styles.intro}>
-                <img src="/logo/avia_logo.png" alt="AVIA Logo" className={styles.aviaLogo}/>
+                <img src="/logo/avia-logo.svg" alt="AVIA Logo" className={styles.aviaLogo}/>
                 <p>
                     <strong>{fr ? `Nous sommes contents que vous soyez là, agent${name}! ` : `We're glad you made it, Agent${name}! `}</strong>
                     {fr ? `La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l'aide à MOOHP (Organisation Marianopolis pour la Protection Humaine).` : `The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.`}
@@ -24,7 +24,7 @@ const Avia = ({ fr }) => {
           <p>
             {fr ? 'Cette compétition multidisciplinaire exige l\'implication de tous les agents chez MOOHP, incluant vous-même. Intégrant l\'informatique, la technologie et l\'ingénierie avec les arts et lettres, les département de robotique, de kiosque, de site web et de cinématographie sont tous indispensables pour cette mission!' : 'This multidisciplinary competition requires the involvement of all agents at MOOHP, including you. Integrating computer science, technology, and engineering with visual arts and humanities; the Machinery, Manufacturing, Hacking, Virtual Network, Marketing and divisions are integral to this mission!'}
           </p>
-                <img src="/logo/crc_logo.svg" alt="CRC Logo" className={styles.crcLogo}/>
+                <img src="/logo/crc-logo.svg" alt="CRC Logo" className={styles.crcLogo}/>
             </div>
 
             <h1 className={styles.header}><strong>{fr ? `AVIA procédera comme suit:` : `AVIA will proceed as follows:`}</strong></h1>
