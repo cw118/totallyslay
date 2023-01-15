@@ -36,12 +36,13 @@
 .author {
     padding-right: 1rem;
     font-size: 16px;
+    color: white;
 }
 
 .date {
     font-size: 15px;
     line-height: 1rem;
-    color: rgb(86, 86, 86);
+    color: rgb(255, 233, 249);
     padding-bottom: 10px;
 }
 

@@ -1,11 +1,16 @@
 .card {
     margin-top: 5vh;
     max-width: revert;
-    border: 5px #D387FF solid;
+    border: 7px #bf49ff solid;
 }
 
 .card img {
     border-radius: 2px;
+}
+
+.card:hover {
+    transform: rotate(5deg);
+    transition-duration: 0.3s;
 }
 
 .title {
@@ -22,6 +27,11 @@
     padding: 5vw;
     padding-bottom: 5vh;
     padding-top: 0vh;
+}
+
+.quote {
+    color: #bf49ff;
+    font-weight: bolder;
 }
 
 @media screen and (min-width: 768px) {

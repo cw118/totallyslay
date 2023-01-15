@@ -109,7 +109,7 @@ export const engM = [
         building the robot and talking with my teammates even if 
         it meant that I had to sacrifice my sleep schedule.`
     },
-    {name: "Victoria Hoang", age: 17, year: "Senior", club:"Virtual network", src:"/members/Victoria_M.JPG", code: 
+    {name: "Victoria Hoang", age: 18, year: "Senior", club:"Virtual network", src:"/members/Victoria_M.JPG", code: 
         "Vi", height: "5'6/167cm", gadget: "Camera-clad pigeon", specialty: "Bee modeler", mbti: "INFP",
         text: `I learnt new and more efficient ways to build websites using
         React.js and Next.js. Making new friends and learning from 
@@ -273,7 +273,7 @@ export const frM = [
         coéquipiers, même si cela signifiait que je devais sacrifier 
         mes heures de sommeil.`
     },
-    {name: "Victoria Hoang", age: 17, year: "Sénior", club:"Réseau virtuel", src:"/members/Victoria_M.JPG", code: 
+    {name: "Victoria Hoang", age: 18, year: "Sénior", club:"Réseau virtuel", src:"/members/Victoria_M.JPG", code: 
         "Vi", height: "5'6/167cm", gadget: "Pigeon vêtu d'une caméra", specialty: "Modéliste d'abeille", mbti: "INFP",
         text: `J'ai appris de nouvelles méthodes plus efficaces pour créer 
         des sites Web à l'aide de React.js et Next.js. Le manque 

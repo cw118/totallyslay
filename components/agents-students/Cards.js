@@ -37,7 +37,7 @@ function Carte(props) {
                 <p>
                     <b>{props.fr ? 'Comité(s): ' : 'Club(s): '}</b> {`${props.club}`}
                 </p>
-                <p>
+                <p className={styles.quote}>
                     <i>&ldquo;{props.fun}&rdquo;</i>
                 </p>
             </div>
