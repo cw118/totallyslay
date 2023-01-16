@@ -9,6 +9,7 @@ export default function Cards({ fr }) {
         <div>
             <h1 className={styles.title}>
                 {fr? "Étudiants et personnel" : "Student Body and Staff"}
+                <img className={styles.sticker} src="/backgrounds/sticker.svg" alt={fr ? "Étoile" : "Star"} />
             </h1>
             <div className={styles.div}>
                 {students.map((member, index) => 
@@ -21,7 +22,6 @@ export default function Cards({ fr }) {
 }
 
 function Carte(props) {
-
     return (
         <Card className={styles.card} imgSrc={props.src} horizontal = {true}>
             <div className="font-kiwi">

@@ -95,7 +95,7 @@ const Robot = ({ fr }) => {
         </video>
       </div>
       <div className={styles.vidContainer}>
-        <h1 className={styles.vidHeader}>{fr ? `Comment construire le bras robotique` : `How to Build the Robotic Arm`}</h1>
+        <h1 className={styles.vidHeader}>{fr ? `Tutoriel: Comment construire le bras robotique` : `Tutorial: How to Build the Robotic Arm`}</h1>
         <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
     </div>
