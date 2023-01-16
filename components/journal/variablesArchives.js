@@ -1,21 +1,21 @@
 export const robEng = [
     {time: "November 13th, 2022", img: "/journal/robot/team.png",
-    alt:"Robot team planning out prototypes", 
+    alt: "Robot team planning out prototypes", 
     text: `The members of the Machinery Division begin brainstorming ideas 
     for an efficient and creative robot. They focus first and 
     foremost on the possible mechanism responsible for picking
-     up and transporting the horizontal game pieces. They are conflicted 
-    between two models: They are conflicted between two models: the angled 
-    claw and the linear motion. The first one can grab different sizes of 
-    game pieces while the second one allows it to be extremely meticulous. 
-    The base that had been previously saved was too small 
-    for its wheels and was therefore rebuilt on a smaller scale.`
+    up and transporting the horizontal game pieces. They are conflicted 
+    between two models: the angled claw and the linear motion. `
     },
-    {time: "December 20thth, 2022", img: "/journal/robot/arm.png",
+    {time: "November 13th, 2022", img: "/journal/robot/base2.png",
+    alt:"Agents work on the base of the robot", 
+    text: `Meanwhile, the base that had been saved from previous MOOHP agents 
+    was too small for the wheels chosen and was therefore rebuilt on a smaller scale.`
+    },
+    {time: "December 20th, 2022", img: "/journal/robot/arm.png",
     alt:"Robot team presents a cardboard robot arm prototype", 
-    text: `The members of the Machinery Division begin to build their prototypes 
-    to pick between the two models of their arm once both have been tested and 
-    compared. They also solder the motors.`
+    text: `In December, they begin to build their prototypes to pick between the 
+    two models of their arm once both have been tested and compared.`
     },
     {time: "January 4th, 2023", img: "/journal/robot/base.png", 
     alt:"Testing of the wheels on the robot's base",
@@ -23,62 +23,101 @@ export const robEng = [
     outstanding progress on all the gadget's components. For one, the team assembles 
     the base frame. The power motors ensure the wheels' rotation are programmed.`
     },
-    {time: "January 7th, 2023", img: "/journal/robot/lift.png", 
+    {time: "January 5th, 2023", img: "/journal/robot/lift.png", 
     alt:"Sofia and Vincent work on the mechanical lift",
     text: `After careful planning, agents begin building the mechanical lift, completing 
-    two stages and attaching the chains to each. Finally, the machinists successfully 
-    fabricate a functional arm with the ability to lift the game pieces. They continue 
-    working on both prototypes and plan to have them completed and tested by the end of 
-    January.`
+    two stages and attaching the chains to each. `
+    },
+    {time: "January 7th, 2023", img: "/journal/robot/arm-working.png", 
+    alt:"Agents showcase the arm's linear motion",
+    text: `Finally, the machinists successfully fabricate a functional arm with the 
+    ability to lift the game pieces. They continue working on both prototypes and 
+    plan to have them completed and tested by the end of January.`
+    },
+    {time: "January 11th, 2023", img: "/journal/robot/lift2.png", 
+    alt:"Completed mechanical lift",
+    text: `Meanwhile, other machinery agents work on the mechanical lift. Their 
+    work was tedious, having to make many small adjustments to their original design, 
+    but they succeed nonetheless!`
+    },
+    {time: "January 13th, 2023", img: "/journal/robot/team2.png", 
+    alt:"Agents regroup to begin assembling the robot",
+    text: `With the base, the arm, and the lift completed, the Machinery subdivisions
+    can join forces and assemble the robot.`
     }
 ]
 
 export const kioskEng = [
-    {time: "November 13th, 2022", img: "/journal/kiosk/walls-up.png", 
+    {time: "November 13th, 2022", img: "/journal/kiosk/walls-up.png",
+    alt:"Kiosk walls being assembled", 
     text: `The members of the Manufacturing Division ponder, deducing how to 
     balance representing both M.A.R.I. and MHOOP at AVIA 2023. Creative minds 
     gather to spark the most ingenious of ideas! Our agents’ physical training 
     is finally put to the test as they put up the kiosk walls. `
     },
-    {time: "December 20th, 2022", img: "/journal/kiosk/blue.png", 
+    {time: "December 20th, 2022", img: "/journal/kiosk/blue.png",
+    alt:"Agents Hadz primes the walls",
     text: `With the kiosk walls assembled, Manufacturing agents prime its inner and 
     outer walls.`
     },
-    {time: "January 4th, 2023", img: "/journal/kiosk/globe.png", 
+    {time: "January 4th, 2023", img: "/journal/kiosk/globe.png",
+    alt:"Agents Andrea and Patel paint the globe", 
     text: `During the first week of January, the interior of MOOHP headquarters 
-    begins to come together! Manufacturing agents finish painting the base colour 
-    of the walls and the MOOHP logo's globe tediously.`
+    begins to come together! They finish painting the base colour of the walls 
+    and the MOOHP logo's globe.`
     },
-    {time: "January 4th, 2023", img: "/journal/kiosk/couch.png", 
+    {time: "January 6th, 2023", img: "/journal/kiosk/couch.png",
+    alt:"Agents Hadz and Patel begin cushioning the back of the couch", 
     text: `Agents also begin gathering materials and plans to furnish MOOHP headquarters.
     Recycling items used by previous MOOHP agents, they can begin building the red couch!`
+    },
+    {time: "January 11th, 2023", img: "/journal/kiosk/id.png",
+    alt:"Zi Heng works on programming the ID system", 
+    text: `Agent Zi Heng of the Hacking and Arduino divisions collaborates with the 
+    Manufacturing division to program an identification system for MOOHP headquarters`
+    },
+    {time: "January 12th, 2023", img: "/journal/kiosk/lockers.png",
+    alt:"Agents Andrea, Patel, and Hadz spray paint lockers outside", 
+    text: `They start furnishing the enclosed area by modifying old lockers that 
+    will disguise headquarters.`
     }
 ]
 
 export const webEng = [
-    {time: "November 13th, 2022", img: "/journal/web/work1.png", 
+    {time: "November 13th, 2022", img: "/journal/web/work2.png",
+    alt:"Agents Seal, Wu, and Vi collaborate on the website's code", 
     text: `The members of the Website Division complete brainstorming and refine 
     their ideas to draw out the overall structure and content of its website. 
     Vision boards and logos are created. Their members also decide to use React.js 
     and Next.js to build a more efficient and complex website! `
     },
-    {time: "December 20th, 2022", img: "/journal/web/celia.png", 
+    {time: "December 20th, 2022", img: "/journal/web/celia.png",
+    alt:"Agent Seal subtly cpatures the robot team working", 
     text: `Virtual Network agents, with concrete ideas in mind, began learning 
     new programming languages, testing out ambitious ideas, and documenting the 
     progress of the MOOHP agents and the mission at hand. They must also wield 
     the art of subtlety to capture their agents working in action!`
     },
-    {time: "January 7th, 2023", img: "/journal/web/work2.png", 
+    {time: "January 7th, 2023", img: "/journal/web/work1.png",
+    alt:"Agents Wu and Vi collaborate on their website's code", 
     text: `They can finally start building its website after learning new 
     programming languages: React.js and Next.js! They complete the first half of 
     the website and solidify their design of its second half to be able to structure 
     it successfully in the following week. As for the content, they compile all the 
     relevant information and update the team’s progress reports.`
+    },
+    {time: "January 12th, 2023", img: "/journal/web/work3.png",
+    alt:"Agents stylizing the spy page", 
+    text: `They finish the second half of the website, despite their struggles 
+    with positioning and rendering 3D models! With the general design completed, 
+    they can begin refining all aspects of the website, improving styling and 
+    adding animations!`
     }
 ]
 
 export const vidEng = [
-    {time: "November 13th, 2022", img: "/journal/video/group1.png", 
+    {time: "November 13th, 2022", img: "/journal/video/group1.png",
+    alt:"Video agents watch a Totally Spies! episode", 
     text: `The members of the Marketing Division gather vital information 
     on “Totally Spies!” to create a 5-minute video that will encapsulate 
     the team, both M.A.R.I. and MOOHP, and their mission, AVIA 2023, 
@@ -86,29 +125,45 @@ export const vidEng = [
     they must gather all the necessary tools and gadgets (and wigs!) 
     that’ll make their video a success.`
     },
-    {time: "December 20th, 2022", img: "/journal/video/gym-group.png", 
+    {time: "December 20th, 2022", img: "/journal/video/gym-group.png",
+    alt:"Agents work on the video script", 
     text: `The Marketing agents finalise their script! After receiving 
     the wigs, they await solely receiving the necessary gadgets to film 
     their video.`
     },
-    {time: "January 4th, 2023", img: "/journal/video/jerry-scene.png", 
+    {time: "January 4th, 2023", img: "/journal/video/jerry-scene.png",
+    alt:"Filming of the Jerry scene", 
     text: `As soon as agents reconvene in the first week of January, 
     having refined their script and collected all props and costumes necessary, 
     they gathered their main actors to film as many scenes as possible around 
     MOOHP headquarters.`
     },
-    {time: "January 6th, 2023", img:"/journal/video/lab-scene.png",
-    text: `figure out how to put video`
+    {time: "January 6th, 2023", img:"/journal/video/sound.png",
+    alt:"They record audio bits",
+    text: `Once filming is completed, they begin collecting resources to edit 
+    the video, from visual aspects to sound bits.`
     },
+    {time: "January 6th, 2023", img:"/journal/video/editing.png",
+    alt:"Yau, Elisa, and Sangeeta editing the video",
+    text: `They work tirelessly to ensure that the video is uniform, 
+    engaging, and true to the theme. After hours of editing and getting 
+    frustrated at the credits, the video is complete!`
+    }
 ]
 
 export const progEng = [
-    {time: "December 3rd, 2022", img: "/journal/prog/vincent3am.png", 
+    {time: "December 3rd, 2022", img: "/journal/prog/vincent3am.png",
+    alt:"Screenshot of Vincent thinking of the solution on Discord", 
     text: `Vincent stayed up until 3am to finish the first preliminary problem.`
     },
-    {time: "December 12th, 2022", img: "/journal/prog/2ndPrelim.png", 
-    text: `Vincent and Carolyn finally submitted the second preliminary 
+    {time: "December 8th, 2022", img: "/journal/prog/2ndPrelim.png",
+    alt:"Screenshot of Carolyn and Vincent submitting the second problem together", 
+    text: `Agents Ly and Wu finally submitted the second preliminary 
     problem, losing their sanity in the process`
+    },
+    {time: "January 14th, 2023", img: "/journal/prog/prelim3.png",
+    alt:"Vincent working on the third preliminary problem", 
+    text: `Agent Ly completes the third preliminary problem in an hour!`
     }
 ]
 
