@@ -18,8 +18,8 @@ export default function Agents({ fr }) {
                 <strong><Typewrite page='agents' /></strong>
             </h1>
             <p className={styles.intro}>
-                {fr ? `Une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour partir en mission avec vous, agent${name}. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`
-                    : `A team of 18 MOOHP agents were carefully selected for this mission alongside you, Agent${name}. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters.`}
+                {fr ? `Agent${name}, une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour vous accompagner dans cette mission. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`
+                    : `Agent${name}, a team of 18 MOOHP agents were carefully selected for this mission alongside you. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters.`}
             </p>
             {students.map((member, index) => 
                 <FlipImg fr={fr} key={index} src={member.src} name={member.name} 
@@ -36,7 +36,7 @@ export default function Agents({ fr }) {
 function FlipImg(props) {
 
     return (
-        <div className={styles.div}>
+        <div className={styles.cardContainer}>
             <div className={styles.flipCard}>
                 <div className={styles.flipCardInner}>
                     <div className={styles.flipCardFront}>
@@ -68,7 +68,7 @@ function FlipImg(props) {
                     </div>
                 </div>
             </div>
-            <div className={styles.Card}>
+            <div className={styles.card}>
                 <Card className={styles.text}>
                     <p className={styles.name}>Agent {props.code}</p>
                     <p>&ldquo;{props.text}&rdquo;</p>

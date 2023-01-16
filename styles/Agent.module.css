@@ -1,9 +1,12 @@
-.Card {
+.card {
   display: grid;
   align-content: center;
   padding-top: 3ch;
   background-color: transparent;
 }
+
+/* 3D flip card implementation customized from
+   https: //www.w3schools.com/howto/howto_css_flip_card.asp */
 
 .flipCard {
   margin: auto;
@@ -21,7 +24,8 @@
 }
 
 .bg {
-  background: url(/backgrounds/gridBlank.svg);
+  padding-bottom: 3.25rem;
+  background: url(/backgrounds/purpleGrid.svg);
 }
 
 .name {
@@ -68,8 +72,7 @@
   transform: rotateY(180deg);
 }
 
-.flipCardFront,
-.flipCardBack {
+.flipCardFront, .flipCardBack {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -86,13 +89,12 @@
   border-width: 0.15rem;
 }
 
-.div {
+.cardContainer {
   position: relative;
   display: grid;
   align-content: center;
-  padding: 5vw;
-  padding-bottom: 5vh;
-  padding-top: 0vh;
+  margin-top: 1.75rem;
+  padding: 0vh 5vw 5vh;
 }
 
 .tapMe {
@@ -112,61 +114,25 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .div {
+  .cardContainer {
     grid-template-columns: 25% 70%;
     column-gap: 3rem;
     display: grid;
     justify-content: center;
   }
 
-  .Card {
-    display: grid;
-    align-content: center;
+  .card {
     padding-top: 0ch;
     padding-left: 5ch;
   }
 
-  .flipCard {
-    margin: auto;
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-  }
-
   .text {
-    background: #4148a488;
-    color: white;
-    font-size: 16px;
-    border-width: 0.15rem;
     height: 300px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .div {
+  .cardContainer {
     grid-template-columns: 25% 50%;
-  }
-
-  .Card {
-    display: grid;
-    align-content: center;
-    padding-top: 0ch;
-  }
-
-  .flipCard {
-    margin: auto;
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-  }
-
-  .text {
-    background: #4148a488;
-    color: white;
-    height: 300px;
-    font-size: 18px;
-    border-width: 0.15rem;
   }
 }

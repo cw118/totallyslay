@@ -37,7 +37,7 @@ export const kioskEng = [
     {time: "November 13th, 2022", img: "/journal/kiosk/walls-up.png", 
     text: `The members of the Manufacturing Division ponder, deducing how to 
     balance representing both M.A.R.I. and MHOOP at AVIA 2023. Creative minds 
-    gather to spark the most ingenious of ideas! Our agents’ physical training 
+    gather to spark the most ingenious of ideas! Our agents' physical training 
     is finally put to the test as they put up the kiosk walls. `
     },
     {time: "December 20th, 2022", img: "/journal/kiosk/blue.png", 
@@ -73,7 +73,7 @@ export const webEng = [
     programming languages: React.js and Next.js! They complete the first half of 
     the website and solidify their design of its second half to be able to structure 
     it successfully in the following week. As for the content, they compile all the 
-    relevant information and update the team’s progress reports.`
+    relevant information and update the team's progress reports.`
     }
 ]
 
@@ -84,7 +84,7 @@ export const vidEng = [
     the team, both M.A.R.I. and MOOHP, and their mission, AVIA 2023, 
     all while highlighting the theme. Once the script is finalised, 
     they must gather all the necessary tools and gadgets (and wigs!) 
-    that’ll make their video a success.`
+    that'll make their video a success.`
     },
     {time: "December 20th, 2022", img: "/journal/video/gym-group.png", 
     text: `The Marketing agents finalise their script! After receiving 
@@ -117,12 +117,12 @@ export const robFr = [
     alt:"L'équipe de robot qui planifie les prototypes", 
     text: `Le département de machinerie commence à réfléchir à des
     idées pour un robot créatif et efficace. Ils se concentrent 
-    d’abord sur tous les mécanismes possibles qui seront responsables 
+    d'abord sur tous les mécanismes possibles qui seront responsables 
     pour ramasser et transporter les pièces de jeux. Ils hésitent 
     entre deux modèles: des pinces ou un système de mouvement linéaire. 
     Le premier permet de ramasser les pièces de jeux de toutes 
-    les tailles, alors que le dernier permet d’être d’autant plus 
-    précis. De plus, la base du robot de la compétition de l’an 
+    les tailles, alors que le dernier permet d'être d'autant plus 
+    précis. De plus, la base du robot de la compétition de l'an 
     dernier qui a été conservée est trop petite pour nos roues.
     Il faut donc reconstruire nos roues en diminuant leur taille.`
     },
@@ -136,7 +136,7 @@ export const robFr = [
     },
     {time: "4 janvier 2023", img: "/journal/robot/base.png", 
     alt:"Tester les roues de la base du robot",
-    text: `L’équipe du robot se divise en sous-groupes. Les membres 
+    text: `L'équipe du robot se divise en sous-groupes. Les membres 
     font des progrès remarquables sur tous les composants du robot. 
     L'équipe assemble le cadre de base. Les moteurs électriques 
     permettent de programmer la rotation des roues.`
@@ -159,7 +159,7 @@ export const kioskFr = [
     à réfléchir à la façon dont M.A.R.I et MOOHP seront représentés à AVIA 2023.
     Les esprits créatifs se sont rassemblés pour susciter les idées les plus 
     ingénieuses ! L'entraînement physique de nos agents est finalement mis à 
-    l’épreuve alors qu’ils assemblent les murs du kiosque.`
+    l'épreuve alors qu'ils assemblent les murs du kiosque.`
     },
     {time: "20 décembre 2022", img: "/journal/kiosk/blue.png", 
     text: `Les membres du département de fabrication préparent les murs intérieurs et extérieurs du kiosque.`
@@ -181,8 +181,8 @@ export const webFr = [
     text: `Le département du réseau virtuel a déterminé la 
     structure générale et le contenu de leur site web. Un 
     tableau de vision et des logos ont été créés. Les membres 
-    du département ont également décidé d’utiliser React.js et 
-    Next.js pour créer un site web d’autant plus efficace et performant ! `
+    du département ont également décidé d'utiliser React.js et 
+    Next.js pour créer un site web d'autant plus efficace et performant ! `
     },
     {time: "20 décembre 2022", img: "/journal/web/celia.png", 
     text: `Les membres du département du réseau virtuel, avec des idées 
@@ -207,8 +207,8 @@ export const webFr = [
 export const vidFr = [
     {time: "13 novembre 2022", img: "/journal/video/group1.png", 
     text: `Le département de marketing a rassemblé des informations 
-    indispensables sur Totally Spies! afin de créer une vidéo d’une 
-    durée de 5 minutes qui résumera à la fois l’équipe, M.A.R.I., 
+    indispensables sur Totally Spies! afin de créer une vidéo d'une 
+    durée de 5 minutes qui résumera à la fois l'équipe, M.A.R.I., 
     MOOHP et la mission AVIA 2023, tout en mettant en évidence le 
     thème. Une fois le script finalisé, ils doivent rassembler tous 
     les outils et les gadgets nécessaires (et les perruques !) qui 
@@ -237,6 +237,6 @@ export const progFr = [
     },
     {time: "12 décembre 2022", img: "/journal/prog/2ndPrelim.png", 
     text: `Vincent et Carolyn ont finalement remis le deuxième problème préliminaire,
-    perdant leur santé mentale dans le processus.`
+    sombrant dans la folie dans le processus.`
     }
 ]

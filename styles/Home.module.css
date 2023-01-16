@@ -2,13 +2,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width: 50%;
     max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 30px 40px;
-    padding-top: 80px;
     width: 90%;
-    margin: auto;
+    margin: auto auto 20px;
     background-color: rgb(255, 239, 206);
     transform: rotate(-1deg);
-    margin-bottom: 20px;
     line-height: 30px;
 }
 

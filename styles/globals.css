@@ -251,7 +251,7 @@
     letter-spacing: 0.4px;
     text-decoration: underline;
     transition: color 0.3s;
-    animation: 1.2s ease-out alternate-reverse infinite colorPulse;
+    animation: 1.3s ease-out alternate-reverse infinite colorPulse;
   }
 
   .popUpLink:hover {
@@ -453,7 +453,7 @@
   .puzzleChangeLang {
     position: fixed;
     z-index: 85;
-    bottom: 10px;
+    top: 10px;
     color: #000 !important;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
     left: 50%;
@@ -600,7 +600,7 @@
 
   @media screen and (min-width: 900px) {
     .puzzleChangeLang {
-      bottom: 15px;
+      top: 15px;
     }
 
     .puzzleChangeLang span {

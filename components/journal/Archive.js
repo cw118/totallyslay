@@ -24,11 +24,11 @@ export default function Archive({ fr }) {
             <h1 className={styles.header}><Typewrite page={fr ? 'archivesFr' : 'archives'} /></h1>
             <p>
                 <strong>{fr ? `Bienvenue aux archives de MOOHP, agent${name}! ` : `Welcome to the MOOHP archives, Agent${name}! `}</strong>
-                {fr ? `Les directeurs de MOOHP ont soigneusement choisi une équipe d’agent 
+                {fr ? `Les directeurs de MOOHP ont soigneusement choisi une équipe d'agent 
                 de M.A.R.I. pour compléter la mission AVIA 2023. Les 18 membres 
-                constituant l’équipe se sont d’abord rencontrés au début du mois de 
+                constituant l'équipe se sont d'abord rencontrés au début du mois de 
                 septembre. Ensuite, des rencontres ont été tenues régulièrement deux 
-                fois par semaine afin d’explorer les talents individuels des agents 
+                fois par semaine afin d'explorer les talents individuels des agents 
                 et de déterminer la manière dont chacun pourra contribuer à la mission.`
                 :
                 `MOOHP's directors carefully curated a team of agents from 

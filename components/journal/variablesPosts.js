@@ -23,8 +23,8 @@ export const engPosts = [
     user: "wall_hugger", hashtags: 'totallyspies', commenter: 'Jennifer Zhang', comment: 'Look at us in suits!', likes: 11,
     caption: 'Spies with cheap sunglasses at your service'
     },
-    {author: 'Sofia Del Raso', date: 'December 20th, 2022', avatar: '/journal/avatars/sofia.png', status: "online", src: '/journal/post-images/appa-funeral.png',
-    user: "british_person123", hashtags: 'RIPAppa', commenter: 'Nehna Patel', comment: 'Who would do such a thing...', likes: 18,
+    {author: 'Zi Heng Wang', date: 'December 20th, 2022', avatar: '/journal/avatars/ziheng.jpg', status: "online", src: '/journal/post-images/appa-funeral.png',
+    user: "pro_firefighter", hashtags: 'RIPAppa', commenter: 'Nehna Patel', comment: 'Who would do such a thing...', likes: 18,
     caption: 'Not a good mo(u)rning. Appa may stay in our hearts, but not our basement.'
     },
     {author: 'Elisa Xue', date: 'December 20th, 2022', avatar: '/journal/avatars/elisa.png', status: "away", src: '/journal/post-images/blond-yau.png',
@@ -67,7 +67,7 @@ export const frPosts = [
     caption: 'Des espionnes dotées de lunettes de soleil en plastique à votre service.'
     },
     {author: 'Zi Heng Wang', date: 'December 20th, 2022', avatar: '/journal/avatars/ziheng.jpg', status: "online", src: '/journal/post-images/appa-funeral.png',
-    user: "s.a.d.", hashtags: 'RIPAppa', commenter: 'Nehna Patel', comment: 'Qui ferait une telle chose...', likes: 18,
+    user: "pro_firefighter", hashtags: 'RIPAppa', commenter: 'Nehna Patel', comment: 'Qui ferait une telle chose...', likes: 18,
     caption: 'Ce n\'était pas un bon matin. Appa restera dans notre cœur, mais pas dans notre espace de travail.'
     },
     {author: 'Elisa Xue', date: 'December 20th, 2022', avatar: '/journal/avatars/elisa.png', status: "away", src: '/journal/post-images/blond-yau.png',
