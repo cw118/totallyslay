@@ -1,8 +1,7 @@
-import { Carousel } from 'antd';
+import {Carousel} from "flowbite-react"
 import styles from '../../styles/Home.module.css';
 
-export default function Carouselle({ fr }) {
-    const el = {backgroundColor: "#F6F1D6"}
+export default function Carouselle({fr}) {
     const list = [
         {bg: "#F6F1D6", colourSlide: "#F6EBC3", colourHeader: "#FE5F00", border: 0,
             header: fr ? 'Portes ouvertes 2010' : 'Open House 2010', 
@@ -34,7 +33,7 @@ export default function Carouselle({ fr }) {
     ]
 
     return(
-        <Carousel>
+        <Carousel slide={false} style={{height: "600px"}}>
             {list.map((slide, index) => {
                 return (
                     <div key={index} className={styles.center}>

@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
 
 .center {
-    display: flex !important;
+    display: flex;
     justify-content: center;
-    margin-top: 2rem;
 }
 
 .slide1{
