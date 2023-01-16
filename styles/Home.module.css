@@ -1,3 +1,37 @@
+.center {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.slide1{
+    height: 80%;
+    width: 80%;
+    transform: rotate(-2deg) translate(-33px, 27px);
+    margin-bottom: 2rem;
+}
+
+.slide1_1{
+    transform: rotate(2deg) translate(33px, -27px);
+    min-height: 25rem;
+}
+
+.header1 {
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    padding-top: 2rem;
+    width: 75%;
+    margin: auto;
+}
+
+.text1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    width: 75%;
+    margin: 1rem auto 0px;
+}
+
 .schoolContainer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width: 50%;
@@ -7,7 +41,7 @@
     align-items: center;
     padding: 30px 40px;
     width: 90%;
-    margin: auto auto 20px;
+    margin: 20px auto;
     background-color: rgb(255, 239, 206);
     transform: rotate(-1deg);
     line-height: 30px;
@@ -37,7 +71,7 @@
 }
 
 .button {
-    margin: auto;
+    margin: 1.5rem auto;
 }
 
 .singleButton1 {
@@ -74,88 +108,12 @@
     color: white;
 }
 
-.slide1{
-    background-image: url('/carousel/slide1_3.svg');
-    height: 535px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.slide2 {
-    background-image: url('/carousel/slide2_3.svg');
-    height: 535px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.slide3 {
-    background-image: url('/carousel/slide3_3.svg');
-    height: 535px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* slide 1 */
-.header1 {
-    font-size: 1.9rem;
-    line-height: 2.3rem;
-    color: #FE5F00;
-    padding-top: 4rem;
-    width: 180px;
-    margin: auto;
-}
-.text1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12.5px;
-    padding: 10px;
-    width: 200px;
-    margin: auto;
-}
-
-/* slide 2 */
-.header2 {
-    font-size: 2.1rem;
-    color: #ff74a3;
-    padding-top: 3rem;
-    width: 230px;
-    margin: auto;
-    line-height: 2.7rem;
-}
-.text2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12.5px;
-    padding: 10px;
-    width: 250px;
-    margin: auto;
-}
-
-/* slide 3 */
-.header3 {
-    font-size: 1.4rem;
-    color: #b251ea;
-    padding-top: 5rem;
-    width: 220px;
-    margin: auto;
-}
-.text3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12.5px;
-    padding: 10px;
-    width: 250px;
-    margin: auto;
-}
-
 /* testimonial */
 .testimonialContainer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 50%;
-    max-width: 90%;
     margin: 40px auto;
     padding: 30px 40px;
     background-color: rgb(255, 239, 206);
@@ -196,130 +154,43 @@
 }
 
 @media only screen and (min-width: 600px) {
-    /* for tablets */
-    .slide1 {background-image: url('/carousel/slide1_2.svg'); height: 620px;}
-    .slide2 {background-image: url('/carousel/slide2_2.svg'); height: 620px;}
-    .slide3 {background-image: url('/carousel/slide3_2.svg'); height: 620px;}
+    .slide1 {width: 30rem; max-height: 620px;}
 
-    /* slide 1 */
-    .header1 {
-        font-size: 3rem;
-        line-height: 3.5rem;
-        width: 400px;
-    }
-    .text1 {
-        font-size: 16px;
-        width: 400px;
-    }
-    /* slide 2 */
-    .header2 {
-        font-size: 2.8rem;
-        padding-top: 6.5rem;
-        width: 400px;
-    }
-    .text2 {
-        font-size: 16px;
-        width: 450px;
-    }
+    .header1 {font-size: 3rem; line-height: 3.5rem;}
 
-    /* slide 3 */
-    .header3 {
-        font-size: 1.7rem;
-        padding-top: 9rem;
-        line-height: 2.2rem;
-        width: 320px;
-    }
-    .text3 {
-        font-size: 16px;
-        width: 370px;
-    }
-    .testimonialContainer {
-        max-width: 90%;
-    }
-    .SchoolContainer {
-        max-width: 90%;
-    }
-    .jared {
-        display: block;
-    }
-    .singleButton1 {
-        width: 500px;
-    }
-    .singleButton2 {
-        width: 500px;
-    }
+    .text1 {font-size: 16px;}
+
+    .testimonialContainer {max-width: 90%;}
+
+    .SchoolContainer {max-width: 90%;}
+
+    .jared {display: block;}
+
+    .singleButton1 {width: 500px;}
+
+    .singleButton2 {width: 500px;}
 }
 
 @media only screen and (min-width: 950px) {
-    /* for desktop */
+    .slide1 {width: 45rem; max-height: 520px; margin-bottom: 3rem;}
+
+    .header1 {font-size: 3rem; padding-top: 3.4rem;}
+
+    .text1 {font-size: 18px; padding: 10px;}
+
+    .testimonialContainer {max-width: 55rem;}
     
-    .slide1 { background-image: url('/carousel/slide1_1.svg'); height: 520px;}
-    .slide2 { background-image: url('/carousel/slide2_1.svg'); height: 520px;}
-    .slide3 { background-image: url('/carousel/slide3_1.svg'); height: 520px;}
+    .schoolContainer {max-width: 55rem; height: 100%;}
 
-    /* slide 1 */
-    .header1 {
-        font-size: 3rem;
-        padding-top: 3.4rem;
-        width: 40%;
-        }
-    .text1 {
-        font-size: 18px;
-        padding: 10px;
-        width: 40%;
-    }
-    /* slide 2 */
-    .header2 {
-        font-size: 4rem;
-        line-height: 4rem;
-        width: 40%;
-        padding-top: 3rem;
-    }
-    .text2 {
-        font-size: 18px;
-        padding: 10px;
-        width: 43%;
-    }
+    .jared {display: block;}
 
-    /* slide 3 */
-    .header3 {
-        font-size: 2rem;
-        padding-top: 6rem;
-        width: 28%;
-    }
-    .text3 {
-        font-size: 16px;
-        padding: 10px;
-        width: 32%;
-    }
-    .testimonialContainer {
-        max-width: 70%;
-    }
-    .schoolContainer {
-        width: 100%;
-        height: 100%
-    }
-    .jared {
-        display: block;
-    }
-    .button{
-        display: grid;
-        width: 80%;
-    }
-    .div{
-        grid-template-columns: 80% 20%;
-        width: 70%;
-    }
-    .linkTitle {
-        font-size: 25px;
-        line-height: 28px;
-    }
-    .singleButton1 {
-        width: 200px;
-    }
-    .singleButton2 {
-        width: 200px;
-    }
+    .button {display: grid; max-width: 80%;}
+
+    .div {grid-template-columns: 80% 20%; max-width: 70%;}
+
+    .linkTitle {font-size: 25px; line-height: 28px;}
+
+    .singleButton1 {max-width: 200px;}
+
+    .singleButton2 {max-width: 200px;}
 }
-
-

@@ -20,21 +20,20 @@ export default function Info({fr}) {
                         offer various pre-university programs in social sciences, sciences, 
                         and arts, as well as certificates that provide opportunities 
                         to our students to be involved in important social causes.`
-                        
                     } 
                 </p>
             </div>
             <div className={styles.button}>
                     <Link href={student}>
                         <Button className={styles.singleButton1}>
-                            <span className={styles.linkTitle}>{fr ? `Promotion 2023` : `Class of 2023`}</span>
-                            <img src="/members/MARI.JPG" alt="M.A.R.I. school picture" className={styles.linkImg}></img>
+                            <span className={styles.linkTitle}>{fr ? `Promotion '10` : `Class of '10`}</span>
+                            <img src="/members/MARI.JPG" alt="M.A.R.I. school picture" className={styles.linkImg}/>
                         </Button>
                     </Link><br></br>
                     <Link href={journal}>
                         <Button className={styles.singleButton2}>
                             <span className={styles.linkTitle}>{fr ? `Explorez la vie étudiante!` : `Explore Student Life!`}</span>
-                            <img src="/members/student-life.png" alt="M.A.R.I. school picture" className={styles.linkImg}></img>
+                            <img src="/members/student-life.png" alt="M.A.R.I. school picture" className={styles.linkImg}/>
                         </Button>
                     </Link>
             </div>
