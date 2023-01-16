@@ -37,7 +37,7 @@ export default function Carouselle({fr}) {
         <Carousel>
             {list.map((slide, index) => {
                 return (
-                    <div className={styles.center}>
+                    <div key={index} className={styles.center}>
                         <div className={styles.slide1} style={{backgroundColor: slide.bg, borderRadius: slide.border}}>
                             <div className={styles.slide1_1} style={{backgroundColor: slide.colourSlide, borderRadius: slide.border}}>
                                 <h1 className={styles.header1} style={{color: slide.colourHeader}}>
