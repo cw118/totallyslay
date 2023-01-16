@@ -45,7 +45,7 @@
   }
 
   #regNav {
-    background-color: #ff521c;
+    background-color: #fc76cd;
   }
 
   #spyNav {
@@ -72,9 +72,9 @@
   }
 
   #regNav ul {
-    background-color: #ff521c;
+    background-color: #fc76cd;
     width: 100vw;
-    outline: solid 20px #ff521c;
+    outline: solid 20px #fc76cd;
   }
   
   #spyNav ul {
@@ -98,7 +98,7 @@
   }
 
   #regLogo, #hiddenLogo {
-    background-color: #ff521c;
+    background-color: #fc76cd;
   }
 
   #spyLogo, #hiddenRegLogo {
@@ -123,6 +123,10 @@
     left: 50%;
     top: -28px;
     padding: 3px 18px 4.5px 5.5px;
+  }
+
+  #regLogo img, #hiddenRegLogo img {
+    filter: invert(100%);
   }
 
   #spyLogo, #hiddenLogo {
@@ -585,7 +589,7 @@
     }
 
     #regNav a:not(.navLogo):hover {
-      color: #ffd8cc;
+      color: #6600ff;
     }
 
     #spyNav a:not(.navLogo):hover {

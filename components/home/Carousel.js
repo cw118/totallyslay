@@ -13,7 +13,7 @@ export default function Carouselle({ fr }) {
         <div className={styles.slide2}>
           <h1 className={styles.header2}>{fr ? 'Foire aux comités' : 'Join-A-Club Day'}</h1>
           <p className={styles.text2}>{fr ? 'M.A.R.I offre une grande variété de comités diversifiés pour leurs étudiants!' : 'M.A.R.I. offers a wide selection of clubs to the student body!'}<br></br><br></br>
-            {fr ? 'Rencontrez le comité de film, de développement web, de construction, de programmation et Arduino.' : 'Get to know the robot builders club, the programming club, the website club, the kiosk club, the film club, and many more.'}<br></br><br></br>
+            {fr ? 'Rencontrez le comité de film, de développement web, de construction, de programmation et Arduino.' : 'Get to know the Arduino club, the programming club, the web development club, the construction club, the film club, and many more.'}<br></br><br></br>
             {fr ? 'Inscrivez-vous au bureau de Jerriella.' : 'Sign up in Jerriella\'s office.'}</p>
         </div>
         <div className={styles.slide3}>
