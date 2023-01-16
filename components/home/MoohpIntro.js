@@ -57,7 +57,7 @@ const MoohpIntro = ({ fr }) => {
         <li><strong>{fr ? 'Machinerie' : 'Machinery'}</strong>, {fr ? 'pour nos formidables constructeurs de robot' : 'for our totally awesome robot builders'}</li>
         <li><strong>{fr ? 'Réseau virtuel' : 'Virtual Network'}</strong>, {fr ? 'qui gère notre site web ' : 'which keeps our website running'}</li>
         <li><strong>{fr ? 'Piratage informatique' : 'Hacking'}</strong>, {fr ? 'où nos programmeurs créent des programmes qui s\'attaquent à des problèmes informatiques (de façon éthique!)' : 'where our programmers solve problems (ethically!) with code'}</li>
-        <li><strong>{fr ? 'Production' : 'Manufacturing/Production'}</strong>, {fr ? 'composé d\'experts en construction de kiosque' : 'composed of kiosk construction experts'}</li>
+        <li><strong>{fr ? 'Production' : 'Manufacturing/Production'}</strong>, {fr ? 'composé d\'experts en DIY de kiosque' : 'composed of kiosk DIY experts'}</li>
         <li><strong>{fr ? 'Marketing' : 'Marketing'}</strong>, {fr ? 'pour nos réalisateurs et producteurs vidéo' : 'for our video directors and producers'}</li>
       </ul>
 

@@ -3,10 +3,11 @@
     max-width: revert;
     border: 7px #bf49ff solid;
     transition: transform 0.3s;
+    border-radius: 0px;
 }
 
 .card img {
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 .card:hover {

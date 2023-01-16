@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
 .center {
     display: flex !important;
     justify-content: center;
@@ -20,12 +22,11 @@
     font-size: 2.5rem;
     line-height: 2.3rem;
     padding-top: 2rem;
-    width: 75%;
-    margin: auto;
+    text-align: center;
 }
 
 .text1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kiwi Maru' sans-serif;
     font-size: 14px;
     padding: 10px;
     width: 75%;
@@ -33,13 +34,13 @@
 }
 
 .schoolContainer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kiwi Maru', sans-serif;
     min-width: 50%;
     max-width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 40px;
+    padding: 0px 40px;
     width: 90%;
     margin: 20px auto;
     background-color: rgb(255, 239, 206);
@@ -110,7 +111,7 @@
 
 /* testimonial */
 .testimonialContainer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kiwi Maru', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +181,7 @@
 
     .testimonialContainer {max-width: 55rem;}
     
-    .schoolContainer {max-width: 55rem; height: 100%;}
+    .schoolContainer {max-width: 55rem;}
 
     .jared {display: block;}
 

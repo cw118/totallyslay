@@ -18,8 +18,9 @@ export default function Agents({ fr }) {
                 <strong><Typewrite page='agents' /></strong>
             </h1>
             <p className={styles.intro}>
-                {fr ? `Agent${name}, une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour vous accompagner dans cette mission. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`
-                    : `Agent${name}, a team of 18 MOOHP agents were carefully selected for this mission alongside you. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters.`}
+              <strong>Agent{name},</strong>
+                {fr ? ` une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour vous accompagner dans cette mission. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`
+                    : ` a team of 18 MOOHP agents were carefully selected for this mission alongside you. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters.`}
             </p>
             {students.map((member, index) => 
                 <FlipImg fr={fr} key={index} src={member.src} name={member.name} 

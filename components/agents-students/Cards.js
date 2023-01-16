@@ -24,7 +24,7 @@ function Carte(props) {
 
     return (
         <Card className={styles.card} imgSrc={props.src} horizontal = {true}>
-            <div className="font-verdana">
+            <div className="font-kiwi">
                 <p>
                     <b>{props.fr ? 'Nom: ' : 'Name: '}</b> {`${props.name}`}
                 </p>

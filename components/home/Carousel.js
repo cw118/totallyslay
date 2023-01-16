@@ -7,9 +7,9 @@ export default function Carouselle({ fr }) {
         {bg: "#F6F1D6", colourSlide: "#F6EBC3", colourHeader: "#FE5F00", border: 0,
             header: fr ? 'Portes ouvertes 2010' : 'Open House 2010', 
             text1: fr ? `L'Institut de recherche académique de Marianopolis (M.A.R.I) est ravi d'accueillir 
-                les futurs étudiants aux portes ouvertes 2023.`: 
+                les futurs étudiants aux portes ouvertes 2010.`: 
                 `The Marianopolis Academic Research Institute is thrilled to invite prospective students 
-                and their families to our 2023 open house.`, 
+                and their families to our 2010 open house.`, 
             text2: fr ? `Découvrez M.A.R.I. et sa communauté et informez-vous sur le programme que vous voulez choisir.`: 
                 `Discover M.A.R.I., meet our community, and get all the information you need to choose the best program for you.`,
             text3: ""
@@ -18,8 +18,8 @@ export default function Carouselle({ fr }) {
             header: fr ? 'Foire aux comités' : 'Join-A-Club Day', 
             text1: fr ? 'M.A.R.I offre une grande variété de comités diversifiés pour leurs étudiants!': 
                 'M.A.R.I. offers a wide selection of clubs to the student body!', 
-            text2: fr ? `Rencontrez le comité de film, de développement web, de construction, de programmation et Arduino.` : 
-                `Get to know the robot builders club, the programming club, the website club, the kiosk club, the film club, and many more.`,
+            text2: fr ? `Rencontrez le comité de film, de développement web, de bricolage, de programmation et Arduino.` : 
+                `Get to know the Arduino club, the programming club, the web development club, the DIY club, the film club, and many more.`,
             text3: fr ? 'Inscrivez-vous au bureau de Jerriella.' : `Sign up in Jerriella's office.`
         },
         {bg: "#F4C6E4", colourSlide: "#D4BFF5", colourHeader: "#b251ea", border: 75, 

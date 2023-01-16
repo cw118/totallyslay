@@ -40,7 +40,7 @@ const RegNav = () => {
 
   return (
     <Navbar fluid={true} id='regNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4'>
-      <Navbar.Toggle className='text-gray-700' />
+      <Navbar.Toggle className='text-white' />
       <Navbar.Collapse className='z-40'>
         <Navbar.Link href={linkCounterparts[currentRoute]}>{fr? 'English' : 'Français'}</Navbar.Link>
         <Navbar.Link href={fr? '/fr' : '/'} className={currentRoute === '/' || currentRoute === '/fr' ? 'navActive' : ''}>{fr? 'Accueil' : 'Home'}</Navbar.Link>

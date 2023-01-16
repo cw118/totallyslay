@@ -18,7 +18,7 @@ export default function Post({ fr }) {
 
 function Info(props) {
     return (
-        <div className={`${styles.container}` + " font-verdana"}>
+      <div className={`${styles.container} font-kiwi`}>
             <Avatar img={props.avatar} rounded={true} className={styles.avatarContainer}
                 alt="student profile picture" status={props.status}>
             </Avatar>

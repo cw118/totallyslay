@@ -16,7 +16,6 @@ module.exports = {
       sans: ['Irish Grover', 'sans-serif'],
       spy: ['Rajdhani', 'serif'],
       kiwi: ['Kiwi Maru', 'serif'],
-      verdana: ['Verdana', 'sans-serif']
     },
   },
 };

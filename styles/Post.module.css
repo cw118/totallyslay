@@ -1,7 +1,22 @@
+.sticker {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+}
+
 .header {
     text-align: center;
     font-size: 70px;
-    padding-top: 40px;
+    width: min-content;
+    height: min-content;
+    margin: 40px auto 10px;
+    padding: 0.25rem 1.25rem;
+    letter-spacing: 2.5px;
+    background-color: rgb(255, 239, 206);
+    color: #b944fc;
+    transform: rotate(-4deg);
+    border-radius: 5px;
+    position: relative;
 }
 
 .div {
@@ -72,6 +87,16 @@
     /* for tablets */
     .container {
         width: 500px;
+    }
+
+    .header {
+      padding: 0.5rem 2rem;
+      width: fit-content;
+    }
+
+    .sticker {
+      top: -20px;
+      left: -20px;
     }
 }
 
