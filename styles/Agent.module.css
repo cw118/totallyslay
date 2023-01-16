@@ -95,6 +95,22 @@
   padding-top: 0vh;
 }
 
+.tapMe {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  padding: 0.2rem 0.45rem;
+  background-color: #999;
+  border-radius: 7.5px;
+  font-weight: 500;
+}
+
+@media screen and (pointer: fine) {
+  .tapMe {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .div {
     grid-template-columns: 25% 70%;

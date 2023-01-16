@@ -41,6 +41,7 @@ function FlipImg(props) {
                 <div className={styles.flipCardInner}>
                     <div className={styles.flipCardFront}>
                         <img src={props.src} alt={props.name} className={styles.img}/>
+                        <div className={styles.tapMe}>{props.fr ? 'Appuyez sur moi!' : 'Tap me!'}</div>
                     </div>
                     <div className={styles.flipCardBack}>
                         <h1>{props.name}</h1>

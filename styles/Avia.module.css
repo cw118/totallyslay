@@ -13,6 +13,38 @@
   padding: 0px 2.5rem;
 }
 
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 1.4rem 0.7rem 1.6rem;
+  margin: 1.5rem 0px 3rem;
+  border: solid 1px #fff;
+  border-radius: 20px;
+  box-shadow: rgba(77, 169, 199, 0.349) 0px 7px 29px 0px;
+  text-align: center;
+}
+
+.timeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeContainer:not(.noBorder) {
+  border-right: solid 0.7px #66d9ff;
+}
+
+.time {
+  font-size: 3rem;
+}
+
+.unit {
+  font-size: 1.5rem;
+}
+
 .aviaLogo {
   margin: auto;
   padding: 20px 0px;
@@ -50,6 +82,7 @@
 
 .sectionTitle {
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .info {
@@ -77,7 +110,22 @@
   line-height: 53px;
 }
 
+@media screen and (min-width: 640px) {
+  .time {
+    font-size: 3.5rem;
+  }
+
+}
+
 @media screen and (min-width: 768px) {
+  .time {
+    font-size: 3.75rem;
+  }
+
+  .unit {
+    font-size: 1.75rem;
+  }
+
   .container model-viewer {
     height: 100%;
   }
@@ -114,14 +162,17 @@
   }
 
   .video {
-    height: 40vh;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .video {
     width: 50vw;
     height: 30vw;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .time {
+    font-size: 4rem;
+  }
+
+  .unit {
+    font-size: 2rem;
+  }
+}

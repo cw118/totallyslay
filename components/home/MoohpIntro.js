@@ -64,12 +64,12 @@ const MoohpIntro = ({ fr }) => {
       <div className={styles.bottomNav}>
         <h3 className={styles.whereNext}>{fr ? 'Où irez-vous ensuite' : 'Where to next'}, {fr ? 'agent' : 'Agent'}{agentName ? ` ${agentName}` : ''}?</h3>
         <div className={styles.buttons}>
-          <Link href={fr ? '/fr/moohp/avia' : '/moohp/avia'}><Button>{fr ? 'En apprendre plus sur votre mission' : 'Learn more about your mission'}</Button></Link>
-          <Link href={fr ? '/fr/moohp/agents' : '/moohp/agents'}><Button>{fr ? 'Rencontrer l\'équipe de MOOHP' : 'Meet the MOOHP team'}</Button></Link>
-          <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}><Button>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Button></Link>
-          <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}><Button>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Button></Link>
+          <Link href={fr ? '/fr/moohp/avia' : '/moohp/avia'}>{fr ? 'En apprendre plus sur votre mission' : 'Learn more about your mission'}</Link>
+          <Link href={fr ? '/fr/moohp/agents' : '/moohp/agents'}>{fr ? 'Rencontrer l\'équipe de MOOHP' : 'Meet the MOOHP team'}</Link>
+          <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Link>
+          <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Link>
         </div>
-        <Link href={fr ? '/fr' : '/'}><Button className={styles.mariBtn}>{fr ? 'Retourner à M.A.R.I.' : 'Return to M.A.R.I.'}</Button></Link>
+        <Link className={styles.mariBtn} href={fr ? '/fr' : '/'}>{fr ? 'Retourner à M.A.R.I.' : 'Return to M.A.R.I.'}</Link>
       </div>
     </div>
   );

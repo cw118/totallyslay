@@ -193,22 +193,23 @@
   margin-bottom: 7.5px;
 }
 
-.bottomNav button {
+.bottomNav a {
+  display: inline-block;
   width: 100%;
-  padding: 0.2rem;
+  height: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: #66d9ff;
+  border-radius: 0.5rem;
   border: solid 2px #66d9ff;
   background: none;
   transition: background-color 0.2s, color 0.2s;
 }
 
-.bottomNav button:hover {
+.bottomNav a:hover {
   background-color: #66d9ff;
   color: #000;
-}
-
-.bottomNav button span {
-  font-size: 1.1rem;
 }
 
 .buttons {
@@ -218,11 +219,8 @@
 }
 
 .bottomNav .mariBtn {
-  width: 100%;
-  padding: 0.2rem;
   border: solid 2px #ff8bd6;
   color: #ff8bd6;
-  transition: background-color 0.2s, color 0.2s;
 }
 
 .bottomNav .mariBtn:hover {
@@ -291,9 +289,9 @@
     font-size: 1.4rem;
   }
 
-  .buttons button span, .bottomNav .mariBtn span {
+  .buttons a, .bottomNav .mariBtn {
     font-size: 1.2rem;
-    padding: 0.9rem;
+    padding: 0.55rem;
   }
   
   .buttons {
@@ -402,11 +400,7 @@
     font-size: 1.7rem;
   }
 
-  .buttons button {
-    padding: 0;
-  }
-
-  .buttons button span, .bottomNav .mariBtn span {
+  .buttons a, .bottomNav .mariBtn {
     font-size: 1.4rem;
   }
 }

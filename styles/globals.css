@@ -30,7 +30,6 @@
     color: #4148a4;
     border-color: #66d9ff;
     border-radius: 30px;
-    box-shadow: #66d9ff;
   }
 
   .invertedLogo img {
@@ -200,7 +199,7 @@
 
   .jerryPopUp {
     width: 6em;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     position: fixed;
     bottom: 65px;
     right: 1.25rem;

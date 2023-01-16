@@ -1,11 +1,12 @@
+import { useContext } from 'react';
+import AppContext from '../AppContext';
 import GameField from "./GameField";
 import styles from "../../styles/Avia.module.css";
 import GamePiece from "./GamePiece";
 import RedGamePiece from "./RedGamePiece";
 import Towers from "./Towers";
 import Typewrite from '../Typewrite';
-import { useContext } from 'react';
-import AppContext from '../AppContext';
+import Countdown from './Countdown';
 
 const Avia = ({ fr }) => {
   // "fetch"/use saved agent name
@@ -17,6 +18,7 @@ const Avia = ({ fr }) => {
           <h1 className={styles.header}><strong><Typewrite page={fr ? 'aviaFr' : 'avia'} /></strong></h1>
             <div className={styles.intro}>
                 <img src="/logo/avia-logo.svg" alt="AVIA Logo" className={styles.aviaLogo}/>
+                <Countdown fr={fr} />
                 <p>
                     <strong>{fr ? `Nous sommes contents que vous soyez là, agent${name}! ` : `We're glad you made it, Agent${name}! `}</strong>
                     {fr ? `La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l'aide à MOOHP (Organisation Marianopolis pour la Protection Humaine).` : `The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.`}
@@ -57,7 +59,7 @@ const Avia = ({ fr }) => {
             <div className='grid'><div className={styles.container}>
                 <div className={styles.infoContainer}>
                     <div className={styles.info}>
-                        <h1 className={styles.sectionTitle}>Earn Points</h1>
+                        <h1 className={styles.sectionTitle}>{fr ? 'Gagner des points' : 'Earn Points'}</h1>
                         <p>{fr ? `Les pièces de jeu doivent être placées sur chaque niveau des tours. La tour centrale a 7 niveaux alors que les deux tours adjacentes ont 6 niveaux chacune. Afin de gagner des points et de compléter cette mission avec succès, les agents doivent accumuler autant de points que possible à l\’aide des pièces de jeu.` 
                         :`Game pieces are to be placed flat on each level of the following towers; the centre tower has 7 levels whilst its adjacent towers have 6 levels. To garner points and complete this mission successfully, agents must accumulate as many points as possible using the game pieces. `}</p>
                     </div>
@@ -70,17 +72,17 @@ const Avia = ({ fr }) => {
                 <RedGamePiece />
                 <div className={styles.infoContainer}>
                     <div className={styles.info}>
-                        <h1 className={styles.sectionTitle}>The Red Game Piece</h1>
+                        <h1 className={styles.sectionTitle}>{fr ? 'La pièce de jeu rouge' : 'The Red Game Piece'}</h1>
                         <p>{ fr ? `Mise en garde ! Il y a une pièce de jeu unique avec un centre rouge. Placer cette pièce de jeu dans la tour annule les points gagnés par les pièces de jeu placés dans les sous-niveaux. ` 
                         : `Caution! A single game piece is red. Placing the red game piece in the tower invalidates the points earned by game pieces placed in lower levels of a tower.`}</p>
                     </div>
                 </div>
             </div></div>
             <p className={styles.textOnly}>{fr ? `Vous avez 5 minutes pour compléter chaque joute.` : `You have 5 minutes to complete each heat.`}</p>
-            <p className={styles.textOnly}>{fr ? `Les agents MOOHP doivent se rassembler pendant trois jours, du 16 au 18 février, à l\’École Curé-Antoine-Labelle. On compte sur vous!` 
-                : `MOOHP agents are to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle. We\'re counting on you!`}</p>
+            <p className={styles.textOnly}>{fr ? `Les agents MOOHP doivent se rassembler pendant trois jours, du 16 au 18 février, à l\'École Curé-Antoine-Labelle. On compte sur vous, agent${name}!` 
+                : `MOOHP agents are to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle. We\'re counting on you, Agent${name}!`}</p>
             <h1 className={styles.vidHeader}>{fr ? `Pour plus d\'informations` : `For further information`}</h1>
-            <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </>
     )
 }
