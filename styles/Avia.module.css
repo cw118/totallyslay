@@ -16,15 +16,40 @@
 .countdown {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  position: relative;
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  padding: 1.4rem 0.7rem 1.6rem;
-  margin: 1.5rem 0px 3rem;
+}
+
+.countdown, .startMsg, .endMsg {
+  text-align: center;
+  color: #fff;
   border: solid 1px #fff;
   border-radius: 20px;
-  box-shadow: rgba(77, 169, 199, 0.349) 0px 7px 29px 0px;
-  text-align: center;
+  box-shadow: rgba(77, 168, 199, 0.469) 0px 7px 29px 0px;
+  padding: 1.4rem 0.3rem 1.6rem;
+  margin: 3.5rem 1rem 1.5rem;
+}
+
+.startMsg, .endMsg {
+  font-size: 4rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.startMsg {
+  animation: 1.3s ease-out alternate-reverse infinite colorPulse;
+}
+
+@keyframes colorPulse {
+  0% {
+    color: #89e1ff;
+  }
+
+  100% {
+    color: #fff;
+  }
 }
 
 .timeContainer {
@@ -116,9 +141,17 @@
     font-size: 3.5rem;
   }
 
+  .countdown, .startMsg, .endMsg {
+    margin: 3.5rem 4rem 1.5rem;
+    padding: 1.4rem 0.7rem 1.6rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .startMsg, .endMsg {
+    font-size: 4.5rem;
+  }
+
   .time {
     font-size: 3.75rem;
   }

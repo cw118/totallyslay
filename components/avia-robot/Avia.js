@@ -18,7 +18,6 @@ const Avia = ({ fr }) => {
           <h1 className={styles.header}><strong><Typewrite page={fr ? 'aviaFr' : 'avia'} /></strong></h1>
             <div className={styles.intro}>
                 <img src="/logo/avia-logo.svg" alt="AVIA Logo" className={styles.aviaLogo}/>
-                <Countdown fr={fr} />
                 <p>
                     <strong>{fr ? `Nous sommes contents que vous soyez là, agent${name}! ` : `We're glad you made it, Agent${name}! `}</strong>
                     {fr ? `La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l'aide à MOOHP (Organisation Marianopolis de la protection humaine).` : `The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.`}
@@ -81,7 +80,8 @@ const Avia = ({ fr }) => {
             <p className={styles.textOnly}>{fr ? `Je vous rappelle que vous avez 5 minutes pour compléter chaque joute!` : `Remember that you have 5 minutes to complete each heat!`}</p>
             <p className={styles.textOnly}>{fr ? `Nous avons besoin de tous nos agents MOOHP pendant trois jours, du 16 au 18 février, à l'École Curé-Antoine-Labelle. Nous comptons sur vous, agent${name}!` 
                 : `We need all MOOHP agents to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle. We're counting on you, Agent${name}!`}</p>
-            <h1 className={styles.vidHeader}>{fr ? `Pour plus d\'informations` : `For further information`}</h1>
+            <Countdown fr={fr} />
+            <h1 className={styles.vidHeader}>{fr ? `Pour plus d'informations` : `For further information`}</h1>
             <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </>
     )
