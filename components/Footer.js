@@ -6,15 +6,15 @@ const Foooter = () => {
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  const lang = currentRoute.includes('/fr') ? true : false;
+  const fr= currentRoute.includes('/fr') ? true : false;
   const spy = currentRoute.includes('/moohp') ? true : false;
 
   return (
-    <Footer container={true} className={classNames('footer px-2 py-4 rounded-none', { 'font-spy': spy })}>
+    <Footer container={true} className={classNames('footer px-2 py-4 rounded-none sm:px-4', { 'font-spy': spy })}>
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <Footer.Brand
-            href={spy ? (lang ? '/fr/moohp' : '/moohp') : (lang ? '/fr' : '/')}
+            href={spy ? (fr? '/fr/moohp' : '/moohp') : (fr? '/fr' : '/')}
             src={spy ? '/logo/moohp-logo.svg' : '/logo/mari-logo.svg'}
             alt={spy ? "MOOHP logo" : "M.A.R.I. logo"}
             name={spy ? "MOOHP" : "M.A.R.I."}
@@ -23,7 +23,7 @@ const Foooter = () => {
           <Footer.Copyright
             className='footerCopyright'
             href="#"
-            by={lang ? 'Robotique Marianopolis. Site inspiré par Totally Spies!' : 'Marianopolis Robotics. Site inspired by Totally Spies!'}
+            by={fr? 'Robotique Marianopolis. Site inspiré par Totally Spies!' : 'Marianopolis Robotics. Site inspired by Totally Spies!'}
             year={2023}
           />
         </div>

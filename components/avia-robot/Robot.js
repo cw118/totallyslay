@@ -9,12 +9,13 @@ import Typewrite from '../Typewrite';
 const Robot = ({ fr }) => {
   // "fetch"/use saved agent name
   const [agentName, setAgentName] = useContext(AppContext);
+  const name = (agentName ? ' ' : '') + agentName;
 
   return (
     <div className={styles.pageWrapper}>
       <h3 className={styles.title}><Typewrite page='robot' /></h3>
       <p className={styles.intro}>
-        {fr ? `Agent ${agentName}, voici toutes les informations dont vous aurez besoin sur le robot à construire — il sera crucial envers l'accomplissement de la mission AVIA.` : `Agent ${agentName}, here is all the information you will need on the robot to build — it will be crucial towards the completion of AVIA.`}
+        {fr ? `Agent${name}, voici toutes les informations dont vous aurez besoin sur le robot à construire — il sera crucial pour l'accomplissement de la mission AVIA.` : `Agent${name}, here is all the information you will need on the robot to build — it will be crucial towards the completion of mission AVIA.`}
       </p>
       <div className={styles.rowOne}>
         <RobotBase />

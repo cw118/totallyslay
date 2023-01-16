@@ -1,11 +1,11 @@
 import { Carousel } from 'antd';
 import styles from '../../styles/Home.module.css';
 
-export default function Carouselle({fr}) {
+export default function Carouselle({ fr }) {
     const el = {backgroundColor: "#F6F1D6"}
     const list = [
         {bg: "#F6F1D6", colourSlide: "#F6EBC3", colourHeader: "#FE5F00", border: 0,
-            header: fr ? 'Portes ouvertes 2023' : 'Open House 2023', 
+            header: fr ? 'Portes ouvertes 2010' : 'Open House 2010', 
             text1: fr ? `L'Institut de recherche académique de Marianopolis (M.A.R.I) est ravi d'accueillir 
                 les futurs étudiants aux portes ouvertes 2023.`: 
                 `The Marianopolis Academic Research Institute is thrilled to invite prospective students 

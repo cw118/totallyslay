@@ -9,12 +9,11 @@ export default function Info({fr}) {
         <div className={styles.div}>
             <div className={styles.schoolContainer}>
                 <p>
-                    {fr ? `L’institut de recherche académique de Marianopolis (M.A.R.I.) 
+                    {fr ? `L'institut de recherche académique de Marianopolis (M.A.R.I.) 
                         est un collège privé situé à Westmount, Montréal. 
                         Nous offrons une variété de programmes pré-universitaires
                         dans le domaine des sciences sociales, des sciences et des 
-                        arts. Des certificats sont également offerts à nos étudiants 
-                        afin qu’ils puissent être d’autant plus impliqués dans les enjeux sociaux.` 
+                        arts. Des certificats sont également offerts à nos étudiants pour reconnaître leurs implications dans les enjeux sociaux."` 
                         :
                         `The Marianopolis Academic Research Institute (M.A.R.I.) is a
                         private english college located in Westmount, Montreal. We 
@@ -27,13 +26,13 @@ export default function Info({fr}) {
             <div className={styles.button}>
                     <Link href={student}>
                         <Button className={styles.singleButton1}>
-                            <p className={styles.linkTitle}>{fr ? `Promotion '10` : `Class of '10`}</p>
+                            <span className={styles.linkTitle}>{fr ? `Promotion '10` : `Class of '10`}</span>
                             <img src="/members/MARI.JPG" alt="M.A.R.I. school picture" className={styles.linkImg}/>
                         </Button>
                     </Link><br></br>
                     <Link href={journal}>
                         <Button className={styles.singleButton2}>
-                            <p className={styles.linkTitle}>{fr ? `Explorez la vie étudiante!` : `Explore Student Life!`}</p>
+                            <span className={styles.linkTitle}>{fr ? `Explorez la vie étudiante!` : `Explore Student Life!`}</span>
                             <img src="/members/student-life.png" alt="M.A.R.I. school picture" className={styles.linkImg}/>
                         </Button>
                     </Link>

@@ -27,10 +27,9 @@
      override default active tab styles) */
   button[aria-selected="true"].active {
     background-color: #66d9ff;
-    color: #4148A4;
+    color: #4148a4;
     border-color: #66d9ff;
     border-radius: 30px;
-    box-shadow: #66d9ff;
   }
 
   .invertedLogo img {
@@ -46,7 +45,7 @@
   }
 
   #regNav {
-    background-color: #FF7522;
+    background-color: #fc76cd;
   }
 
   #spyNav {
@@ -65,7 +64,7 @@
   }
 
   #regNav a:not(.navLogo) {
-    color: #000;
+    color: #fff;
   }
 
   #spyNav a:not(.navLogo) {
@@ -73,9 +72,9 @@
   }
 
   #regNav ul {
-    background-color: #FF7522;
+    background-color: #fc76cd;
     width: 100vw;
-    outline: solid 20px #FF7522;
+    outline: solid 20px #fc76cd;
   }
   
   #spyNav ul {
@@ -99,7 +98,7 @@
   }
 
   #regLogo, #hiddenLogo {
-    background-color: #FF7522;
+    background-color: #fc76cd;
   }
 
   #spyLogo, #hiddenRegLogo {
@@ -124,6 +123,10 @@
     left: 50%;
     top: -28px;
     padding: 3px 18px 4.5px 5.5px;
+  }
+
+  #regLogo img, #hiddenRegLogo img {
+    filter: invert(100%);
   }
 
   #spyLogo, #hiddenLogo {
@@ -200,7 +203,7 @@
 
   .jerryPopUp {
     width: 6em;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     position: fixed;
     bottom: 65px;
     right: 1.25rem;
@@ -251,12 +254,22 @@
     font-size: 0.95rem;
     letter-spacing: 0.4px;
     text-decoration: underline;
-    color: #fff;
     transition: color 0.3s;
+    animation: 1.3s ease-out alternate-reverse infinite colorPulse;
   }
 
   .popUpLink:hover {
-    color: #99e6ff;
+    color: #1ac6ff !important;
+    font-weight: 800;
+  }
+
+  @keyframes colorPulse {
+    0% {
+      color: #66d9ff;
+    }
+    100% {
+      color: #fff;
+    }
   }
   
   .puzzle {
@@ -444,7 +457,7 @@
   .puzzleChangeLang {
     position: fixed;
     z-index: 85;
-    bottom: 10px;
+    top: 10px;
     color: #000 !important;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
     left: 50%;
@@ -576,7 +589,7 @@
     }
 
     #regNav a:not(.navLogo):hover {
-      color: #fff;
+      color: #6600ff;
     }
 
     #spyNav a:not(.navLogo):hover {
@@ -591,7 +604,7 @@
 
   @media screen and (min-width: 900px) {
     .puzzleChangeLang {
-      bottom: 15px;
+      top: 15px;
     }
 
     .puzzleChangeLang span {

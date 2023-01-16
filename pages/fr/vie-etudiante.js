@@ -7,7 +7,7 @@ export default function vieEtudiante() {
     <>
       <Meta title='Vie étudiante | M.A.R.I.' description='Vie étudiante à M.A.R.I.' />
       <h1 className={styles.header}>Vie étudiante</h1>
-      <Post />
+      <Post fr={true} />
     </>
   );
 }

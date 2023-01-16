@@ -2,6 +2,8 @@ import styles from "../../styles/Archive.module.css";
 import { Tabs, Card, Timeline } from "flowbite-react";
 import { robEng, kioskEng, webEng, vidEng, progEng, robFr, kioskFr, webFr, vidFr, progFr } from "./variablesArchives.js";
 import Typewrite from '../Typewrite';
+import { useContext } from 'react';
+import AppContext from '../AppContext';
 
 export default function Archive({ fr }) {
     const rob = fr ? robFr : robEng;
@@ -9,20 +11,24 @@ export default function Archive({ fr }) {
     const web = fr ? webFr : webEng;
     const vid = fr ? vidFr : vidEng;
     const prog = fr ? progFr : progEng;
-    const list = [{name: rob, title: "ROBOT"}, {name: kiosk, title: fr ? "KIOSQUE" : "KIOSK"}, {name: web, title: fr ? "SITE WEB" : "WEBSITE"}, 
+    const entries = [{name: rob, title: "ROBOT"}, {name: kiosk, title: fr ? "KIOSQUE" : "KIOSK"}, {name: web, title: fr ? "SITE WEB" : "WEBSITE"}, 
         {name: vid, title: fr ? "VIDÉO" : "VIDEO"}, {name: prog, title: fr ? "PROGRAMMATION" : "PROGRAMMING"}
     ]
+  
+    const [agentName, setAgentName] = useContext(AppContext);
+    const name = (agentName ? ' ' : '') + agentName;
 
     return(
         <div className={styles.bg}>
         <div className={styles.intro}>
             <h1 className={styles.header}><Typewrite page={fr ? 'archivesFr' : 'archives'} /></h1>
             <p>
-                {fr ? `Les directeurs de MOOHP ont soigneusement choisi une équipe d’agent 
+                <strong>{fr ? `Bienvenue aux archives de MOOHP, agent${name}! ` : `Welcome to the MOOHP archives, Agent${name}! `}</strong>
+                {fr ? `Les directeurs de MOOHP ont soigneusement choisi une équipe d'agent 
                 de M.A.R.I. pour compléter la mission AVIA 2023. Les 18 membres 
-                constituant l’équipe se sont d’abord rencontrés au début du mois de 
+                constituant l'équipe se sont d'abord rencontrés au début du mois de 
                 septembre. Ensuite, des rencontres ont été tenues régulièrement deux 
-                fois par semaine afin d’explorer les talents individuels des agents 
+                fois par semaine afin d'explorer les talents individuels des agents 
                 et de déterminer la manière dont chacun pourra contribuer à la mission.`
                 :
                 `MOOHP's directors carefully curated a team of agents from 
@@ -34,9 +40,9 @@ export default function Archive({ fr }) {
             </p>
         </div>
         <Tabs.Group aria-label="Tabs with icons" style="underline" className={styles.tabs}>
-            {list.map((el, index) => 
-                <Tabs.Item title={el.title} key={index}>
-                    {el.name.map((member, index) => 
+            {entries.map((entry, index) => 
+                <Tabs.Item title={entry.title} key={index}>
+                    {entry.name.map((member, index) => 
                         <Posts key={index} time={member.time} img={member.img} alt={member.alt} text={member.text}/>
                     )}
                 </Tabs.Item>

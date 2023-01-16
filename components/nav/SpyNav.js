@@ -12,7 +12,7 @@ const SpyNav = () => {
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  const lang = currentRoute.includes('/fr') ? true : false;
+  const fr= currentRoute.includes('/fr') ? true : false;
 
   const pause = () => setPaused(true);
   const play = () => setPaused(false);
@@ -33,16 +33,16 @@ const SpyNav = () => {
     <Navbar fluid={true} id='spyNav' className='relative z-50 pl-0 sm:pl-0 md:pl-4 font-spy'>
       <Navbar.Toggle className='text-gray-100 hover:text-gray-700' />
       <Navbar.Collapse className='z-40'>
-        <Navbar.Link href={lang ? currentRoute.replace('fr', '').replace('//', '/') : '/fr' + currentRoute}>
-          {lang ? 'English' : 'Français'}
+        <Navbar.Link href={fr? currentRoute.replace('fr', '').replace('//', '/') : '/fr' + currentRoute}>
+          {fr? 'English' : 'Français'}
         </Navbar.Link>
         <Navbar.Link
-          href={lang ? '/fr/moohp' : '/moohp'}
+          href={fr? '/fr/moohp' : '/moohp'}
           className={(currentRoute === '/moohp' || currentRoute === '/fr/moohp') ? 'navActive' : ''}>
-          {lang ? 'Accueil' : 'Home'}
+          {fr? 'Accueil' : 'Home'}
         </Navbar.Link>
         <Navbar.Link
-          href={lang ? '/fr/moohp/avia' : '/moohp/avia'}
+          href={fr? '/fr/moohp/avia' : '/moohp/avia'}
           className={(currentRoute === '/moohp/avia' || currentRoute === '/fr/moohp/avia') ? 'navActive' : ''}
         >
           Avia
@@ -50,25 +50,25 @@ const SpyNav = () => {
       </Navbar.Collapse>
       <div className='block m-auto relative'>
         <div id='spyLogo' className={classNames('navLogo', { 'showLogoTwo': showLogo, 'hideLogoTwo': hideLogo, 'pause': paused })} onMouseOver={revealLogo} onTouchStart={revealLogo} onMouseLeave={pause} onTouchEnd={pause}>
-          <img src='/logo/moohp-logo.svg' alt={lang ? 'Logo de MOOHP' : 'MOOHP logo'} />
+          <img src='/logo/moohp-logo.svg' alt={fr? 'Logo de MOOHP' : 'MOOHP logo'} />
         </div>
-        <Link href={lang ? '/fr' : '/'} id='hiddenRegLogo' className='navLogo' onMouseOver={play} onTouchStart={play} onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
-          <img src='/logo/mari-logo.svg' alt={lang ? 'Logo de M.A.R.I.' : 'M.A.R.I logo'} />
+        <Link href={fr? '/fr' : '/'} id='hiddenRegLogo' className='navLogo' onMouseOver={play} onTouchStart={play} onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
+          <img src='/logo/mari-logo.svg' alt={fr? 'Logo de M.A.R.I.' : 'M.A.R.I logo'} />
         </Link>
       </div>
       <Navbar.Collapse className='navSecondCollapse'>
         <Navbar.Link
-          href={lang ? '/fr/moohp/agents' : '/moohp/agents'}
+          href={fr? '/fr/moohp/agents' : '/moohp/agents'}
           className={(currentRoute === '/moohp/agents' || currentRoute === '/fr/moohp/agents') ? 'navActive' : ''}>
           Agents
         </Navbar.Link>
         <Navbar.Link
-          href={lang ? '/fr/moohp/archives' : '/moohp/archives'}
+          href={fr? '/fr/moohp/archives' : '/moohp/archives'}
           className={(currentRoute === '/moohp/archives' || currentRoute === '/fr/moohp/archives') ? 'navActive' : ''}>
           Archives
         </Navbar.Link>
         <Navbar.Link
-          href={lang ? '/fr/moohp/robot' : '/moohp/robot'}
+          href={fr? '/fr/moohp/robot' : '/moohp/robot'}
           className={(currentRoute === '/moohp/robot' || currentRoute === '/fr/moohp/robot') ? 'navActive' : ''}>
           Robot
         </Navbar.Link>

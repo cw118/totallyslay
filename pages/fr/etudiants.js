@@ -5,7 +5,7 @@ export default function etudiants() {
   return (
     <>
       <Meta title='Étudiants | M.A.R.I.' description='' />
-      <Cards />
+      <Cards fr={true} />
     </>
   );
 }

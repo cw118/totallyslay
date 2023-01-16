@@ -13,6 +13,63 @@
   padding: 0px 2.5rem;
 }
 
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.countdown, .startMsg, .endMsg {
+  text-align: center;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 20px;
+  box-shadow: rgba(77, 168, 199, 0.469) 0px 7px 29px 0px;
+  padding: 1.4rem 0.3rem 1.6rem;
+  margin: 3.5rem 1rem 1.5rem;
+}
+
+.startMsg, .endMsg {
+  font-size: 4rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.startMsg {
+  animation: 1.3s ease-out alternate-reverse infinite colorPulse;
+}
+
+@keyframes colorPulse {
+  0% {
+    color: #89e1ff;
+  }
+
+  100% {
+    color: #fff;
+  }
+}
+
+.timeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeContainer:not(.noBorder) {
+  border-right: solid 0.7px #66d9ff;
+}
+
+.time {
+  font-size: 3rem;
+}
+
+.unit {
+  font-size: 1.5rem;
+}
+
 .aviaLogo {
   margin: auto;
   padding: 20px 0px;
@@ -50,6 +107,7 @@
 
 .sectionTitle {
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .info {
@@ -72,12 +130,36 @@
   color: white;
   font-size: 50px;
   font-weight: bolder;
+  margin-top: 1.75rem;
   padding: 20px 0px;
   text-align: center;
   line-height: 53px;
 }
 
+@media screen and (min-width: 640px) {
+  .time {
+    font-size: 3.5rem;
+  }
+
+  .countdown, .startMsg, .endMsg {
+    margin: 3.5rem 4rem 1.5rem;
+    padding: 1.4rem 0.7rem 1.6rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .startMsg, .endMsg {
+    font-size: 4.5rem;
+  }
+
+  .time {
+    font-size: 3.75rem;
+  }
+
+  .unit {
+    font-size: 1.75rem;
+  }
+
   .container model-viewer {
     height: 100%;
   }
@@ -114,14 +196,17 @@
   }
 
   .video {
-    height: 40vh;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .video {
     width: 50vw;
     height: 30vw;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .time {
+    font-size: 4rem;
+  }
+
+  .unit {
+    font-size: 2rem;
+  }
+}

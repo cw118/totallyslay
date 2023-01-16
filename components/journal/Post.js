@@ -1,18 +1,14 @@
-import {Card, Avatar } from "flowbite-react";
+import { Card, Avatar } from "flowbite-react";
 import styles from "../../styles/Post.module.css";
-import { useRouter } from "next/router";
-import { eng, fr } from "./variablesPosts";
+import { engPosts, frPosts } from "./variablesPosts";
 
-export default function Post() {
-    const router = useRouter();
-    const currentRoute = router.pathname;
-    const lang = currentRoute.includes('/fr') ? 'fr' : '';
-    const post = lang ? fr : eng;
+export default function Post({ fr }) {
+    const post = fr ? frPosts : engPosts;
 
     return(
         <div className={styles.div}>
             {post.map((post, index) => 
-                <Info key={index} avatar={post.avatar} status={post.status} author={post.author}
+              <Info key={index} fr={fr} avatar={post.avatar} status={post.status} author={post.author}
                 date={post.date} image={post.src} username={post.user} caption={post.caption}
                 hashtags={post.hashtags} commenter={post.commenter} comment={post.comment} likes={post.likes} />
             )}
@@ -50,7 +46,7 @@ function Info(props) {
                         <p>{props.comment}</p>
                     </div>
                     <p className={styles.likes}>
-                        {props.likes} likes
+                        {props.likes} {props.fr ? 'J\'aime' : 'likes'}
                     </p>
                 </Card>
             </div>
