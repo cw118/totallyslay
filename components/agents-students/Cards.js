@@ -13,13 +13,13 @@ export default function Cards({ fr }) {
             </h1>
             <p className={`${styles.clubsDesc} font-kiwi`}>
               {fr ? `Tous les étudiants à M.A.R.I. participent à au moins un comité: 
-                  le comité Arduino construit des robots, le comité de développement web crée des sites web, 
-                  le comité de bricolage travaille sur des projets de construction et fait l'artisanat, 
+                  le comité Arduino où on construit des robots, le comité de développement web, 
+                  le comité de bricolage qui permet de développer des compétences en construction et en design d'intérieur, 
                   le comité de programmation résout des problèmes de programmation, et le comité de film
                   réalise des vidéos.` 
-                  : `M.A.R.I. students all take part in at least one club: the Arduino club engineers robots, 
-                  the web development club creates websites, the DIY club works on construction projects and crafts,
-                  the programming club solves coding challenges, and the film club directs and produces videos.`}</p>
+                  : `M.A.R.I. students all take part in various clubs such as the Arduino club, 
+                  in which they build robots, the programming club, the web development club,
+                  the DIY club that develops construction and interior design skills, and the film club.`}</p>
             <div className={styles.div}>
                 {students.map((member, index) => 
                     <Carte fr={fr} key={index} src={member.src} name={member.name} 
@@ -33,7 +33,7 @@ export default function Cards({ fr }) {
 function Carte(props) {
     return (
         <Card className={styles.card} imgSrc={props.src} horizontal={true}>
-            <div className="font-kiwi">
+            <div className={`${styles.text} font-kiwi`}>
                 <p>
                     <strong>{props.fr ? 'Nom: ' : 'Name: '}</strong> {`${props.name}`}
                 </p>

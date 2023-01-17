@@ -44,8 +44,7 @@ const MoohpIntro = ({ fr }) => {
             <div className={styles.inputGroup}>
             <input ref={inputRef} className={classNames(`${styles.inputName}`, { 'inputWarn': inputWarn })} type='text' onChange={(e) => setTempName(e.target.value)}
                 placeholder={inputWarn ? (fr ? 'Veuillez entrer un nom' : 'Please enter a name') : (fr ? 'Entrez un nom de code' : 'Type a codename')} />
-              <Button outline={true} className={styles.enterName}
-                gradientDuoTone="pinkToOrange"
+              <Button className={styles.enterName}
                 onClick={handleSubmit}
                 >{fr ? 'Soumettre' : 'Enter'}</Button>
             </div>
@@ -63,12 +62,13 @@ const MoohpIntro = ({ fr }) => {
 
       <div className={styles.bottomNav}>
         <h3 className={styles.whereNext}>{fr ? 'Où irez-vous ensuite' : 'Where to next'}, {fr ? 'agent' : 'Agent'}{agentName ? ` ${agentName}` : ''}?</h3>
-        <div className={styles.buttons}>
+        <div className='md:grid'><div className={styles.buttons}>
           <Link href={fr ? '/fr/moohp/avia' : '/moohp/avia'}>{fr ? 'En apprendre plus sur votre mission' : 'Learn more about your mission'}</Link>
           <Link href={fr ? '/fr/moohp/agents' : '/moohp/agents'}>{fr ? 'Rencontrer l\'équipe de MOOHP' : 'Meet the MOOHP team'}</Link>
           <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Link>
           <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Link>
-        </div>
+        </div></div>
+        <Link className={styles.ghBtn} href='https://github.com/cw118/totallyslay'>{fr ? 'Code source sur GitHub' : 'Source code on GitHub'}</Link>
         <Link className={styles.mariBtn} href={fr ? '/fr' : '/'}>{fr ? 'Retourner à M.A.R.I.' : 'Return to M.A.R.I.'}</Link>
       </div>
     </div>

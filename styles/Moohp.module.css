@@ -108,6 +108,7 @@
 .jerryWelcome {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding: 1.5rem 0px 2.5rem;
   justify-content: center;
@@ -123,12 +124,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  grid-row-gap: 0.5rem;
   row-gap: 0.5rem;
 }
 
 .inputGroup {
   display: flex;
   flex-direction: column;
+  grid-row-gap: 0.5rem;
   row-gap: 0.5rem;
 }
 
@@ -139,19 +142,33 @@
   font-weight: 500;
   border-radius: 7.5px;
   padding: 0.4rem 0.5rem;
-  border: solid 1.75px #66d9ff;
+  border: solid 2px #c9f2ff;
+  box-shadow: #66d9ff50 0px 5px 20px;
   line-height: 0.9rem;
   text-align: center;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 .inputName:focus {
-  border: solid 1.75px #e74694;
+  box-shadow: #66d9ff50 0px 5px 20px !important; /* box-shadow won't show on focus if it's not specified here as well */
+  border-color: #5ad6ff;
   box-shadow: none;
 }
 
 .inputName::placeholder {
   font-size: 0.83rem;
+}
+
+.enterName {
+  border: 2px #66d9ff solid;
+  background: none;
+  transition: background-color 0.2s, color 0.2s;
+  box-shadow: #66d9ff50 0px 5px 20px;
+}
+
+.enterName:hover {
+  background-color: #66d9ff;
+  color: #4148a4;
 }
 
 .enterName span {
@@ -179,6 +196,7 @@
 .bottomNav {
   display: flex;
   flex-direction: column;
+  grid-row-gap: 1rem;
   row-gap: 1rem;
   margin-top: 2.5rem;
   padding: 1.25rem 1.1rem;
@@ -209,13 +227,20 @@
 
 .bottomNav a:hover {
   background-color: #66d9ff;
-  color: #000;
+  color: #4148a4;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
+  grid-row-gap: 0.9rem;
   row-gap: 0.9rem;
+}
+
+/* using .bottomNav .mariBtn etc. to increase specificity and 
+   thereby more easily override default Tailwind/Flowbite styles */
+.bottomNav .mariBtn, .bottomNav .ghBtn {
+  font-weight: 600;
 }
 
 .bottomNav .mariBtn {
@@ -225,7 +250,7 @@
 
 .bottomNav .mariBtn:hover {
   background-color: #ff8bd6;
-  color: #000;
+  color: #4148a4;
 }
 
 @media screen and (min-width: 640px) {
@@ -235,10 +260,12 @@
 
   .initialWelcome {
     padding: 1rem;
+    grid-row-gap: 0.8rem;
     row-gap: 0.8rem;
   }
 
   .inputGroup {
+    grid-row-gap: 0.7rem;
     row-gap: 0.7rem;
   }
 
@@ -255,6 +282,7 @@
   }
 
   .initialWelcome {
+    grid-row-gap: 1rem;
     row-gap: 1rem;
   }
 
@@ -263,6 +291,7 @@
   }
 
   .inputGroup {
+    grid-row-gap: 0.8rem;
     row-gap: 0.8rem;
   }
 
@@ -289,7 +318,7 @@
     font-size: 1.4rem;
   }
 
-  .buttons a, .bottomNav .mariBtn {
+  .buttons a, .bottomNav .ghBtn, .bottomNav .mariBtn {
     font-size: 1.2rem;
     padding: 0.55rem;
   }
@@ -297,13 +326,16 @@
   .buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0.75rem;
     row-gap: 0.75rem;
+    grid-column-gap: 0.75rem;
     column-gap: 0.75rem;
   }
 }
 
 @media screen and (min-width: 850px) {
   .initialWelcome {
+    grid-row-gap: 1.5rem;
     row-gap: 1.5rem;
   }
 
@@ -312,6 +344,7 @@
   }
 
   .inputGroup {
+    grid-row-gap: 0.9rem;
     row-gap: 0.9rem;
   }
 
@@ -374,6 +407,7 @@
   }
 
   .initialWelcome {
+    grid-row-gap: 1.8rem;
     row-gap: 1.8rem;
   }
 
@@ -382,6 +416,7 @@
   }
 
   .inputGroup {
+    grid-row-gap: 1rem;
     row-gap: 1rem;
   }
 
@@ -400,7 +435,7 @@
     font-size: 1.7rem;
   }
 
-  .buttons a, .bottomNav .mariBtn {
+  .buttons a, .bottomNav .ghBtn, .bottomNav .mariBtn {
     font-size: 1.4rem;
   }
 }
@@ -408,6 +443,7 @@
 @media screen and (min-width: 2000px) {
   .buttons {
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
     column-gap: 1rem;
   }
 }

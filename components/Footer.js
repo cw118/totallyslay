@@ -22,7 +22,7 @@ const Foooter = () => {
           />
           <Footer.Copyright
             className='footerCopyright'
-            href="#"
+            href="https://github.com/cw118/totallyslay"
             by={fr? 'Robotique Marianopolis. Site inspiré par Totally Spies!' : 'Marianopolis Robotics. Site inspired by Totally Spies!'}
             year={2023}
           />

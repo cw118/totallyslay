@@ -12,29 +12,36 @@ const Robot = ({ fr }) => {
   const name = (agentName ? ' ' : '') + agentName;
 
   return (
+    // many grid elements are wrapped in another grid element/container
+    // in order for Safari to display them properly/as intended
     <div className={styles.pageWrapper}>
       <h3 className={styles.title}><Typewrite page='robot' /></h3>
       <p className={styles.intro}>
         <strong>Agent{name},</strong>
         {fr ? ` voici toutes les informations dont vous aurez besoin sur le robot à construire — il sera crucial pour l'accomplissement de la mission AVIA.` : ` here is all the information you will need on the robot to build — it will be crucial towards the completion of mission AVIA.`}
       </p>
-      <div className={styles.rowOne}>
+      <div className='grid'><div className={styles.rowOne}>
         <RobotBase />
         <RobotArmTwo />
         <RobotArmTwo />
-      </div>
-      <div className={styles.rowTwo}>
+      </div></div>
+
+      <div className='grid'><div className={styles.rowTwo}>
         <div className={styles.container}>
           <div className={styles.rowTwoModels}>
             <RobotArm />
             <RobotArmTwo />
           </div>
-          <p>Following the kickoff, the machinist division began brainstorming ideas 
+          <div className={styles.robotArms}>
+            <h3 className={`${styles.subheading} ${styles.armSubOne}`}>{fr ? 'Bras 1' : 'Arm 1'}</h3>
+            <p className={styles.armDesc}>Following the kickoff, the machinist division began brainstorming ideas 
             for the arm of the robot. Conflicted between two models, they build the two 
-            following prototypes</p>
+              following prototypes.</p>
+            <h3 className={`${styles.subheading} ${styles.armSubTwo}`}>{fr ? 'Bras 2' : 'Arm 2'}</h3>
+          </div>
         </div>
         <div className={styles.container}>
-          <h3 className={styles.subheading}>The Chosen Arm: Claudine</h3>
+          <h3 className={styles.subheading}>The Chosen Arm (Arm 1)</h3>
           <p>The arm of the robot is composed of 3 two-wire motors that ensure two motion 
             systems: linear motion and rotation. The horizontal linear motion is necessary for 
             picking up and dropping game pieces, whilst the rotation of the arm allows the coloured 
@@ -44,13 +51,14 @@ const Robot = ({ fr }) => {
              by [motor type]. The wheels are surrounded by an aluminium extrusion frame, and 3D-printed 
              adapters to allow them to use bearings for circular shafts for the hexagonal shaft. (LOL WHAT). </p>
         </div>
-      </div>
-      <div className={styles.rowThree}>
-        <div className={styles.imageContainer}>
+      </div></div>
+
+      <div className='grid'><div className={styles.rowThree}>
+        <div className='grid'><div className={styles.imageContainer}>
           <img src="/robot/electric.png" alt="Cabbage ball (temp photo)" />
           <img src="/robot/solder.png" alt="Cabbage ball (temp photo)" />
-        </div>
-        <div className={styles.container}>
+        </div></div>
+        <div className='grid'><div className={styles.container}>
           <h3 className={styles.subheading}>The Lift</h3>
           <p>After careful research, the Machinery agents determined that a three stage 
             cascading lift would be the best option to build a mechanism capable of both 
@@ -61,12 +69,12 @@ const Robot = ({ fr }) => {
             extrusion are free of any obstacles. In order to achieve a maximum height, after multiple 
             designs, agents deem it optimal to attach the rollers to the second stage, and allow them 
             to roll freely on the first and third stage. </p>
-        </div>
-        <div className={styles.imageContainer}>
+        </div></div>
+        <div className='grid'><div className={styles.imageContainer}>
           <img src="/robot/base.png" alt="Cabbage ball (temp photo)" />
           <img src="/robot/sofia-drill.png" alt="Cabbage ball (temp photo)" />
-        </div>
-      </div>
+        </div></div>
+      </div></div>
       <div className={styles.container}>
         <h3 className={styles.subheading}>Struggles</h3>
         <p>The Machinery Division encountered many challenges as they prepared for the mission. Having 
@@ -83,7 +91,8 @@ const Robot = ({ fr }) => {
           the robot&apos;s center. Therefore, they added a thick double aluminium extrusion to the base to support 
           its center.</p>
       </div>
-      <div className={styles.rowOne}>
+
+      <div className='lg:grid'><div className={styles.rowOne}>
         <video width={420} height={340} controls>
           <source src="/robot/arm-rotation.mp4"></source>
         </video>
@@ -93,7 +102,8 @@ const Robot = ({ fr }) => {
         <video width={420} height={340} controls>
           <source src="/robot/combining-robot.mp4"></source>
         </video>
-      </div>
+      </div></div>
+
       <div className={styles.vidContainer}>
         <h1 className={styles.vidHeader}>{fr ? `Tutoriel: Comment construire le bras robotique` : `Tutorial: How to Build the Robotic Arm`}</h1>
         <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

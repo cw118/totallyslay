@@ -203,7 +203,7 @@
 
   .jerryPopUp {
     width: 6em;
-    aspect-ratio: 1 / 1;
+    height: 6em;
     position: fixed;
     bottom: 65px;
     right: 1.25rem;
@@ -491,6 +491,7 @@
     /* 640px is when the footer flattens into "one line" */
     .jerryPopUp {
       width: 7em;
+      height: 7em;
       background-position: 50% 135%;
     }
 

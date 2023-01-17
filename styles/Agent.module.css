@@ -128,6 +128,7 @@
   }
   .cardContainer {
     grid-template-columns: 25% 70%;
+    grid-column-gap: 3rem;
     column-gap: 3rem;
     display: grid;
     justify-content: center;
