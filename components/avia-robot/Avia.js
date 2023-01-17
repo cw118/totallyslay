@@ -21,7 +21,7 @@ const Avia = ({ fr }) => {
                 <p>
                     <strong>{fr ? `Nous sommes contents que vous soyez là, agent${name}! ` : `We're glad you made it, Agent${name}! `}</strong>
                     {fr ? `La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l'aide à MOOHP (Organisation Marianopolis de la protection humaine).` : `The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.`}
-                </p><br></br>
+                </p><br/>
           <p>
             {fr ? 'Cette compétition multidisciplinaire exige l\'implication de tous les agents chez MOOHP, incluant vous-même. Intégrant l\'informatique, la technologie et l\'ingénierie avec les arts et lettres, les département de machinerie, de réseau virtuel, de piratage informatique, de production et de marketing sont tous indispensables pour accomplir cette mission!' : 'This multidisciplinary competition requires the involvement of all agents at MOOHP, including you. Integrating computer science, technology, and engineering with visual arts and humanities; the Machinery, Manufacturing, Hacking, Virtual Network, Marketing and divisions are integral to this mission!'}
           </p>
@@ -78,8 +78,8 @@ const Avia = ({ fr }) => {
                 </div>
             </div></div>
             <p className={styles.textOnly}>{fr ? `Je vous rappelle que vous avez 5 minutes pour compléter chaque joute!` : `Remember that you have 5 minutes to complete each heat!`}</p>
-            <p className={styles.textOnly}>{fr ? `Nous avons besoin de tous nos agents MOOHP pendant trois jours, du 16 au 18 février, à l'École Curé-Antoine-Labelle. ` 
-                : `We need all MOOHP agents to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle. `}
+            <p className={styles.textOnly}>{fr ? `Nous avons besoin de tous nos agents MOOHP pendant trois jours, du 16 au 18 février, à l'École Curé-Antoine-Labelle (216 Boul Marc-Aurèle-Fortin, Laval, QC H7L 1Z5). ` 
+                : `We need all MOOHP agents to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle (216 Boul Marc-Aurèle-Fortin, Laval, QC H7L 1Z5). `}
               <strong>{fr ? `Nous comptons sur vous, agent${name}!` : `We're counting on you, Agent${name}!`}</strong>
             </p>
             <Countdown fr={fr} />

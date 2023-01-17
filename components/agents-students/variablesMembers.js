@@ -1,50 +1,50 @@
 export const engS = [
-    {name: "Adam Abbas", age: 17, year: "First year", club:"Arduino", fun: "When I sleep, I can't see.", src:"/members/Adam_S.JPG"},    
+    {name: "Adam Abbas", age: 17, year: "First year", club:"Arduino and DIY", fun: "When I sleep, I can't see.", src:"/members/Adam_S.JPG"},    
     {name: "Andrea Abou-Haidar", age: 17, year: "Second year", club:"Arduino (executive) and DIY", fun: "It should work... let's test it!", src:"/members/Andrea_S.JPG"},
     {name: "Adelina Badea", age: 17, year: "First year", club:"Arduino", fun: "ADAM!!!", src:"/members/Adelina_S.JPG"},
-    {name: "Yau Hong Chau", age: 18, year: "Second year", club:"Film", fun: "I'm so cold.", src:"/members/Yau_S.JPG"},
-    {name: "Sofia Del Raso", age: 19, year: "Second year", club:"Arduino", fun: "I got a way with the screws.", src:"/members/Sofia_S.JPG"},
+    {name: "Yau Hong Chau", age: 18, year: "Second year", club:"Film and DIY", fun: "I'm so cold.", src:"/members/Yau_S.JPG"},
+    {name: "Sofia Del Raso", age: 19, year: "Second year", club:"Arduino and film", fun: "I got a way with the screws.", src:"/members/Sofia_S.JPG"},
     {name: "Audrey Dumais", age: 17, year: "First year", club:"Film, DIY and web development",fun: "Just reading a boring French book.", src:"/members/Audrey_S.JPG"},
-    {name: "Zoe Hadziaras", age: 18, year: "First year", club:"DIY", fun: "I'm scared of the rats.", src:"/members/Zoe_S.JPG"},
-    {name: "Isabella Hensley", age: 18, year: "Second year", club:"Arduino", fun: "Give me a hammer, I'll fix that.", src:"/members/Isabella_S.JPG"},
+    {name: "Zoe Hadziaras", age: 18, year: "First year", club:"DIY and film", fun: "What does concoise mean?", src:"/members/Zoe_S.JPG"},
+    {name: "Isabella Hensley", age: 18, year: "Second year", club:"Arduino and DIY", fun: "Give me a hammer, I'll fix that.", src:"/members/Isabella_S.JPG"},
     {name: "Victoria Hoang", age: 18, year: "Second year", club:"Web development, DIY and film", fun: "Pigeons can't fly.", src:"/members/Victoria_S.JPG"},
     {name: "Vincent Ly", age: 18, year: "Second year", club:"Arduino and programming", fun: "I am losing my sanity.", src:"/members/Vincent_S.JPG"},
     {name: "Nehna Patel", age: 18, year: "Second year", club:"DIY (executive)", fun: "I can't sneeze.", src:"/members/Nehna_S.jpg"},
-    {name: "Ruwa Qatmash", age: 17, year: "First year", club:"Arduino", fun: "WD-40 for life", src:"/members/Ruwa_S.JPG"},
-    {name: "Celia Shi", age: 18, year: "Second year", club:"Web development, film and DIY", fun: "I'll never sing again. *starts singing*", src:"/members/Celia_S.JPG"},
+    {name: "Ruwa Qatmash", age: 18, year: "First year", club:"Arduino and DIY", fun: "WD-40 for life", src:"/members/Ruwa_S.JPG"},
+    {name: "Celia Shi", age: 18, year: "Second year", club:"Web development, film, DIY and programming", fun: "I'll never sing again. *starts singing*", src:"/members/Celia_S.JPG"},
     {name: "Sangeeta Vidyarthi", age : 18, year: "Second year", club:"Arduino and film", fun: "Screw the credits.", src:"/members/Sangeeta_S.JPG"},
-    {name: "Zi Heng Wang", age: 18, year: "First year", club:"Arduino and DIY", fun: "It's okay, we have a fire extinguisher.", src:"/members/ZiHeng_S.JPG"},
+    {name: "Zi Heng Wang", age: 18, year: "First year", club:"Arduino, programming and DIY", fun: "It's okay, we have a fire extinguisher.", src:"/members/ZiHeng_S.JPG"},
     {name: "Carolyn Wu", age: 18, year: "First year", club:"Web development, DIY, programming and film", fun: "I'll be your sanity keeper.", src:"/members/Carolyn_S.JPG"},
-    {name: "Elisa Xue", age: 18, year: "First year", club:"Film", fun: "I just realized why fx stands for effects.", src:"/members/Elisa_S.JPG"},
-    {name: "Jennifer Zhang", age: 17, year: "First year", club:"Arduino", fun: "Soldered a million times!", src:"/members/Jennifer_S.JPG"},
+    {name: "Elisa Xue", age: 18, year: "First year", club:"Film and DIY", fun: "I just realized why fx stands for effects.", src:"/members/Elisa_S.JPG"},
+    {name: "Jennifer Zhang", age: 18, year: "First year", club:"Arduino and DIY", fun: "Soldered a million times!", src:"/members/Jennifer_S.JPG"},
     {name: "Dominique Paradis", age: "(Confidential)", year: "Staff member", club:"(Confidential)", fun: "That's okay if you want to be wrong.", src:"/members/Paradis.png"},
 ];
 
 export const frS = [
-    {name: "Adam Abbas", age: 17, year: "Première année", club:"Arduino", fun: "Quand je dors, je ne vois pas.", src:"/members/Adam_S.JPG"},    
-    {name: "Andrea Abou-Haidar", age: 17, year: "Deuxième année", club:"Arduino (directrice) et bricolage", fun: "Ça devrait fonctionner... Essayons-le!", src:"/members/Andrea_S.JPG"},
+    {name: "Adam Abbas", age: 17, year: "Première année", club:"Arduino et bricolage", fun: "Quand je dors, je ne vois pas.", src:"/members/Adam_S.JPG"},    
+    {name: "Andrea Abou-Haidar", age: 17, year: "Deuxième année", club:"Arduino (exécutif) et bricolage", fun: "Ça devrait fonctionner... Essayons-le!", src:"/members/Andrea_S.JPG"},
     {name: "Adelina Badea", age: 17, year: "Première année", club:"Arduino", fun: "ADAM!!!", src:"/members/Adelina_S.JPG"},
-    {name: "Yau Hong Chau", age: 18, year: "Deuxième année", club:"Film", fun: "J'ai tellement froid!", src:"/members/Yau_S.JPG"},
-    {name: "Sofia Del Raso", age: 19, year: "Deuxième année", club:"Arduino", fun: "J'ai une spécialité avec les vis.", src:"/members/Sofia_S.JPG"},
+    {name: "Yau Hong Chau", age: 18, year: "Deuxième année", club:"Film et bricolage", fun: "J'ai tellement froid!", src:"/members/Yau_S.JPG"},
+    {name: "Sofia Del Raso", age: 19, year: "Deuxième année", club:"Arduino et film", fun: "J'ai une spécialité avec les vis.", src:"/members/Sofia_S.JPG"},
     {name: "Audrey Dumais", age: 17, year: "Première année", club:"Film, bricolage et développement web", fun: "Je lis un livre français ennuyant.", src:"/members/Audrey_S.JPG"},
-    {name: "Zoe Hadziaras", age: 18, year: "Première année", club:"Bricolage", fun: "J'ai peur des rats.", src:"/members/Zoe_S.JPG"},
-    {name: "Isabella Hensley", age: 18, year: "Deuxième année", club:"Arduino", fun: "Donne-moi un marteau, je le réparerai.", src:"/members/Isabella_S.JPG"},
+    {name: "Zoe Hadziaras", age: 18, year: "Première année", club:"Bricolage et film", fun: `Que veut dire "concoise"`, src:"/members/Zoe_S.JPG"},
+    {name: "Isabella Hensley", age: 18, year: "Deuxième année", club:"Arduino et bricolage", fun: "Donne-moi un marteau, je le réparerai.", src:"/members/Isabella_S.JPG"},
     {name: "Victoria Hoang", age: 17, year: "Deuxième année", club:"Développement web, bricolage et film", fun: "Les pigeons ne peuvent pas voler.", src:"/members/Victoria_S.JPG"},
     {name: "Vincent Ly", age: 18, year: "Deuxième année", club:"Arduino et programmation", fun: "Je sombre dans la folie.", src:"/members/Vincent_S.JPG"},
-    {name: "Nehna Patel", age: 18, year: "Deuxième année", club:"Bricolage (directrice)", fun: "Je ne peux pas éternuer", src:"/members/Nehna_S.jpg"},
-    {name: "Ruwa Qatmash", age: 17, year: "Première année", club:"Arduino", fun: "WD-40, c'est la vie!", src:"/members/Ruwa_S.JPG"},
-    {name: "Celia Shi", age: 18, year: "Deuxième année", club:"Développement web, film et bricolage", fun: "Je ne chanterai plus jamais *et puis elle recommence de chanter*", src:"/members/Celia_S.JPG"},
+    {name: "Nehna Patel", age: 18, year: "Deuxième année", club:"Bricolage (exécutif)", fun: "Je ne peux pas éternuer", src:"/members/Nehna_S.jpg"},
+    {name: "Ruwa Qatmash", age: 18, year: "Première année", club:"Arduino et bricolage", fun: "WD-40, c'est la vie!", src:"/members/Ruwa_S.JPG"},
+    {name: "Celia Shi", age: 18, year: "Deuxième année", club:"Développement web, film, bricolage et programmation", fun: "Je ne chanterai plus jamais *et puis elle recommence de chanter*", src:"/members/Celia_S.JPG"},
     {name: "Sangeeta Vidyarthi", age: 18, year: "Deuxième année", club:"Arduino et film", fun: "Je ne veux plus faire les génériques de la vidéo.", src:"/members/Sangeeta_S.JPG"},
-    {name: "Zi Heng Wang", age: 18, year: "Première année", club:"Arduino", fun: "Tout va bien aller, nous avons un extincteur de feu.", src:"/members/ZiHeng_S.JPG"},
+    {name: "Zi Heng Wang", age: 18, year: "Première année", club:"Arduino, programmation et bricolage", fun: "Tout va bien aller, nous avons un extincteur de feu.", src:"/members/ZiHeng_S.JPG"},
     {name: "Carolyn Wu", age: 18, year: "First year", club:"Développement web, bricolage, programmation et film", fun: "J'empêche mes amis de sombrer dans la folie.", src:"/members/Carolyn_S.JPG"},  
-    {name: "Elisa Xue", age: 18, year: "Première année", club:"Film", fun: "Je viens de découvrir que fx signifie effets.", src:"/members/Elisa_S.JPG"},
-    {name: "Jennifer Zhang", age: 17, year: "Première année", club:"Arduino", fun: "J'ai soudé un million de fois!", src:"/members/Jennifer_S.JPG"},
+    {name: "Elisa Xue", age: 18, year: "Première année", club:"Film et bricolage", fun: "Je viens de découvrir que fx signifie effets.", src:"/members/Elisa_S.JPG"},
+    {name: "Jennifer Zhang", age: 18, year: "Première année", club:"Arduino et bricolage", fun: "J'ai soudé un million de fois!", src:"/members/Jennifer_S.JPG"},
     {name: "Dominique Paradis", age: "(Confidentiel)", year: "Membre du personnel", club:"(Confidentiel)", fun: "C'est correct si tu veux avoir tort.", src:"/members/Paradis.png"},
 ];
 
 
 export const engM = [
-    {name: "Adam Abbas", age: 17, year: "Junior", club:"Machinery", src:"/members/Adam_M.JPG", code: "Adam", height: "5'10/178cm", 
+    {name: "Adam Abbas", age: 17, year: "Junior", club:"Machinery and manufacturing", src:"/members/Adam_M.JPG", code: "Adam", height: "5'10/178cm", 
         gadget: "Laser glasses", specialty: "Professional forgetter", mbti: "INTP",
         text: `I learned that theory is very far from practice, that most of 
         the time you cannot know what you will lack or find. Thus,
@@ -69,7 +69,7 @@ export const engM = [
         time, sleep time, and effort to make it work.  
         `
     },
-    {name: "Yau Hong Chau", age: 18, year: "Senior", club:"Marketing", src:"/members/Yau_M.JPG", code: "Croc", 
+    {name: "Yau Hong Chau", age: 18, year: "Senior", club:"Marketing and manufacturing", src:"/members/Yau_M.JPG", code: "Croc", 
         height: "6'/182cm", gadget: "Cell jammer", specialty: "Expert liar", mbti: "ISTJ",
         text: `As my team and I worked at a consistent pace while making great
         progress in preparation for the competition, I learned better
@@ -79,7 +79,7 @@ export const engM = [
         specifically during the winter break, as well as my time for
         academic work and, most importantly, sleep.`
     },
-    {name: "Sofia Del Raso", age: 19, year: "Senior", club:"Machinery", src:"/members/Sofia_M.JPG", code: "S.A.D", 
+    {name: "Sofia Del Raso", age: 19, year: "Senior", club:"Machinery and marketing", src:"/members/Sofia_M.JPG", code: "S.A.D", 
         height: "5'3/160cm", gadget: "Positivity ray gun", specialty: "Positivity specialist", mbti: "ENFP",
         text: `I really enjoyed making new friends! I think the social aspect
         of the competition is definitely the most enjoyable for me.
@@ -87,7 +87,7 @@ export const engM = [
         which I feel will be great skills to have in the future. 
         I'm really going to miss the CRC.`
     },
-    {name: "Audrey Dumais", age: 17, year: "Junior", club:"Virtual network", src:"/members/Audrey_M.JPG", code: "Badger", 
+    {name: "Audrey Dumais", age: 17, year: "Junior", club:"Virtual network, marekting and manufacturing", src:"/members/Audrey_M.JPG", code: "Badger", 
         height: "5'4/162cm", gadget: "Flint's lighter with 82 functions", specialty: "Wall catcher", mbti: "ENFJ",
         text: `Working together, as a team, supporting each other, is the reason
         I became an agent. As a member of the VN division, I know
@@ -95,7 +95,7 @@ export const engM = [
         such as React.js and Next.js to make sure our agents 
         in the field would have a smooth mission.`
     },
-    {name: "Zoe Hadziaras", age: 18, year: "Junior", club:"Manufacturing", src:"/members/Zoe_M.JPG", code: "Hadz", 
+    {name: "Zoe Hadziaras", age: 18, year: "Junior", club:"Manufacturing and marketing", src:"/members/Zoe_M.JPG", code: "Hadz", 
         height: "5'8/172cm", gadget: "Paint roller", specialty: "Professional mess maker", mbti: "ESFP",
         text: `I learnt that it is not important to only be dedicated to one 
         specialty. This year has taught me to be able to work in different
@@ -103,13 +103,13 @@ export const engM = [
         thing I had to sacrifice was my winter break, but it was worth
         it as I enjoy robotics and my team so much.`
     },
-    {name: "Isabella Hensley", age: 18, year: "Senior", club:"Machinery", src:"/members/Isabella_M.JPG", code: 
+    {name: "Isabella Hensley", age: 18, year: "Senior", club:"Machinery and manufacturing", src:"/members/Isabella_M.JPG", code: 
         "Hensley", height: "5'9/175cm", gadget: "Jet pack boots", specialty: "Meal assembler", mbti: "INTJ",
         text: `I learned about linear motion systems and electronics. I enjoyed
         building the robot and talking with my teammates even if 
         it meant that I had to sacrifice my sleep schedule.`
     },
-    {name: "Victoria Hoang", age: 18, year: "Senior", club:"Virtual network", src:"/members/Victoria_M.JPG", code: 
+    {name: "Victoria Hoang", age: 18, year: "Senior", club:"Virtual network, marketing and manufacturing", src:"/members/Victoria_M.JPG", code: 
         "Vi", height: "5'6/167cm", gadget: "Camera-clad pigeon", specialty: "Bee modeler", mbti: "INFP",
         text: `I learnt new and more efficient ways to build websites using
         React.js and Next.js. Making new friends and learning from 
@@ -127,21 +127,21 @@ export const engM = [
     {name: "Nehna Patel", age: 18, year: "Head", club:"Manufacturing", src:"/members/Nehna_M.JPG", code: "Patel", 
         height: "5'4/162cm", gadget: "Compowder", specialty: "Mind reading", mbti: "ESFP",
         text: `Throughout the years competing in the CRC competition, I've 
-        learnt countless different things – whether that'd be 
+        learnt countless different things - whether that'd be 
         developing my building, organizational or management skills.
          My favourite part of every competition is seeing an idea turn
         into exactly what we wanted it to, seeing the final product
         is always something to be proud of. I did spend a lot of 
         my time on robotics in general, but it was always time I enjoyed.`
     },
-    {name: "Ruwa Qatmash", age: 17, year: "Junior", club:"Machinery", src:"/members/Ruwa_M.JPG", code: "Qatmash", 
+    {name: "Ruwa Qatmash", age: 18, year: "Junior", club:"Machinery and manufacturing", src:"/members/Ruwa_M.JPG", code: "Qatmash", 
         height: "5'6/167cm", gadget: "Wd-40", specialty: "Wd-40 specialist", mbti: "ENTJ",
         text: `I learned how to efficiently manage my time between robotics
         and school. Working on the robot and to move forward while 
         having fun.`
     },
-    {name: "Celia Shi", age: 18, year: "Senior", club:"Virtual network", src:"/members/Celia_M.JPG", code: "Seal", 
-        height: "5'8/172cm", gadget: "Remote-controlled insect", specialty: "Animal whisperer", mbti: "INFP",
+    {name: "Celia Shi", age: 18, year: "Senior", club:"Virtual network, marketing, manufacturing and hacking", src:"/members/Celia_M.JPG", 
+        code: "Seal", height: "5'8/172cm", gadget: "Remote-controlled insect", specialty: "Animal whisperer", mbti: "INFP",
         text: `This is my first time doing anything robotics related and I 
         loved my experience. I learned how to code in React.js  and 
         Next.js and I finally learned how to use git command lines instead 
@@ -157,7 +157,7 @@ export const engM = [
         my APs and my winter break. However, I learned new things 
         regarding the robot, for instance the robotic arm mechanism.`
     },
-    {name: "Zi Heng Wang", age: 18, year: "Junior", club:"Machinery", src:"/members/ZiHeng_M.JPG", code: "Zi Heng", 
+    {name: "Zi Heng Wang", age: 18, year: "Junior", club:"Machinery, manufacturing and hacking", src:"/members/ZiHeng_M.JPG", code: "Zi Heng", 
         height: "5'9/175cm", gadget: "Alligator clips", specialty: "Sleep specialist", mbti: "INTJ",
         text: `Overall, it was extremely fun to work on the robot. I loved 
         meeting new people and working with highly competent teammates. 
@@ -165,14 +165,14 @@ export const engM = [
         the functioning of electrical circuits, and I have also acquired 
         many time management and teamwork skills.`
     },
-    {name: "Carolyn Wu", age: 18, year: "Junior", club:"Hacking and virtual network", src:"/members/Carolyn_M.JPG", 
-        code: "Wu", height: "5'4/162cm", gadget: "Spy watch", specialty: "Senior developer", mbti: "INTJ",
+    {name: "Carolyn Wu", age: 18, year: "Junior", club:"Virtual network, hacking, manufacturing and marketing", src:"/members/Carolyn_M.JPG", 
+        code: "Wu", height: "5'4/162cm", gadget: "Wristwatch camera", specialty: "Senior developer", mbti: "INTJ",
         text: `I learnt a lot about the Next.js framework and various ways 
         to create both 2D and 3D animations. My main struggles were 
         CSS positioning, finding a good approach to animate elements, 
         as well as integrating and customizing npm packages I'd never used before.`
     },
-    {name: "Elisa Xue", age: 18, year: "Junior", club:"Marketing", src:"/members/Elisa_M.JPG", code: "Emu", 
+    {name: "Elisa Xue", age: 18, year: "Junior", club:"Marketing and manufacturing", src:"/members/Elisa_M.JPG", code: "Emu", 
         height: "5'6/167cm", gadget: "Recording pen", specialty: "Enhanced hearing", mbti: "ISTP",
         text: `Through this experience, I learned time management and teamwork 
         skills. I enjoyed meeting new people and having something 
@@ -181,7 +181,7 @@ export const engM = [
         but I had a lot of fun. My main struggle was waking up in the 
         morning during the winter break.`
     },
-    {name: "Jennifer Zhang", age: 17, year: "Junior", club:"Machinery", src:"/members/Jennifer_M.JPG", code: "Yiting Zhang", 
+    {name: "Jennifer Zhang", age: 18, year: "Junior", club:"Machinery and manufacturing", src:"/members/Jennifer_M.JPG", code: "Yiting Zhang", 
         height: "5'7/170cm", gadget: "Wd-40 camera", specialty: "Smile specialist", mbti: "ENTJ",
         text: `As a member of the robot division, I enjoy working with my partners. 
         I made new friends and we cooperated smoothly to reach 
@@ -200,7 +200,7 @@ export const engM = [
 ];
 
 export const frM = [
-    {name: "Adam Abbas", age: 17, year: "Junior", club:"Machinerie", src:"/members/Adam_M.JPG", code: "Adam", height: "5'10/178cm", 
+    {name: "Adam Abbas", age: 17, year: "Junior", club:"Machinerie et production", src:"/members/Adam_M.JPG", code: "Adam", height: "5'10/178cm", 
         gadget: "Lunette laser", specialty: "Oublieur professionnel", mbti: "INTP",
         text: `J'ai appris que la théorie diffère énormément de la pratique. 
         Parce qu'il est impossible de prédire le type de problèmes que je vais
@@ -228,7 +228,7 @@ export const frM = [
         énergie, mon temps, mon sommeil, et tous mes efforts afin d'atteindre 
         un résultat satisfaisant.`
     },
-    {name: "Yau Hong Chau", age: 18, year: "Sénior", club:"Marketing", src:"/members/Yau_M.JPG", code: "Croc", 
+    {name: "Yau Hong Chau", age: 18, year: "Sénior", club:"Marketing et production", src:"/members/Yau_M.JPG", code: "Croc", 
         height: "6'/182cm", gadget: "Brouilleur de téléphone", specialty: "Expert en mensonge", mbti: "ISTJ",
         text: `Alors que mon équipe et moi travaillions à un rythme constant
         tout en faisant de grands progrès en préparation pour la 
@@ -239,7 +239,7 @@ export const frM = [
         les vacances d'hiver, ainsi que mon temps qui aurait été consacré 
         pour les études et, surtout, le sommeil.`
     },
-    {name: "Sofia Del Raso", age: 19, year: "Sénior", club:"Machinerie", src:"/members/Sofia_M.JPG", code: "S.A.D", 
+    {name: "Sofia Del Raso", age: 19, year: "Sénior", club:"Machinerie et marketing", src:"/members/Sofia_M.JPG", code: "S.A.D", 
         height: "5'3/160cm", gadget: "Pistolet à rayons de positivité", specialty: "Spécialiste en positivité", mbti: "ENFP",
         text: `J'ai vraiment adoré me faire de nouveaux amis! Je pense que 
         l'aspect social de la compétition est certainement l'aspect 
@@ -248,7 +248,7 @@ export const frM = [
         mon avis, est une excellente compétence à avoir. La CRC va
         vraiment me manquer.`
     },
-    {name: "Audrey Dumais", age: 17, year: "Junior", club:"Réseau virtuel", src:"/members/Audrey_M.JPG", code: "Badger", 
+    {name: "Audrey Dumais", age: 17, year: "Junior", club:"Réseau virtuel, marketing et production", src:"/members/Audrey_M.JPG", code: "Badger", 
         height: "5'4/162cm", gadget: "Briquet à silex avec 82 fonctions", specialty: "Attrapeuse de mur", mbti: "ENFJ",
         text: `Travailler en équipe et se soutenir mutuellement sont quelques 
         raisons pour lesquelles je suis devenue agente. En tant que 
@@ -257,7 +257,7 @@ export const frM = [
         tels que React.js et Next.js afin de garantir le 
         bon déroulement de la mission pour nos agents sur le terrain.`
     },
-    {name: "Zoe Hadziaras", age: 18, year: "Junior", club:"Production", src:"/members/Zoe_M.JPG", code: "Hadz", 
+    {name: "Zoe Hadziaras", age: 18, year: "Junior", club:"Production et marketing", src:"/members/Zoe_M.JPG", code: "Hadz", 
         height: "5'8/172cm", gadget: "Rouleau à peinture", specialty: "Fabricante de désordre professionnel", mbti: "ESFP",
         text: `J'ai appris qu'il est important de ne pas se consacrer uniquement 
         à une seule spécialité. Cette année m'a appris à 
@@ -266,14 +266,14 @@ export const frM = [
         sont mes vacances d'hiver, mais cela en valait la peine, 
         car j'aime beaucoup la robotique et mon équipe.`
     },
-    {name: "Isabella Hensley", age: 18, year: "Sénior", club:"Machinerie", src:"/members/Isabella_M.JPG", code: 
+    {name: "Isabella Hensley", age: 18, year: "Sénior", club:"Machinerie et production", src:"/members/Isabella_M.JPG", code: 
         "Hensley", height: "5'9/175cm", gadget: "Botte à propulsion autonome", specialty: "Assembleur de repas", mbti: "INTJ",
         text: `J'ai appris sur les systèmes de mouvement linéaire et l'électronique. 
         J'ai aimé construire le robot et discuter avec mes
         coéquipiers, même si cela signifiait que je devais sacrifier 
         mes heures de sommeil.`
     },
-    {name: "Victoria Hoang", age: 18, year: "Sénior", club:"Réseau virtuel", src:"/members/Victoria_M.JPG", code: 
+    {name: "Victoria Hoang", age: 18, year: "Sénior", club:"Réseau virtuel, marketing et production", src:"/members/Victoria_M.JPG", code: 
         "Vi", height: "5'6/167cm", gadget: "Pigeon vêtu d'une caméra", specialty: "Modéliste d'abeille", mbti: "INFP",
         text: `J'ai appris de nouvelles méthodes plus efficaces pour créer 
         des sites web comme React.js et Next.js. Le manque 
@@ -301,12 +301,12 @@ export const frM = [
         final. J'ai passé de nombreuses heures et jours en 
         robotique, mais j'ai toujours adoré ce temps.`
     },
-    {name: "Ruwa Qatmash", age: 17, year: "Junior", club:"Machinerie", src:"/members/Ruwa_M.JPG", code: "Qatmash", 
+    {name: "Ruwa Qatmash", age: 18, year: "Junior", club:"Machinerie et production", src:"/members/Ruwa_M.JPG", code: "Qatmash", 
         height: "5'6/167cm", gadget: "Wd-40", specialty: "Spécialiste en wd-40", mbti: "ENTJ",
         text: `ask ruwa`
     },
-    {name: "Celia Shi", age: 18, year: "Sénior", club:"Réseau virtuel", src:"/members/Celia_M.JPG", code: "Seal", 
-        height: "5'8/172cm", gadget: "Insecte télécommandé", specialty: "Chuchoteuse d'animaux", mbti: "INFP",
+    {name: "Celia Shi", age: 18, year: "Sénior", club:"Réseau virtuel, marketing, production et piratage informatique", src:"/members/Celia_M.JPG", 
+        code: "Seal", height: "5'8/172cm", gadget: "Insecte télécommandé", specialty: "Chuchoteuse d'animaux", mbti: "INFP",
         text: `C'est la première fois que je suis dans une équipe de robotique 
         et j'ai adoré mon expérience. J'ai appris à programmer 
         en React.js et Next.js. J'ai également finalement 
@@ -324,8 +324,8 @@ export const frM = [
         d'hiver. Cependant, j'ai appris de nouvelles choses concernant 
         le robot, par exemple le mécanisme du bras robotique.`
     },
-    {name: "Zi Heng Wang", age: 18, year: "Junior", club:"Machinerie", src:"/members/ZiHeng_M.JPG", code: "Zi Heng", 
-        height: "5'9/175cm", gadget: "Pince crocodiles", specialty: "Spécialiste de sommeil", mbti: "INTJ",
+    {name: "Zi Heng Wang", age: 18, year: "Junior", club:"Machinerie, marketing et piratage informatique", src:"/members/ZiHeng_M.JPG", 
+        code: "Zi Heng", height: "5'9/175cm", gadget: "Pince crocodiles", specialty: "Spécialiste de sommeil", mbti: "INTJ",
         text: `Dans l'ensemble, c'était extrêmement amusant de travailler
         sur le robot. J'ai adoré rencontrer de nouvelles personnes
         et travailler avec des coéquipiers très compétents. Cette 
@@ -334,7 +334,7 @@ export const frM = [
         J'ai également acquis de nombreuses compétences en gestion
         de temps et en travail d'équipe.`
     },
-    {name: "Carolyn Wu", age: 18, year: "Junior", club:"Piratage informatique et réseau virtuel", src:"/members/Carolyn_M.JPG", 
+    {name: "Carolyn Wu", age: 18, year: "Junior", club:"Réseau virtuel, piratage informatique, production et marketing", src:"/members/Carolyn_M.JPG", 
         code: "Wu", height: "5'4/162cm", gadget: "Montre espion", specialty: "Développeuse sénior", mbti: "INTJ",
         text: `J'ai beaucoup appris sur Next.js et sur les différentes façons 
         de créer des animations 2D et 3D. Mes principales difficultés 
@@ -346,7 +346,7 @@ export const frM = [
         j'ai eu beaucoup de plaisir à apprendre, à connaître mes 
         coéquipiers et à améliorer mes compétences en programmation.`
     },
-    {name: "Elisa Xue", age: 18, year: "Junior", club:"Marketing", src:"/members/Elisa_M.JPG", code: "Emu", 
+    {name: "Elisa Xue", age: 18, year: "Junior", club:"Marketing et production", src:"/members/Elisa_M.JPG", code: "Emu", 
         height: "5'6/167cm", gadget: "Stylo enregistreur", specialty: "Audition exacerbée", mbti: "ISTP",
         text: `Grâce à cette expérience, j'ai appris à gérer mon temps
         et à travailler en équipe. J'ai aimé rencontrer de nouvelles 
@@ -356,7 +356,7 @@ export const frM = [
         besoin d'aide. Cependant, je me suis tout de même beaucoup amusée. Ma principale 
         difficulté a été de me réveiller le matin pendant les vacances d'hiver.`
     },
-    {name: "Jennifer Zhang", age: 17, year: "Junior", club:"Machinerie", src:"/members/Jennifer_M.JPG", code: "Yiting Zhang", 
+    {name: "Jennifer Zhang", age: 18, year: "Junior", club:"Machinerie et production", src:"/members/Jennifer_M.JPG", code: "Yiting Zhang", 
         height: "5'7/170cm", gadget: "Caméra WD-40", specialty: "Spécialiste en sourire", mbti: "ENTJ",
         text: `En tant que membre de l'équipe en charge du robot, j'ai beaucoup 
         aimé travailler avec mes coéquipiers. Je me suis fait 

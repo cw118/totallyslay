@@ -68,7 +68,7 @@ const MoohpIntro = ({ fr }) => {
           <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Link>
           <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Link>
         </div></div>
-        <Link className={styles.ghBtn} href='https://github.com/cw118/totallyslay'>{fr ? 'Code source sur GitHub' : 'Source code on GitHub'}</Link>
+        <a target="_blank" className={styles.ghBtn} href='https://github.com/cw118/totallyslay' rel="noopener noreferrer">{fr ? 'Code source sur GitHub' : 'Source code on GitHub'}</a>
         <Link className={styles.mariBtn} href={fr ? '/fr' : '/'}>{fr ? 'Retourner à M.A.R.I.' : 'Return to M.A.R.I.'}</Link>
       </div>
     </div>
