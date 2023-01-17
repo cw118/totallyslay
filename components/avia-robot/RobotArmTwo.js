@@ -1,6 +1,7 @@
 import Script from 'next/script';
+import styles from '../../styles/Robot.module.css';
 
-const RobotArmTwo = () => {
+const RobotArmTwo = ({ fr }) => {
   return (
     <>
       <Script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></Script>
@@ -9,6 +10,7 @@ const RobotArmTwo = () => {
           <div className="update-bar"></div>
         </div>
       </model-viewer>
+      <h3 className={styles.label}>{fr ? 'Bras 2' : 'Arm 2'}</h3>
     </>
   );
 }

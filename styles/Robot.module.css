@@ -22,43 +22,29 @@
   font-weight: 500;
 }
 
-.container, .imageContainer, .rowOne {
+.container, .imageContainer, .rowOne, .vidRow {
   border: solid 2px #fff;
   border-radius: 35px;
   display: grid;
-  justify-content: center;
-  align-items: center;
   padding: 25px 30px;
   grid-row-gap: 2rem;
   row-gap: 2rem;
 }
 
-.robotArms {
-  position: relative;
-  height: 100%;
-}
-
-.robotArms .subheading {
-  position: absolute;
-  font-style: italic;
-}
-
-.robotArms .armSubOne {
-  top: 0;
-}
-
-.robotArms .armDesc {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.robotArms .armSubTwo {
-  bottom: 0;
+.container, .imageContainer, .vidRow {
+  justify-content: center;
+  align-items: center;
 }
 
 .container p {
   font-size: 20px;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
 }
 
 .rowTwo, .rowThree {
@@ -70,8 +56,8 @@
 .rowTwoModels {
   display: grid;
   width: 100%;
-  grid-row-gap: 2.5rem;
-  row-gap: 2.5rem;
+  grid-row-gap: 2rem;
+  row-gap: 2rem;
 }
 
 .subheading {
@@ -131,7 +117,7 @@
     row-gap: 3.5rem;
   }
 
-  .rowOne {
+  .rowOne, .vidRow {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2.5rem;
     column-gap: 2.5rem;
@@ -168,7 +154,7 @@
     column-gap: 1.8rem;
   }
   
-  .rowTwoModels, .rowTwoModels model-viewer {
+  .rowTwoModels {
     height: 100%;
   }
 
