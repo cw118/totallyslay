@@ -825,16 +825,16 @@ input.inputWarn::placeholder { color: #2a2a2a; }
 .ring-2,
 .ring-8 { box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000); }
 .ring-8 { --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(8px + var(--tw-ring-offset-width)) var(--tw-ring-color); }
-.ring-gray-800 { --tw-ring-opacity: 1; --tw-ring-color: rgb(31 41 55/var(--tw-ring-opacity)); }
-.ring-red-500 { --tw-ring-opacity: 1; --tw-ring-color: rgb(240 82 82/var(--tw-ring-opacity)); }
-.ring-gray-500 { --tw-ring-opacity: 1; --tw-ring-color: rgb(107 114 128/var(--tw-ring-opacity)); }
-.ring-blue-400 { --tw-ring-opacity: 1; --tw-ring-color: rgb(118 169 250/var(--tw-ring-opacity)); }
-.ring-gray-300 { --tw-ring-opacity: 1; --tw-ring-color: rgb(209 213 219/var(--tw-ring-opacity)); }
-.ring-purple-500 { --tw-ring-opacity: 1; --tw-ring-color: rgb(144 97 249/var(--tw-ring-opacity)); }
-.ring-green-500 { --tw-ring-opacity: 1; --tw-ring-color: rgb(14 159 110/var(--tw-ring-opacity)); }
-.ring-yellow-300 { --tw-ring-opacity: 1; --tw-ring-color: rgb(250 202 21/var(--tw-ring-opacity)); }
-.ring-pink-500 { --tw-ring-opacity: 1; --tw-ring-color: rgb(231 70 148/var(--tw-ring-opacity)); }
-.ring-white { --tw-ring-opacity: 1; --tw-ring-color: rgb(255 255 255/var(--tw-ring-opacity)); }
+.ring-gray-800 { --tw-ring-color: rgb(31 41 55); }
+.ring-red-500 { --tw-ring-color: rgb(240 82 82); }
+.ring-gray-500 { --tw-ring-color: rgb(107 114 128); }
+.ring-blue-400 { --tw-ring-color: rgb(118 169 250); }
+.ring-gray-300 { --tw-ring-color: rgb(209 213 219); }
+.ring-purple-500 { --tw-ring-color: rgb(144 97 249); }
+.ring-green-500 { --tw-ring-color: rgb(14 159 110); }
+.ring-yellow-300 { --tw-ring-color: rgb(250 202 21); }
+.ring-pink-500 { --tw-ring-color: rgb(231 70 148); }
+.ring-white { --tw-ring-color: rgb(255 255 255); }
 .transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.15s; }
 .transition-opacity { transition-property: opacity; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.15s; }
 .transition { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter; transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.15s; }
