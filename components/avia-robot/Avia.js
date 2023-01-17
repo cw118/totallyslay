@@ -78,8 +78,8 @@ const Avia = ({ fr }) => {
                 </div>
             </div></div>
             <p className={styles.textOnly}>{fr ? `Je vous rappelle que vous avez 5 minutes pour compléter chaque joute!` : `Remember that you have 5 minutes to complete each heat!`}</p>
-            <p className={styles.textOnly}>{fr ? `Nous avons besoin de tous nos agents MOOHP pendant trois jours, du 16 au 18 février, à l'École Curé-Antoine-Labelle (216 Boul Marc-Aurèle-Fortin, Laval, QC H7L 1Z5). ` 
-                : `We need all MOOHP agents to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle (216 Boul Marc-Aurèle-Fortin, Laval, QC H7L 1Z5). `}
+            <p className={styles.textOnly}>{fr ? `Nous avons besoin de tous nos agents MOOHP pendant trois jours, du 16 au 18 février, à l'École Curé-Antoine-Labelle (216 Blvd Marc-Aurèle-Fortin, Laval, QC). ` 
+                : `We need all MOOHP agents to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle (216 Boul Marc-Aurèle-Fortin, Laval, QC). `}
               <strong>{fr ? `Nous comptons sur vous, agent${name}!` : `We're counting on you, Agent${name}!`}</strong>
             </p>
             <Countdown fr={fr} />

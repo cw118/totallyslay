@@ -170,7 +170,9 @@ export const engM = [
         text: `I learnt a lot about the Next.js framework and various ways 
         to create both 2D and 3D animations. My main struggles were 
         CSS positioning, finding a good approach to animate elements, 
-        as well as integrating and customizing npm packages I'd never used before.`
+        as well as integrating and customizing npm packages I'd never used before. 
+        Though I sacrificed time I could have spent studying or with friends and family, 
+        I had lots of fun getting to know my teammates and improving my coding skills.`
     },
     {name: "Elisa Xue", age: 18, year: "Junior", club:"Marketing and manufacturing", src:"/members/Elisa_M.JPG", code: "Emu", 
         height: "5'6/167cm", gadget: "Recording pen", specialty: "Enhanced hearing", mbti: "ISTP",
