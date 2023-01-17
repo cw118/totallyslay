@@ -22,8 +22,8 @@ const Robot = ({ fr }) => {
       </p>
       <div className='grid'><div className={styles.rowOne}>
         <RobotBase />
-        <RobotArmTwo />
-        <RobotArmTwo />
+        <RobotBase />
+        <RobotBase />
       </div></div>
 
       <div className='grid'><div className={styles.rowTwo}>
@@ -32,13 +32,9 @@ const Robot = ({ fr }) => {
             <RobotArm />
             <RobotArmTwo />
           </div>
-          <div className={styles.robotArms}>
-            <h3 className={`${styles.subheading} ${styles.armSubOne}`}>{fr ? 'Bras 1' : 'Arm 1'}</h3>
-            <p className={styles.armDesc}>Following the kickoff, the machinist division began brainstorming ideas 
-            for the arm of the robot. Conflicted between two models, they build the two 
-              following prototypes.</p>
-            <h3 className={`${styles.subheading} ${styles.armSubTwo}`}>{fr ? 'Bras 2' : 'Arm 2'}</h3>
-          </div>
+          <p>Following the kickoff, the machinist division began brainstorming ideas 
+          for the arm of the robot. Conflicted between two models, they build the two 
+            following prototypes.</p>
         </div>
         <div className={styles.container}>
           <h3 className={styles.subheading}>The Chosen Arm (Arm 1)</h3>
@@ -92,7 +88,7 @@ const Robot = ({ fr }) => {
           its center.</p>
       </div>
 
-      <div className='lg:grid'><div className={styles.rowOne}>
+      <div className='lg:grid'><div className={styles.vidRow}>
         <video width={420} height={340} controls>
           <source src="/robot/arm-rotation.mp4"></source>
         </video>
