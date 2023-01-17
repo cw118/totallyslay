@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap'); /* Kiwi Maru font */
+
+.carousel button span {
+  /* for the carousel's left/right indicators */
+  background-color: #ac17ff;
+  transition: background-color 0.2s;
+}
+
+.carousel button span:hover {
+  /* override default hover colour */
+  background-color: #9100df !important;
+}
 
 .center {
     display: flex;

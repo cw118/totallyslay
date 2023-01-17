@@ -85,13 +85,13 @@ const Robot = ({ fr }) => {
       </div>
       <div className={styles.rowOne}>
         <video width={420} height={340} controls>
-          <source src="/robot/arm-linear.mp4"></source>
-        </video>
-        <video width={420} height={340} controls>
           <source src="/robot/arm-rotation.mp4"></source>
         </video>
         <video width={420} height={340} controls>
           <source src="/robot/lift.mp4"></source>
+        </video>
+        <video width={420} height={340} controls>
+          <source src="/robot/combining-robot.mp4"></source>
         </video>
       </div>
       <div className={styles.vidContainer}>

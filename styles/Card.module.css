@@ -1,3 +1,11 @@
+.clubsDesc {
+  font-size: 1.2rem;
+  margin: 3rem 1.5rem 2rem;
+  padding: 2rem;
+  background-color: rgb(255, 239, 206);
+  border-radius: 2.5px;
+}
+
 .card {
     margin-top: 5vh;
     max-width: revert;
@@ -59,6 +67,11 @@
     top: -20px;
     left: -20px;
   }
+
+  .clubsDesc {
+    margin: 3.5rem 1.7rem 1.5rem;
+    padding: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -67,6 +80,13 @@
         column-gap: 1rem;
         row-gap: 2rem;
     }
+}
+
+@media screen and (min-width: 1024px) {
+  .clubsDesc {
+    margin: 3.5rem 2rem 1.5rem;
+    padding: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1280px) {

@@ -24,7 +24,7 @@ export default function Carouselle({fr}) {
         {bg: "#F4C6E4", colourSlide: "#D4BFF5", colourHeader: "#b251ea", border: 75, 
             header: fr ? 'Visionnage de Totally Spies! ce vendredi' : 'TUNE IN: Totally Spies! Screening This Friday', 
             text1: fr ? `Trois adolescentes de Beverly Hills - Alex, Clover et Sam - tentent de balancer leur vie en tant 
-                qu'étudiante du secondaire et agent d'infiltration, combattant une variété de criminels étranges.`:
+                qu'étudiante du secondaire et agent d'infiltration à WOOHP, combattant une variété de criminels étranges.`:
                 `Three teenage girls from Beverly Hills – Alex, Clover, and Sam – attempt to balance their lives as 
                 high school students with their undercover work as super spies at WOOHP, battling a variety of bizarre criminals.`, 
             text2: "",
@@ -33,7 +33,7 @@ export default function Carouselle({fr}) {
     ]
 
     return(
-        <Carousel slide={false} style={{height: "600px"}}>
+        <Carousel slide={false} style={{height: "600px"}} className={styles.carousel}>
             {list.map((slide, index) => {
                 return (
                     <div key={index} className={styles.center}>
