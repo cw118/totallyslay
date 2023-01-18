@@ -104,13 +104,9 @@ const Puzzle = ({ fr }) => {
             ))}
           </div>
         </DndProvider>
-        <Button
-          outline={true}
-          gradientDuoTone="purpleToBlue"
-          className={classNames('puzzleChangeLang', { 'hide': puzzleSolved })}
-        >
-          <Link href={fr ? '/moohp' : '/fr/moohp'}>{fr ? 'English' : 'Français'}</Link>
-        </Button>
+        <Link href={fr ? '/moohp' : '/fr/moohp'} className={classNames('puzzleChangeLang', { 'hide': puzzleSolved })}>
+          {fr ? 'English' : 'Français'}
+        </Link>
       </div>
       
       {/* hide actual page until the puzzle is solved */}

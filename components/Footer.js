@@ -6,7 +6,7 @@ const Foooter = () => {
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  const fr= currentRoute.includes('/fr') ? true : false;
+  const fr = currentRoute.includes('/fr') ? true : false;
   const spy = currentRoute.includes('/moohp') ? true : false;
 
   return (
@@ -27,7 +27,6 @@ const Foooter = () => {
             year={2023}
           />
         </div>
-          
       </div>
     </Footer>
   );

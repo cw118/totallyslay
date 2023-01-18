@@ -43,6 +43,7 @@
 
 .title {
   font-size: 50px;
+  font-weight: 700;
   padding: 7vh 7vh 1rem;
   display: grid;
   justify-content: center;
@@ -126,6 +127,7 @@
     font-size: 1.6rem;
     padding: 1rem 2.5rem 1.5rem;
   }
+  
   .cardContainer {
     grid-template-columns: 25% 70%;
     grid-column-gap: 3rem;

@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+/* custom useSessionStorage hook implementation inspired by
+   a combination of multiple online sources and programming forum answers */
+
 // pre-define methods with fallbacks and error catching
 const storage = {
   getItem(key, initialValue) {

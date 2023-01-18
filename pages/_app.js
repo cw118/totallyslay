@@ -4,6 +4,8 @@ import '../styles/globals.css';
 import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
+  // Initialize empty agentName to prep for name input on MOOHP homepage
+  // then provide that to AppContext for use across the entire site
   const [agentName, setAgentName] = useSessionStorage('agentName', '');
 
   return (

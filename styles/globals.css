@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); /* Irish Grover font */
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap'); /* Rajdhani font */
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap'); /* Kiwi Maru font */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +9,9 @@
   /* nearly all custom styles are too complex for tailwind
      some default tailwind styles have to be overriden
      using !important */
+
+  /* many box-shadows were (customized) from https: //getcssscan.com/css-box-shadow-examples */
+
   *::selection {
     background-color: purple;
     color: #fff;
@@ -458,14 +461,21 @@
     position: fixed;
     z-index: 85;
     top: 10px;
-    color: #000 !important;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: #ff8bd6;
+    color: #000;
+    border: solid 1px #000;
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    border-radius: 10px;
+    transition: background-color 0.2s, color 0.2s;
   }
 
   .puzzleChangeLang:hover {
-    color: #fff !important;
+    background-color: #6f41a4;
+    color: #fff;
   }
 
   .puzzleChangeLang span {

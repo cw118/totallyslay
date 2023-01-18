@@ -8,10 +8,10 @@
 
 .card {
     margin-top: 5vh;
-    max-width: revert;
-    border: 7px #bf49ff solid;
-    transition: transform 0.3s;
-    border-radius: 0px;
+  max-width: revert;
+  border: 7px #bf49ff solid;
+  transition: transform 0.3s;
+  border-radius: 0px;
 }
 
 .text {
@@ -19,26 +19,26 @@
 }
 
 .card img {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 .card:hover {
-    transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .title {
-    text-align: center;
-    font-size: 70px;
-    width: min-content;
-    height: min-content;
-    margin: 40px auto 10px;
-    padding: 0.25rem 1.25rem;
-    letter-spacing: 2.5px;
-    background-color: rgb(255, 239, 206);
-    color: #b944fc;
-    transform: rotate(-2.5deg);
-    border-radius: 5px;
-    position: relative;
+  text-align: center;
+  font-size: 70px;
+  width: min-content;
+  height: min-content;
+  margin: 40px auto 10px;
+  padding: 0.25rem 1.25rem;
+  letter-spacing: 2.5px;
+  background-color: rgb(255, 239, 206);
+  color: #b944fc;
+  transform: rotate(-2.5deg);
+  border-radius: 5px;
+  position: relative;
 }
 
 .sticker {
@@ -48,17 +48,17 @@
 }
 
 .div {
-    position: relative;
-    display: grid;
-    justify-content: center;
-    padding: 5vw;
-    padding-bottom: 5vh;
-    padding-top: 0vh;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  padding: 5vw;
+  padding-bottom: 5vh;
+  padding-top: 0vh;
 }
 
 .quote {
-    color: #bf49ff;
-    font-weight: bolder;
+  color: #bf49ff;
+  font-weight: bolder;
 }
 
 @media screen and (min-width: 600px) {
@@ -79,12 +79,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    .div {
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 1rem;
-        column-gap: 1rem;
-        grid-row-gap: 2rem;
-    }
+  .div {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 1rem;
+      column-gap: 1rem;
+      grid-row-gap: 2rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -99,8 +99,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .div {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1rem;
-    }
+  .div {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+  }
 }

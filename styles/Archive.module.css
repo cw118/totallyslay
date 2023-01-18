@@ -1,21 +1,21 @@
 .bg {
-    background: url(/backgrounds/purpleGrid.svg);
+	background: url(/backgrounds/purpleGrid.svg);
 }
 
 .header {
-    font-size: 60px;
-    font-weight: bold;
-    padding: 1.2rem 0px;
+	font-size: 60px;
+	font-weight: bold;
+	padding: 1.2rem 0px;
 }
 
 .intro {
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-    width: 80%;
-    margin: auto;
-    font-size: 20px;
-    letter-spacing: 1.5px;
+	color: white;
+	text-align: center;
+	padding-top: 30px;
+	width: 80%;
+	margin: auto;
+	font-size: 20px;
+	letter-spacing: 1.5px;
 }
 
 .intro p {
@@ -23,78 +23,78 @@
 }
 
 .tabs button {
-    padding: 1.5vh 3vw;
-    border: 3px #66d9ff solid;
-    color: #66d9ff;
-    font-size: 20px;
-    letter-spacing: 5px;
-    transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
-    font-weight: bolder;
-    margin-top: 5vh;
+	padding: 1.5vh 3vw;
+	border: 3px #66d9ff solid;
+	color: #66d9ff;
+	font-size: 20px;
+	letter-spacing: 5px;
+	transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
+	font-weight: bolder;
+	margin-top: 5vh;
 }
 
 .tabs {
-    justify-content: space-around;
-    padding-bottom: 4vh;
-    border-style: hidden;
-    color: #66d9ff;
+	justify-content: space-around;
+	padding-bottom: 4vh;
+	border-style: hidden;
+	color: #66d9ff;
 }
 
 .tabs button {
   /* !important is needed to override/add active button box shadow */
-    box-shadow: #66d9ff50 0px 5px 20px !important;
+	box-shadow: #66d9ff50 0px 5px 20px !important;
 }
 
 .tabs button:hover {
-    background-color: #66d9ff;
-    color: #4148a4;
-    border-color: #66d9ff;
-    border-radius: 30px;
+	background-color: #66d9ff;
+	color: #4148a4;
+	border-color: #66d9ff;
+	border-radius: 30px;
 }
 
 .card {
-    align-items: center;
-    border: 2px #66d9ff solid;
-    border-radius: 20px;
-    color: white;
-    letter-spacing: 1px;
+	align-items: center;
+	border: 2px #66d9ff solid;
+	border-radius: 20px;
+	color: white;
+	letter-spacing: 1px;
 }
 
 .timeline {
-    display: grid;
-    grid-row-gap: 0px;
-    row-gap: 0px;
-    font-size: 18px;
-    width: 100%;
-    margin: auto;
-    background-color: #4148a4a0;
+	display: grid;
+	grid-row-gap: 0px;
+	row-gap: 0px;
+	font-size: 18px;
+	width: 100%;
+	margin: auto;
+	background-color: #4148a4a0;
 }
 
 .point {
-    background-color: #66d9ff;
-    border-color: #66d9ff;
+	background-color: #66d9ff;
+	border-color: #66d9ff;
 }
 
 .time {
-    color: white;
-    font-size: 20px;
+	color: white;
+	font-size: 20px;
 }
 
 .img {
-    border: 2.5px #66d9ff solid;
-    border-radius: 20px;
+	border: 2.5px #66d9ff solid;
+	border-radius: 20px;
 }
 
 .text {
-    width: 95%;
-    margin: auto;
+	width: 95%;
+	margin: auto;
 }
 
 @media only screen and (min-width: 600px) {
-    /* tablet */
-    .timeline {
-        width: 80%;
-    }
+	/* tablet */
+	.timeline {
+			width: 80%;
+	}
 }
 
 @media only screen and (min-width: 675px) {
@@ -113,8 +113,8 @@
 }
 
 @media only screen and (min-width: 950px) {
-    /* desktop */
-    .timeline {
-        width: 50%;
-    }
+	/* desktop */
+	.timeline {
+			width: 50%;
+	}
 }
