@@ -19,7 +19,7 @@ const JerryPopUp = ({ fr }) => {
 					<Tooltip content={fr ? 'Cliquez sur le texte/lien souligné!' : 'Click on the underlined text/link!'}
 						style='light' placement='bottom'>{fr ? 'Appel à tous les agents de MOOHP! ' : 'Calling all MOOHP agents! '}
 						<Link href={fr ? '/fr/moohp' : '/moohp'} className='popUpLink'>
-							{fr ? 'Réunissez au siège de MOOHP, une nouvelle tâche importante vous attend!' :
+							{fr ? 'Réunissez au siège de MOOHP. Une nouvelle tâche importante vous attend!' :
 								'Please convene at MOOHP headquarters, a new important task awaits!'}
 						</Link>
 					</Tooltip>

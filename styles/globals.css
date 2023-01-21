@@ -39,10 +39,6 @@
     filter: grayscale(1) invert(1);
   }
 
-  .invertedLogo img {
-    filter: grayscale(1) invert(1);
-  }
-
   .navActive {
     text-decoration: solid 2.5px underline;
   }
@@ -141,6 +137,12 @@
     animation-play-state: paused !important;
   }
 
+  /* sets up animation which reveals the hidden MOOHP logo
+     behind the M.A.R.I. one on hover/tap, a small "easter 
+     egg" that also leads to the spy portion of the website 
+     if the user stumbles upon this feature (the intent is 
+     to keep it quite hidden, not too obvious but reasonably 
+     accessible) */
   .showLogo {
     animation: 0.8s linear 1 forwards showLogo;
   }

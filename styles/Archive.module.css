@@ -30,7 +30,7 @@
 	letter-spacing: 5px;
 	transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
 	font-weight: bolder;
-	margin-top: 5vh;
+	margin: 5vh 4.5px 0px;
 }
 
 .tabs {
@@ -43,13 +43,6 @@
 .tabs button {
   /* !important is needed to override/add active button box shadow */
 	box-shadow: #66d9ff50 0px 5px 20px !important;
-}
-
-.tabs button:hover {
-	background-color: #66d9ff;
-	color: #4148a4;
-	border-color: #66d9ff;
-	border-radius: 30px;
 }
 
 .card {
@@ -106,15 +99,15 @@
   .tabs {
     padding-top: 5vh;
   }
-
-  .tabs button {
-    margin-top: 0;
-  }
 }
 
 @media only screen and (min-width: 950px) {
 	/* desktop */
 	.timeline {
 			width: 50%;
+	}
+
+	.tabs button {
+		margin-top: 0;
 	}
 }

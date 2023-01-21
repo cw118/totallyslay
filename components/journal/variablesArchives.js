@@ -199,14 +199,15 @@ export const robFr = [
 		alt: "L'équipe de robot qui planifie les prototypes",
 		text: `Le département de machinerie commence à réfléchir à des
     idées pour un robot créatif et efficace. Ils se concentrent 
-    d'abord sur tous les mécanismes possibles qui seront responsables 
-    pour ramasser et transporter les pièces de jeux. Ils hésitent 
-    entre deux modèles: des pinces ou un système de mouvement linéaire. 
+    d'abord sur tous les mécanismes possibles qui seront capables 
+    de ramasser et transporter les pièces de jeux. Ils hésitent 
+    entre deux modèles: l'un s'inspire des pinces de crabe alors
+		que l'autre se resserre linéairement comme une casse-noisette. 
     Le premier permet de ramasser les pièces de jeux de toutes 
     les tailles, alors que le dernier permet d'être d'autant plus 
     précis. De plus, la base du robot de la compétition de l'an 
-    dernier qui a été conservée est trop petite pour nos roues.
-    Il faut donc reconstruire nos roues en diminuant leur taille.`
+    dernier est trop petite pour les roues choisies pour la mission.
+    Il va donc falloir reconstruire la base du robot.`
 	},
 	{
 		time: "20 décembre 2022", img: "/journal/robot/arm.png",

@@ -60,7 +60,7 @@ const Archive = ({ fr }) => {
 					}
 				</p>
 			</div>
-			<Tabs.Group aria-label="Tabs with icons" style="underline" className={styles.tabs}>
+			<Tabs.Group aria-label={fr ? 'Onglets' : 'Tabs'} style="underline" className={styles.tabs}>
 				{entries.map((entry, index) =>
 					<Tabs.Item title={entry.title} key={index}>
 						{entry.name.map((member, index) =>
