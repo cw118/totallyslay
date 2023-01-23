@@ -1,12 +1,11 @@
 import { useContext } from 'react';
 import AppContext from '../AppContext';
-import GameField from "./GameField";
+import Link from 'next/link';
 import styles from "../../styles/Avia.module.css";
-import GamePiece from "./GamePiece";
-import RedGamePiece from "./RedGamePiece";
-import Towers from "./Towers";
+import Model from './Model';
 import Typewrite from '../Typewrite';
 import Countdown from './Countdown';
+import BottomNav from '../nav/BottomNav';
 
 const Avia = ({ fr }) => {
   // "fetch"/use saved agent name
@@ -14,7 +13,7 @@ const Avia = ({ fr }) => {
   const name = (agentName ? ' ' : '') + agentName;
 
 	return (
-		<>
+    <>
 			<div className={styles.header}><Typewrite page={fr ? 'aviaFr' : 'avia'} /></div>
 			<div className={styles.intro}>
 				<img src="/logo/avia-logo.svg" alt="AVIA Logo" className={styles.aviaLogo} />
@@ -43,10 +42,10 @@ const Avia = ({ fr }) => {
 					<p className={styles.info}>{fr ? `Trois tours se situent le long du milieu du terrain de jeu. Notez que la tour centrale est la plus grande. De plus, une zone multiplicatrice se situe entre les zones de départ de chaque équipe.`
 						: `There are three towers located along the middle of the playing field, the center one being the tallest. Also note the multiplier zone between each team\'s starting zone.`} </p>
 				</div>
-				<GameField />
+				<Model model='playing-field' />
 			</div></div>
 			<div className='grid'><div className={styles.container}>
-				<GamePiece />
+				<Model model='game-piece' />
 				<div className={styles.infoContainer}>
 					<div className={styles.info}>
 						<h1 className={styles.sectionTitle}>{fr ? `La pièce de jeu` : `The Game Piece`}</h1>
@@ -65,10 +64,10 @@ const Avia = ({ fr }) => {
 					<p className={styles.info}>{fr ? `Chaque équipe recevra 35 points pour chaque pièce de jeu dont la face vers le haut représente la couleur de son équipe. Plus les pièces de jeu sont placées haut sur les tours, plus ces pièces de jeu rapportent des points.`
 						: `Game pieces laid face-side up on the ground will award 35 points to the team corresponding with the colour facing upwards. Game pieces placed on tower levels collect points increasing along the height of towers.`}</p>
 				</div>
-				<Towers />
+				<Model model='towers' />
 			</div></div>
 			<div className='grid'><div className={styles.container}>
-				<RedGamePiece />
+				<Model model='red-game-piece' />
 				<div className={styles.infoContainer}>
 					<div className={styles.info}>
 						<h1 className={styles.sectionTitle}>{fr ? 'La pièce de jeu rouge' : 'The Red Game Piece'}</h1>
@@ -78,14 +77,21 @@ const Avia = ({ fr }) => {
 				</div>
 			</div></div>
 			<p className={styles.textOnly}>{fr ? `Je vous rappelle que vous avez 5 minutes pour compléter chaque joute!` : `Remember that you have 5 minutes to complete each heat!`}</p>
-			<p className={styles.textOnly}>{fr ? `Nous avons besoin de tous nos agents MOOHP pendant trois jours, du 16 au 18 février, à l'École Curé-Antoine-Labelle (216 Blvd Marc-Aurèle-Fortin, Laval, QC). `
-				: `We need all MOOHP agents to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle (216 Boul Marc-Aurèle-Fortin, Laval, QC). `}
+			<p className={styles.textOnly}>{fr ? `Nous avons besoin de tous nos agents MOOHP pendant trois jours, du 16 au 18 février, à l'École Curé-Antoine-Labelle (216 Boul Marc-Aurèle-Fortin, Laval, QC). `
+				: `We need all MOOHP agents to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle (216 Blvd Marc-Aurèle-Fortin, Laval, QC). `}
 				<strong>{fr ? `Nous comptons sur vous, agent${name}!` : `We're counting on you, Agent${name}!`}</strong>
 			</p>
 			<Countdown fr={fr} />
 			<h1 className={styles.vidHeader}>{fr ? `Pour plus d'informations — Vidéo` : `For Further Information — Video`}</h1>
 			<iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-		</>
+      
+      <BottomNav fr={fr} name={name}>
+        <Link href={fr ? '/fr/moohp' : '/moohp'}>{fr ? 'Siège de MOOHP' : 'MOOHP headquarters'}</Link>
+        <Link href={fr ? '/fr/moohp/agents' : '/moohp/agents'}>{fr ? 'Rencontrer l\'équipe de MOOHP' : 'Meet the MOOHP team'}</Link>
+        <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Link>
+        <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Link>
+      </BottomNav>
+    </>
 	);
 }
 

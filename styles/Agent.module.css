@@ -24,8 +24,7 @@
 }
 
 .bg {
-  padding-bottom: 3.25rem;
-  background: url(/backgrounds/purpleGrid.svg);
+  background-image: url(/backgrounds/purpleGrid.svg);
 }
 
 .name {

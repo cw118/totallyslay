@@ -1,9 +1,11 @@
+import { useContext } from 'react';
+import AppContext from '../AppContext';
+import Link from 'next/link';
 import { Card } from "flowbite-react";
 import styles from "../../styles/Agent.module.css";
 import { engM, frM } from "./variablesMembers.js";
 import Typewrite from '../Typewrite';
-import { useContext } from 'react';
-import AppContext from '../AppContext';
+import BottomNav from "../nav/BottomNav";
 
 const FlipImg = (props) => {
 	return (
@@ -73,7 +75,13 @@ const Agents = ({ fr }) => {
 					height={member.height} specialty={member.specialty}
 					mbti={member.mbti} gadget={member.gadget} text={member.text}
 				/>
-			)}
+      )}
+      <BottomNav fr={fr} name={name}>
+        <Link href={fr ? '/fr/moohp' : '/moohp'}>{fr ? 'Siège de MOOHP' : 'MOOHP headquarters'}</Link>
+        <Link href={fr ? '/fr/moohp/avia' : '/moohp/avia'}>{fr ? 'En apprendre plus sur votre mission' : 'Learn more about your mission'}</Link>
+        <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Link>
+        <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Link>
+      </BottomNav>
 		</div>
 	);
 }
