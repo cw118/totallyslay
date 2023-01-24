@@ -43,7 +43,8 @@ const Avia = ({ fr }) => {
 						: `There are three towers located along the middle of the playing field, the center one being the tallest. Also note the multiplier zone between each team\'s starting zone.`} </p>
 				</div>
 				<Model model='playing-field' />
-			</div></div>
+      </div></div>
+      
 			<div className='grid'><div className={styles.container}>
 				<Model model='game-piece' />
 				<div className={styles.infoContainer}>
@@ -53,7 +54,8 @@ const Avia = ({ fr }) => {
 							: `Agents' gadgets must transport hexagonal wooden game pieces, as shown, that will be scattered either face-up or on its side across the game field. Only two game pieces can be carried by a gadget at the same time.`}</p>
 					</div>
 				</div>
-			</div></div>
+      </div></div>
+      
 			<div className='grid'><div className={styles.container}>
 				<div className={styles.infoContainer}>
 					<div className={styles.info}>
@@ -65,7 +67,8 @@ const Avia = ({ fr }) => {
 						: `Game pieces laid face-side up on the ground will award 35 points to the team corresponding with the colour facing upwards. Game pieces placed on tower levels collect points increasing along the height of towers.`}</p>
 				</div>
 				<Model model='towers' />
-			</div></div>
+      </div></div>
+      
 			<div className='grid'><div className={styles.container}>
 				<Model model='red-game-piece' />
 				<div className={styles.infoContainer}>
@@ -75,13 +78,16 @@ const Avia = ({ fr }) => {
 							: `Caution! A single game piece is red. Placing the red game piece in a tower invalidates the points earned by game pieces placed in lower levels of a tower.`}</p>
 					</div>
 				</div>
-			</div></div>
-			<p className={styles.textOnly}>{fr ? `Je vous rappelle que vous avez 5 minutes pour compléter chaque joute!` : `Remember that you have 5 minutes to complete each heat!`}</p>
+      </div></div>
+      
+			<p className={styles.textOnly}>{fr ? `Nous vous rappelons que vous avez 5 minutes pour compléter chaque joute!` : `Remember that you have 5 minutes to complete each heat!`}</p>
 			<p className={styles.textOnly}>{fr ? `Nous avons besoin de tous nos agents MOOHP pendant trois jours, du 16 au 18 février, à l'École Curé-Antoine-Labelle (216 Boul Marc-Aurèle-Fortin, Laval, QC). `
 				: `We need all MOOHP agents to convene over three days, from February 16th to 18th, at École Curé-Antoine-Labelle (216 Blvd Marc-Aurèle-Fortin, Laval, QC). `}
 				<strong>{fr ? `Nous comptons sur vous, agent${name}!` : `We're counting on you, Agent${name}!`}</strong>
-			</p>
-			<Countdown fr={fr} />
+      </p>
+      
+      <Countdown fr={fr} />
+      
 			<h1 className={styles.vidHeader}>{fr ? `Pour plus d'informations — Vidéo` : `For Further Information — Video`}</h1>
 			<iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       

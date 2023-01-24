@@ -29,7 +29,11 @@
 
 .name {
   font-size: 40px;
-  font-style: oblique;
+  font-style: italic;
+}
+
+.quote {
+  font-size: 17px;
 }
 
 .img {
@@ -88,15 +92,20 @@
   display: grid;
   align-content: center;
   border-width: 0.15rem;
+  padding: 5px 9px;
 }
 
 .flipCardBack h1 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 700;
 }
 
 .flipCardBack h2 {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.flipCardBack strong {
   font-weight: 600;
 }
 

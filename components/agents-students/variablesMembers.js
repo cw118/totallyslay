@@ -52,7 +52,7 @@ export const engM = [
         It also came with the cost of time I would have wasted anyways.`
     },    
     {name: "Andrea Abou-Haidar", age: 17, year: "Head", code: "Quack", height: "5'1/155cm", gadget: "Anti-Gravity Ring", 
-        specialty: "Acrobatics specialist", mbti: "INFJ", club: "Machinery and manufacturing", src: "/members/Andrea_M.JPG",
+        specialty: "Acrobatics specialist", mbti: "INFJ", club: "Board of directors, machinery and manufacturing", src: "/members/Andrea_M.JPG",
         text: `By being part of the 2022-2023 Marianopolis Robotics Team, I
         made new friends, developed leadership skills, and most importantly, 
         had lots of fun! Although robotics did take a lot 
@@ -87,7 +87,7 @@ export const engM = [
         which I feel will be great skills to have in the future. 
         I'm really going to miss the CRC.`
     },
-    {name: "Audrey Dumais", age: 17, year: "Junior", club: "Virtual network, marekting and manufacturing", src: "/members/Audrey_M.JPG", code: "Badger", 
+    {name: "Audrey Dumais", age: 17, year: "Junior", club: "Virtual network, marketing and manufacturing", src: "/members/Audrey_M.JPG", code: "Badger", 
         height: "5'4/162cm", gadget: "Flint's lighter with 82 functions", specialty: "Wall catcher", mbti: "ENFJ",
         text: `Working together, as a team, supporting each other, is the reason
         I became an agent. As a member of the VN division, I know
@@ -124,7 +124,7 @@ export const engM = [
         university applications, but I think that this risk is totally
         worth it.`    
     },
-    {name: "Nehna Patel", age: 18, year: "Head", club: "Manufacturing", src: "/members/Nehna_M.JPG", code: "Patel", 
+    {name: "Nehna Patel", age: 18, year: "Head", club: "Board of directors and manufacturing", src: "/members/Nehna_M.JPG", code: "Patel", 
         height: "5'4/162cm", gadget: "Compowder", specialty: "Mind reading", mbti: "ESFP",
         text: `Throughout the years competing in the CRC competition, I've 
         learned countless different things - whether that'd be 
@@ -193,7 +193,7 @@ export const engM = [
         uses of parts. It's an extremely enjoyable experience 
         and I will cherish it forever.`
     },
-    {name: "Dominique Paradis", age: "(Confidential)", year: "Executive", club: "Executive", src: "/members/Paradis.png", code: "Paradis", height: "(Confidential)", 
+    {name: "Dominique Paradis", age: "(Confidential)", year: "Executive", club: "Board of directors", src: "/members/Paradis.png", code: "Paradis", height: "(Confidential)", 
         gadget: "Shoe Phone", specialty: "Disguise Expert", mbti: "(Confidential)",
         text: `I am mostly here to deal with the aspects of the team that diverge 
         from the main goal. I help organize budget, transport
@@ -213,7 +213,7 @@ export const frM = [
         j'aurais perdu mon temps d'une autre manière.`
     },    
     {name: "Andrea Abou-Haidar", age: 17, year: "en chef", code: "Quack", height: "5'1/155cm", gadget: "Bague antigravité", 
-        specialty: "Spécialiste en acrobatie", mbti: "INFJ", club: "Machinerie et production", src: "/members/Andrea_M.JPG",
+        specialty: "Spécialiste en acrobatie", mbti: "INFJ", club: "Conseil d'administration, machinerie et production", src: "/members/Andrea_M.JPG",
         text: `En faisant partie de l'équipe de robotique de Marianopolis 
         2022-2023, je me suis faite de nouveaux amis, j'ai développé 
         des compétences en leadership et, le plus important de tous, 
@@ -294,7 +294,7 @@ export const frM = [
         mes candidatures à l'université, mais je pense que 
         ce risque en vaut totalement la peine.`    
     },
-    {name: "Nehna Patel", age: 18, year: "en chef", club: "Production", src: "/members/Nehna_M.JPG", code: "Patel", 
+    {name: "Nehna Patel", age: 18, year: "en chef", club: "Conseil d'administration et production", src: "/members/Nehna_M.JPG", code: "Patel", 
         height: "5'4/162cm", gadget: "Compowder", specialty: "Télépathie", mbti: "ESFP",
         text: `À travers les années durant lesquelles j'ai participé aux 
         compétitions de la CRC, j'ai appris de nombreuses choses différentes 
@@ -373,7 +373,7 @@ export const frM = [
         les outils et les différentes utilisations des pièces. C'est 
         une expérience que je chérirai pour toujours.`
     },
-    {name: "Dominique Paradis", age: "(Confidentiel)", year: "Exécutif", club: "Exécutif", src: "/members/Paradis.png", code: "Paradis", height: "(Confidentiel)", 
+    {name: "Dominique Paradis", age: "(Confidentiel)", year: "exécutif", club: "Conseil d'administration", src: "/members/Paradis.png", code: "Paradis", height: "(Confidentiel)", 
         gadget: "Téléphone soulier", specialty: "Expert en déguisement", mbti: "(Confidentiel)",
         text: `Je suis surtout là pour m'occuper des aspects de l'équipe 
         qui divergent de l'objectif principal. J'aide à organiser le 

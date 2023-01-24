@@ -22,31 +22,31 @@ const FlipImg = (props) => {
 							{props.fr ? `Agent ${props.year} - MOOHP` : `${props.year} Agent - MOOHP`}
 						</h2>
 						<p>
-							{props.fr ? `Nom de code: ${props.code}` : `Codename: ${props.code}`}
+							<strong>{props.fr ? `Nom de code:` : `Codename:`}</strong> {props.code}
 						</p>
 						<p>
-							{props.fr ? `Âge: ${props.age}` : `Age: ${props.age}`}
+							<strong>{props.fr ? `Âge:` : `Age:`}</strong> {props.age}
 						</p>
 						<p>
-							{props.fr ? `Taille: ${props.height}` : `Height: ${props.height}`}
+							<strong>{props.fr ? `Taille:` : `Height:`}</strong> {props.height}
 						</p>
 						<p>
-							{props.fr ? `Spécialisation: ${props.specialty}` : `Specialty: ${props.specialty}`}
+							<strong>{props.fr ? `Spécialisation:` : `Specialty:`}</strong> {props.specialty}
 						</p>
 						<p>
-							{props.fr ? `Département: ${props.club}` : `Department: ${props.club}`}
+							<strong>{props.fr ? `Département(s):` : `Department(s):`}</strong> {props.club}
 						</p>
 						<p>
-							{props.fr ? `Type Myers-Briggs: ${props.mbti}` : `Myers-Briggs type: ${props.mbti}`} 
+							<strong>{props.fr ? `Type Myers-Briggs:` : `Myers-Briggs type:`}</strong> {props.mbti}
 						</p>
-						<p>Gadget: {props.gadget}</p>
+						<p><strong>Gadget:</strong> {props.gadget}</p>
 					</div>
 				</div>
 			</div>
 			<div className={styles.card}>
 				<Card className={styles.text}>
 					<p className={styles.name}>Agent {props.code}</p>
-					<p>&ldquo;{props.text}&rdquo;</p>
+					<p className={styles.quote}>&ldquo;{props.text}&rdquo;</p>
 				</Card>
 			</div>
 		</div>
