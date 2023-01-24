@@ -35,7 +35,7 @@
 
 .img {
   border-radius: 10px;
-  border-color: #ffff;
+  border-color: #fff;
   border-width: 0.15rem;
   height: 18.75rem;
   width: 18.75rem;
@@ -84,11 +84,21 @@
 
 .flipCardBack {
   background-color: #5b61be;
-  color: white;
+  color: #fff;
   transform: rotateY(180deg);
   display: grid;
   align-content: center;
   border-width: 0.15rem;
+}
+
+.flipCardBack h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.flipCardBack h2 {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .cardContainer {
@@ -104,9 +114,8 @@
   top: 0.15rem;
   left: 0.15rem;
   padding: 0.2rem 0.45rem;
-  background-color: #999;
-  border-radius: 7.5px;
-  font-weight: 500;
+  color: white;
+  font-style: oblique;
 }
 
 @media screen and (pointer: fine) {

@@ -34,10 +34,14 @@ const Robot = ({ fr }) => {
           </div>
           <p>{fr ? `Après le lancement de la compétition, la département de machinerie a
                 commencé à penser à des idées pour construire le bras du robot. Hésitant entre deux modèles,
-                l'équipe a décidé de construire les deux prototypes suivants.`
+                l'équipe a décidé de construire les deux prototypes suivants. Le premier bras comporte deux extrusions en aluminium, dont un seul subit un mouvement linéaire
+                afin de ramasser des pièces de jeu. Le deuxième bras, cependant, se comporte comme une serre. Ce prototype nécessite 
+                un axe de rotation qui fixe les deux extrusions d'aluminium à la pièce de jeu.`
               : `Following the kickoff, the machinist division began brainstorming ideas
                 for the arm of the robot. Conflicted between two models, they build the two
-                following prototypes.`}</p>
+                following prototypes. The first arm has two aluminium extrusions, only one of which undergoes linear motion
+                in order to pick up game pieces. The second arm, however, behaves like a claw. This prototype requires an axis of
+                rotation that will clamp both aluminium extrusions to the game piece.`}</p>
         </div>
         <div className={styles.container}>
           <h3 className={styles.subheading}>{fr ? 'Le bras robotique choisi (bras 1)' : 'The Chosen Arm (Arm 1)'}</h3>
@@ -50,10 +54,17 @@ const Robot = ({ fr }) => {
                     picking up and dropping game pieces, whilst the rotation of the arm allows the coloured
                     face corresponding to agents' team to face upwards.`}</p>
           <h3 className={styles.subheading}>{fr ? 'La base' : 'The Base'}</h3>
-          <p>{fr ? `[traduction ici]`
-            : `[incomplete!] The [dimension] base of the robot consists of 4 [type] wheels, motorized individually
-            by [motor type]. The wheels are surrounded by an aluminum extrusion frame, and 3D-printed
-            adapters to allow them to use bearings for circular shafts for the hexagonal shaft. (LOL WHAT).`}</p>
+          <p>{fr ? `La base du robot mesure 72,6 cm par 45 cm et comprend 4 roues omnidirectionnelles, chacune d'elles 
+          motorisée par un moteur à courant continu de 12 volts. La structure rectangulaire est construite à partir 
+          d’extrusions d’aluminium renforcées par des rainures en T et des équerres noires. Une extrusion 30-30 argentée 
+          accrochée au centre de la base empêche la structure d’incliner vers l’intérieur. Des adaptateurs imprimés en 3D 
+          permettent à l’axe du moteur de rentrer dans le pignon puisque l’intérieur du pignon était trop gros. Les 
+          adaptateurs sont donc nécessaires pour assurer que l’axe et le pignon pivotent ensemble.`
+            : `The 72.6 cm x 45 cm base of the robot consists of 4 omni wheels, motorized individually by four 12 volt 
+            DC motors. The rectangular structure is built from multiple aluminium extrusions fortified with t-slots and 
+            black brackets. A 30-30 silver extrusion is attached at the center of the base to avoid slanting inwards. 3D 
+            printed adapters allow the motor axle to fit into the sprocket, as the sprocket’s interior was too large to 
+            accommodate the axle. The adapters are therefore necessary to ensure that the two rotate together.`}</p>
         </div>
       </div></div>
 
@@ -67,7 +78,7 @@ const Robot = ({ fr }) => {
           <p>{fr ? `Après de longues heures de recherche, les agents du département de la machinerie ont décidé
                     de construire un mécanisme d'élévation télescopique. Ce système d'élévation est fait d'extrusions
                     d'aluminium (choisies pour leur faible masse et leur bonne durabilité) et de parties d'imprimantes
-                    3D (utilisées pour attache chaque étage ensemble). Pour ne pas que ces parties d'imprimantes 3D se
+                    3D (utilisées pour attache chaque étage ensemble). Pour ne pas que ces parties imprimées en 3D se
                     bloquent l'un et l'autre, ces pièces sont chacune placées au deuxième étage du système d'élévation.
                     Ceci optimise ainsi la hauteur maximale que le système d'élévation peut atteindre.`
                  : `After careful research, the Machinery agents determined that a three stage
