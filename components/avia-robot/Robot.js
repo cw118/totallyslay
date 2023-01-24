@@ -57,11 +57,11 @@ const Robot = ({ fr }) => {
                       picking up and dropping game pieces, whilst the rotation of the arm allows the coloured
                       face corresponding to agents' team to face upwards.`}</p>
             <h3 className={styles.subheading}>{fr ? 'La base' : 'The Base'}</h3>
-            <p>{fr ? `La base du robot mesure 72,6 cm par 45 cm et comprend 4 roues omnidirectionnelles, chacune d'elles 
+            <p>{fr ? `La base du robot mesure 72,6 cm par 44 cm et comprend 4 roues omnidirectionnelles, chacune d'elles 
             motorisée par un moteur à courant continu de 12 volts. La structure rectangulaire est construite à partir 
             d'extrusions d'aluminium renforcées par des rainures en T et des équerres noires. Une extrusion 30-30 argentée 
             accrochée au centre de la base empêche la structure d'incliner vers l'intérieur.`
-              : `The 72.6 cm x 45 cm base of the robot consists of 4 omni wheels, motorized individually by four 12 volt 
+              : `The 72.6 cm x 44 cm base of the robot consists of 4 omni wheels, motorized individually by four 12 volt 
               DC motors. The rectangular structure is built from multiple aluminium extrusions fortified with t-slots and 
               black brackets. A 30-30 silver extrusion is attached at the center of the base to avoid slanting inwards.`}</p>
           </div>
@@ -82,17 +82,13 @@ const Robot = ({ fr }) => {
                       adaptateurs sont donc nécessaires pour assurer que l'axe et le pignon pivotent ensemble. Pour ne pas que ces parties imprimées en 3D se
                       bloquent l'un et l'autre, ces pièces sont placées chacune au deuxième étage du système d'élévation.
                       Ceci optimise ainsi la hauteur maximale que le système d'élévation peut atteindre.`
-                  : `After careful research, the Machinery agents determined that a three stage
-                      cascading lift would be the best option to build a mechanism capable of both
-                      reaching great heights as well as retracting itself, creating a cascading motion.
-                      The lift is constructed using aluminum extrusions, chosen for their lightweight and
-                      durable nature, and 3D-printed parts to allow the extrusions to roll freely. These 3D-printed 
-                      adapters allow the motor axle to fit into the sprocket, as the sprocket's interior was too large to 
-                      accommodate the axle. The adapters are therefore necessary to ensure that the two rotate together. The
-                      rollers, however, must be strategically placed so as three of the four faces of an
-                      extrusion are free of any obstacles. In order to achieve a maximum height, after multiple
-                      designs, agents deem it optimal to attach the rollers to the second stage, and allow them
-                      to roll freely on the first and third stage.`}</p>
+              : `After careful research, the Machinery agents determined that a three stage cascading lift would be the 
+                  best option to build a mechanism capable of both reaching great heights as well as retracting itself, creating a cascading motion.
+                  The lift is constructed using aluminum extrusions, chosen for their lightweight and durable nature, and 3D-printed adapters to allow
+                  the extrusions to lift. These 3D-printed parts allow the motor axle to fit into the sprocket, as the sprocket's interior was too large
+                  to accommodate the axle. The adapters are therefore necessary to ensure that the two rotate together. The rollers, however, must be
+                  strategically placed so as three of the four faces of an extrusion are free of any obstacles. In order to achieve a maximum height,
+                  after multiple designs, agents deem it optimal to attach the rollers to the second stage, and allow them to roll freely on the first and third stage.`}</p>
           </div></div>
           <div className='grid'><div className={styles.imageContainer}>
             <img src="/robot/base.png" alt={fr ? 'La base du robot' : 'The robot\'s base'} />
@@ -145,7 +141,7 @@ const Robot = ({ fr }) => {
 
         <div className={styles.vidContainer}>
           <h1 className={styles.vidHeader}>{fr ? `Tutoriel: Comment construire le bras robotique` : `Tutorial: How to Build the Robotic Arm`}</h1>
-          <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe className={styles.video} src="https://www.youtube.com/embed/OcvOn_SFodk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 

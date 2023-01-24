@@ -7,7 +7,7 @@
 }
 
 .card {
-    margin-top: 5vh;
+  margin-top: 5vh;
   max-width: revert;
   border: 7px #bf49ff solid;
   transition: transform 0.3s;

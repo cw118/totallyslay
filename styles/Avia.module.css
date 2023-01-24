@@ -30,7 +30,7 @@
   border-radius: 20px;
   box-shadow: rgba(77, 168, 199, 0.469) 0px 7px 29px 0px;
   padding: 1.4rem 0.3rem 1.6rem;
-  margin: 3.5rem 1rem 1.5rem;
+  margin: 3.5rem 1rem 2rem;
 }
 
 .startMsg, .endMsg {
@@ -144,7 +144,7 @@
   }
 
   .countdown, .startMsg, .endMsg {
-    margin: 3.5rem 4rem 1.5rem;
+    margin: 3.5rem 4rem 2rem;
     padding: 1.4rem 0.7rem 1.6rem;
   }
 }
