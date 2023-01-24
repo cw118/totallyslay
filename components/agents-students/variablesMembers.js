@@ -139,7 +139,7 @@ export const engM = [
         text: `I learned how to efficiently manage my time between 
         robotics and school. I also learned how to solder wires and 
         motors with a soldering iron, as well as how to add a heat seal 
-        using the heat gun in order to protect our solders and make it 
+        using the heat gun in order to protect our solders and make them 
         more durable.`
     },
     {name: "Celia Shi", age: 18, year: "Senior", club:"Virtual network, marketing, manufacturing and hacking", src:"/members/Celia_M.JPG", 
@@ -307,10 +307,10 @@ export const frM = [
     },
     {name: "Ruwa Qatmash", age: 18, year: "Junior", club:"Machinerie et production", src:"/members/Ruwa_M.JPG", code: "Qatmash", 
         height: "5'6/167cm", gadget: "Wd-40", specialty: "Spécialiste en wd-40", mbti: "ENTJ",
-        text: `J’ai appris à gérer mon temps entre l’école et la robotique 
-        de manière efficace. J’ai également appris à souder des fils et des 
-        moteurs en utilisant un fer à souder, ainsi qu’à ajouter un thermoscellage 
-        à l’aide du pistolet thermique pour protéger nos soudures et les rendre 
+        text: `J'ai appris à gérer mon temps entre l'école et la robotique 
+        de manière efficace. J'ai également appris à souder des fils et des 
+        moteurs en utilisant un fer à souder, ainsi qu'à ajouter un thermoscellage 
+        à l'aide du pistolet thermique pour protéger nos soudures et les rendre 
         plus résistantes.`
     },
     {name: "Celia Shi", age: 18, year: "Sénior", club:"Réseau virtuel, marketing, production et piratage informatique", src:"/members/Celia_M.JPG", 

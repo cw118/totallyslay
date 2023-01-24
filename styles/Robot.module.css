@@ -54,7 +54,9 @@
 }
 
 .rowTwoModels {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   grid-row-gap: 2rem;
   row-gap: 2rem;
