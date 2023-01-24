@@ -36,7 +36,9 @@ const FlipImg = (props) => {
 						<p>
 							{props.fr ? `Département: ${props.club}` : `Department: ${props.club}`}
 						</p>
-						<p>MB type: {props.mbti}</p>
+						<p>
+							{props.fr ? `Type Myers-Briggs: ${props.mbti}` : `Myers-Briggs type: ${props.mbti}`} 
+						</p>
 						<p>Gadget: {props.gadget}</p>
 					</div>
 				</div>

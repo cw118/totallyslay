@@ -45,6 +45,13 @@
 	box-shadow: #66d9ff50 0px 5px 20px !important;
 }
 
+.tabs button:hover {
+	background-color: #66d9ff;
+	color: #4148a4;
+	border-color: #66d9ff;
+	border-radius: 30px;
+  }
+
 .card {
 	align-items: center;
 	border: 2px #66d9ff solid;

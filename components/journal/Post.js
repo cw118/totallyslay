@@ -17,7 +17,7 @@ const Info = (props) => {
 						{props.date}
 					</div>
 				</div>
-				<Card imgSrc={props.image} className={styles.cardContainer}>
+				<Card imgSrc={props.image} alt={props.alt} className={styles.cardContainer}>
 					<p className={styles.username}>
 						@{props.username}
 					</p>
@@ -47,7 +47,7 @@ const Post = ({ fr }) => {
 		<div className={styles.div}>
 			{post.map((post, index) =>
 				<Info key={index} fr={fr} avatar={post.avatar} status={post.status} author={post.author}
-					date={post.date} image={post.src} username={post.user} caption={post.caption}
+					date={post.date} image={post.src} alt={post.alt} username={post.user} caption={post.caption}
 					hashtags={post.hashtags} commenter={post.commenter} comment={post.comment} likes={post.likes} />
 			)}
 		</div>

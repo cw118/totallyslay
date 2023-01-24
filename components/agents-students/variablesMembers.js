@@ -97,7 +97,7 @@ export const engM = [
     },
     {name: "Zoe Hadziaras", age: 18, year: "Junior", club:"Manufacturing and marketing", src:"/members/Zoe_M.JPG", code: "Hadz", 
         height: "5'8/172cm", gadget: "Paint roller", specialty: "Professional mess maker", mbti: "ESFP",
-        text: `I learnt that it is not important to only be dedicated to one 
+        text: `I learned that it is not important to only be dedicated to one 
         specialty. This year has taught me to be able to work in different
         groups such as the kiosk and the robot. The one big
         thing I had to sacrifice was my winter break, but it was worth
@@ -111,7 +111,7 @@ export const engM = [
     },
     {name: "Victoria Hoang", age: 18, year: "Senior", club:"Virtual network, marketing and manufacturing", src:"/members/Victoria_M.JPG", code: 
         "Vi", height: "5'6/167cm", gadget: "Camera-clad pigeon", specialty: "Bee modeler", mbti: "INFP",
-        text: `I learnt new and more efficient ways to build websites using
+        text: `I learned new and more efficient ways to build websites using
         React.js and Next.js. Making new friends and learning from 
        them everyday made the sleep deprivation and time commitment
         worth it!`
@@ -127,7 +127,7 @@ export const engM = [
     {name: "Nehna Patel", age: 18, year: "Head", club:"Manufacturing", src:"/members/Nehna_M.JPG", code: "Patel", 
         height: "5'4/162cm", gadget: "Compowder", specialty: "Mind reading", mbti: "ESFP",
         text: `Throughout the years competing in the CRC competition, I've 
-        learnt countless different things - whether that'd be 
+        learned countless different things - whether that'd be 
         developing my building, organizational or management skills.
          My favourite part of every competition is seeing an idea turn
         into exactly what we wanted it to, seeing the final product
@@ -136,9 +136,11 @@ export const engM = [
     },
     {name: "Ruwa Qatmash", age: 18, year: "Junior", club:"Machinery and manufacturing", src:"/members/Ruwa_M.JPG", code: "Qatmash", 
         height: "5'6/167cm", gadget: "Wd-40", specialty: "Wd-40 specialist", mbti: "ENTJ",
-        text: `I learned how to efficiently manage my time between robotics
-        and school. Working on the robot and to move forward while 
-        having fun.`
+        text: `I learned how to efficiently manage my time between 
+        robotics and school. I also learned how to solder wires and 
+        motors with a soldering iron, as well as how to add a heat seal 
+        using the heat gun in order to protect our solders and make it 
+        more durable.`
     },
     {name: "Celia Shi", age: 18, year: "Senior", club:"Virtual network, marketing, manufacturing and hacking", src:"/members/Celia_M.JPG", 
         code: "Seal", height: "5'8/172cm", gadget: "Remote-controlled insect", specialty: "Animal whisperer", mbti: "INFP",
@@ -167,7 +169,7 @@ export const engM = [
     },
     {name: "Carolyn Wu", age: 18, year: "Junior", club:"Virtual network, hacking, manufacturing and marketing", src:"/members/Carolyn_M.JPG", 
         code: "Wu", height: "5'4/162cm", gadget: "Wristwatch camera", specialty: "Senior developer", mbti: "INTJ",
-        text: `I learnt a lot about the Next.js framework and various ways 
+        text: `I learned a lot about the Next.js framework and various ways 
         to create both 2D and 3D animations. My main struggles were 
         CSS positioning, finding a good approach to animate elements, 
         as well as integrating and customizing npm packages I'd never used before. 
@@ -305,7 +307,11 @@ export const frM = [
     },
     {name: "Ruwa Qatmash", age: 18, year: "Junior", club:"Machinerie et production", src:"/members/Ruwa_M.JPG", code: "Qatmash", 
         height: "5'6/167cm", gadget: "Wd-40", specialty: "Spécialiste en wd-40", mbti: "ENTJ",
-        text: `ask ruwa`
+        text: `J’ai appris à gérer mon temps entre l’école et la robotique 
+        de manière efficace. J’ai également appris à souder des fils et des 
+        moteurs en utilisant un fer à souder, ainsi qu’à ajouter un thermoscellage 
+        à l’aide du pistolet thermique pour protéger nos soudures et les rendre 
+        plus résistantes.`
     },
     {name: "Celia Shi", age: 18, year: "Sénior", club:"Réseau virtuel, marketing, production et piratage informatique", src:"/members/Celia_M.JPG", 
         code: "Seal", height: "5'8/172cm", gadget: "Insecte télécommandé", specialty: "Chuchoteuse d'animaux", mbti: "INFP",
