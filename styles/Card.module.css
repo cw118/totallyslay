@@ -7,7 +7,7 @@
 }
 
 .card {
-    margin-top: 5vh;
+  margin-top: 5vh;
   max-width: revert;
   border: 7px #bf49ff solid;
   transition: transform 0.3s;
@@ -85,6 +85,14 @@
       column-gap: 1rem;
       grid-row-gap: 2rem;
   }
+
+  .card {
+    height: 330px !important;
+  }
+
+  .card img {
+    height: 316px !important;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -100,7 +108,16 @@
 
 @media screen and (min-width: 1280px) {
   .div {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  .card {
+    height: 400px !important;
+  }
+
+  .card img {
+    height: 386px !important;
   }
 }
