@@ -16,7 +16,7 @@ const Posts = (props) => {
 					<Timeline.Time className={styles.time}>
 						{props.time}
 					</Timeline.Time>
-					<Card className={"bg-transparent " + `${styles.card}`} >
+					<Card className={`bg-transparent ${styles.card}`} >
 						<p className={styles.text}>
 							{props.text}
 						</p>

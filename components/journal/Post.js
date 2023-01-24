@@ -17,7 +17,7 @@ const Info = (props) => {
 						{props.date}
 					</div>
 				</div>
-				<Card imgSrc={props.image} alt={props.alt} className={styles.cardContainer}>
+				<Card imgSrc={props.image} imgAlt={props.alt} className={styles.cardContainer}>
 					<p className={styles.username}>
 						@{props.username}
 					</p>

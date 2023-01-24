@@ -4,7 +4,7 @@ import { engS, frS } from "./variablesMembers.js";
 
 const Carte = (props) => {
 	return (
-		<Card className={styles.card} imgSrc={props.src} horizontal={true}>
+		<Card className={styles.card} imgSrc={props.src} imgAlt={props.fr ? `Photo de ${props.name}` : `Photo of ${props.name}`} horizontal={true}>
 			<div className={`${styles.text} font-kiwi`}>
 				<p>
 					<strong>{props.fr ? 'Nom: ' : 'Name: '}</strong> {`${props.name}`}
