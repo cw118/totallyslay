@@ -60,14 +60,10 @@ const Robot = ({ fr }) => {
             <p>{fr ? `La base du robot mesure 72,6 cm par 45 cm et comprend 4 roues omnidirectionnelles, chacune d'elles 
             motorisée par un moteur à courant continu de 12 volts. La structure rectangulaire est construite à partir 
             d'extrusions d'aluminium renforcées par des rainures en T et des équerres noires. Une extrusion 30-30 argentée 
-            accrochée au centre de la base empêche la structure d'incliner vers l'intérieur. Des adaptateurs imprimés en 3D 
-            permettent à l'axe du moteur de rentrer dans le pignon puisque l'intérieur du pignon était trop gros. Les 
-            adaptateurs sont donc nécessaires pour assurer que l'axe et le pignon pivotent ensemble.`
+            accrochée au centre de la base empêche la structure d'incliner vers l'intérieur.`
               : `The 72.6 cm x 45 cm base of the robot consists of 4 omni wheels, motorized individually by four 12 volt 
               DC motors. The rectangular structure is built from multiple aluminium extrusions fortified with t-slots and 
-              black brackets. A 30-30 silver extrusion is attached at the center of the base to avoid slanting inwards. 3D 
-              printed adapters allow the motor axle to fit into the sprocket, as the sprocket's interior was too large to 
-              accommodate the axle. The adapters are therefore necessary to ensure that the two rotate together.`}</p>
+              black brackets. A 30-30 silver extrusion is attached at the center of the base to avoid slanting inwards.`}</p>
           </div>
         </div></div>
 
@@ -81,14 +77,18 @@ const Robot = ({ fr }) => {
             <p>{fr ? `Après de longues heures de recherche, les agents du département de la machinerie ont décidé
                       de construire un mécanisme d'élévation télescopique. Ce système d'élévation est fait d'extrusions
                       d'aluminium (choisies pour leur faible masse et leur bonne durabilité) et de parties d'imprimantes
-                      3D (utilisées pour attache chaque étage ensemble). Pour ne pas que ces parties imprimées en 3D se
-                      bloquent l'un et l'autre, ces pièces sont chacune placées au deuxième étage du système d'élévation.
+                      3D (utilisées pour attacher les étages ensemble). Ces adaptateurs imprimés en 3D 
+                      permettent à l'axe du moteur de rentrer dans le pignon puisque l'intérieur du pignon était trop gros. Les 
+                      adaptateurs sont donc nécessaires pour assurer que l'axe et le pignon pivotent ensemble. Pour ne pas que ces parties imprimées en 3D se
+                      bloquent l'un et l'autre, ces pièces sont placées chacune au deuxième étage du système d'élévation.
                       Ceci optimise ainsi la hauteur maximale que le système d'élévation peut atteindre.`
                   : `After careful research, the Machinery agents determined that a three stage
                       cascading lift would be the best option to build a mechanism capable of both
                       reaching great heights as well as retracting itself, creating a cascading motion.
                       The lift is constructed using aluminum extrusions, chosen for their lightweight and
-                      durable nature, and 3D printed parts to allow the extrusions to roll freely. The
+                      durable nature, and 3D-printed parts to allow the extrusions to roll freely. These 3D-printed 
+                      adapters allow the motor axle to fit into the sprocket, as the sprocket's interior was too large to 
+                      accommodate the axle. The adapters are therefore necessary to ensure that the two rotate together. The
                       rollers, however, must be strategically placed so as three of the four faces of an
                       extrusion are free of any obstacles. In order to achieve a maximum height, after multiple
                       designs, agents deem it optimal to attach the rollers to the second stage, and allow them
