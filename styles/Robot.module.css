@@ -1,6 +1,6 @@
 .pageWrapper {
   color: #fff;
-  padding: 50px 2.5rem;
+  padding: 50px 2.5rem 0px;
   display: grid;
   grid-row-gap: 2.5rem;
   row-gap: 2.5rem;
@@ -54,7 +54,9 @@
 }
 
 .rowTwoModels {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   grid-row-gap: 2rem;
   row-gap: 2rem;
@@ -63,6 +65,10 @@
 .subheading {
   font-size: 2rem;
   font-weight: 600;
+}
+
+.vidContainer {
+  margin-bottom: 1.5rem;
 }
 
 .video {

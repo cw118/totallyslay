@@ -1,10 +1,10 @@
+import { useRouter } from 'next/router';
+import classNames from 'classnames';
 import Meta from './Meta';
 import RegNav from './nav/RegNav';
 import SpyNav from './nav/SpyNav';
 import Foooter from './Footer';
 import JerryPopUp from './JerryPopUp';
-import { useRouter } from 'next/router';
-import classNames from 'classnames';
 
 const Layout = ({ children }) => {
   const router = useRouter();

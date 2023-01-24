@@ -5,6 +5,7 @@ import styles from '../../styles/Moohp.module.css';
 import { Button } from 'flowbite-react';
 import useSessionStorage from '../Storage';
 import classNames from 'classnames';
+import BottomNav from '../nav/BottomNav';
 
 const MoohpIntro = ({ fr }) => {
   const [tempName, setTempName] = useState(''); // temporary name, updates on detected changes in input box
@@ -60,17 +61,12 @@ const MoohpIntro = ({ fr }) => {
         <li><strong>{fr ? 'Marketing' : 'Marketing'}</strong>, {fr ? 'pour nos réalisateurs et producteurs vidéo' : 'for our video directors and producers'}</li>
       </ul>
 
-      <div className={styles.bottomNav}>
-        <h3 className={styles.whereNext}>{fr ? 'Où irez-vous ensuite' : 'Where to next'}, {fr ? 'agent' : 'Agent'}{agentName ? ` ${agentName}` : ''}?</h3>
-        <div className='md:grid'><div className={styles.buttons}>
-          <Link href={fr ? '/fr/moohp/avia' : '/moohp/avia'}>{fr ? 'En apprendre plus sur votre mission' : 'Learn more about your mission'}</Link>
-          <Link href={fr ? '/fr/moohp/agents' : '/moohp/agents'}>{fr ? 'Rencontrer l\'équipe de MOOHP' : 'Meet the MOOHP team'}</Link>
-          <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Link>
-          <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Link>
-        </div></div>
-        <a target="_blank" className={styles.ghBtn} href='https://github.com/cw118/totallyslay' rel="noopener noreferrer">{fr ? 'Code source sur GitHub' : 'Source code on GitHub'}</a>
-        <Link className={styles.mariBtn} href={fr ? '/fr' : '/'}>{fr ? 'Retourner à M.A.R.I.' : 'Return to M.A.R.I.'}</Link>
-      </div>
+      <BottomNav fr={fr} name={agentName}>
+        <Link href={fr ? '/fr/moohp/avia' : '/moohp/avia'}>{fr ? 'En apprendre plus sur votre mission' : 'Learn more about your mission'}</Link>
+        <Link href={fr ? '/fr/moohp/agents' : '/moohp/agents'}>{fr ? 'Rencontrer l\'équipe de MOOHP' : 'Meet the MOOHP team'}</Link>
+        <Link href={fr ? '/fr/moohp/archives' : '/moohp/archives'}>{fr ? 'Consulter nos archives' : 'Check out our archives'}</Link>
+        <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Link>
+      </BottomNav>
     </div>
   );
 }

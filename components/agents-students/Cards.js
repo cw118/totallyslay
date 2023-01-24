@@ -37,12 +37,11 @@ const Cards = ({ fr }) => {
 			</h1>
 			<p className={`${styles.clubsDesc} font-kiwi`}>
 				{fr ? `Tous les étudiants à M.A.R.I. participent à au moins un comité: 
-                  le comité Arduino où on construit des robots, le comité de développement web, 
+                  le comité Arduino où on construit des robots, le comité de programmation, le comité de développement web, 
                   le comité de bricolage qui permet de développer des compétences en construction et en design d'intérieur, 
-                  le comité de programmation résout des problèmes de programmation, et le comité de film
-                  réalise des vidéos.`
+                  et le comité de film.`
 					: `M.A.R.I. students all take part in various clubs such as the Arduino club, 
-                  in which they build robots, the programming club, the web development club,
+                  in which members build robots, the programming club, the web development club,
                   the DIY club that develops construction and interior design skills, and the film club.`}</p>
 			<div className={styles.div}>
 				{students.map((member, index) =>

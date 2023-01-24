@@ -1,9 +1,11 @@
+import { useContext } from 'react';
+import AppContext from '../AppContext';
+import Link from "next/link";
 import styles from "../../styles/Archive.module.css";
 import { Tabs, Card, Timeline } from "flowbite-react";
 import { robEng, kioskEng, webEng, vidEng, progEng, robFr, kioskFr, webFr, vidFr, progFr } from "./variablesArchives.js";
 import Typewrite from '../Typewrite';
-import { useContext } from 'react';
-import AppContext from '../AppContext';
+import BottomNav from "../nav/BottomNav";
 
 const Posts = (props) => {
 	return (
@@ -68,7 +70,13 @@ const Archive = ({ fr }) => {
 						)}
 					</Tabs.Item>
 				)}
-			</Tabs.Group>
+      </Tabs.Group>
+      <BottomNav fr={fr} name={name}>
+        <Link href={fr ? '/fr/moohp' : '/moohp'}>{fr ? 'Siège de MOOHP' : 'MOOHP headquarters'}</Link>
+        <Link href={fr ? '/fr/moohp/avia' : '/moohp/avia'}>{fr ? 'En apprendre plus sur votre mission' : 'Learn more about your mission'}</Link>
+        <Link href={fr ? '/fr/moohp/agents' : '/moohp/agents'}>{fr ? 'Rencontrer l\'équipe de MOOHP' : 'Meet the MOOHP team'}</Link>
+        <Link href={fr ? '/fr/moohp/robot' : '/moohp/robot'}>{fr ? 'Découvrir le robot de MOOHP' : 'Discover the MOOHP robot'}</Link>
+      </BottomNav>
 		</div>
 	);
 }
