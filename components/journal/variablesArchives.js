@@ -416,7 +416,7 @@ export const webFr = [
     structure générale et le contenu de leur site web. Un 
     tableau de vision et des logos ont été créés. Les membres 
     du département ont également décidé d'utiliser React.js et 
-    Next.js pour créer un site web d'autant plus efficace et performant ! `
+    Next.js pour créer un site web d'autant plus efficace et performant! `
 	},
 	{
 		time: "20 décembre 2022", img: "/journal/web/celia.png",
@@ -426,14 +426,14 @@ export const webFr = [
     programmation, à tester des idées ambitieuses et à documenter les 
     progrès des agents du MOOHP et la mission à accomplir. Ils doivent 
     également manier l'art de la subtilité pour capturer leurs agents 
-    en pleine action !`
+    en pleine action!`
 	},
 	{
 		time: "7 janvier 2023", img: "/journal/web/work2.png",
 		alt: "Les agents Wu et Vi collaborent sur le code du site web",
 		text: `Le département peut enfin commencer à construire 
     son site web après avoir appris de nouveaux langages de 
-    programmation : React.js et Next.js ! Ils complètent la 
+    programmation : React.js et Next.js! Ils complètent la 
     première moitié du site Web et consolident leur conception 
     de sa seconde moitié pour pouvoir le programmer avec succès 
     la semaine suivante. Quant au contenu, ils compilent toutes 
@@ -477,14 +477,14 @@ export const vidFr = [
     durée de 5 minutes qui résumera à la fois l'équipe, M.A.R.I., 
     MOOHP et la mission AVIA 2023, tout en mettant en évidence le 
     thème. Une fois le script finalisé, ils doivent rassembler tous 
-    les outils et les gadgets nécessaires (et les perruques !) qui 
+    les outils et les gadgets nécessaires (et les perruques!) qui 
     permettront le succès de leur vidéo.`
 	},
 	{
 		time: "20 décembre 2022", img: "/journal/video/gym-group.png",
 		alt: "Les agents travaillent sur le scénario de la vidéo",
 		text: `Les membres du département de marketing finalisent leur 
-    scénario ! Ayant reçu les perruques, ils n'attendent 
+    scénario! Ayant reçu les perruques, ils n'attendent 
     plus que les gadgets nécessaires pour filmer leur vidéo.`
 	},
 	{
