@@ -66,8 +66,8 @@ const Agents = ({ fr }) => {
 			</div>
 			<p className={styles.intro}>
 				<strong>Agent{name},</strong>
-				{fr ? ` une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour vous accompagner dans cette mission. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP. Survolez avec votre souris (ou cliquez sur) les portraits des agents pour plus d'informations!`
-					: ` a team of 18 MOOHP agents were carefully selected for this mission alongside you. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters. Hover with your mouse (or click on) the agent headshot for more information!`}
+				{fr ? ` une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour vous accompagner dans cette mission. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP. Survolez avec votre souris (ou appuyez sur des appareils mobiles) les portraits des agents pour plus d'informations!`
+					: ` a team of 18 MOOHP agents were carefully selected for this mission alongside you. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters. Hover with your mouse (or tap for mobile devices) the agent headshot for more information!`}
 			</p>
 			{students.map((member, index) =>
 				<FlipImg fr={fr} key={index} src={member.src} name={member.name}

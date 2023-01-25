@@ -66,6 +66,10 @@
     color: #fff;
   }
 
+  #regNav a:not(.navLogo):hover {
+    color: #6600ff;
+  }
+
   #spyNav a:not(.navLogo) {
     color: #4148a4;
   }
@@ -663,10 +667,6 @@
 
     #regNav a:not(.navLogo), #spyNav a:not(.navLogo) {
       transition: color 0.25s;
-    }
-
-    #regNav a:not(.navLogo):hover {
-      color: #6600ff;
     }
 
     #spyNav a:not(.navLogo):hover {
