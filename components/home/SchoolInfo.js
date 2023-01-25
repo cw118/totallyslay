@@ -25,16 +25,17 @@ const SchoolInfo = ({ fr }) => {
 					}
 				</p><br />
 				<p>
-					{fr ? `Totalement M.A.R.I est une initiative menée par les étudiants du comité de développement web, dans le 
+					{fr ? `Totalement M.A.R.I est une initiative menée par les étudiants du comité de développement web dans le 
                         but de documenter l'année de graduation de la cohorte 2010. Toutes les images et vidéos ont été prises par 
-                        les élèves. Les logos et les dessins sont inspirés par la série animée Totally Spies! et la CRC, dessinés 
-                        par Victoria Hoang. Tous les modèles 3D sont faits par Adelina Badea et Andrea Abou-Haidar.`
+                        les élèves. Les logos et les dessins, dessinés par Victoria Hoang, sont inspirés par la série animée `
 						:
 						`Totally M.A.R.I. is a student-led initiative run by the web development club in order to document the school 
                         year of the graduating class of 2010. All images and videos are taken by our student body. Logos and drawings 
-                        based off of Totally Spies! and the CRC are by Victoria Hoang. All 3D models are by Adelina Badea and Andrea Abou-Haidar.
-`
-					}
+                        based off of `
+          }
+          <i>Totally Spies!</i>
+          {fr ? ` et la CRC. Tous les modèles 3D sont faits par Adelina Badea et Andrea Abou-Haidar.`
+              : ` and the CRC are by Victoria Hoang. All 3D models are by Adelina Badea and Andrea Abou-Haidar.`}
 				</p><br />
 				<div>
 					{fr ? `Tout le code est écrit par le comité du développement web sauf indication contraire. Pour accéder au code source, `
