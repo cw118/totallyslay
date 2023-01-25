@@ -64,7 +64,7 @@ export const robEng = [
     can join forces and assemble the robot.`
 	},
 	{
-		time: "January 13th, 2023", img: "/journal/robot/team3.png",
+		time: "January 17th, 2023", img: "/journal/robot/team3.png",
 		alt: "Attaching the lift to the base",
 		text: `During assembly, however, agents encounter an issue: their 3D-printed 
 		adapters began to bend! Also, the mechanical lift they supported has trouble 
@@ -78,40 +78,40 @@ export const kioskEng = [
 		time: "November 13th, 2022", img: "/journal/kiosk/walls-up.png",
 		alt: "Kiosk walls being assembled",
 		text: `The members of the Manufacturing Division ponder, deducing how to 
-    balance representing both M.A.R.I. and MHOOP at AVIA 2023. Creative minds 
-    gather to spark the most ingenious of ideas! Our agents' physical training 
-    is finally put to the test as they put up the kiosk walls. `
+		balance representing both M.A.R.I. and MHOOP at AVIA 2023. Creative minds 
+		gather to spark the most ingenious of ideas! Our agents' physical training 
+		is finally put to the test as they put up the kiosk walls. `
 	},
 	{
 		time: "December 20th, 2022", img: "/journal/kiosk/blue.png",
 		alt: "Agents Hadz primes the walls",
 		text: `With the kiosk walls assembled, Manufacturing agents prime its inner and 
-    outer walls.`
+    	outer walls.`
 	},
 	{
 		time: "January 4th, 2023", img: "/journal/kiosk/globe.png",
 		alt: "Agents Andrea and Patel paint the globe",
 		text: `During the first week of January, the interior of MOOHP headquarters 
-    begins to come together! They finish painting the base colour of the walls 
-    and the MOOHP logo's globe.`
+		begins to come together! They finish painting the base colour of the walls 
+		and the MOOHP logo's globe.`
 	},
 	{
 		time: "January 6th, 2023", img: "/journal/kiosk/couch.png",
 		alt: "Agents Hadz and Patel begin making the back of the couch",
 		text: `Agents also begin gathering materials and plans to furnish MOOHP headquarters.
-    Recycling items used by previous MOOHP agents, they can begin building the red couch!`
+    	Recycling items used by previous MOOHP agents, they can begin building the red couch!`
 	},
 	{
 		time: "January 11th, 2023", img: "/journal/kiosk/id.png",
 		alt: "Zi Heng works on programming the ID system",
 		text: `Agent Zi Heng of the Hacking and Arduino divisions collaborates with the 
-    Manufacturing division to program an identification system for MOOHP headquarters`
+    	Manufacturing division to program an identification system for MOOHP headquarters`
 	},
 	{
 		time: "January 12th, 2023", img: "/journal/kiosk/lockers.png",
 		alt: "Agents Andrea, Patel, and Hadz spray paint lockers outside",
 		text: `They start furnishing the enclosed area by modifying old lockers that 
-    will disguise headquarters.`
+    	will disguise headquarters.`
 	},
 	{
 		time: "January 12th, 2023", img: "/journal/kiosk/monitors.png",
@@ -138,34 +138,34 @@ export const webEng = [
 		time: "November 13th, 2022", img: "/journal/web/work2.png",
 		alt: "Agents Seal, Wu, and Vi collaborate on the website's code",
 		text: `The members of the Website Division complete brainstorming and refine 
-    their ideas to draw out the overall structure and content of its website. 
-    Vision boards and logos are created. Their members also decide to use React.js 
-    and Next.js to build a more efficient and complex website! `
+		their ideas to draw out the overall structure and content of its website. 
+		Vision boards and logos are created. Their members also decide to use React.js 
+		and Next.js to build a more efficient and complex website! `
 	},
 	{
 		time: "December 20th, 2022", img: "/journal/web/celia.png",
 		alt: "Agent Seal subtly cpatures the robot team working",
 		text: `Virtual Network agents, with concrete ideas in mind, began learning 
-    new programming languages, testing out ambitious ideas, and documenting the 
-    progress of the MOOHP agents and the mission at hand. They must also wield 
-    the art of subtlety to capture their agents working in action!`
+		new programming languages, testing out ambitious ideas, and documenting the 
+		progress of the MOOHP agents and the mission at hand. They must also wield 
+		the art of subtlety to capture their agents working in action!`
 	},
 	{
 		time: "January 7th, 2023", img: "/journal/web/work1.png",
 		alt: "Agents Wu and Vi collaborate on their website's code",
 		text: `They can finally start building its website after learning new 
-    programming languages: React.js and Next.js! They complete the first half of 
-    the website and solidify their design of its second half to be able to structure 
-    it successfully in the following week. As for the content, they compile all the 
-    relevant information and update the team's progress reports.`
+		programming languages: React.js and Next.js! They complete the first half of 
+		the website and solidify their design of its second half to be able to structure 
+		it successfully in the following week. As for the content, they compile all the 
+		relevant information and update the team's progress reports.`
 	},
 	{
 		time: "January 12th, 2023", img: "/journal/web/work3.png",
 		alt: "Audrey, Victoria, Carolyn, and Celia working on steps together",
 		text: `They finish the second half of the website, despite their struggles 
-    with positioning and rendering 3D models! With the general design completed, 
-    they can begin refining all aspects of the website, improving styling and 
-    adding animations!`
+		with positioning and rendering 3D models! With the general design completed, 
+		they can begin refining all aspects of the website, improving styling and 
+		adding animations!`
 	},
 	{
 		time: "7 janvier 2023", img: "/journal/web/carolyn.png",
@@ -189,26 +189,26 @@ export const vidEng = [
 		time: "November 13th, 2022", img: "/journal/video/group1.png",
 		alt: "Video agents watch a Totally Spies! episode",
 		text: `The members of the Marketing Division gather vital information 
-    on "Totally Spies!" to create a 5-minute video that will encapsulate 
-    the team, both M.A.R.I. and MOOHP, and their mission, AVIA 2023, 
-    all while highlighting the theme. Once the script is finalised, 
-    they must gather all the necessary tools and gadgets (and wigs!) 
-    that'll make their video a success.`
+		on "Totally Spies!" to create a 5-minute video that will encapsulate 
+		the team, both M.A.R.I. and MOOHP, and their mission, AVIA 2023, 
+		all while highlighting the theme. Once the script is finalised, 
+		they must gather all the necessary tools and gadgets (and wigs!) 
+		that'll make their video a success.`
 	},
 	{
 		time: "December 20th, 2022", img: "/journal/video/gym-group.png",
 		alt: "Agents work on the video script",
 		text: `The Marketing agents finalise their script! After receiving 
-    the wigs, they await solely receiving the necessary gadgets to film 
-    their video.`
+		the wigs, they await solely receiving the necessary gadgets to film 
+		their video.`
 	},
 	{
 		time: "January 4th, 2023", img: "/journal/video/jerry-scene.png",
 		alt: "Filming of the Jerry scene",
 		text: `As soon as agents reconvene in the first week of January, 
-    having refined their script and collected all props and costumes necessary, 
-    they gather their main actors to film the scenes between Jerry Lewis and the 
-	three spies.`
+		having refined their script and collected all props and costumes necessary, 
+		they gather their main actors to film the scenes between Jerry Lewis and the 
+		three spies.`
 	},
 	{
 		time: "January 6th, 2023", img: "/journal/video/lab-scene.png",
@@ -226,7 +226,7 @@ export const vidEng = [
 		time: "January 6th, 2023", img: "/journal/video/editing.png",
 		alt: "Yau, Elisa, and Sangeeta editing the video",
 		text: `They work tirelessly to ensure that the video is uniform, 
-    engaging, and true to the theme. After hours of editing, the video is complete!`
+    	engaging, and true to the theme. After hours of editing, the video is complete!`
 	},
 	{
 		time: "January 6th, 2023", img: "/journal/video/tuto.png",
@@ -248,13 +248,13 @@ export const progEng = [
 	{
 		time: "December 3rd, 2022", img: "/journal/prog/vincent3am.png",
 		alt: "Screenshot of Vincent thinking of the solution of the first problem on Discord",
-		text: `Vincent stayed up until 3am to finish the first preliminary problem.`
+		text: `Vincent stayed up until 3am to brainstorm ideas for the second preliminary problem.`
 	},
 	{
 		time: "December 8th, 2022", img: "/journal/prog/2ndPrelim.png",
 		alt: "Screenshot of Carolyn and Vincent submitting the second problem together",
 		text: `Agents Ly and Wu finally submitted the second preliminary 
-    problem, losing their sanity in the process.`
+    	problem, losing their sanity in the process.`
 	},
 	{
 		time: "January 14th, 2023", img: "/journal/prog/prelim3.png",
@@ -270,55 +270,54 @@ export const robFr = [
 		text: `Les agents de MOOHP reçoivent un message urgent de 
 		la CRC: ils doivent se réunir à l'emplacement de la mission. 
 		Huit agents de différents départements de MOOHP ont été sélectionnés 
-		pour recevoir et relayer cette information cruciale. Ayant enfin à 
-		leur disposition ces outils importants, nos agents se mettent rapidement 
+		pour recevoir et transmettre cette information cruciale. Ayant enfin à 
+		leur disposition des outils importants, nos agents se mettent rapidement 
 		au travail!`
 	},
 	{
 		time: "13 novembre 2022", img: "/journal/robot/team.png",
 		alt: "L'équipe robotique planifie les prototypes",
 		text: `Le département de machinerie commence à réfléchir à des
-    idées pour un robot créatif et efficace. Ils se concentrent 
-	d'abord sur tous les mécanismes nécessaires afin que le robot puisse 
-    ramasser et transporter les pièces du jeux. Ils hésitent 
-	entre deux modèles: l'un s'inspire des pinces de crabe et
-	l'autre se resserre linéairement comme un casse-noisette.`
+		idées pour un robot créatif et efficace. Ils se concentrent 
+		d'abord sur tous les mécanismes nécessaires afin que le robot puisse 
+		ramasser et transporter les pièces du jeux. Ils hésitent 
+		entre deux modèles: l'un s'inspire des pinces de crabe et
+		l'autre se resserre linéairement comme un casse-noisette.`
 	},
 	{
 		time: "13 novembre 2022", img: "/journal/robot/base2.png",
 		alt: "Les agents travaillant sur la base du robot",
 		text: ` De plus, la base du robot de la compétition de l'an 
-    dernier est trop petite pour les roues choisies pour la mission.
-    Il va donc falloir reconstruire la base du robot.`
+    	dernier est trop petite pour les roues choisies pour la mission.
+    	Il va donc falloir reconstruire la base du robot.`
 	},
 	{
 		time: "20 décembre 2022", img: "/journal/robot/arm.png",
 		alt: "L'équipe de robot présente un prototype en carton pour le bras",
 		text: `En décembre, ils commencent à construire leurs 
-    prototypes afin de choisir entre les deux modèles du bras de robot 
-    une fois que les deux auront été testés et comparés.`
+    	prototypes afin de choisir entre les deux modèles du bras de robot 
+    	une fois que les deux auront été testés et comparés.`
 	},
 	{
 		time: "4 janvier 2023", img: "/journal/robot/base.png",
 		alt: "Teste des roues de la base du robot",
-		text: `L'équipe du robot se divise en sous-groupes. Les membres 
-    font des progrès remarquables sur tous les aspects du robot. 
-    L'équipe assemble le cadre de base. Les moteurs électriques 
-    permettent de programmer la rotation des roues.`
+		text: `L'équipe du robot se divise en sous-groupes. Ainsi, les membres 
+    	pourront des progrès remarquables sur tous les aspects du robot. Alors qu'un sous-groupe assemble le cadre de base, 
+		un autre sous-groupe programme les moteurs électriques permettant la rotation des roues`
 	},
 	{
 		time: "7 janvier 2023", img: "/journal/robot/lift.png",
 		alt: "Sofia et Vincent travaillant sur le système d'élévation",
 		text: `Après une planification minutieuse, les agents commencent à construire 
-    le système d'élévation, en complétant deux étages et en attachant les chaînes à chacun.`
+    	le système d'élévation, en complétant deux étages et en attachant les chaînes à chacun.`
 	},
 	{
 		time: "7 janvier 2023", img: "/journal/robot/arm-working.png",
 		alt: "Les agents démontrent le mouvement linéaire du bras robotique",
 		text: `Enfin, les machinistes fabriquent avec succès un bras fonctionnel capable de soulever 
-    les pièces du jeu. Ce département travaille sur les deux prototypes 
-    et prévoit de les terminer, de les tester et de sélectionner une 
-    version avant la fin janvier.`
+    	les pièces de jeu. Ce département travaille sur les deux prototypes 
+    	et prévoit les terminer, les tester et sélectionner une 
+    	version avant la fin janvier.`
 	},
 	{
 		time: "January 13th, 2023", img: "/journal/robot/lift2.png",
@@ -335,12 +334,12 @@ export const robFr = [
 		ensemble.`
 	},
 	{
-		time: "January 13th, 2023", img: "/journal/robot/team3.png",
+		time: "January 17th, 2023", img: "/journal/robot/team3.png",
 		alt: "Ils attachent le système d'élévation à la base",
 		text: `Cependant, durant l'assemblage, les agents rencontrent quelques problèmes; 
 		les adaptateurs imprimés à l'aide de l'imprimante 3D ont commencé à briser. De plus, 
 		le système d'élévation n'arrive pas à rester droit. Afin de régler ces problèmes, 
-		les machinistes pensent recréer certaines pièces en métal au lieu du plastique.`
+		les machinistes pensent remplacer certaines pièces de plastique en piéces de métal.`
 	}
 ];
 
@@ -349,10 +348,10 @@ export const kioskFr = [
 		time: "13 novembre 2022", img: "/journal/kiosk/walls-up.png",
 		alt: "L'assemblement des murs du kiosque",
 		text: `Le département chargé de la manufacture a également commencé 
-    à réfléchir à la façon dont M.A.R.I et MOOHP seront représentés à AVIA 2023.
-    Les esprits créatifs se sont rassemblés pour susciter les idées les plus 
-    ingénieuses! L'entraînement physique de nos agents est finalement mis à 
-    l'épreuve alors qu'ils assemblent les murs du kiosque.`
+		à réfléchir à la façon dont M.A.R.I et MOOHP seront représentés à AVIA 2023.
+		Les esprits créatifs se sont rassemblés pour susciter les idées les plus 
+		ingénieuses! L'entraînement physique de nos agents est finalement mis à 
+		l'épreuve alors qu'ils assemblent les murs du kiosque.`
 	},
 	{
 		time: "20 décembre 2022", img: "/journal/kiosk/blue.png",
@@ -363,15 +362,15 @@ export const kioskFr = [
 		time: "4 janvier 2023", img: "/journal/kiosk/globe.png",
 		alt: "Les agents Andrea et Patel peinturent le globe de MOOHP",
 		text: `Durant la première semaine de janvier, l'intérieur du quartier général du MOOHP 
-    commence à se mettre en place! Les agents du département de la manufacture finissent de
-    peinturer les couleurs de base du mur et le logo du MOOHP.`
+		commence à se mettre en place! Les agents du département de la manufacture finissent de
+		peinturer les couleurs de base du mur et le logo du MOOHP.`
 	},
 	{
 		time: "7 janvier 2023", img: "/journal/kiosk/couch.png",
 		alt: "Les agents Hadz et Patel commencent à fabriquer le dos du divan",
-    text: `De plus, les agents rassemblent les matériaux afin de meubler le siège de MOOHP. 
-    En recyclant plusieurs objets utilisés par les agents MOOHP précédents, ils peuvent commencer 
-    à construire le divan rouge!`
+		text: `De plus, les agents rassemblent les matériaux afin de meubler le siège de MOOHP. 
+		En recyclant plusieurs objets utilisés par les agents MOOHP précédents, ils peuvent commencer 
+		à construire le divan rouge!`
 	},
 	{
 		time: "January 11th, 2023", img: "/journal/kiosk/id.png",
@@ -383,7 +382,7 @@ export const kioskFr = [
 	{
 		time: "January 12th, 2023", img: "/journal/kiosk/lockers.png",
 		alt: "Andrea, Nehna et Zoe peinturent des casiers avec de la peinture en spray",
-		text: `Les agents commencent à meubler le kiosque en modifiant d'anciens casiers qui déguiseront le 
+		text: `Les agents commencent à meubler le kiosque en modifiant des anciens casiers qui déguiseront le 
 		siège de MOOHP.`
 	},
 	{
@@ -413,32 +412,32 @@ export const webFr = [
 		time: "13 novembre 2022", img: "/journal/web/work1.png",
 		alt: "Les agents Seal, Wu et Vi collaborent sur le code du site web",
 		text: `Le département du réseau virtuel a déterminé la 
-    structure générale et le contenu de leur site web. Un 
-    tableau de vision et des logos ont été créés. Les membres 
-    du département ont également décidé d'utiliser React.js et 
-    Next.js pour créer un site web d'autant plus efficace et performant! `
+		structure générale et le contenu de leur site web. Un 
+		tableau de vision et des logos ont été créés. Les membres 
+		du département ont également décidé d'utiliser React.js et 
+		Next.js pour créer un site web d'autant plus efficace et performant! `
 	},
 	{
 		time: "20 décembre 2022", img: "/journal/web/celia.png",
 		alt: "L'agent Seal prend l'équipe de robot en photo avec subtilité",
 		text: `Les membres du département du réseau virtuel, avec des idées 
-    concrètes en tête, ont commencé à apprendre de nouveaux langages de 
-    programmation, à tester des idées ambitieuses et à documenter les 
-    progrès des agents du MOOHP et la mission à accomplir. Ils doivent 
-    également manier l'art de la subtilité pour capturer leurs agents 
-    en pleine action!`
+		concrètes en tête, ont commencé à apprendre de nouveaux langages de 
+		programmation, à tester des idées ambitieuses et à documenter les 
+		progrès des agents du MOOHP et la mission à accomplir. Ils doivent 
+		également manier l'art de la subtilité pour capturer leurs agents 
+		en pleine action!`
 	},
 	{
 		time: "7 janvier 2023", img: "/journal/web/work2.png",
 		alt: "Les agents Wu et Vi collaborent sur le code du site web",
 		text: `Le département peut enfin commencer à construire 
-    son site web après avoir appris de nouveaux langages de 
-    programmation : React.js et Next.js! Ils complètent la 
-    première moitié du site Web et consolident leur conception 
-    de sa seconde moitié pour pouvoir le programmer avec succès 
-    la semaine suivante. Quant au contenu, ils compilent toutes 
-    les informations pertinentes et mettent à jour les rapports 
-    d'avancement de l'équipe.`
+		son site web après avoir appris de nouveaux langages de 
+		programmation : React.js et Next.js! Ils complètent la 
+		première moitié du site Web et consolident leur conception 
+		de sa seconde moitié pour pouvoir le programmer avec succès 
+		la semaine suivante. Quant au contenu, ils compilent toutes 
+		les informations pertinentes et mettent à jour les rapports 
+		d'avancement de l'équipe.`
 	},
 	{
 		time: "7 janvier 2023", img: "/journal/web/work3.png",
@@ -455,7 +454,7 @@ export const webFr = [
 		text: `Les agents du département du réseau virtuel reçoivent des 
 		conseils pertinents de leurs supérieurs et collègues après leur avoir 
 		présenté leur site web. Utilisant ces conseils, les agents du réseaux 
-		virtuels se divisent le travail pour peaufiner leur site web à la perfection!
+		virtuel se divisent le travail pour peaufiner leur site web à la perfection!
 `
 	},
 	{
@@ -472,20 +471,20 @@ export const vidFr = [
 	{
 		time: "13 novembre 2022", img: "/journal/video/group1.png",
 		alt: "Les agents de vidéo regardent une épisode de Totally Spies!",
-		text: `Le département de marketing a rassemblé des informations 
-    indispensables sur Totally Spies! afin de créer une vidéo d'une 
-    durée de 5 minutes qui résumera à la fois l'équipe, M.A.R.I., 
-    MOOHP et la mission AVIA 2023, tout en mettant en évidence le 
-    thème. Une fois le script finalisé, ils doivent rassembler tous 
-    les outils et les gadgets nécessaires (et les perruques!) qui 
-    permettront le succès de leur vidéo.`
+		text: `Le département de marketing rassemble des informations 
+		indispensables sur Totally Spies! afin de créer une vidéo d'une 
+		durée de 5 minutes qui résumera à la fois l'équipe, M.A.R.I., 
+		MOOHP et la mission AVIA 2023, tout en mettant en évidence le 
+		thème. Une fois le script finalisé, ils doivent rassembler tous 
+		les outils et les gadgets nécessaires (et les perruques!) qui 
+		permettront le succès de leur vidéo.`
 	},
 	{
 		time: "20 décembre 2022", img: "/journal/video/gym-group.png",
 		alt: "Les agents travaillent sur le scénario de la vidéo",
 		text: `Les membres du département de marketing finalisent leur 
-    scénario! Ayant reçu les perruques, ils n'attendent 
-    plus que les gadgets nécessaires pour filmer leur vidéo.`
+		scénario! Ayant reçu les perruques, ils n'attendent 
+		plus que les gadgets nécessaires pour filmer leur vidéo.`
 	},
 	{
 		time: "4 janvier 2023", img: "/journal/video/jerry-scene.png",
@@ -510,15 +509,15 @@ export const vidFr = [
 	{
 		time: "6 janvier 2023", img: "/journal/video/editing.png",
 		alt: "Yau, Elisa et Sangeeta montant la vidéo",
-		text: `Ils travaillent sans relâche afin d'assurer que la vidéo est uniforme, captivant et 
-		fidèle au thème. Après des heures de montage, la vidéo est terminé!`
+		text: `Ils travaillent sans relâche afin d'assurer que la vidéo est uniforme, captivante et 
+		fidèle au thème. Après des heures de montage, la vidéo est terminée!`
 	},
 	{
 		time: "6 janvier 2023", img: "/journal/video/tuto.png",
 		alt: "L'équipe planifiant le tutoriel",
 		text: `Par contre, le travail du département de marketing n'est pas terminé. Ils doivent 
 		maintenant commencer à écrire le script du tutoriel, puis le filmer. Ils commencent par 
-		récupérer toute l'information au sujet du bras robotique auprès du département de la machinerie.`
+		récupérer toute information au sujet du bras robotique auprès du département de la machinerie.`
 	},
 	{
 		time: "6 janvier 2023", img: "/journal/video/tuto2.png",
@@ -532,14 +531,14 @@ export const progFr = [
 	{
 		time: "3 décembre 2022", img: "/journal/prog/vincent3am.png",
 		alt: "Une capture d'écran de Vincent pensant à la solution pour le premier problème préliminaire sur Discord",
-		text: `Vincent est resté debout jusqu'à trois heures du matin pour finir le 
-    deuxième problème prèliminaire.`
+		text: `Vincent est resté debout jusqu'à trois heures du matin afin de réfléchir à des idées pour le 
+    	deuxième problème préliminaire.`
 	},
 	{
 		time: "12 décembre 2022", img: "/journal/prog/2ndPrelim.png",
 		alt: "Une capture d'écran de Carolyn et Vincent remettant le deuxième problème préliminaire",
 		text: `Vincent et Carolyn ont finalement remis le deuxième problème préliminaire,
-    sombrant dans la folie dans le processus.`
+    	sombrant dans la folie dans le processus.`
 	},
 	{
 		time: "12 décembre 2022", img: "/journal/prog/prelim3.png",
