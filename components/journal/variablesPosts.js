@@ -67,7 +67,7 @@ export const engPosts = [
     alt: "Isabella holding up her flannel to block the light, next to Dominique Paradis"
   },
   {
-    author: 'Ruwa Qatmash', date: 'January 10th, 2023', avatar: '/journal/avatars/ruwa.png', status: "busy", src: '/journal/post-images/zoe-vacuum.png',
+    author: 'Ruwa Qatmash', date: 'January 10th, 2023', avatar: '/journal/avatars/ruwa.png', status: "busy", src: '/journal/post-images/zoe-vacuum.jpg',
     user: "i_am_wd40", hashtags: 'DontAsk', commenter: 'Zoe Hadziaras', comment: 'Thanks dawg!', likes: 16,
     caption: 'The things I do for Zoe are beyond me...',
     alt: "Celia and Victoria watching Ruwa vacuum Zoe's pants"
@@ -228,7 +228,7 @@ export const frPosts = [
     alt: "Isabella tenant sa chemise pour bloquer la lumière à côté de Dominique Paradis"
   },
   {
-    author: 'Ruwa Qatmash', date: '10 janvier 2023', avatar: '/journal/avatars/ruwa.png', status: "busy", src: '/journal/post-images/zoe-vacuum.png',
+    author: 'Ruwa Qatmash', date: '10 janvier 2023', avatar: '/journal/avatars/ruwa.png', status: "busy", src: '/journal/post-images/zoe-vacuum.jpg',
     user: "i_am_wd40", hashtags: 'DemandezPas', commenter: 'Zoe Hadziaras', comment: 'Merci dawg!', likes: 16,
     caption: 'Les affaires que je fais pour Zoe vont au-délà de ma compréhension.',
     alt: "Celia et Victoria regardant Ruwa aspirer les pantalons de Zoe"
