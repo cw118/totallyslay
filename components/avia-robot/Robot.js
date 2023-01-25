@@ -140,7 +140,7 @@ const Robot = ({ fr }) => {
 
         <div className={styles.vidContainer}>
           <h1 className={styles.vidHeader}>{fr ? `Tutoriel: Comment construire le bras robotique` : `Tutorial: How to Build the Robotic Arm`}</h1>
-          <iframe className={styles.video} src="https://www.youtube.com/embed/OcvOn_SFodk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe className={styles.video} src="https://www.youtube.com/embed/OcvOn_SFodk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 

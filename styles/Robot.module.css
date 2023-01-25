@@ -72,10 +72,9 @@
 }
 
 .video {
-  margin: 0 auto;
+  margin: 0 auto 30px;
   width: 70vw;
   height: 50vw;
-  padding-bottom: 30px;
 }
 
 .vidHeader {
@@ -98,7 +97,7 @@
   .video {
     width: 70vw;
     height: 40vw;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .vidHeader {
