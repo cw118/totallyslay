@@ -29,7 +29,7 @@ export const frS = [
     {name: "Audrey Dumais", age: 17, year: "Première année", club: "Film, bricolage et développement web", fun: "Je lis un livre français ennuyant.", src: "/members/Audrey_S.JPG"},
     {name: "Zoe Hadziaras", age: 18, year: "Première année", club: "Bricolage et film", fun: `Que veut dire "concoise"?`, src: "/members/Zoe_S.JPG"},
     {name: "Isabella Hensley", age: 18, year: "Deuxième année", club: "Arduino et bricolage", fun: "Donne-moi un marteau, je le réparerai.", src: "/members/Isabella_S.JPG"},
-    {name: "Victoria Hoang", age: 17, year: "Deuxième année", club: "Développement web, bricolage et film", fun: "Les pigeons ne peuvent pas voler.", src: "/members/Victoria_S.JPG"},
+    {name: "Victoria Hoang", age: 18, year: "Deuxième année", club: "Développement web, bricolage et film", fun: "Les pigeons ne peuvent pas voler.", src: "/members/Victoria_S.JPG"},
     {name: "Vincent Ly", age: 18, year: "Deuxième année", club: "Arduino et programmation", fun: "Je sombre dans la folie.", src: "/members/Vincent_S.JPG"},
     {name: "Nehna Patel", age: 18, year: "Deuxième année", club: "Bricolage (dirigeante)", fun: "Je ne peux pas éternuer", src: "/members/Nehna_S.jpg"},
     {name: "Ruwa Qatmash", age: 18, year: "Première année", club: "Arduino et bricolage", fun: "WD-40, c'est la vie!", src: "/members/Ruwa_S.JPG"},

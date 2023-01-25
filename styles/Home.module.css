@@ -10,6 +10,10 @@
 	scroll-behavior: auto;
 }
 
+.carousel > div div {
+  cursor: default;
+}
+
 .carousel button span {
 /* for the carousel's left/right indicators */
 	background-color: #ac17ff;
