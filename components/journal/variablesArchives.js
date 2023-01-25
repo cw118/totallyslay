@@ -51,7 +51,7 @@ export const robEng = [
     plan to have them completed and tested by the end of January.`
 	},
 	{
-		time: "January 11th, 2023", img: "/journal/robot/lift3.png",
+		time: "January 11th, 2023", img: "/journal/robot/lift2.png",
 		alt: "Completed mechanical lift",
 		text: `Meanwhile, other machinery agents work on the mechanical lift. Their 
     work was tedious, having to make many small adjustments to their original design, 
@@ -265,7 +265,7 @@ export const progEng = [
 
 export const robFr = [
 	{
-		time: "7 novembre, 2022", img: "/journal/robot/kickoff.png",
+		time: "7 novembre 2022", img: "/journal/robot/kickoff.png",
 		alt: "Quelques membres de l'équipe avant le lancement",
 		text: `Les agents de MOOHP reçoivent un message urgent de 
 		la CRC: ils doivent se réunir à l'emplacement de la mission. 
@@ -320,21 +320,21 @@ export const robFr = [
     	version avant la fin janvier.`
 	},
 	{
-		time: "January 13th, 2023", img: "/journal/robot/lift2.png",
+		time: "11 janvier 2023", img: "/journal/robot/lift2.png",
 		alt: "Le système d'élévation complété",
 		text: `En parallèle, d'autres agents travaillent sur le système d'élévation. 
 		Leur travail est minutieux puisqu'ils ont dû modifier leur concept original 
 		pour le système à plusieurs reprises.`
 	},
 	{
-		time: "January 11th, 2023", img: "/journal/robot/team2.png",
+		time: "13 janvier 2023", img: "/journal/robot/team2.png",
 		alt: "Les agents se regroupent pour assembler le robot",
 		text: `Avec la base, la pince et le système d'élévation complétés, le 
 		département de machinerie unissent leurs forces en assemblant toutes ces pièces 
 		ensemble.`
 	},
 	{
-		time: "January 17th, 2023", img: "/journal/robot/team3.png",
+		time: "17 janvier 2023", img: "/journal/robot/team3.png",
 		alt: "Ils attachent le système d'élévation à la base",
 		text: `Cependant, durant l'assemblage, les agents rencontrent quelques problèmes; 
 		les adaptateurs imprimés à l'aide de l'imprimante 3D ont commencé à briser. De plus, 
@@ -373,32 +373,32 @@ export const kioskFr = [
 		à construire le divan rouge!`
 	},
 	{
-		time: "January 11th, 2023", img: "/journal/kiosk/id.png",
+		time: "11 janvier 2023", img: "/journal/kiosk/id.png",
 		alt: "Zi Heng programme un système d'identification",
 		text: `L'agent Zi Heng des départements de piratage informatique et de machinerie collabore 
 		avec le département de fabrication afin de programmer un système d'identification pour le 
 		siège de MOOHP.`
 	},
 	{
-		time: "January 12th, 2023", img: "/journal/kiosk/lockers.png",
+		time: "12 janvier 2023", img: "/journal/kiosk/lockers.png",
 		alt: "Andrea, Nehna et Zoe peinturent des casiers avec de la peinture en spray",
 		text: `Les agents commencent à meubler le kiosque en modifiant des anciens casiers qui déguiseront le 
 		siège de MOOHP.`
 	},
 	{
-		time: "January 12th, 2023", img: "/journal/kiosk/monitors.png",
+		time: "12 janvier 2023", img: "/journal/kiosk/monitors.png",
 		alt: "Yau et Audrey montent les écrans et clans",
 		text: `Avec les murs du kiosque complétés, les agents commencent à installer des 
 		moniteurs, claviers et lumières pour décorer l'intérieur. Ces installations sont 
 		primordiales pour assurer la sécurité du MOOHP.`
 	},
 	{
-		time: "January 12th, 2023", img: "/journal/kiosk/logo.png",
+		time: "12 janvier 2023", img: "/journal/kiosk/logo.png",
 		alt: "Agent Hadz trace le logo de MOOHP sur du bois",
 		text: `Les agents construisent aussi de zéro le logo MOOHP à l'aide de pièces de bois recyclées!`
 	},
 	{
-		time: "January 12th, 2023", img: "/journal/kiosk/spraypaint.png",
+		time: "12 janvier 2023", img: "/journal/kiosk/spraypaint.png",
 		alt: "Victoria, Isabella et Nehna peinturent les murs extérieurs avec de la peinture en spray",
 		text: `Finalement, ils peignent les murs extérieurs du kiosque qui ont pour rôle de cacher la base 
 		secrète de MOOHP. Ils commencent d'abord par décorer les murs de motifs colorés. Ensuite, ils ajoutent 
