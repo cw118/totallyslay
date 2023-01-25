@@ -57,11 +57,11 @@ const Robot = ({ fr }) => {
                       picking up and dropping game pieces, whilst the rotation of the arm allows the coloured
                       face corresponding to agents' team to face upwards.`}</p>
             <h3 className={styles.subheading}>{fr ? 'La base' : 'The Base'}</h3>
-            <p>{fr ? `La base du robot mesure 72,6 cm par 45 cm et comprend 4 roues omnidirectionnelles, chacune d'elles 
-            motorisée par un moteur à courant continu de 12 volts. La structure rectangulaire est construite à partir 
-            d'extrusions d'aluminium renforcées par des rainures en T et des équerres noires. Une extrusion 30-30 argentée 
-            accrochée au centre de la base empêche la structure d'incliner vers l'intérieur.`
-              : `The 72.6 cm x 45 cm base of the robot consists of 4 omni wheels, motorized individually by four 12 volt 
+            <p>{fr ? `La base du robot mesure 72,6 cm par 44 cm et comprend 4 roues omnidirectionnelles, chacune d'elles 
+                      motorisée par un moteur de 12 volts. La structure rectangulaire est construite à partir d'extrusions 
+                      d'aluminium renforcées par des rainures en T et des équerres noires. Une extrusion 30-30 argentée 
+                      accrochée au centre de la base empêche la structure de s'incliner vers l'intérieur.`
+              : `The 72.6 cm x 44 cm base of the robot consists of 4 omni wheels, motorized individually by four 12 volt 
               DC motors. The rectangular structure is built from multiple aluminium extrusions fortified with t-slots and 
               black brackets. A 30-30 silver extrusion is attached at the center of the base to avoid slanting inwards.`}</p>
           </div>
@@ -74,25 +74,20 @@ const Robot = ({ fr }) => {
           </div></div>
           <div className='grid'><div className={styles.container}>
             <h3 className={styles.subheading}>{fr ? 'Le système d\'élévation' : 'The Lift'}</h3>
-            <p>{fr ? `Après de longues heures de recherche, les agents du département de la machinerie ont décidé
-                      de construire un mécanisme d'élévation télescopique. Ce système d'élévation est fait d'extrusions
-                      d'aluminium (choisies pour leur faible masse et leur bonne durabilité) et de parties d'imprimantes
-                      3D (utilisées pour attacher les étages ensemble). Ces adaptateurs imprimés en 3D 
-                      permettent à l'axe du moteur de rentrer dans le pignon puisque l'intérieur du pignon était trop gros. Les 
-                      adaptateurs sont donc nécessaires pour assurer que l'axe et le pignon pivotent ensemble. Pour ne pas que ces parties imprimées en 3D se
-                      bloquent l'un et l'autre, ces pièces sont placées chacune au deuxième étage du système d'élévation.
-                      Ceci optimise ainsi la hauteur maximale que le système d'élévation peut atteindre.`
-                  : `After careful research, the Machinery agents determined that a three stage
-                      cascading lift would be the best option to build a mechanism capable of both
-                      reaching great heights as well as retracting itself, creating a cascading motion.
-                      The lift is constructed using aluminum extrusions, chosen for their lightweight and
-                      durable nature, and 3D-printed parts to allow the extrusions to roll freely. These 3D-printed 
-                      adapters allow the motor axle to fit into the sprocket, as the sprocket's interior was too large to 
-                      accommodate the axle. The adapters are therefore necessary to ensure that the two rotate together. The
-                      rollers, however, must be strategically placed so as three of the four faces of an
-                      extrusion are free of any obstacles. In order to achieve a maximum height, after multiple
-                      designs, agents deem it optimal to attach the rollers to the second stage, and allow them
-                      to roll freely on the first and third stage.`}</p>
+            <p>{fr ? `Après de longues heures de recherche, les agents du département de la machinerie ont décidé de construire un mécanisme d'élévation 
+                      télescopique. Ce système d'élévation est fait de pièces d'aluminium (choisies pour leur faible masse et leur bonne durabilité) et 
+                      d'adaptateurs imprimés à l'aide dune imprimante 3D. Ces adaptateurs de plastique permettent à l'axe du moteur de rentrer dans le 
+                      pignon puisque l'intérieur du pignon était trop gros. Les adaptateurs sont donc nécessaires pour assurer que l'axe et le pignon 
+                      pivotent ensemble. De plus, des patins à 4 galets sont installés pour relier les étages du système. Pour ne pas que ces pièces se 
+                      bloquent l'un et l'autre, elles sont placées chacune au deuxième étage du système d'élévation. Ceci optimise ainsi la hauteur maximale 
+                      que le système d'élévation peut atteindre.`
+              : `After careful research, the Machinery agents determined that a three stage cascading lift would be the 
+                  best option to build a mechanism capable of both reaching great heights as well as retracting itself, creating a cascading motion.
+                  The lift is constructed using aluminum extrusions, chosen for their lightweight and durable nature, and 3D-printed adapters to allow
+                  the extrusions to lift. These 3D-printed parts allow the motor axle to fit into the sprocket, as the sprocket's interior was too large
+                  to accommodate the axle. The adapters are therefore necessary to ensure that the two rotate together. The rollers, however, must be
+                  strategically placed so as three of the four faces of an extrusion are free of any obstacles. In order to achieve a maximum height,
+                  after multiple designs, agents deem it optimal to attach the rollers to the second stage, and allow them to roll freely on the first and third stage.`}</p>
           </div></div>
           <div className='grid'><div className={styles.imageContainer}>
             <img src="/robot/base.png" alt={fr ? 'La base du robot' : 'The robot\'s base'} />
@@ -103,11 +98,11 @@ const Robot = ({ fr }) => {
         <div className={styles.container}>
           <h3 className={styles.subheading}>{fr ? 'Difficultés' : 'Struggles'}</h3>
           <p>{fr ? `Le département de machinerie a rencontré plusieurs problèmes lors de leur préparation pour 
-                    leur mission. N'ayant pas anticipé chaque petit ajustement nécessaire qu'il fallait ajouter 
-                    à leur idée originale, ils ont rapidement constaté l'importance de se prendre à l'avance. En 
-                    effet, les agents s'occupant du système d'élévation ont rencontré plusieurs problèmes lors de 
-                    son assemblage. Ils se sont rendu compte assez tôt qu'il fallait assembler ce système dans un 
-                    ordre spécifique, sinon il faudrait tout défaire et recommencer à zéro.`
+                    leur mission. N'ayant pas anticipé chaque petit ajustement nécessaire à ajouter à leur idée 
+                    originale, ils ont rapidement constaté l'importance de se prendre à l'avance. En effet, les 
+                    agents s'occupant du système d'élévation ont rencontré plusieurs problèmes lors de son assemblage. 
+                    Ils se sont rendu compte assez tôt qu'il fallait assembler ce système dans un ordre spécifique, 
+                    sinon il faudrait tout défaire et recommencer à zéro.`
                   : `The Machinery Division encountered many challenges as they prepared for the mission. Having
                   not anticipated how many small adjustments would be necessary to their original design, they
                   quickly learnt of the importance of leaving time for testing. Agents working on the lift faced
@@ -119,16 +114,16 @@ const Robot = ({ fr }) => {
                 : `For the arm, finding an appropriate motor strength became difficult, with the given motors being either too
                 weak or too strong. To resolve this issue, the agents decide to combine 2 weak motors in order to
                 provide the strength necessary.`}</p>
-          <p>{fr ? `Les agents qui travaillaient sur la base, quant à eux, voulaient originellement construire une 
-                    base rectangulaire. Cependant, pour faire de la place pour le système d'élévation, ils ont 
-                    modifié leur base pour lui donner une forme de U. Ce changement a causé d'autres problèmes comme 
-                    le fait que la base s'incline vers l'intérieur à cause du poids des moteurs au milieu. Ainsi, les 
-                    agents ont attaché une longue double pièce d'aluminium épaisse pour supporter le centre de la base.`
-                : `Agents working on the base originally designed a rectangular base for the robot. However, after
-                  struggling to arrange space for the lift, they modified the design to a U-shaped base. This change
-                  resulted in further problems; due to the weight of the 4 motor, the base would incline itself towards
-                  the robot's center. Therefore, they added a thick double aluminum extrusion to the base to support
-                  its center.`}</p>
+          <p>{fr ? `Les agents qui travaillent sur la base, quant à eux, voulaient originellement construire une base 
+                    rectangulaire. Cependant, pour faire de la place pour le système d'élévation, ils ont modifié leur 
+                    base pour lui donner une forme de U. Ce changement a causé d'autres problèmes comme le fait que la 
+                    base s'incline vers l'intérieur à cause du poids des moteurs au milieu. Ainsi, les agents ont attaché 
+                    une extrusion 30-30 argentée au centre de la base pour l'empêcher de s'incliner vers l'intérieur.`
+                : `Agents working on the base originally designed a rectangular base for the robot. However, after 
+                   struggling to arrange space for the lift, they modified the design to a U-shaped base. This change
+                   resulted in further problems; due to the weight of the 4 motor, the base would incline itself towards
+                   the robot's center. Therefore, they added a thick 30-30 aluminium extrusion to the base to support its
+                   center.`}</p>
         </div>
 
         <div className='lg:grid'><div className={styles.vidRow}>
@@ -145,7 +140,7 @@ const Robot = ({ fr }) => {
 
         <div className={styles.vidContainer}>
           <h1 className={styles.vidHeader}>{fr ? `Tutoriel: Comment construire le bras robotique` : `Tutorial: How to Build the Robotic Arm`}</h1>
-          <iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe className={styles.video} src="https://www.youtube.com/embed/OcvOn_SFodk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 

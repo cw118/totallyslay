@@ -118,6 +118,7 @@
 }
 
 .tapMe {
+  display: block;
   position: absolute;
   top: 0.15rem;
   left: 0.15rem;
@@ -126,9 +127,26 @@
   font-style: oblique;
 }
 
+.hoverMe {
+  display: none;
+}
+
 @media screen and (pointer: fine) {
+  /* this media query targets devices with a "precise" cursor
+     and should target devices that can hover and click precisely
+     (unlike phones, tablets, other mobile devices that have "tap") */
   .tapMe {
     display: none;
+  }
+
+  .hoverMe {
+    display: block;
+    position: absolute;
+    top: 0.15rem;
+    left: 0.15rem;
+    padding: 0.2rem 0.45rem;
+    color: white;
+    font-style: oblique;
   }
 }
 

@@ -22,7 +22,7 @@ const Avia = ({ fr }) => {
 					{fr ? `La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l'aide à MOOHP (Organisation Marianopolis de la protection humaine).` : `The Canadian Robotics Competition (CRC), a non-profit organisation that runs annual robotics competitions, has reached out to MOOHP for help.`}
 				</p><br />
 				<p>
-					{fr ? 'Cette compétition multidisciplinaire exige l\'implication de tous les agents chez MOOHP, incluant vous-même. Intégrant l\'informatique, la technologie et l\'ingénierie avec les arts et lettres, les département de machinerie, de réseau virtuel, de piratage informatique, de production et de marketing sont tous indispensables pour accomplir cette mission!' : 'This multidisciplinary competition requires the involvement of all agents at MOOHP, including you. Integrating computer science, technology, and engineering with visual arts and humanities; the Machinery, Manufacturing, Hacking, Virtual Network, Marketing and divisions are integral to this mission!'}
+					{fr ? 'Cette compétition multidisciplinaire exige l\'implication de tous les agents chez MOOHP, incluant vous-même. Intégrant l\'informatique, la technologie et l\'ingénierie avec les arts et lettres, les département de machinerie, de réseau virtuel, de piratage informatique, de production et de marketing sont tous indispensables pour accomplir cette mission!' : 'This multidisciplinary competition requires the involvement of all agents at MOOHP, including you. Integrating computer science, technology, and engineering with visual arts and humanities; the Machinery, Manufacturing, Hacking, Virtual Network, and Marketing divisions are integral to this mission!'}
 				</p>
 				<img src="/logo/crc-logo.svg" alt="CRC Logo" className={styles.crcLogo} />
 			</div>
@@ -87,9 +87,6 @@ const Avia = ({ fr }) => {
       </p>
       
       <Countdown fr={fr} />
-      
-			<h1 className={styles.vidHeader}>{fr ? `Pour plus d'informations — Vidéo` : `For Further Information — Video`}</h1>
-			<iframe className={styles.video} src="https://www.youtube.com/embed/XZcGbwce7fU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       
       <BottomNav fr={fr} name={name}>
         <Link href={fr ? '/fr/moohp' : '/moohp'}>{fr ? 'Siège de MOOHP' : 'MOOHP headquarters'}</Link>
