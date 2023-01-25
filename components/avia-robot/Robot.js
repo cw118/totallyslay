@@ -48,11 +48,11 @@ const Robot = ({ fr }) => {
           </div>
           <div className={styles.container}>
             <h3 className={styles.subheading}>{fr ? 'Le bras robotique choisi (bras 1)' : 'The Chosen Arm (Arm 1)'}</h3>
-            <p>{fr ? `Le bras du robot est composé de 3 servomoteurs transmettant deux types de mouvement: un
+            <p>{fr ? `Le bras du robot est composé de 3 moteurs transmettant deux types de mouvement: un
                     mouvement de translation et un mouvement de rotation. Le robot utilise le système de mouvement
                     de translation pour resserrer les pièces de jeu entre ses pinces. Le système de rotation, quant
                     à lui, existe pour retourner les pièces de jeu de bord pour que leur face soit de la bonne couleur.`
-                  : `The arm of the robot is composed of 3 servos that ensure two motion
+                  : `The arm of the robot is composed of 3 motors that ensure two motion
                       systems: linear motion and rotation. The horizontal linear motion is necessary for
                       picking up and dropping game pieces, whilst the rotation of the arm allows the coloured
                       face corresponding to agents' team to face upwards.`}</p>
@@ -108,13 +108,13 @@ const Robot = ({ fr }) => {
                   quickly learnt of the importance of leaving time for testing. Agents working on the lift faced
                   many issues during its assembly due to its tedious nature; building it in a specific order was
                   vital, otherwise the lift would have to be disassembled altogether.`}</p>
-          <p>{fr ? `Pour le bras robotique, trouver un servomoteur spécifique était difficile. Les servomoteurs dans les ateliers 
+          <p>{fr ? `Pour le bras robotique, trouver un moteur spécifique était difficile. Les moteurs dans les ateliers 
                     de MOOHP était soit trop fort, soit trop faible. Pour régler ce problème, les agents ont décidé de combiner 2 
-                    servomoteurs faibles pour atteindre une force juste parfaite.`
+                    moteurs faibles pour atteindre une force juste parfaite.`
                 : `For the arm, finding an appropriate motor strength became difficult, with the given motors being either too
                 weak or too strong. To resolve this issue, the agents decide to combine 2 weak motors in order to
                 provide the strength necessary.`}</p>
-          <p>{fr ? `Les agents qui travaillent sur la base, quant à eux, voulaient originellement construire une base 
+          <p>{fr ? `Les agents qui travaillent sur la base, quant à eux, voulaient initialement construire une base 
                     rectangulaire. Cependant, pour faire de la place pour le système d'élévation, ils ont modifié leur 
                     base pour lui donner une forme de U. Ce changement a causé d'autres problèmes comme le fait que la 
                     base s'incline vers l'intérieur à cause du poids des moteurs au milieu. Ainsi, les agents ont attaché 

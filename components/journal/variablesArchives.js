@@ -398,12 +398,12 @@ export const kioskFr = [
 		text: `Les agents construisent aussi de zéro le logo MOOHP à l'aide de pièces de bois recyclées!`
 	},
 	{
-		time: "12 janvier 2023", img: "/journal/kiosk/spraypaint.png",
+		time: "17 janvier 2023", img: "/journal/kiosk/spraypaint.png",
 		alt: "Victoria, Isabella et Nehna peinturent les murs extérieurs avec de la peinture en spray",
 		text: `Finalement, ils peignent les murs extérieurs du kiosque qui ont pour rôle de cacher la base 
 		secrète de MOOHP. Ils commencent d'abord par décorer les murs de motifs colorés. Ensuite, ils ajoutent 
 		des affiches d'écoles pour que la base secrète MOOHP passe complètement inaperçue dans l'établissement 
-		du Marianopolis Academic Research Institute. `
+		de l'Institut de recherche académique de Marianopolis.`
 	}
 ];
 

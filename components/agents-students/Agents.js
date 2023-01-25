@@ -14,8 +14,6 @@ const FlipImg = (props) => {
 				<div className={styles.flipCardInner}>
 					<div className={styles.flipCardFront}>
 						<img src={props.src} alt={props.name} className={styles.img} />
-						<div className={styles.tapMe}>{props.fr ? 'Appuyez sur moi!' : 'Tap me!'}</div>
-						<div className={styles.hoverMe}>{props.fr ? 'Survolez-moi avec votre souris!' : 'Hover me!'}</div>
 					</div>
 					<div className={styles.flipCardBack}>
 						<h1>{props.name}</h1>
@@ -68,8 +66,8 @@ const Agents = ({ fr }) => {
 			</div>
 			<p className={styles.intro}>
 				<strong>Agent{name},</strong>
-				{fr ? ` une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour vous accompagner dans cette mission. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP.`
-					: ` a team of 18 MOOHP agents were carefully selected for this mission alongside you. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters.`}
+				{fr ? ` une équipe de 18 agents de MOOHP ont été soigneusement sélectionnés pour vous accompagner dans cette mission. Nous vous suggérons de vous familiariser avec eux avant de nous rejoindre au siège de MOOHP. Survolez avec votre souris (ou cliquez sur) les portraits des agents pour plus d'informations!`
+					: ` a team of 18 MOOHP agents were carefully selected for this mission alongside you. We suggest that you familiarise yourself with them before joining us at MOOHP headquarters. Hover with your mouse (or click on) the agent headshot for more information!`}
 			</p>
 			{students.map((member, index) =>
 				<FlipImg fr={fr} key={index} src={member.src} name={member.name}

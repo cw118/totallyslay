@@ -68,7 +68,7 @@ export const engPosts = [
   },
   {
     author: 'Ruwa Qatmash', date: 'January 10th, 2023', avatar: '/journal/avatars/ruwa.png', status: "busy", src: '/journal/post-images/zoe-vacuum.jpg',
-    user: "i_am_wd40", hashtags: 'DontAsk', commenter: 'Zoe Hadziaras', comment: 'Thanks dawg!', likes: 16,
+    user: "i_am_wd40", hashtags: 'DontAsk', commenter: 'Zoe Hadziaras', comment: 'Thanks Ruwa!', likes: 16,
     caption: 'The things I do for Zoe are beyond me...',
     alt: "Celia and Victoria watching Ruwa vacuum Zoe's pants"
   },
@@ -168,13 +168,13 @@ export const frPosts = [
   },
   {
     author: 'Adelina Badea', date: '17 janvier 2023', avatar: '/journal/avatars/adelina.png', status: "offline", src: '/journal/post-images/appa-head.png',
-    user: "dragon_slayer", hashtags: 'RIPAppa', commenter: 'Zi Heng Wang', comment: 'Je te jures qu\'une fois, il m\'a fait un clin d\'œil.', likes: 8,
+    user: "dragon_slayer", hashtags: 'RIPAppa', commenter: 'Zi Heng Wang', comment: 'Je te jure qu\'une fois, il m\'a fait un clin d\'œil.', likes: 8,
     caption: 'À l\'aide! Il n\'arrête pas de me regarder.',
     alt: "La tête d'Appa sur une étage"
   },
   {
     author: 'Celia Shi', date: '16 janvier 2023', avatar: '/journal/avatars/celia.png', status: "online", src: '/journal/post-images/carolyn.png',
-    user: "tallish_singer", hashtags: 'CalmesToi', commenter: 'Victoria Hoang', comment: 'Carolyn, inscris-toi au club Chillax!!', likes: 9,
+    user: "tallish_singer", hashtags: 'CalmesToi', commenter: 'Victoria Hoang', comment: 'Carolyn, inscris-toi au comité Chillax!!', likes: 9,
     caption: 'Notre développeuse sénior en a assez de nous. MDR.',
     alt: "Carolyn prenant une sieste"
   },
@@ -195,7 +195,7 @@ export const frPosts = [
     author: 'Adam Abbas', date: '14 janvier 2023', avatar: '/journal/avatars/adam.png', status: "offline", src: '/journal/post-images/bella-cake.png',
     user: "professional_forgetter", hashtags: 'Concerné', commenter: 'Yau Hong Chau', comment: 'MDR!', likes: 11,
     caption: 'Isabella prétend que sa technique pour couper est meilleure que la mienne, mais cette photo dit tout.',
-    alt: "Isabella coupant un gâteay avec des ciseaux"
+    alt: "Isabella coupant un gâteau avec des ciseaux"
   },
   {
     author: 'Victoria Hoang', date: '14 janvier 2023', avatar: '/journal/avatars/vic.png', status: "away", src: '/journal/post-images/couch-group.png',
@@ -229,7 +229,7 @@ export const frPosts = [
   },
   {
     author: 'Ruwa Qatmash', date: '10 janvier 2023', avatar: '/journal/avatars/ruwa.png', status: "busy", src: '/journal/post-images/zoe-vacuum.jpg',
-    user: "i_am_wd40", hashtags: 'DemandezPas', commenter: 'Zoe Hadziaras', comment: 'Merci dawg!', likes: 16,
+    user: "i_am_wd40", hashtags: 'DemandezPas', commenter: 'Zoe Hadziaras', comment: 'Merci Ruwa!', likes: 16,
     caption: 'Les affaires que je fais pour Zoe vont au-délà de ma compréhension.',
     alt: "Celia et Victoria regardant Ruwa aspirer les pantalons de Zoe"
   },
@@ -243,7 +243,7 @@ export const frPosts = [
     author: 'Celia Shi', date: '7 janvier 2023', avatar: '/journal/avatars/celia.png', status: "online", src: '/journal/post-images/school-pic.png',
     user: "tallish_singer", hashtags: 'humilité', commenter: 'Carolyn Wu', comment: 'Mais tu avais l\'air tellement contente dans la photo!', likes: 17,
     caption: 'Je croyais que j\'étais grande, mais ils m\'ont placée à la rangée du milieu. :(',
-    alt: "Behind the scenes of the team taking a school group picture"
+    alt: "L'équipe en train de prendre une photo de classe"
   },
   {
     author: 'Andrea Abou-Haidar', date: '6 janvier 2023', avatar: '/journal/avatars/andrea.png', status: "online", src: '/journal/post-images/audrey-suit.png',
@@ -313,7 +313,7 @@ export const frPosts = [
   },
   {
     author: 'Isabella Hensley', date: '13 novembre 2022', avatar: '/journal/avatars/isabella.png', status: "offline", src: '/journal/post-images/cabbage.png',
-    user: "british_person123", hashtags: 'végane', commenter: 'Sofia Del Raso', comment: 'C\'est moi qui a gagné!!', likes: 9,
+    user: "british_person123", hashtags: 'végane', commenter: 'Sofia Del Raso', comment: 'C\'est moi qui ai gagné!!', likes: 9,
     caption: 'J\'ai gagné des billets de premier rang à un match de "lance-choux"!! (Andrea a gagné!)',
     alt: "Andrea et Sofia jouant au baseball avec un chou en chiffon"
   }

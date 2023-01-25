@@ -27,7 +27,7 @@ const Avia = ({ fr }) => {
 				</p><br />
 				<p>
 					{fr ? `Cette compétition multidisciplinaire exige l'implication de tous les agents chez MOOHP, incluant vous-même. 
-						Intégrant l'informatique, la technologie et l'ingénierie avec les arts et lettres, les département de machinerie, 
+						Intégrant l'informatique, la technologie et l'ingénierie avec les arts et lettres, les départements de machinerie, 
 						de réseau virtuel, de piratage informatique, de production et de marketing sont tous indispensables pour accomplir 
 						cette mission!`:
 						`This multidisciplinary competition requires the involvement of all agents at MOOHP, including you. Integrating computer 
