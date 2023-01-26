@@ -230,7 +230,7 @@ export const frPosts = [
   {
     author: 'Ruwa Qatmash', date: '10 janvier 2023', avatar: '/journal/avatars/ruwa.png', status: "busy", src: '/journal/post-images/zoe-vacuum.jpg',
     user: "i_am_wd40", hashtags: 'DemandezPas', commenter: 'Zoe Hadziaras', comment: 'Merci Ruwa!', likes: 16,
-    caption: 'Les affaires que je fais pour Zoe vont au-délà de ma compréhension.',
+    caption: 'Les affaires que je fais pour Zoe vont au-delà de ma compréhension.',
     alt: "Celia et Victoria regardant Ruwa aspirer les pantalons de Zoe"
   },
   {
