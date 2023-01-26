@@ -125,7 +125,7 @@ export const kioskEng = [
 		text: `Agents also build the MOOHP logo from scratch out of recycled wood pieces!`
 	},
 	{
-		time: "January 12th, 2023", img: "/journal/kiosk/spraypaint.png",
+		time: "January 17th, 2023", img: "/journal/kiosk/spraypaint.png",
 		alt: "Victoria, Isabella, and Nehna spraypaint the outer walls",
 		text: `Finally, they design the outer walls of the kiosk that will disguise MOOHP 
 		headquarters as the Marianopolis Academic Research Institute. They first paint colourful 
@@ -168,7 +168,7 @@ export const webEng = [
 		adding animations!`
 	},
 	{
-		time: "7 janvier 2023", img: "/journal/web/carolyn.png",
+		time: "January 15th 2023", img: "/journal/web/carolyn.png",
 		alt: "Carolyn working on the MOOHP page on the red couch",
 		text: `After presenting the website to their fellow MOOHP agents and heads, 
 		they receive important feedback in order to improve the user experience. 
@@ -176,7 +176,7 @@ export const webEng = [
 		conquer!`
 	},
 	{
-		time: "7 janvier 2023", img: "/journal/web/last.png",
+		time: "January 17th 2023", img: "/journal/web/last.png",
 		alt: "Celia and Victoria working on the red couch, Vincent and Zi Heng working on a bench",
 		text: `As the submission deadline approaches, the division finalises all their 
 		designs. They update their team members' progress as well as their student life 
@@ -217,26 +217,26 @@ export const vidEng = [
 		to life in scenes between Clover, Alex, and Sam. `
 	},
 	{
-		time: "January 6th, 2023", img: "/journal/video/sound.png",
+		time: "January 7th, 2023", img: "/journal/video/sound.png",
 		alt: "They record audio effects with Andrea",
 		text: `Once filming is completed, they begin collecting visual and sound
 		effects to edit the video.`
 	},
 	{
-		time: "January 6th, 2023", img: "/journal/video/editing.png",
+		time: "January 9th, 2023", img: "/journal/video/editing.png",
 		alt: "Yau, Elisa, and Sangeeta editing the video",
 		text: `They work tirelessly to ensure that the video is uniform, 
     	engaging, and true to the theme. After hours of editing, the video is complete!`
 	},
 	{
-		time: "January 6th, 2023", img: "/journal/video/tuto.png",
+		time: "January 11th, 2023", img: "/journal/video/tuto.png",
 		alt: "The team planning the tutorial",
 		text: `The Marketing Division's work is not done, however. With the video 
 		complete, they must now start scripting and filming the tutorial. They begin 
 		by collecting information on the robotic arm from the Machinery Division.`
 	},
 	{
-		time: "January 6th, 2023", img: "/journal/video/tuto2.png",
+		time: "January 12th, 2023", img: "/journal/video/tuto2.png",
 		alt: "Editing the tutorial on the red couch",
 		text: `They gather the materials needed to make the tutorial, then swiftly 
 		film and edit it before they must return to M.A.R.I.`
@@ -306,7 +306,7 @@ export const robFr = [
 		un autre sous-groupe programme les moteurs électriques permettant la rotation des roues`
 	},
 	{
-		time: "7 janvier 2023", img: "/journal/robot/lift.png",
+		time: "5 janvier 2023", img: "/journal/robot/lift.png",
 		alt: "Sofia et Vincent travaillant sur le système d'élévation",
 		text: `Après une planification minutieuse, les agents commencent à construire 
     	le système d'élévation, en complétant deux étages et en attachant les chaînes à chacun.`
@@ -366,7 +366,7 @@ export const kioskFr = [
 		peinturer les couleurs de base du mur et le logo du MOOHP.`
 	},
 	{
-		time: "7 janvier 2023", img: "/journal/kiosk/couch.png",
+		time: "6 janvier 2023", img: "/journal/kiosk/couch.png",
 		alt: "Les agents Hadz et Patel commencent à fabriquer le dos du divan",
 		text: `De plus, les agents rassemblent les matériaux afin de meubler le siège de MOOHP. 
 		En recyclant plusieurs objets utilisés par les agents MOOHP précédents, ils peuvent commencer 
@@ -440,7 +440,7 @@ export const webFr = [
 		d'avancement de l'équipe.`
 	},
 	{
-		time: "7 janvier 2023", img: "/journal/web/work3.png",
+		time: "12 janvier 2023", img: "/journal/web/work3.png",
 		alt: "Audrey, Victoria, Carolyn et Celia travaillent sur des escaliers ensemble",
 		text: `Ils complètent la deuxième moitié malgré leurs 
 		difficultés avec le positionnement et les modèles en 3D. Ayant 
@@ -449,7 +449,7 @@ export const webFr = [
 		animations!`
 	},
 	{
-		time: "7 janvier 2023", img: "/journal/web/carolyn.png",
+		time: "15 janvier 2023", img: "/journal/web/carolyn.png",
 		alt: "Carolyn travaille sur la page MOOHP sur le divan rouge",
 		text: `Les agents du département du réseau virtuel reçoivent des 
 		conseils pertinents de leurs supérieurs et collègues après leur avoir 
@@ -458,7 +458,7 @@ export const webFr = [
 `
 	},
 	{
-		time: "7 janvier 2023", img: "/journal/web/last.png",
+		time: "17 janvier 2023", img: "/journal/web/last.png",
 		alt: "Celia et Victoria travaillent sur le divan rouge, Vincent et Zi Heng travaillant sur un banc",
 		text: `Alors que la date de la remise approche, l'équipe finalise leur site web. 
 		Elle met à jour les progrès des agents des autres départements et améliore la page 
@@ -501,26 +501,26 @@ export const vidFr = [
 		couloirs de M.A.R.I. dans les scènes entre Clover, Alex et Sam.`
 	},
 	{
-		time: "6 janvier 2023", img: "/journal/video/sound.png",
+		time: "7 janvier 2023", img: "/journal/video/sound.png",
 		alt: "Ils enregistrent des effets sonores avec Andrea",
 		text: `Lorsque le tournage est terminé, ils commencent à collecter des effets visuels 
 		et sonores afin de monter la vidéo.`
 	},
 	{
-		time: "6 janvier 2023", img: "/journal/video/editing.png",
+		time: "9 janvier 2023", img: "/journal/video/editing.png",
 		alt: "Yau, Elisa et Sangeeta montant la vidéo",
 		text: `Ils travaillent sans relâche afin d'assurer que la vidéo est uniforme, captivante et 
 		fidèle au thème. Après des heures de montage, la vidéo est terminée!`
 	},
 	{
-		time: "6 janvier 2023", img: "/journal/video/tuto.png",
+		time: "11 janvier 2023", img: "/journal/video/tuto.png",
 		alt: "L'équipe planifiant le tutoriel",
 		text: `Par contre, le travail du département de marketing n'est pas terminé. Ils doivent 
 		maintenant commencer à écrire le script du tutoriel, puis le filmer. Ils commencent par 
 		récupérer toute information au sujet du bras robotique auprès du département de la machinerie.`
 	},
 	{
-		time: "6 janvier 2023", img: "/journal/video/tuto2.png",
+		time: "12 janvier 2023", img: "/journal/video/tuto2.png",
 		alt: "Ils montent le tutoriel sur le divan rouge",
 		text: `Ils ramassent les matériaux nécessaires pour tourner les scènes du tutoriel. Puis, ils les 
 		filment et les montent avant leur retour à M.A.R.I.`
@@ -535,13 +535,13 @@ export const progFr = [
     	deuxième problème préliminaire.`
 	},
 	{
-		time: "12 décembre 2022", img: "/journal/prog/2ndPrelim.png",
+		time: "8 décembre 2022", img: "/journal/prog/2ndPrelim.png",
 		alt: "Une capture d'écran de Carolyn et Vincent remettant le deuxième problème préliminaire",
 		text: `Vincent et Carolyn ont finalement remis le deuxième problème préliminaire,
     	sombrant dans la folie dans le processus.`
 	},
 	{
-		time: "12 décembre 2022", img: "/journal/prog/prelim3.png",
+		time: "14 décembre 2022", img: "/journal/prog/prelim3.png",
 		alt: "Vincen travaillant sur le troisième problème préliminaire",
 		text: `Agent Ly résout le troisième problème préliminaire en 1 heure!`
 	}
