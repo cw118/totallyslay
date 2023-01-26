@@ -168,7 +168,7 @@ export const webEng = [
 		adding animations!`
 	},
 	{
-		time: "January 15th 2023", img: "/journal/web/carolyn.png",
+		time: "January 15th, 2023", img: "/journal/web/carolyn.png",
 		alt: "Carolyn working on the MOOHP page on the red couch",
 		text: `After presenting the website to their fellow MOOHP agents and heads, 
 		they receive important feedback in order to improve the user experience. 
@@ -176,7 +176,7 @@ export const webEng = [
 		conquer!`
 	},
 	{
-		time: "January 17th 2023", img: "/journal/web/last.png",
+		time: "January 17th, 2023", img: "/journal/web/last.png",
 		alt: "Celia and Victoria working on the red couch, Vincent and Zi Heng working on a bench",
 		text: `As the submission deadline approaches, the division finalises all their 
 		designs. They update their team members' progress as well as their student life 
