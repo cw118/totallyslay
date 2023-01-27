@@ -50,10 +50,10 @@ const SpyNav = () => {
       </Navbar.Collapse>
       <div className='block m-auto relative'>
         <div id='spyLogo' className={classNames('navLogo', { 'showLogoTwo': showLogo, 'hideLogoTwo': hideLogo, 'pause': paused })} onMouseOver={revealLogo} onTouchStart={revealLogo} onMouseLeave={pause} onTouchEnd={pause}>
-          <img src='/logo/moohp-logo.svg' alt={fr? 'Logo de MOOHP' : 'MOOHP logo'} />
+          <img src='/logo/moohp-logo.png' alt={fr? 'Logo de MOOHP' : 'MOOHP logo'} />
         </div>
         <Link href={fr? '/fr' : '/'} id='hiddenRegLogo' className='navLogo' onMouseOver={play} onTouchStart={play} onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
-          <img src='/logo/mari-logo.svg' alt={fr? 'Logo de M.A.R.I.' : 'M.A.R.I logo'} />
+          <img src='/logo/mari-logo.png' alt={fr? 'Logo de M.A.R.I.' : 'M.A.R.I logo'} />
         </Link>
       </div>
       <Navbar.Collapse className='navSecondCollapse'>

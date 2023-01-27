@@ -15,7 +15,7 @@ const Foooter = () => {
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <Footer.Brand
             href={spy ? (fr? '/fr/moohp' : '/moohp') : (fr? '/fr' : '/')}
-            src={spy ? '/logo/moohp-logo.svg' : '/logo/mari-logo.svg'}
+            src={spy ? '/logo/moohp-logo.png' : '/logo/mari-logo.png'}
             alt={spy ? "MOOHP logo" : "M.A.R.I. logo"}
             name={spy ? "MOOHP" : "M.A.R.I."}
             className={classNames("flex justify-center md:block footerBrand", { 'invertedLogo': spy })}

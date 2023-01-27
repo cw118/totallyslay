@@ -16,7 +16,7 @@ const Avia = ({ fr }) => {
     <>
 			<div className={styles.header}><Typewrite page={fr ? 'aviaFr' : 'avia'} /></div>
 			<div className={styles.intro}>
-				<img src="/logo/avia-logo.svg" alt="AVIA Logo" className={styles.aviaLogo} />
+				<img src="/logo/avia-logo.png" alt="AVIA Logo" className={styles.aviaLogo} />
 				<p>
 					<strong>{fr ? `Nous sommes contents que vous soyez là, agent${name}! ` : `We're glad you made it, Agent${name}! `}</strong>
 					{fr ? `La CRC, une association à but non lucratif qui organise des compétitions de robotique annuelles, a demandé de l'aide 
@@ -34,7 +34,7 @@ const Avia = ({ fr }) => {
 						science, technology, and engineering with visual arts and humanities; the Machinery, Manufacturing, Hacking, Virtual 
 						Network, and Marketing divisions are integral to this mission!`}
 				</p>
-				<img src="/logo/crc-logo.svg" alt="CRC Logo" className={styles.crcLogo} />
+				<img src="/logo/crc-logo.png" alt="CRC Logo" className={styles.crcLogo} />
 			</div>
 
 			<h1 className={styles.header}><strong>{fr ? `AVIA procédera comme suit:` : `AVIA will proceed as follows:`}</strong></h1>

@@ -9,7 +9,7 @@ const Testimonial = ({ fr }) => {
 				<p className={styles.name}>{fr ? 'Jared Lewis, ancien élève de M.A.R.I. et ' : 'Jared Lewis, M.A.R.I. Alumni & '}<Link className={styles.hintLink} href={fr ? '/fr/moohp' : '/moohp'}>{fr ? 'vice-président de MOOHP' : 'MOOHP Vice President'}</Link></p>
 			</div>
 			<img 
-					src="/testimonial/jared.svg"
+					src="/testimonial/jared.png"
 					alt={fr ? 'Image de Jared Lewis' : 'Picture of Jared Lewis'}
 					className={styles.jared}
 			/>

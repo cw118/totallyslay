@@ -47,10 +47,10 @@ const RegNav = () => {
       </Navbar.Collapse>
       <div className='block m-auto relative'>
         <Link href={fr? '/fr' : '/'} id='regLogo' className={classNames('navLogo', { 'showLogo': showLogo, 'hideLogo': hideLogo, 'pause': paused })} onMouseOver={revealLogo} onTouchStart={revealLogo} onMouseLeave={pause} onTouchEnd={pause}>
-          <img src='/logo/mari-logo.svg' alt='M.A.R.I Logo' />
+          <img src='/logo/mari-logo.png' alt='M.A.R.I Logo' />
         </Link>
         <Link href={fr? '/fr/moohp' : '/moohp'} id='hiddenLogo' className='navLogo' onMouseOver={play} onTouchStart={play} onMouseLeave={coverLogo} onTouchEnd={coverLogo}>
-          <img src='/logo/moohp-logo.svg' alt='MOOHP logo' />
+          <img src='/logo/moohp-logo.png' alt='MOOHP logo' />
         </Link>
       </div>
       <Navbar.Collapse className='navSecondCollapse'>

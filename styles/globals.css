@@ -220,13 +220,15 @@
     box-shadow: 0 0 0 2.5px #000;
     cursor: pointer;
     background-color: #fff;
-    background-image: url(/jerry/clown-jerry-mari.svg);
+    background-size: 100%;
+    background-position: 50% 60%;
+    background-image: url(/jerry/clown-jerry-mari.png);
     background-repeat: no-repeat;
     z-index: 75;
   }
 
   .activePopUp {
-    background-image: url(/jerry/clown-jerry-moohp.svg);
+    background-image: url(/jerry/clown-jerry-moohp.png);
   }
 
   .popUpTooltip {
@@ -414,20 +416,24 @@
     border-top: solid 0.5px #eee;
   }
 
+  .one, .two, .three, .four {
+    background-size: 100%;
+  }
+
   .one {
-    background-image: url(/puzzle/one-sm.svg);
+    background-image: url(/puzzle/one.png);
   }
 
   .two {
-    background-image: url(/puzzle/two-sm.svg);
+    background-image: url(/puzzle/two.png);
   }
 
   .three {
-    background-image: url(/puzzle/three-sm.svg);
+    background-image: url(/puzzle/three.png);
   }
 
   .four {
-    background-image: url(/puzzle/four-sm.svg);
+    background-image: url(/puzzle/four.png);
   }
 
   .hide {
@@ -508,7 +514,6 @@
     .jerryPopUp {
       width: 7em;
       height: 7em;
-      background-position: 50% 135%;
     }
 
     .popUpTooltip {
@@ -723,7 +728,7 @@
       width: 300px;
       height: 250px;
     }
-
+/* 
     .one {
       background-image: url(/puzzle/one.svg);
     }
@@ -738,7 +743,7 @@
 
     .four {
       background-image: url(/puzzle/four.svg);
-    }
+    } */
 
     .bottomNav h3.whereNext {
       font-size: 1.7rem;

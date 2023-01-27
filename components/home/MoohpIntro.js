@@ -30,7 +30,7 @@ const MoohpIntro = ({ fr }) => {
     <div className={styles.intro}>
       <h3>{fr ? 'Bienvenue à MOOHP!' : 'Welcome to MOOHP!'}</h3>
       <div className={styles.jerryWelcome}>
-        <img className={styles.compowderJerry} src='/jerry/compowder-jerry.svg' alt={fr ? 'Hologramme de Jerry dans le compowder' : 'Hologram of Jerry in the Compowder'} />
+        <img className={styles.compowderJerry} src='/jerry/compowder-jerry.png' alt={fr ? 'Hologramme de Jerry dans le compowder' : 'Hologram of Jerry in the Compowder'} />
         
         <div className={classNames(`${styles.welcomeAgent}`, { 'hide': !hideInitial, 'quickFadeIn': hideInitial })}>
           <p className={styles.personalizedGreeting}>

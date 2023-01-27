@@ -303,14 +303,15 @@
   #leftLogo, #rightLogo {
     height: 250px;
     width: 150px;
+    background-size: 100%;
   }
 
   #leftLogo {
-    background-image: url(/puzzle/left.svg);
+    background-image: url(/puzzle/left.png);
   }
 
   #rightLogo {
-    background-image: url(/puzzle/right.svg);
+    background-image: url(/puzzle/right.png);
   }
 
   .moohpDesc {
