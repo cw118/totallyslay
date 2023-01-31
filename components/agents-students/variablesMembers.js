@@ -36,7 +36,7 @@ export const frS = [
     {name: "Celia Shi", age: 18, year: "Deuxième année", club: "Développement web, film, bricolage et programmation", fun: "Je ne chanterai plus jamais *et puis elle recommence de chanter*", src: "/members/Celia_S.JPG"},
     {name: "Sangeeta Vidyarthi", age: 18, year: "Deuxième année", club: "Arduino et film", fun: "Je ne veux plus faire les génériques de la vidéo.", src: "/members/Sangeeta_S.JPG"},
     {name: "Zi Heng Wang", age: 18, year: "Première année", club: "Arduino, programmation et bricolage", fun: "Tout va bien aller, nous avons un extincteur de feu.", src: "/members/ZiHeng_S.JPG"},
-    {name: "Carolyn Wu", age: 18, year: "First year", club: "Développement web, bricolage, programmation et film", fun: "J'empêche mes amis de sombrer dans la folie.", src: "/members/Carolyn_S.JPG"},  
+    {name: "Carolyn Wu", age: 18, year: "Première année", club: "Développement web, bricolage, programmation et film", fun: "J'empêche mes amis de sombrer dans la folie.", src: "/members/Carolyn_S.JPG"},  
     {name: "Elisa Xue", age: 18, year: "Première année", club: "Film et bricolage", fun: "Je viens de découvrir que fx signifie effets.", src: "/members/Elisa_S.JPG"},
     {name: "Jennifer Zhang", age: 18, year: "Première année", club: "Arduino et bricolage", fun: "J'ai soudé un million de fois!", src: "/members/Jennifer_S.JPG"},
     {name: "Dominique Paradis", age: "(Confidentiel)", year: "Membre du personnel", club: "(Confidentiel)", fun: "C'est correct si tu veux avoir tort.", src: "/members/Paradis.png"},

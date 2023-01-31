@@ -37,7 +37,7 @@ const Cards = ({ fr }) => {
 			</h1>
 			<p className={`${styles.clubsDesc} font-kiwi`}>
 				{fr ? `Tous les étudiants à M.A.R.I. participent à au moins un comité: 
-                  le comité Arduino où on construit des robots, le comité de programmation, le comité de développement web, 
+                  le comité Arduino qui construit des robots, le comité de programmation, le comité de développement web, 
                   le comité de bricolage qui permet de développer des compétences en construction et en design d'intérieur, 
                   et le comité de film.`
 					: `M.A.R.I. students all take part in various clubs such as the Arduino club, 

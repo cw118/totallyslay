@@ -7,7 +7,6 @@ const Meta = ({ title, description, icon }) => {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta name='description' content={description} />
-      <meta charSet='utf-8' />
       <link rel='icon' href={icon} />
       <title>{title}</title>
     </Head>
